@@ -1,0 +1,92 @@
+AMLTRIX License Terms
+
+1. INTRODUCTION AND SCOPE
+
+1.1 Licensor  
+The present license is granted under the terms and conditions set forth herein by UAB “Amlyze”, a legal entity duly incorporated and operating under the laws of the Republic of Lithuania, as the publisher and administrator of AMLTRIX (hereinafter – the Licensor).
+
+1.2 AMLTRIX  
+AMLTRIX is an open, community-driven knowledge framework developed by UAB “Amlyze” to unify and standardize the identification and mitigation of money laundering (ML) for financial institutions, regulators, and compliance professionals (hereinafter – AMLTRIX).
+
+1.3 License type  
+The present license is a tailored license based on the general principles of the Creative Commons licensing framework with specific terms and conditions set forth herein (hereinafter – the License).
+
+1.4 Object of the License  
+This License is applicable to the original contents found on AMLTRIX which were published by the Licensor (hereinafter – the Licensed Content).
+
+1.5 Licensee  
+These License terms apply to any individual accessing, using, or modifying AMLTRIX content in any form (hereinafter – the Users). By using AMLTRIX, the User acknowledges that they have read, understood, and agree to be bound by the License terms set forth herein.
+
+1.6 User-generated content  
+Materials created by the Users are classified as either original content published on AMLTRIX (hereinafter – the Contributions) or content created by modifying or adapting the Licensed Content and published on AMLTRIX or elsewhere, regardless of the degree of modification or adaptation (hereinafter – the Derivative Works).
+
+2. LICENSE TERMS
+
+2.1 Rights granted under the License  
+The Users are hereby granted a worldwide, royalty-free, non-exclusive, irrevocable license to:  
+a) reproduce the Licensed Content in whole or in part in any medium or format;  
+b) copy and distribute the Licensed Content in whole or in part, without restriction;  
+c) modify, remix, and adapt the Licensed Content in whole or in part by creating Derivative Works or making improvements;  
+d) use the Licensed Content in whole or in part for commercial purposes, subject to compliance with the attribution requirement.
+
+2.2 Medium and formats  
+The Users are permitted to exercise the rights conferred upon them by this License in any media and format, including but not limited to audio, video, text, blog posts, articles, academic papers, and to make technical modifications to the Licensed Content for the purpose of adapting it to the chosen medium and/or format.
+
+2.3 Attribution requirement  
+As a condition of using, sharing, or modifying the Licensed Content, the Users are obliged to:  
+a) provide appropriate credit to AMLTRIX (if using Licensed Content) or to the User (if using user-generated content), including a reference to the original source;  
+b) provide a link (if applicable) to the Licensed Content or the Contributions or the Derivative Works;  
+c) provide a link (if applicable) to these License terms, or if hyperlinking is not possible, provide a textual reference;  
+d) ensure that the attribution does not imply AMLTRIX’s endorsement of the User’s work.
+
+2.4 Attribution method  
+The attribution must be made in a manner that unequivocally and directly indicates AMLTRIX as the source material.  
+- For digital content (websites, online reports, blogs, etc.): The attribution must be placed in a visible location with hyperlinks to the source material.  
+- For print publications (reports, books, papers, etc.): The attribution must be included in the bibliography, footnote, or citation section.  
+- For software and data integrations (usage in applications, AI models, datasets, etc.): The attribution must be included in the documentation, source code, or an “About” section.  
+- For multimedia content (videos, podcasts, presentations, etc.): The attribution must be included in the credits, captions, or description.
+
+2.5 Status in relation to the Licensor and other Users  
+This License does not constitute permission for Users to assert or imply any connection with, sponsorship by, or endorsement from AMLTRIX or any other Users designated for attribution under this License.
+
+2.6 Contribution licensing  
+By submitting Contributions to AMLTRIX, Users confirm that they grant the public a worldwide, royalty-free, non-exclusive, irrevocable license to reproduce, modify, adapt, publish, and distribute their Contributions under the same terms as specified in this License.
+
+2.7 Retention of moral rights  
+Users shall retain their moral rights, including but not limited to the right of integrity and the right of attribution regarding their Contributions. However, by submitting their Contributions to AMLTRIX, Users agree not to enforce any moral rights that would restrict others from using the Contributions as permitted under this License.
+
+2.8 License validity duration  
+The duration of this License corresponds to the duration of copyright protection under applicable national laws. For any user who submitted a Contribution or created a Derivative Work anonymously, the License remains valid for 50 years after the date of publication.
+
+2.9 Responsibility for Derivative Work licensing requirement infringements  
+Failure to comply with the derivative work licensing requirements is a violation of the License terms. If a User is found distributing Derivative Works under different terms or with restrictive conditions, AMLTRIX may take corrective measures, including termination of the License in relation to that User or restricting access to AMLTRIX.
+
+2.10 Additional rights or endorsements  
+This License does not grant any rights to claim or suggest AMLTRIX’s endorsement of any Derivative Work or Contribution, nor does it waive any applicable regulatory, compliance, or legal requirements.
+
+2.11 Industrial rights not covered by the License  
+The License does not grant any rights, whether express or implied, to use trademarks, designs, logos, branding elements, or other industrial rights of the Licensor or other Users without separate, prior written permission from the respective rights holders.
+
+3. MISCELLANEOUS PROVISIONS
+
+3.1 Disclaimer of Warranties  
+Unless expressly agreed otherwise in a separate agreement by the Licensor, the Licensed Content is provided “as-is” and “as-available,” without any warranties, either express, implied, statutory, or otherwise. This includes but is not limited to warranties regarding title, merchantability, fitness for a particular purpose, non-infringement, or the absence of latent defects.
+
+3.2 Liability  
+To the fullest extent permitted by law, the Licensor shall not be liable for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising from or in connection with this License or the use of the Licensed Content, even if advised of the possibility of such damages.
+
+3.3 Termination of the License  
+The License is automatically terminated for any User who fails to comply with the terms set forth herein. Reinstatement of the License is at the sole discretion of the Licensor.
+
+3.4 Different terms and conditions  
+No additional or different terms or conditions communicated by any User will be binding unless expressly agreed to by the Licensor in writing. Any separate arrangements or agreements regarding the Licensed Content are independent of this License.
+
+3.5 Amendment of provisions  
+If any provision of this License is deemed unenforceable, it may be amended to the minimum extent necessary to make it enforceable. If the provision cannot be amended, it shall be severed without affecting the enforceability of the remaining terms.
+
+3.6 Governing Law and Dispute Resolution  
+This License shall be governed by and construed in accordance with the laws of the Republic of Lithuania. Any disputes or controversies arising out of or in connection with this License shall be resolved through negotiations in good faith, and if unsuccessful, through the competent courts of the Republic of Lithuania.
+
+---
+
+End of AMLTRIX License Terms

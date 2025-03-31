@@ -1,0 +1,933 @@
+{
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "domain": "amltrix-ml",
+  "name": "Money Laundering",
+  "description": "Money laundering is the multi-step, cyclical process in which criminals conceal the origins of funds acquired through illegal activities (e.g., fraud, corruption, organized crime) by moving them into the legal financial system under a guise of legitimacy. In the context of AMLTRIX\u2019s adversarial threat model, these activities extend beyond the traditional stages of placement, layering, and integration to encompass early infiltration (access facilitation), operational evasion, concealment mechanisms, and post-integration asset protection\u2014recognizing that criminals can reuse or cycle between these phases as they adapt to avoid detection.",
+  "filters": {
+    "platforms": [
+      "Customer Risk",
+      "Product Risk",
+      "Jurisdictional Risk",
+      "Channel Risk",
+      "Internal Risk"
+    ]
+  },
+  "layout": {
+    "layout": "side",
+    "showName": true
+  },
+  "techniques": [
+    {
+      "techniqueID": "T0144.009"
+    },
+    {
+      "techniqueID": "T0012.001"
+    },
+    {
+      "techniqueID": "T0098"
+    },
+    {
+      "techniqueID": "T0115"
+    },
+    {
+      "techniqueID": "T0016"
+    },
+    {
+      "techniqueID": "T0043"
+    },
+    {
+      "techniqueID": "T0144"
+    },
+    {
+      "techniqueID": "T0014"
+    },
+    {
+      "techniqueID": "T0018"
+    },
+    {
+      "techniqueID": "T0002"
+    },
+    {
+      "techniqueID": "T0003"
+    },
+    {
+      "techniqueID": "T0010"
+    },
+    {
+      "techniqueID": "T0011"
+    },
+    {
+      "techniqueID": "T0083"
+    },
+    {
+      "techniqueID": "T0017"
+    },
+    {
+      "techniqueID": "T0022"
+    },
+    {
+      "techniqueID": "T0026"
+    },
+    {
+      "techniqueID": "T0032"
+    },
+    {
+      "techniqueID": "T0028"
+    },
+    {
+      "techniqueID": "T0042"
+    },
+    {
+      "techniqueID": "T0007"
+    },
+    {
+      "techniqueID": "T0055"
+    },
+    {
+      "techniqueID": "T0059"
+    },
+    {
+      "techniqueID": "T0060"
+    },
+    {
+      "techniqueID": "T0068"
+    },
+    {
+      "techniqueID": "T0066"
+    },
+    {
+      "techniqueID": "T0076"
+    },
+    {
+      "techniqueID": "T0064"
+    },
+    {
+      "techniqueID": "T0062"
+    },
+    {
+      "techniqueID": "T0086"
+    },
+    {
+      "techniqueID": "T0088"
+    },
+    {
+      "techniqueID": "T0092"
+    },
+    {
+      "techniqueID": "T0093"
+    },
+    {
+      "techniqueID": "T0129"
+    },
+    {
+      "techniqueID": "T0087"
+    },
+    {
+      "techniqueID": "T0141"
+    },
+    {
+      "techniqueID": "T0142"
+    },
+    {
+      "techniqueID": "T0096"
+    },
+    {
+      "techniqueID": "T0100"
+    },
+    {
+      "techniqueID": "T0103"
+    },
+    {
+      "techniqueID": "T0104"
+    },
+    {
+      "techniqueID": "T0001"
+    },
+    {
+      "techniqueID": "T0112"
+    },
+    {
+      "techniqueID": "T0116"
+    },
+    {
+      "techniqueID": "T0118"
+    },
+    {
+      "techniqueID": "T0119"
+    },
+    {
+      "techniqueID": "T0121"
+    },
+    {
+      "techniqueID": "T0050"
+    },
+    {
+      "techniqueID": "T0049"
+    },
+    {
+      "techniqueID": "T0125"
+    },
+    {
+      "techniqueID": "T0128"
+    },
+    {
+      "techniqueID": "T0130"
+    },
+    {
+      "techniqueID": "T0131"
+    },
+    {
+      "techniqueID": "T0132"
+    },
+    {
+      "techniqueID": "T0135"
+    },
+    {
+      "techniqueID": "T0136"
+    },
+    {
+      "techniqueID": "T0140"
+    },
+    {
+      "techniqueID": "T0143"
+    },
+    {
+      "techniqueID": "T0145"
+    },
+    {
+      "techniqueID": "T0147"
+    },
+    {
+      "techniqueID": "T0073"
+    },
+    {
+      "techniqueID": "T0077"
+    },
+    {
+      "techniqueID": "T0084"
+    },
+    {
+      "techniqueID": "T0085"
+    },
+    {
+      "techniqueID": "T0020"
+    },
+    {
+      "techniqueID": "T0133"
+    },
+    {
+      "techniqueID": "T0117"
+    },
+    {
+      "techniqueID": "T0113"
+    },
+    {
+      "techniqueID": "T0146"
+    },
+    {
+      "techniqueID": "T0075"
+    },
+    {
+      "techniqueID": "T0144.011"
+    },
+    {
+      "techniqueID": "T0006"
+    },
+    {
+      "techniqueID": "T0015"
+    },
+    {
+      "techniqueID": "T0046"
+    },
+    {
+      "techniqueID": "T0051"
+    },
+    {
+      "techniqueID": "T0053"
+    },
+    {
+      "techniqueID": "T0102"
+    },
+    {
+      "techniqueID": "T0078"
+    },
+    {
+      "techniqueID": "T0095"
+    },
+    {
+      "techniqueID": "T0109"
+    },
+    {
+      "techniqueID": "T0105"
+    },
+    {
+      "techniqueID": "T0124"
+    },
+    {
+      "techniqueID": "T0123"
+    },
+    {
+      "techniqueID": "T0148"
+    },
+    {
+      "techniqueID": "T0149"
+    },
+    {
+      "techniqueID": "T0012"
+    },
+    {
+      "techniqueID": "T0041"
+    },
+    {
+      "techniqueID": "T0080"
+    },
+    {
+      "techniqueID": "T0023"
+    },
+    {
+      "techniqueID": "T0025"
+    },
+    {
+      "techniqueID": "T0122"
+    },
+    {
+      "techniqueID": "T0139"
+    },
+    {
+      "techniqueID": "T0094"
+    },
+    {
+      "techniqueID": "T0097"
+    },
+    {
+      "techniqueID": "T0110"
+    },
+    {
+      "techniqueID": "T0054"
+    },
+    {
+      "techniqueID": "T0057"
+    },
+    {
+      "techniqueID": "T0027"
+    },
+    {
+      "techniqueID": "T0111"
+    },
+    {
+      "techniqueID": "T0079"
+    },
+    {
+      "techniqueID": "T0090"
+    },
+    {
+      "techniqueID": "T0126"
+    },
+    {
+      "techniqueID": "T0089"
+    },
+    {
+      "techniqueID": "T0101"
+    },
+    {
+      "techniqueID": "T0049.001"
+    },
+    {
+      "techniqueID": "T0058"
+    },
+    {
+      "techniqueID": "T0071"
+    },
+    {
+      "techniqueID": "T0107"
+    },
+    {
+      "techniqueID": "T0063"
+    },
+    {
+      "techniqueID": "T0044"
+    },
+    {
+      "techniqueID": "T0140.001"
+    },
+    {
+      "techniqueID": "T0024"
+    },
+    {
+      "techniqueID": "T0004"
+    },
+    {
+      "techniqueID": "T0036"
+    },
+    {
+      "techniqueID": "T0074"
+    },
+    {
+      "techniqueID": "T0013.005"
+    },
+    {
+      "techniqueID": "T0129.001"
+    },
+    {
+      "techniqueID": "T0055.001"
+    },
+    {
+      "techniqueID": "T0015.001"
+    },
+    {
+      "techniqueID": "T0061"
+    },
+    {
+      "techniqueID": "T0144.001"
+    },
+    {
+      "techniqueID": "T0011.001"
+    },
+    {
+      "techniqueID": "T0045.001"
+    },
+    {
+      "techniqueID": "T0143.001"
+    },
+    {
+      "techniqueID": "T0045"
+    },
+    {
+      "techniqueID": "T0013.001"
+    },
+    {
+      "techniqueID": "T0034.001"
+    },
+    {
+      "techniqueID": "T0048.002"
+    },
+    {
+      "techniqueID": "T0010.001"
+    },
+    {
+      "techniqueID": "T0016.001"
+    },
+    {
+      "techniqueID": "T0111.001"
+    },
+    {
+      "techniqueID": "T0107.001"
+    },
+    {
+      "techniqueID": "T0137"
+    },
+    {
+      "techniqueID": "T0094.001"
+    },
+    {
+      "techniqueID": "T0072"
+    },
+    {
+      "techniqueID": "T0005.001"
+    },
+    {
+      "techniqueID": "T0107.002"
+    },
+    {
+      "techniqueID": "T0144.002"
+    },
+    {
+      "techniqueID": "T0015.002"
+    },
+    {
+      "techniqueID": "T0062.001"
+    },
+    {
+      "techniqueID": "T0108"
+    },
+    {
+      "techniqueID": "T0058.001"
+    },
+    {
+      "techniqueID": "T0005.002"
+    },
+    {
+      "techniqueID": "T0144.003"
+    },
+    {
+      "techniqueID": "T0015.003"
+    },
+    {
+      "techniqueID": "T0144.004"
+    },
+    {
+      "techniqueID": "T0138"
+    },
+    {
+      "techniqueID": "T0134"
+    },
+    {
+      "techniqueID": "T0140.002"
+    },
+    {
+      "techniqueID": "T0144.005"
+    },
+    {
+      "techniqueID": "T0016.002"
+    },
+    {
+      "techniqueID": "T0010.002"
+    },
+    {
+      "techniqueID": "T0094.002"
+    },
+    {
+      "techniqueID": "T0144.006"
+    },
+    {
+      "techniqueID": "T0144.007"
+    },
+    {
+      "techniqueID": "T0007.001"
+    },
+    {
+      "techniqueID": "T0070.001"
+    },
+    {
+      "techniqueID": "T0067"
+    },
+    {
+      "techniqueID": "T0144.008"
+    },
+    {
+      "techniqueID": "T0050.001"
+    },
+    {
+      "techniqueID": "T0099"
+    },
+    {
+      "techniqueID": "T0106"
+    },
+    {
+      "techniqueID": "T0147.001"
+    },
+    {
+      "techniqueID": "T0001.001"
+    },
+    {
+      "techniqueID": "T0075.001"
+    },
+    {
+      "techniqueID": "T0115.001"
+    },
+    {
+      "techniqueID": "T0001.002"
+    },
+    {
+      "techniqueID": "T0067.001"
+    },
+    {
+      "techniqueID": "T0069.001"
+    },
+    {
+      "techniqueID": "T0061.001"
+    },
+    {
+      "techniqueID": "T0023.001"
+    },
+    {
+      "techniqueID": "T0144.010"
+    },
+    {
+      "techniqueID": "T0061.002"
+    },
+    {
+      "techniqueID": "T0098.001"
+    },
+    {
+      "techniqueID": "T0013"
+    },
+    {
+      "techniqueID": "T0030"
+    },
+    {
+      "techniqueID": "T0130.001"
+    },
+    {
+      "techniqueID": "T0140.003"
+    },
+    {
+      "techniqueID": "T0144.012"
+    },
+    {
+      "techniqueID": "T0114"
+    },
+    {
+      "techniqueID": "T0008.001"
+    },
+    {
+      "techniqueID": "T0143.002"
+    },
+    {
+      "techniqueID": "T0145.001"
+    },
+    {
+      "techniqueID": "T0011.002"
+    },
+    {
+      "techniqueID": "T0003.001"
+    },
+    {
+      "techniqueID": "T0091"
+    },
+    {
+      "techniqueID": "T0058.002"
+    },
+    {
+      "techniqueID": "T0145.002"
+    },
+    {
+      "techniqueID": "T0086.001"
+    },
+    {
+      "techniqueID": "T0088.001"
+    },
+    {
+      "techniqueID": "T0058.003"
+    },
+    {
+      "techniqueID": "T0016.003"
+    },
+    {
+      "techniqueID": "T0144.013"
+    },
+    {
+      "techniqueID": "T0108.001"
+    },
+    {
+      "techniqueID": "T0003.002"
+    },
+    {
+      "techniqueID": "T0008.002"
+    },
+    {
+      "techniqueID": "T0074.001"
+    },
+    {
+      "techniqueID": "T0144.014"
+    },
+    {
+      "techniqueID": "T0014.001"
+    },
+    {
+      "techniqueID": "T0147.002"
+    },
+    {
+      "techniqueID": "T0067.002"
+    },
+    {
+      "techniqueID": "T0088.002"
+    },
+    {
+      "techniqueID": "T0014.002"
+    },
+    {
+      "techniqueID": "T0001.003"
+    },
+    {
+      "techniqueID": "T0045.002"
+    },
+    {
+      "techniqueID": "T0144.015"
+    },
+    {
+      "techniqueID": "T0062.002"
+    },
+    {
+      "techniqueID": "T0010.003"
+    },
+    {
+      "techniqueID": "T0010.004"
+    },
+    {
+      "techniqueID": "T0035"
+    },
+    {
+      "techniqueID": "T0013.002"
+    },
+    {
+      "techniqueID": "T0144.016"
+    },
+    {
+      "techniqueID": "T0020.001"
+    },
+    {
+      "techniqueID": "T0034"
+    },
+    {
+      "techniqueID": "T0038"
+    },
+    {
+      "techniqueID": "T0011.003"
+    },
+    {
+      "techniqueID": "T0014.003"
+    },
+    {
+      "techniqueID": "T0143.003"
+    },
+    {
+      "techniqueID": "T0015.004"
+    },
+    {
+      "techniqueID": "T0033"
+    },
+    {
+      "techniqueID": "T0144.017"
+    },
+    {
+      "techniqueID": "T0140.004"
+    },
+    {
+      "techniqueID": "T0062.003"
+    },
+    {
+      "techniqueID": "T0029"
+    },
+    {
+      "techniqueID": "T0052.001"
+    },
+    {
+      "techniqueID": "T0074.002"
+    },
+    {
+      "techniqueID": "T0144.018"
+    },
+    {
+      "techniqueID": "T0012.002"
+    },
+    {
+      "techniqueID": "T0147.003"
+    },
+    {
+      "techniqueID": "T0023.002"
+    },
+    {
+      "techniqueID": "T0013.003"
+    },
+    {
+      "techniqueID": "T0069.002"
+    },
+    {
+      "techniqueID": "T0065"
+    },
+    {
+      "techniqueID": "T0065.001"
+    },
+    {
+      "techniqueID": "T0014.004"
+    },
+    {
+      "techniqueID": "T0066.001"
+    },
+    {
+      "techniqueID": "T0013.004"
+    },
+    {
+      "techniqueID": "T0113.001"
+    },
+    {
+      "techniqueID": "T0067.003"
+    },
+    {
+      "techniqueID": "T0048.001"
+    },
+    {
+      "techniqueID": "T0142.001"
+    },
+    {
+      "techniqueID": "T0061.003"
+    },
+    {
+      "techniqueID": "T0016.004"
+    },
+    {
+      "techniqueID": "T0115.002"
+    },
+    {
+      "techniqueID": "T0134.001"
+    },
+    {
+      "techniqueID": "T0107.003"
+    },
+    {
+      "techniqueID": "T0010.005"
+    },
+    {
+      "techniqueID": "T0012.003"
+    },
+    {
+      "techniqueID": "T0067.004"
+    },
+    {
+      "techniqueID": "T0065.002"
+    },
+    {
+      "techniqueID": "T0090.002"
+    },
+    {
+      "techniqueID": "T0066.002"
+    },
+    {
+      "techniqueID": "T0020.002"
+    },
+    {
+      "techniqueID": "T0147.004"
+    },
+    {
+      "techniqueID": "T0107.006"
+    },
+    {
+      "techniqueID": "T0021"
+    },
+    {
+      "techniqueID": "T0120"
+    },
+    {
+      "techniqueID": "T0055.002"
+    },
+    {
+      "techniqueID": "T0019"
+    },
+    {
+      "techniqueID": "T0052"
+    },
+    {
+      "techniqueID": "T0008.003"
+    },
+    {
+      "techniqueID": "T0127"
+    },
+    {
+      "techniqueID": "T0031"
+    },
+    {
+      "techniqueID": "T0051.001"
+    },
+    {
+      "techniqueID": "T0048"
+    },
+    {
+      "techniqueID": "T0040"
+    },
+    {
+      "techniqueID": "T0048.003"
+    },
+    {
+      "techniqueID": "T0081"
+    },
+    {
+      "techniqueID": "T0008"
+    },
+    {
+      "techniqueID": "T0045.003"
+    },
+    {
+      "techniqueID": "T0069"
+    },
+    {
+      "techniqueID": "T0005"
+    },
+    {
+      "techniqueID": "T0049.002"
+    },
+    {
+      "techniqueID": "T0090.001"
+    },
+    {
+      "techniqueID": "T0040.001"
+    },
+    {
+      "techniqueID": "T0016.005"
+    },
+    {
+      "techniqueID": "T0121.001"
+    },
+    {
+      "techniqueID": "T0107.004"
+    },
+    {
+      "techniqueID": "T0037"
+    },
+    {
+      "techniqueID": "T0014.005"
+    },
+    {
+      "techniqueID": "T0070"
+    },
+    {
+      "techniqueID": "T0015.005"
+    },
+    {
+      "techniqueID": "T0024.001"
+    },
+    {
+      "techniqueID": "T0039"
+    },
+    {
+      "techniqueID": "T0014.006"
+    },
+    {
+      "techniqueID": "T0009"
+    },
+    {
+      "techniqueID": "T0134.002"
+    },
+    {
+      "techniqueID": "T0056"
+    },
+    {
+      "techniqueID": "T0061.004"
+    },
+    {
+      "techniqueID": "T0082"
+    },
+    {
+      "techniqueID": "T0047"
+    },
+    {
+      "techniqueID": "T0098"
+    },
+    {
+      "techniqueID": "T0019.001"
+    },
+    {
+      "techniqueID": "T0107.005"
+    },
+    {
+      "techniqueID": "T0070.002"
+    },
+    {
+      "techniqueID": "T0066.003"
+    },
+    {
+      "techniqueID": "T0014.007"
+    },
+    {
+      "techniqueID": "T0010.006"
+    },
+    {
+      "techniqueID": "T0013.006"
+    },
+    {
+      "techniqueID": "T0067.005"
+    },
+    {
+      "techniqueID": "T0145.003"
+    },
+    {
+      "techniqueID": "T0144.019"
+    },
+    {
+      "techniqueID": "T0107.007"
+    }
+  ]
+}
