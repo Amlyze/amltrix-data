@@ -1,0 +1,736 @@
+STIX ID,Type,Actor Name,Description,Short Description,Created,Modified,spec_version,x_mitre_is_subtechnique,x_mitre_parent_ref,x_mitre_aliases,External References,External ID,URL
+x-amltrix-actor--a27996b8-5d5b-472f-b5d7-020e0cfe4b8b,x-amltrix-actor,Insurance Company,"Organizations that underwrite and issue insurance policies, collecting premiums and paying claims in the event of covered losses. They may operate directly or through intermediaries.","Insurance companies underwrite and issue policies, collecting premiums and paying claims, and thereby handle significant capital flows that can be exploited for layering or illicit fund infiltration. Their intermediary relationships and complex transaction flows demand robust AML/CFT controls to mitigate these vulnerabilities in adversarial threat modelling.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0002"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0002""
+  }
+]",AT0002,https://framework.amltrix.com/actors/AT0002
+x-amltrix-actor--49d349d8-7d8b-4929-b6de-29aeff897f28,x-amltrix-actor,Cardholder,An individual authorized to use a credit or debit card issued by a financial institution for making purchases or withdrawing funds.,"A cardholder is an authorized individual who uses a payment card for financial transactions and represents a potential point of vulnerability in AML/CFT risk scenarios, as their account and transaction patterns may be exploited for unauthorized or illicit activities.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0007"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0007""
+  }
+]",AT0007,https://framework.amltrix.com/actors/AT0007
+x-amltrix-actor--c4527017-bc5f-4798-90da-8217a4faac3c,x-amltrix-actor,Bank,"A licensed entity that accepts deposits, extends credit, and provides various financial services to individuals and businesses.","Banks are licensed financial institutions that serve as critical nodes in the financial ecosystem, subject to elevated AML/CFT vulnerabilities due to their deposit-taking and lending activities. They mitigate these threats through regulatory compliance obligations, KYC protocols, and continuous transaction monitoring to detect and disrupt illicit financial flows.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0008"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0008""
+  }
+]",AT0008,https://framework.amltrix.com/actors/AT0008
+x-amltrix-actor--38448b5b-9e2a-48f7-a663-3d87a895d373,x-amltrix-actor,Cybercriminal,"An individual or group engaged in illegal cyber activities primarily for financial gain, which can involve targeting financial institutions or their customers to obtain or launder illicit funds.","Cybercriminals are threat actors who exploit digital vulnerabilities to illegally acquire or launder funds, targeting financial institutions and their clients through hacking, identity theft, and other illicit tactics. Their activities elevate AML/CFT risks by enabling unauthorized asset transfers, concealing illicit proceeds, and undermining financial system integrity.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0014"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0014""
+  }
+]",AT0014,https://framework.amltrix.com/actors/AT0014
+x-amltrix-actor--4af71054-7a2f-419f-a471-93dee707af70,x-amltrix-actor,Terrorist Organization,"An entity recognized by national or international authorities for employing or supporting acts of terrorism, typically driven by ideological, political, or religious objectives. Such organizations may operate openly or clandestinely and leverage various networks or resources to further their aims.","Recognized by national or international authorities for committing or supporting acts of terrorism, these entities operate through both overt and clandestine networks to finance their ideological, political, or religious objectives. They exploit vulnerabilities in financial systems, channeling and laundering funds through illicit or opaque mechanisms, thereby posing significant AML/CFT threats.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0019"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0019""
+  }
+]",AT0019,https://framework.amltrix.com/actors/AT0019
+x-amltrix-actor--e35d596d-ec38-4ee4-9c84-47e4c1f350c3,x-amltrix-actor,Non-Profit Organization,"An organization formed for philanthropic, social, charitable, religious, or humanitarian objectives, typically operating independently of government agencies. These entities often rely on donations, membership fees, or grants for funding and maintain financial relationships with financial institutions to manage their operational needs and disburse resources in pursuit of their mission.","Non-Profit Organizations (NPOs) rely on donations, grants, or membership fees to fund philanthropic objectives and frequently operate across multiple jurisdictions, exposing them to heightened AML/CFT risks. Their broad donor base, varied funding streams, and often minimal oversight can create vulnerabilities that adversaries may exploit to launder illicit proceeds or facilitate terrorist financing under the guise of charitable operations.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0022"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0022""
+  }
+]",AT0022,https://framework.amltrix.com/actors/AT0022
+x-amltrix-actor--a03770f1-1d55-406b-927a-6a621342f740,x-amltrix-actor,Organized Crime Group,"A structured collective or network of individuals who systematically engage in criminal activities for profit, often operating across multiple jurisdictions and involved in various predicate offenses such as drug trafficking, fraud, extortion, or smuggling.","An organized crime group is a structured network engaging in coordinated criminal operations for profit, often spanning multiple jurisdictions and encompassing a range of predicate offenses that significantly increase money laundering and terrorist financing (ML/TF) risks. Their illicit activities—such as drug trafficking, fraud, extortion, and smuggling—exploit vulnerabilities in financial systems, posing substantial compliance and regulatory challenges within AML/CFT frameworks.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0029"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0029""
+  }
+]",AT0029,https://framework.amltrix.com/actors/AT0029
+x-amltrix-actor--d63051e4-8703-4a40-92b6-3f59da195824,x-amltrix-actor,Offshore Financial Institution,"A financial entity operating in a jurisdiction typically offering certain regulatory, privacy, or tax benefits for international clients.","Offshore financial institutions operate in jurisdictions with favorable regulatory or tax regimes and heightened confidentiality, creating potential vulnerabilities for money laundering or terrorism financing through reduced transparency and regulatory oversight. They often serve as facilitators for obscuring ultimate beneficial ownership, thereby necessitating enhanced due diligence and robust compliance measures to mitigate AML/CFT risks.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0031"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0031""
+  }
+]",AT0031,https://framework.amltrix.com/actors/AT0031
+x-amltrix-actor--7bed9c9c-aaa9-456e-a8ef-c864b283088f,x-amltrix-actor,Money Services Business,"An enterprise or individual offering financial services such as currency exchange, money transmission, or check cashing outside traditional banking channels. These entities often serve customers with limited access to mainstream financial institutions by providing alternative or more flexible solutions.","Money Services Businesses (MSBs) facilitate currency exchange, money transmission, and other financial services outside formal banking channels, often catering to underserved or underbanked populations. Their flexible service models and broader customer reach can present increased AML/CFT vulnerabilities, necessitating enhanced regulatory oversight and comprehensive risk mitigation strategies.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0033"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0033""
+  }
+]",AT0033,https://framework.amltrix.com/actors/AT0033
+x-amltrix-actor--87e31b8f-6e3a-4733-a798-b72981210ad0,x-amltrix-actor,Private Interest Foundation,A legal structure established under specific jurisdictions to manage or protect private wealth. Such foundations typically maintain a separate legal identity from their founders and often interact with financial institutions for account services or investment management.,"A private interest foundation is a discrete legal entity distinct from its founder, enabling the management or protection of private wealth while potentially obscuring beneficial ownership. Frequently operating in jurisdictions with favorable secrecy provisions, these foundations can pose elevated risks for money laundering and terrorist financing when interfacing with financial institutions for account and investment services.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0034"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0034""
+  }
+]",AT0034,https://framework.amltrix.com/actors/AT0034
+x-amltrix-actor--26a9ad24-44a6-43f8-a076-dffe6e56e36f,x-amltrix-actor,Trust and Company Service Providers (TCSPs),"Professionals or firms that provide services associated with the formation, administration, and management of companies, trusts, or similar structures on behalf of clients. Their offerings can include company formation, registered office provision, directorship or nominee services, trust administration, accounting, tax compliance, and other administrative or fiduciary duties, often operating across multiple jurisdictions.","TCSPs form and manage corporate or trust structures across multiple jurisdictions, creating potential opacity around beneficial ownership and facilitating complex financial flows that increase AML/CFT vulnerabilities. As critical gatekeepers, they must implement robust due diligence and monitoring measures to mitigate money laundering and terrorist financing risks.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0035"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0035""
+  }
+]",AT0035,https://framework.amltrix.com/actors/AT0035
+x-amltrix-actor--fe0632d6-cee8-4577-a1e2-279fe40e65c4,x-amltrix-actor,Gambler,"An individual who participates in wagering or betting at casinos, betting shops, or online gambling platforms.","A Gambler engages in wagering activities through various channels (e.g., casinos, betting shops, online platforms), potentially providing opportunities to layer or mingle illicit funds. As a result, this actor presents AML/CFT vulnerabilities that necessitate stringent monitoring, robust KYC procedures, and targeted transaction oversight to mitigate money laundering and terrorist financing risks.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0038"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0038""
+  }
+]",AT0038,https://framework.amltrix.com/actors/AT0038
+x-amltrix-actor--3cb307f3-9372-468e-8842-34a79662ebcb,x-amltrix-actor,Cryptocurrency Exchange,"A business or platform that facilitates the buying, selling, or exchanging of cryptocurrencies and other digital assets, providing user accounts, order books, and digital wallet services.","A cryptocurrency exchange serves as a critical gateway for digital asset transactions, offering trading, custody, and liquidity services. Due to the inherent pseudonymity of many cryptocurrencies, these platforms pose elevated AML/CFT risks if robust KYC/AML controls and transaction monitoring are not effectively implemented.",2025-04-08T07:48:43.533540+00:00,2025-04-08T07:48:43.533540+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0039"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0039""
+  }
+]",AT0039,https://framework.amltrix.com/actors/AT0039
+x-amltrix-actor--b86ed4a3-56cd-44bd-b661-9b1be2e2a695,x-amltrix-actor,Broker,"An individual or entity that acts as an intermediary between buyers and sellers of financial instruments or currencies. Brokers may be licensed professionals or firms facilitating trades on behalf of retail or institutional clients. They may also provide investment advice, portfolio management, order execution, record-keeping, or negotiation services, often specializing in areas such as stocks, bonds, money markets, or other financial assets.","Brokers serve as intermediaries connecting buyers and sellers of financial instruments, often holding licenses and providing services such as trade execution, investment advice, and record-keeping. Their multifaceted role makes them a potential conduit for money laundering and terrorist financing, necessitating strong oversight and compliance measures to mitigate AML/CFT risks.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0041"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0041""
+  }
+]",AT0041,https://framework.amltrix.com/actors/AT0041
+x-amltrix-actor--18670527-5553-4d3d-bb16-52b813d0ebcb,x-amltrix-actor,Import-Export Company,"A business entity engaged in cross-border trade, facilitating the movement of goods between countries. Such companies typically manage shipping logistics, customs documentation, and financial settlements associated with international commerce. They may also offer personal shopping or package forwarding services for foreign markets.","Import-export companies facilitate cross-border trade, managing critical shipping logistics, customs compliance, and financial settlements, thereby presenting heightened exposure to trade-based money laundering and other illicit finance risks. Their role in moving goods and funds across jurisdictions makes them potential channels for layering and obfuscating illicit proceeds.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0043"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0043""
+  }
+]",AT0043,https://framework.amltrix.com/actors/AT0043
+x-amltrix-actor--21b8b05c-1c11-41b7-bf4f-c983624dc3ba,x-amltrix-actor,Peer-to-Peer Platform Operator,"Entities that operate platforms enabling direct transactions or exchanges between individuals, typically allowing users to transfer funds, goods, or services without relying on a centralized intermediary. These operators may offer marketplaces or payment functionalities for participants to engage in peer-to-peer transactions.","Peer-to-Peer Platform Operators administer decentralized platforms that facilitate direct transactions or exchanges between individuals, bypassing traditional financial intermediaries. Their limited oversight and potential anonymity features heighten vulnerabilities to money laundering and terrorist financing abuse, underscoring the need for robust AML/CFT controls.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0044"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0044""
+  }
+]",AT0044,https://framework.amltrix.com/actors/AT0044
+x-amltrix-actor--8959f44a-7b0b-4dad-8b3b-69c683731222,x-amltrix-actor,Customer,"An individual or entity that maintains an account or relationship with a financial institution or specialized service provider, utilizing various financial products or services such as deposits, withdrawals, loans, or investments. Customers may include private individuals, companies, or other organizations from diverse backgrounds.","Customers are individuals or entities that maintain financial relationships involving transactions, deposits, loans, or investments. They represent a central focus in adversarial threat modelling for AML/CFT, as insufficient due diligence and ongoing monitoring of customer accounts can create vulnerabilities for money laundering and terrorist financing.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0046"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0046""
+  }
+]",AT0046,https://framework.amltrix.com/actors/AT0046
+x-amltrix-actor--b4d69df6-0d56-425e-a388-08ac832ffa69,x-amltrix-actor,Professional Money Launderer,"An individual, group, or network that provides specialized services to transfer or conceal funds on behalf of third parties, often employing complex financial or corporate structures across multiple jurisdictions to obscure the origin or ownership of assets.","A professional money launderer is a specialized facilitator who strategically employs complex financial or corporate arrangements across multiple jurisdictions to obscure asset origins and ownership, thereby enabling illicit actors to evade AML/CFT controls. They represent a critical node in adversarial threat landscapes, utilizing advanced layering techniques to thwart detection and maintain anonymity.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0047"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0047""
+  }
+]",AT0047,https://framework.amltrix.com/actors/AT0047
+x-amltrix-actor--12a76ff7-f465-4fb4-aad6-929d6c34b8a9,x-amltrix-actor,Financial Intermediary,"An entity that facilitates the flow of funds or securities within the financial system, connecting banks, investment firms, or other participants.","A financial intermediary is a pivotal conduit through which capital flows between banks, investment firms, or other participants, making it an attractive target for adversarial exploitation. As such, it requires robust AML/CFT measures to mitigate the heightened risk of money laundering and terrorist financing activities.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0001"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0001""
+  }
+]",AT0001,https://framework.amltrix.com/actors/AT0001
+x-amltrix-actor--fb25a081-b865-468f-837c-cc4690b0dadf,x-amltrix-actor,Trader,"An individual or entity that buys and sells personal or institutional financial instruments, assets, or digital currencies—such as stocks, bonds, derivatives, commodities, or cryptocurrencies—primarily for investment or speculation. Traders often use brokerage services or virtual asset exchanges and maintain accounts with financial institutions to execute and settle their trades. They may operate in either regulated or unregulated markets.","Traders engage in buying and selling diverse financial instruments or digital assets—often across regulated and unregulated markets—thereby creating vulnerabilities for obscuring beneficial ownership and illicit fund flows. Their use of multiple brokerage or exchange services can enable complex layering and rapid transfers, elevating money laundering and terrorist financing risks.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0003"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0003""
+  }
+]",AT0003,https://framework.amltrix.com/actors/AT0003
+x-amltrix-actor--9f09e5f1-4537-4182-9596-a50eed653d16,x-amltrix-actor,Settlor,"An individual or entity that creates a trust by transferring assets to a trustee for the benefit of designated beneficiaries. The settlor defines the trust’s terms and objectives, typically recorded in a trust deed.","The Settlor, as the originator of a trust’s assets and defining its objectives, occupies a pivotal position in adversarial threat modeling and AML/CFT risk management, necessitating enhanced customer due diligence to prevent misuse of the trust structure for illicit financial flows.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0004"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0004""
+  }
+]",AT0004,https://framework.amltrix.com/actors/AT0004
+x-amltrix-actor--4be096ec-3135-420e-b134-f7bb2f4ba722,x-amltrix-actor,Sports Professional,"An individual engaged in professional sports or in athlete representation, involved in negotiations, endorsements, and various financial arrangements.","Sports professionals manage high-value, often cross-border financial flows arising from salaries, endorsements, and representation contracts, creating heightened AML/CFT exposure and potential conduits for illicit funds. Their public profile and complex financial arrangements also make them attractive targets for money laundering schemes and other adversarial infiltration efforts.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0048"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0048""
+  }
+]",AT0048,https://framework.amltrix.com/actors/AT0048
+x-amltrix-actor--003a6596-d27c-43fd-a692-4c99e87fe9b1,x-amltrix-actor,Human Trafficker,"Individuals or groups engaged in the illegal recruitment, transportation, or exploitation of persons for forced labor or sexual exploitation, generating illicit proceeds.","Human traffickers illegally recruit, transport, and exploit individuals for forced labor or sexual exploitation, generating illicit proceeds that are funneled through sophisticated laundering schemes. Their activities pose heightened AML/CFT threats by obscuring transaction flows and necessitating robust detection, reporting, and monitoring frameworks.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0005"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0005""
+  }
+]",AT0005,https://framework.amltrix.com/actors/AT0005
+x-amltrix-actor--c1d7b6de-d0a0-4498-b4f4-b463d7ba8706,x-amltrix-actor,Financial Institution Employee,"An individual employed by a bank, credit union, or other regulated financial institution to perform or oversee financial services such as account management, transaction processing, client onboarding, or compliance functions. Roles may range from frontline tellers to back-office analysts and managers.","Financial Institution Employees serve as frontline and back-office personnel who implement and oversee critical AML/CFT controls, ensuring proper client onboarding, transaction monitoring, and compliance measures. However, lapses in oversight or collusion by these employees can create vulnerabilities that adversaries exploit for money laundering or terrorist financing activities.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0006"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0006""
+  }
+]",AT0006,https://framework.amltrix.com/actors/AT0006
+x-amltrix-actor--fd0c93f6-2ff5-46fa-a74f-a4bf8ca9034d,x-amltrix-actor,Virtual Asset Service Provider Employee,"An individual employed by or operating a virtual asset service provider, often responsible for account management, transaction facilitation, customer support, or compliance-related duties.","Virtual Asset Service Provider employees oversee critical elements of account management, transaction handling, and compliance controls, making them both essential gatekeepers against money laundering and terrorist financing risk and potential insider threats if their access is misused. Their activities and decisions directly influence the effectiveness of AML/CFT measures by shaping customer interactions, transaction monitoring, and the execution of compliance protocols.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0009"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0009""
+  }
+]",AT0009,https://framework.amltrix.com/actors/AT0009
+x-amltrix-actor--f4b9f23f-d3e1-42b8-9369-29448930551f,x-amltrix-actor,Family Members and Close Associates,"Individuals with personal or business relationships to another person or organization who may hold or manage accounts, jointly own assets, or otherwise assist with financial activities.","Family members and close associates are individuals with personal or business ties to a primary subject or entity, who may jointly hold or manage financial instruments, co-own assets, or facilitate transactions. By leveraging trust and proximity, they can obscure beneficial ownership and complicate AML/CFT controls, serving as potential conduits for illicit financial flows.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0010"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0010""
+  }
+]",AT0010,https://framework.amltrix.com/actors/AT0010
+x-amltrix-actor--638f917c-b902-48fc-b50a-bdba9c5a1561,x-amltrix-actor,Real Estate Professional,"Individuals or entities engaged in real estate transactions, including brokerage, agency, property management, leasing, or development. They often work with financial institutions (e.g., for mortgages or escrow services) and coordinate among buyers, sellers, and other stakeholders in property dealings.","Real estate professionals act as key gatekeepers in property transactions and coordinate with financial institutions, presenting elevated AML/CFT vulnerabilities due to their handling of significant funds and potential exposure to illicit proceeds laundered through real property assets.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0011"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0011""
+  }
+]",AT0011,https://framework.amltrix.com/actors/AT0011
+x-amltrix-actor--2d4ca224-fffd-4348-9e14-abf88f62a309,x-amltrix-actor,Business Entity,"An organization formed to engage in commercial, industrial, or professional activities, recognized as a separate legal structure from its owners or members. Such entities can own assets, incur liabilities, and enter into contracts in their own name. This category encompasses organizations of all sizes and industries, including manufacturing, construction, entertainment, and other commercial sectors.","Business entities, as legally separate structures with the capacity to hold assets, incur liabilities, and conduct transactions in their own names, can be exploited to conceal illicit funds or obscure ultimate beneficial ownership. Their broad commercial scope and legal autonomy make them an essential focus in adversarial threat modeling and AML/CFT risk assessments.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0050"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0050""
+  }
+]",AT0050,https://framework.amltrix.com/actors/AT0050
+x-amltrix-actor--c5526c64-459c-4248-89f4-216e89dd4192,x-amltrix-actor,Foreign Terrorist Fighter,An individual who travels from their home country to join or support terrorist or extremist organizations in foreign conflict areas.,"Foreign Terrorist Fighters are individuals who travel from their home countries to conflict zones to join or assist terrorist organizations, posing substantial AML/CFT threats by leveraging illicit or opaque funding channels to facilitate extremist operations. They often exploit cross-border vulnerabilities and informal transfer networks to launder funds and direct financial support to designated terrorist entities.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0012"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0012""
+  }
+]",AT0012,https://framework.amltrix.com/actors/AT0012
+x-amltrix-actor--37c576b6-bf34-42a6-891d-d86730afa7dc,x-amltrix-actor,Financier,"An individual or entity that provides or arranges capital for ventures or investments, typically in exchange for profit or strategic advantages.","Financiers are individuals or entities that supply or manage capital for various ventures, posing heightened AML/CFT risks by potentially enabling the layering or integration of illicit funds if due diligence and beneficial ownership checks are insufficient. They can facilitate adversarial threats through structuring complex financial instruments or cross-border transactions that obscure the source and flow of funds.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0013"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0013""
+  }
+]",AT0013,https://framework.amltrix.com/actors/AT0013
+x-amltrix-actor--d4712425-f589-444a-bdc3-c9faaa8cfe0d,x-amltrix-actor,Drug Trafficker,"Individuals or groups involved in the unlawful production, distribution, or sale of controlled substances, generating illicit proceeds through narcotics-related offenses.","Drug traffickers engage in the illicit production, distribution, and sale of controlled substances, generating and laundering significant proceeds through clandestine financial channels. They represent a high-risk adversarial threat, exploiting transnational networks and sophisticated techniques to evade AML/CFT controls.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0015"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0015""
+  }
+]",AT0015,https://framework.amltrix.com/actors/AT0015
+x-amltrix-actor--c704752d-a683-497c-90e0-d44454bea272,x-amltrix-actor,Pawnshop Operator,"Individuals or businesses offering short-term loans secured by personal property, holding items as collateral until repayment or forfeiture. They typically operate on a local or community basis.","Pawnshop operators provide short-term, collateral-based lending in local settings, creating potential vulnerabilities where valuable, often difficult-to-trace items can be exploited to move or obscure illicit funds. Their handling of personal property as security necessitates enhanced vigilance and due diligence to mitigate money laundering and terrorism financing risks.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0016"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0016""
+  }
+]",AT0016,https://framework.amltrix.com/actors/AT0016
+x-amltrix-actor--6b7cd990-9424-4f74-a258-d7560fb64c7c,x-amltrix-actor,Illicit Operator,"An individual or group engaged in illegal activities that generate unlawful proceeds from a wide range of predicate offenses, such as fraud, corruption, cybercrime, or smuggling.","An Illicit Operator conducts diverse predicate offenses (e.g., fraud, corruption, cybercrime, smuggling) that generate unlawful proceeds, creating significant vulnerabilities in the financial system. They employ sophisticated money laundering techniques to integrate illicit funds, thereby posing a heightened AML/CFT risk.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0052"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0052""
+  }
+]",AT0052,https://framework.amltrix.com/actors/AT0052
+x-amltrix-actor--915082fb-c51c-4b0b-aa03-68b6cb5e7efd,x-amltrix-actor,Correspondent Bank,"Banks that provide cross-border financial services—such as clearing, wire transfers, or foreign exchange—to other financial institutions (respondent banks) to facilitate international transactions.","Correspondent banks serve as critical cross-border intermediaries, providing clearing, wire transfer, and foreign exchange services to respondent institutions. This role exposes them to elevated AML/CFT vulnerabilities due to potential misuse of their infrastructure for illicit financing and money laundering activities.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0017"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0017""
+  }
+]",AT0017,https://framework.amltrix.com/actors/AT0017
+x-amltrix-actor--cacc5fcc-2e4c-487d-96e7-212aa46ffd30,x-amltrix-actor,Wildlife Trafficker,"Individuals or groups involved in the illegal trade of protected animals or wildlife products, generating illicit proceeds.","Wildlife traffickers engage in the illicit trade of endangered species and wildlife products, using clandestine networks and complex financial flows to generate and launder criminal proceeds. Their cross-border operations pose considerable AML/CFT threats through corruption, transnational organized crime ties, and the concealment of illicit profits.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0018"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0018""
+  }
+]",AT0018,https://framework.amltrix.com/actors/AT0018
+x-amltrix-actor--6f1332ec-f01f-4035-bd3a-7b6bc0f2ea48,x-amltrix-actor,Private Equity Firm,An investment entity that pools capital from individuals or institutions to acquire and manage interests in private or public companies. Private equity firms often maintain accounts and conduct financing arrangements through financial institutions.,"Private equity firms aggregate capital from diverse sources to acquire and manage interests across various companies, often using complex ownership structures and cross-border transactions. As such, they present heightened AML/CFT vulnerabilities through intricate financing arrangements and opaque beneficial ownership chains, requiring robust due diligence and ongoing monitoring.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0056"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0056""
+  }
+]",AT0056,https://framework.amltrix.com/actors/AT0056
+x-amltrix-actor--4025aa40-8750-4e5b-9010-3feebc43acc7,x-amltrix-actor,Beneficial Owner,"A natural person (or persons) who ultimately owns, controls, or profits from an asset, business, or arrangement, whether directly or indirectly. Beneficial owners typically have the right to share in the entity’s profits or influence strategic decisions, even if not publicly disclosed.","Beneficial owners are the ultimate decision-makers or profit recipients behind an entity, often obscured from public view, making them pivotal in adversarial threat scenarios. Their undisclosed leverage and control pose heightened AML/CFT risks by facilitating the concealment of illicit funds if not rigorously identified and monitored.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0057"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0057""
+  }
+]",AT0057,https://framework.amltrix.com/actors/AT0057
+x-amltrix-actor--185e9273-acca-441d-9ad5-96a3d37e583b,x-amltrix-actor,Trustee/Custodian,"An individual or entity that holds or manages assets on behalf of others, either as a trustee responsible for administering trust assets or as a custodian focused on safekeeping and record-keeping. This role typically involves fiduciary or legal responsibilities to protect and maintain the assets in accordance with relevant laws.","Trustees and custodians, entrusted with safeguarding and managing assets on behalf of beneficiaries, bear a fiduciary obligation to maintain accurate records and perform robust due diligence. Their position of trust makes them potential vectors for money laundering or terrorism financing if controls, reporting, and verification processes are not rigorously enforced within the AML/CFT framework.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0020"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0020""
+  }
+]",AT0020,https://framework.amltrix.com/actors/AT0020
+x-amltrix-actor--45a2e109-0410-4557-bc38-b9720f2e07d1,x-amltrix-actor,Commercial Business,"A legally registered entity engaged in offering goods or services. These businesses typically maintain financial accounts for managing customer payments, supplier invoices, payroll, and general operations.","Commercial businesses are legally registered entities offering goods or services whose operational financial accounts typically process high-volume, diverse transactions, making them susceptible to misuse for money laundering or terrorist financing if appropriate controls are inadequate.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0021"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0021""
+  }
+]",AT0021,https://framework.amltrix.com/actors/AT0021
+x-amltrix-actor--a62c964c-eb6a-49fe-9d92-c80958746352,x-amltrix-actor,Sanctioned Entity or Individual,"Any individual or organization that is subject to restrictions or prohibitions under sanctions programs administered by governmental or international authorities, including those affiliated with sanctioned governments or regimes.","Sanctioned entities or individuals are subjects of governmental or international prohibitions or restrictions that heighten their risk profile in adversarial threat modeling. Their status demands enhanced AML/CFT controls, including rigorous due diligence and ongoing monitoring, to mitigate exposure to illicit financial activities.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0059"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0059""
+  }
+]",AT0059,https://framework.amltrix.com/actors/AT0059
+x-amltrix-actor--7b04f045-dd8e-418f-bdbc-e56f578332a7,x-amltrix-actor,Trade Finance Institution,"An entity that provides or arranges cross-border trade financing solutions, such as letters of credit, factoring, and forfaiting. These services help businesses manage liquidity, mitigate payment risks, and facilitate the efficient movement of goods and related payments.","Trade finance institutions facilitate cross-border transactions through instruments like letters of credit and factoring, ensuring liquidity and risk mitigation. However, their involvement in complex, multi-party dealings makes them a prime target for trade-based money laundering and sanctions evasion within adversarial threat modelling.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0023"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0023""
+  }
+]",AT0023,https://framework.amltrix.com/actors/AT0023
+x-amltrix-actor--91960196-43f1-415a-8ea6-789f50ed9ac9,x-amltrix-actor,Finance or Leasing Company,"An entity that provides credit or leasing services for assets such as vehicles, equipment, or property.","Finance or leasing companies provide credit or asset-leasing services that can be exploited for laundering or layering illicit proceeds through structured financing arrangements. By handling high-value assets and extending credit, these entities face heightened AML/CFT risks and must implement robust due diligence and transaction monitoring controls to detect and deter abusive financial activities.",2025-04-08T07:48:43.534174+00:00,2025-04-08T07:48:43.534174+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0067"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0067""
+  }
+]",AT0067,https://framework.amltrix.com/actors/AT0067
+x-amltrix-actor--2992075c-2c03-4485-a146-1f411e3a388d,x-amltrix-actor,Investment Firm,"An organization that invests capital in assets or securities on behalf of itself or its clients, offering services such as portfolio management and advisory. These firms typically maintain accounts with financial institutions to execute trades, custody assets, and facilitate client transactions.","Investment firms allocate and manage capital through multiple financial institution accounts, presenting heightened AML/CFT risks due to complex investment vehicles, layering schemes, and potentially opaque cross-border transactions. Robust due diligence, ongoing monitoring, and compliance controls are essential to mitigate these vulnerabilities and safeguard against illicit financial flows.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0074"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0074""
+  }
+]",AT0074,https://framework.amltrix.com/actors/AT0074
+x-amltrix-actor--5374f080-387f-4615-9101-65645b312c39,x-amltrix-actor,High Net Worth Individual,Individuals with substantial financial assets who typically require specialized banking or investment services. They often maintain diversified portfolios and may operate across multiple jurisdictions and legal structures.,"High Net Worth Individuals (HNWIs) present heightened AML/CFT vulnerabilities due to their complex, cross-border financial dealings and diversified portfolios, often structured through multiple legal entities. In adversarial threat modelling, they may be exploited for layering or integrating illicit funds, necessitating enhanced due diligence and robust multi-jurisdictional oversight.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0075"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0075""
+  }
+]",AT0075,https://framework.amltrix.com/actors/AT0075
+x-amltrix-actor--430f4836-4e5a-428f-81ac-64f2c876af7b,x-amltrix-actor,Money Mule,"An individual who transfers or receives funds on behalf of another party, often using personal bank accounts or cash. They typically follow instructions to deposit, withdraw, or remit sums across various financial channels, sometimes in exchange for compensation.","A Money Mule is a high-risk intermediary who knowingly or unknowingly facilitates illicit fund transfers for criminal networks by using personal accounts or cash transactions, thereby obscuring the origin of funds and posing significant AML/CFT threats.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0076"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0076""
+  }
+]",AT0076,https://framework.amltrix.com/actors/AT0076
+x-amltrix-actor--0a1e64eb-e778-48f3-874d-5090f3beabb7,x-amltrix-actor,Informal Value Transfer System Operator,"Individuals or entities that move funds outside formal banking channels, often relying on trust-based networks (such as hawala) to provide money transfer or remittance services.","Informal Value Transfer System Operators (e.g., hawala networks) transfer funds outside formal banking channels, largely relying on trust-based networks that lack rigorous regulatory oversight. Their opaque structures and minimal documentation create elevated AML/CFT vulnerabilities, enabling the potential movement of illicit proceeds without detection.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0081"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0081""
+  }
+]",AT0081,https://framework.amltrix.com/actors/AT0081
+x-amltrix-actor--69606492-e598-4cb0-85f4-cc5cfd539735,x-amltrix-actor,Hedge Fund,"A privately managed investment vehicle that pools capital from accredited or institutional investors and employs various advanced investment strategies. Hedge funds typically maintain relationships with financial institutions for custodial, brokerage, and transactional services.","Hedge funds are privately managed investment vehicles that deploy sophisticated strategies for accredited or institutional investors, often involving complex capital movements and multiple intermediaries. Their opaque structures and reliance on custodial, brokerage, and transactional services can create heightened AML/CFT risks, particularly where layering or obscuring beneficial ownership is possible.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0024"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0024""
+  }
+]",AT0024,https://framework.amltrix.com/actors/AT0024
+x-amltrix-actor--a2a03588-1e4f-45e7-978c-880ddf9d14a2,x-amltrix-actor,Politically Exposed Person (PEP),"An individual who holds or has held a prominent public function at the national or international level, such as a head of state, senior politician, high-level government official, judicial or military leader, or executive of a state-owned enterprise. Immediate family members and close associates of such individuals are also considered PEPs due to their potential access to or influence over public resources and policy decisions.","Politically Exposed Persons (PEPs) are high-risk individuals who, by virtue of their or their close associates’ prominent public functions, wield significant influence and access to public resources, thereby elevating their susceptibility to corruption, money laundering, and other illicit financial activities. Their status necessitates enhanced due diligence within AML/CFT risk frameworks to mitigate threats arising from potential misuse of office or policy manipulation.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0025"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0025""
+  }
+]",AT0025,https://framework.amltrix.com/actors/AT0025
+x-amltrix-actor--eb63d946-97d7-41c7-9f05-0fdbfb3b9960,x-amltrix-actor,Investor,"An individual or entity that allocates or arranges capital into ventures, businesses, or financial instruments with the expectation of generating returns or gains. Investors may hold economic influence or connections, enabling them to direct capital across various markets or channels.","Investors deploy capital across various markets or instruments to achieve returns, potentially enabling cross-border movement of funds that can be exploited for money laundering or terrorist financing if beneficial ownership and source of funds are not properly scrutinized. Their economic influence and ability to channel capital make them pivotal actors in both legitimate financial activities and illicit financing schemes.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0026"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0026""
+  }
+]",AT0026,https://framework.amltrix.com/actors/AT0026
+x-amltrix-actor--7b417d93-8506-408c-b714-99bbe2203a72,x-amltrix-actor,Prepaid Card Issuer,"Organizations issuing prepaid (stored-value) cards, allowing customers to load funds and use the card for payments or withdrawals. These issuers typically manage card balances, enable reloading, and facilitate transactions through established payment networks.","Prepaid card issuers provide stored-value cards that permit loading, storing, and transacting funds through established payment networks, potentially obscuring customer identities and transaction flows. As a result, they pose heightened AML/CFT vulnerabilities related to money laundering and terrorist financing, necessitating robust KYC, ongoing monitoring, and strict compliance controls.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0027"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0027""
+  }
+]",AT0027,https://framework.amltrix.com/actors/AT0027
+x-amltrix-actor--1ab4f935-bbd4-4363-af86-8d6fd088a45f,x-amltrix-actor,Game Developers/Platforms,"Game developers and platforms facilitate the trade of virtual goods and currencies, which can be misused by criminals for laundering purposes. While these entities operate legally, their platforms can be manipulated to obscure financial trails, posing significant compliance and due diligence challenges for FIs tasked with monitoring such transactions.","Game developers and platforms facilitate the creation and trade of virtual goods and currencies that can be exploited for money laundering, allowing criminals to obscure illicit financial flows. As legal entities, these platforms pose significant challenges to financial institutions’ compliance and due diligence efforts by potentially masking suspicious transactions within their virtual ecosystems.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0028"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0028""
+  }
+]",AT0028,https://framework.amltrix.com/actors/AT0028
+x-amltrix-actor--eaabb41e-3d68-4ded-8bec-775cc0951215,x-amltrix-actor,Captive Insurance Manager,"A Captive Insurance Manager is a professional or entity responsible for overseeing the operations of a captive insurance company. This role involves managing the day-to-day activities, ensuring compliance with regulatory requirements, and implementing risk management strategies. The manager coordinates with various stakeholders, including the captive's owners, service providers, and regulatory bodies, to optimize the captive's performance and ensure it meets its financial and operational goals. Common synonyms for a Captive Insurance Manager include Captive Manager and Insurance Manager, with ""Captive Insurance Manager"" being the most widely used term.","A Captive Insurance Manager administers the formation and ongoing operations of a captive insurer, ensuring robust governance and compliance measures that mitigate AML/CFT vulnerabilities within complex insurance arrangements. They coordinate with owners, service providers, and regulators to maintain effective oversight, manage risk exposures, and uphold financial integrity across all captive activities.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0030"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0030""
+  }
+]",AT0030,https://framework.amltrix.com/actors/AT0030
+x-amltrix-actor--6763d241-a12e-483d-ad05-d5c80e90ca2e,x-amltrix-actor,FinTech Company,"A business leveraging technology to deliver financial services, including digital payments, online lending, or other technology-driven solutions.","A FinTech company harnesses technology-driven financial services—such as digital payments and online lending—that can streamline transactions but also expose new avenues for illicit activity, necessitating robust AML/CFT frameworks and vigilance. They serve both as potential entry points for money laundering and terrorist financing, and as innovators capable of offering cutting-edge compliance solutions through advanced data analytics and enhanced customer due diligence.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0032"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0032""
+  }
+]",AT0032,https://framework.amltrix.com/actors/AT0032
+x-amltrix-actor--1da6d28d-b793-4d13-86fe-920e318926ad,x-amltrix-actor,Real Estate Investment Trust (REIT),"A specialized legal entity or trust structure that pools investor capital to own, operate, or finance income-producing real estate. REITs offer investors opportunities to earn returns from real estate assets without direct property ownership, often providing diversification and professional management of property portfolios.","Real Estate Investment Trusts (REITs) are specialized legal entities pooling investor funds for income-producing real estate, offering diversified exposure without direct ownership. However, their complex ownership structures and multi-layered financing can obscure beneficial ownership and transaction flows, elevating AML/CFT risks.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0036"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0036""
+  }
+]",AT0036,https://framework.amltrix.com/actors/AT0036
+x-amltrix-actor--67402cfb-6296-4389-b846-2ec2d49bb299,x-amltrix-actor,Tax Advisor,"Professionals or entities providing tax-related services, including tax return preparation, compliance guidance, and strategic planning for individuals or organizations. They possess specialized knowledge of tax laws, regulations, and filing requirements to help clients meet their obligations and optimize tax outcomes.","Tax Advisors leverage specialized tax knowledge to legitimately minimize clients’ tax liabilities but can also create vulnerabilities to money laundering and terrorist financing through complex financial structures. In adversarial threat modeling, they function as critical gatekeepers whose compliance practices and due diligence are pivotal in identifying and mitigating AML/CFT risks.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0037"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0037""
+  }
+]",AT0037,https://framework.amltrix.com/actors/AT0037
+x-amltrix-actor--19c0c6ad-ff1b-422d-8549-837fe07b3765,x-amltrix-actor,Online Marketplace,"A business or entity operating an online platform that enables individuals or organizations to buy, sell, or exchange goods, services, or digital items. Such platforms typically manage user listings, facilitate transactions, and may provide payment or escrow services for participants.","Online marketplaces are digital platforms enabling individuals or entities to buy, sell, or exchange goods, services, or digital items, potentially creating channels for illicit layering and obfuscation of funds. Their high transaction volumes and often minimal identification requirements pose elevated AML/CFT risks, necessitating robust KYC, transaction monitoring, and controls to mitigate adversarial threats.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0040"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0040""
+  }
+]",AT0040,https://framework.amltrix.com/actors/AT0040
+x-amltrix-actor--ce1fdd7e-a70a-4d7c-b4c8-4056f2f476e0,x-amltrix-actor,Insurance Agent or Broker,"Professionals or entities that arrange or sell insurance products. They gather customer information, handle policy documentation, and facilitate the application, premium payment, and claims processes on behalf of insurance companies or clients seeking coverage.","Insurance agents or brokers are intermediaries who collect client information, process premium payments, and manage policy and claims documentation, placing them at a critical point for identifying and mitigating illicit financial flows. Their frontline role in customer onboarding and transaction facilitation necessitates robust KYC measures, thorough due diligence, and ongoing AML/CFT compliance to prevent exploitation by money launderers and terrorist financiers.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0042"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0042""
+  }
+]",AT0042,https://framework.amltrix.com/actors/AT0042
+x-amltrix-actor--50329be9-4688-4d2a-901f-f6d0e2c58543,x-amltrix-actor,Accountant,"A professional responsible for recording, analyzing, and reporting financial information within organizations or as an external service provider. Duties typically include preparing financial statements, processing payments, and maintaining accurate financial records.","The accountant serves as a key financial gatekeeper, overseeing transaction flows, verifying records, and maintaining regulatory compliance; this position places them at a critical juncture for detecting and mitigating potential AML/CFT threats through the early identification of irregularities and anomalous activity.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0045"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0045""
+  }
+]",AT0045,https://framework.amltrix.com/actors/AT0045
+x-amltrix-actor--8f05fe2d-9a30-43b5-adc4-01f91a7390d7,x-amltrix-actor,Virtual Asset User,"An individual or entity that acquires, holds, or transacts with digital or tokenized assets (e.g., cryptocurrencies, tokens) for personal, commercial, or investment purposes. They may use self-hosted or custodial wallets, peer-to-peer platforms, decentralized finance (DeFi) protocols, or other virtual asset services and marketplaces.","A Virtual Asset User acquires, holds, or transacts in digital or tokenized assets through self-hosted or custodial wallets, peer-to-peer channels, or decentralized protocols, potentially exposing the financial system to anonymity-driven vulnerabilities that facilitate money laundering, terrorist financing, and other illicit activities.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0049"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0049""
+  }
+]",AT0049,https://framework.amltrix.com/actors/AT0049
+x-amltrix-actor--415be770-81e3-4368-bd1b-96daa4da8301,x-amltrix-actor,Lender,"An individual or entity that provides loans or credit under agreed-upon terms. This category may include regulated lenders (e.g., banks, consumer credit providers) as well as unregulated lenders (e.g., informal money lenders).","Lenders, whether regulated or unregulated, extend credit under contractual terms and can be targeted to channel illicit funds through fraudulent or obscured repayment structures. From an AML/CFT standpoint, they necessitate rigorous controls to mitigate vulnerabilities arising from disguised loan transactions and potential terrorist financing.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0051"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0051""
+  }
+]",AT0051,https://framework.amltrix.com/actors/AT0051
+x-amltrix-actor--71e9d39a-2dad-4586-9a12-d4fb783568b7,x-amltrix-actor,Money Transfer Agent,"An individual or organization authorized to accept or process fund transfers on behalf of customers, typically as part of a money transfer or remittance service.","A Money Transfer Agent serves as an intermediary authorized to handle customer remittances, posing heightened AML/CFT risks due to potential misuse for illicit funds movement if not subject to stringent customer due diligence and transaction monitoring measures.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0082"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0082""
+  }
+]",AT0082,https://framework.amltrix.com/actors/AT0082
+x-amltrix-actor--c4d6589a-0d5c-436c-bb09-1566e16020ad,x-amltrix-actor,Loyalty Program Operator,"Entities that design and administer points-based or rewards-based programs allowing customers to accumulate and redeem credits for products, services, or other benefits, often in partnership with businesses or financial institutions.","Loyalty Program Operators develop and administer points-based or rewards-based programs, effectively creating a pseudo-monetary ecosystem that may be exploited for illicit financial flows if left unchecked. Their collaboration with financial institutions and businesses necessitates rigorous due diligence and monitoring to mitigate potential AML/CFT vulnerabilities.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0053"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0053""
+  }
+]",AT0053,https://framework.amltrix.com/actors/AT0053
+x-amltrix-actor--f5e88cb6-bfa0-4883-9d1e-92249d38b835,x-amltrix-actor,Art Market Participant,"Individuals or organizations involved in creating, appraising, or trading artworks and collectibles, including dealers, auction houses, galleries, and art appraisers. Their activities involve the purchase, sale, or valuation of fine art, antiques, and other collectible items.","Art market participants facilitate high-value, often opaque transactions in fine art and collectibles, creating vulnerabilities that adversarial actors can exploit for laundering illicit funds or evading financial transparency measures. Through appraisals, sales, and cross-border transfers, they face heightened AML/CFT risks tied to the subjective nature of valuations and limited regulatory oversight.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0054"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0054""
+  }
+]",AT0054,https://framework.amltrix.com/actors/AT0054
+x-amltrix-actor--23109c27-d27e-421a-b843-a79d377b00ed,x-amltrix-actor,Professional Money Laundering Networks,"Organizations that specialize in moving or concealing illicit proceeds on behalf of criminal actors or enterprises, often operating in multiple regions or industries.","Professional Money Laundering Networks are specialized, cross-border service providers that facilitate the layering, integration, and ultimate concealment of illicit proceeds on behalf of criminal enterprises, exploiting multi-jurisdictional vulnerabilities and diverse industry channels. Their sophisticated operations pose a high-level AML/CFT threat, circumventing regulatory controls through complex laundering methods, shell entities, and other evasive techniques.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0055"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0055""
+  }
+]",AT0055,https://framework.amltrix.com/actors/AT0055
+x-amltrix-actor--e1fd71ad-82c1-437f-b0e9-77558ff39060,x-amltrix-actor,Designated Non-Financial Businesses and Professions (DNFBPs),"A category recognized by the FATF comprising certain non-financial businesses and professionals—such as casinos, real estate agents, jewelers, lawyers, notaries, accountants, and corporate service providers—who conduct or facilitate financial or high-value transactions.","Designated Non-Financial Businesses and Professions (DNFBPs) constitute FATF-recognized entities that handle or facilitate high-value financial transactions, making them particularly susceptible to exploitation by illicit actors. Their AML/CFT compliance obligations and risk-based controls are critical in detecting and mitigating the misuse of their services for money laundering and terrorism financing.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0058"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0058""
+  }
+]",AT0058,https://framework.amltrix.com/actors/AT0058
+x-amltrix-actor--5dccff8b-83d4-4c2f-929b-0146d3a9815d,x-amltrix-actor,Mobile Money Agent,"Individuals or businesses authorized to facilitate mobile money transactions, converting cash to electronic balances and vice versa, often serving areas with limited formal banking infrastructure.","Mobile money agents act as pivotal intermediaries for converting cash to electronic balances and vice versa in underserved markets, making them potential conduits for laundering illicit funds. Their limited oversight and reliance on often less-stringent due diligence measures elevate the risk of exploitation in adversarial threat modelling scenarios, necessitating robust AML/CFT controls.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0060"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0060""
+  }
+]",AT0060,https://framework.amltrix.com/actors/AT0060
+x-amltrix-actor--4e4d083c-2d4a-434a-ae90-e5e4afed4212,x-amltrix-actor,Money Mule Herder,"An individual or group that recruits, coordinates, and manages money mules, overseeing multiple participants who move funds across financial channels or borders.","Money Mule Herders recruit, coordinate, and manage networks of individuals to transfer illicit funds across jurisdictions or channels, circumventing compliance controls. By leveraging these unwitting or complicit mules, they obscure transactional footprints and undermine AML/CFT measures.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0061"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0061""
+  }
+]",AT0061,https://framework.amltrix.com/actors/AT0061
+x-amltrix-actor--df6505b9-7d55-4e18-8ed5-5624037f54ee,x-amltrix-actor,Compliance Officer,"A professional within a financial institution or other regulated entity tasked with ensuring adherence to relevant laws, regulations, and internal policies. Responsibilities typically include overseeing compliance programs, implementing controls, and fulfilling reporting obligations.","A compliance officer ensures institutional adherence to AML/CFT frameworks by designing and monitoring robust compliance programs, executing internal controls, and fulfilling regulatory reporting obligations. They serve as a critical line of defense in detecting and mitigating illicit financial threats within the organization.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0062"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0062""
+  }
+]",AT0062,https://framework.amltrix.com/actors/AT0062
+x-amltrix-actor--b8cb6811-546f-410a-9999-b2b3ca5b0cc9,x-amltrix-actor,Document Forger,"An individual or entity that creates or alters official documents, such as identity, financial, or corporate records, for fraudulent or illicit use.","A Document Forger produces or alters official records to facilitate illicit transactions and conceal illicit actors’ true identities or beneficial ownership. By enabling identity fraud and bypassing customer due diligence controls, this actor poses a significant AML/CFT threat.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0063"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0063""
+  }
+]",AT0063,https://framework.amltrix.com/actors/AT0063
+x-amltrix-actor--3ae26dea-a5c4-4604-9ede-cbdda5b7e52e,x-amltrix-actor,Cash Courier,"Individuals or services that physically transport currency or monetary instruments on behalf of clients, often across borders or between locations.","Cash couriers physically transport currency or monetary instruments across borders or between jurisdictions on behalf of clients, creating vulnerabilities for money laundering and terrorist financing. Their role exploits gaps in reporting and monitoring requirements for physical cash movements, enabling the concealment and layering of illicit funds.",2025-04-08T07:48:43.534806+00:00,2025-04-08T07:48:43.534806+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0064"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0064""
+  }
+]",AT0064,https://framework.amltrix.com/actors/AT0064
+x-amltrix-actor--134a339a-8987-47af-adfd-232a1bf93341,x-amltrix-actor,Shell or Front Company,"A legal entity typically formed with minimal or no active business operations. Such entities may hold assets, open financial accounts, or issue invoices, but often lack the operational structures or staff characteristic of fully functioning businesses.","Shell or front companies are legal entities with limited or no genuine business operations, frequently used to obscure beneficial ownership and create barriers to transparency. They pose a high AML/CFT risk by facilitating illicit financial flows, asset concealment, and transactional layering through minimal operational footprints and limited oversight.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0065"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0065""
+  }
+]",AT0065,https://framework.amltrix.com/actors/AT0065
+x-amltrix-actor--69c90282-3c1b-4aab-a6b9-79c3511334cd,x-amltrix-actor,Payment Service Provider,"Organizations that facilitate electronic payment transactions for merchants, individuals, and other entities. They handle payment authorization, settlement, clearing, and related financial processes, and may be subject to varying levels of regulatory oversight depending on the jurisdiction.","Payment Service Providers facilitate electronic payment transactions—including authorization, settlement, and clearing—for merchants and individuals, functioning as critical intermediaries that may be exploited for illicit fund flows if AML/CFT controls are inadequate. Their exposure to regulatory oversight varies by jurisdiction, requiring robust compliance measures to mitigate adversarial threats.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0066"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0066""
+  }
+]",AT0066,https://framework.amltrix.com/actors/AT0066
+x-amltrix-actor--28807691-be05-4562-afa2-f1a57eaefe0e,x-amltrix-actor,Nominee,"An individual or entity that formally holds or manages assets or accounts on behalf of another party, typically lacking genuine control or authority. The nominee’s name appears in official records or legal documents, while actual control or ownership remains with the appointing party. Nominees are commonly used in corporate, estate, or financial arrangements to maintain a separation of direct and beneficial ownership.","A nominee is a proxy individual or entity listed in formal records to obscure the actual beneficiary’s identity or control, creating potential opacity in financial arrangements. In adversarial threat modeling, this structure heightens AML/CFT risks by facilitating anonymity and impeding the effective tracing of illicit financial flows.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0068"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0068""
+  }
+]",AT0068,https://framework.amltrix.com/actors/AT0068
+x-amltrix-actor--92a4549e-64d7-42d3-bfaf-886a1875084c,x-amltrix-actor,Sports Club,"An organization or professional club engaged in sporting competitions or related activities, handling player contracts, sponsorships, and overall event operations.","Sports Clubs, which handle substantial financial flows through player transfers, sponsorships, and event operations, present heightened AML/CFT risk due to the complexity and often cross-border nature of their transactions. From an adversarial threat modeling perspective, these entities can be exploited by illicit actors seeking to launder funds, conceal beneficial ownership, or facilitate corruption under the cover of legitimate sporting activities.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0069"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0069""
+  }
+]",AT0069,https://framework.amltrix.com/actors/AT0069
+x-amltrix-actor--71a19b2b-52da-4b43-9946-c0938e360726,x-amltrix-actor,Shipping and Logistics Company,"Organizations providing domestic and international transportation, warehousing, distribution, or maritime services, including passenger and cargo operations. They coordinate shipping routes, handle cargo management, and manage logistics within supply chains to move goods effectively across different regions.","Shipping and logistics companies facilitate global trade by coordinating domestic and international freight and passenger movements, potentially exposing them to illicit trade and money laundering schemes. Their integrated networks and supply chain processes necessitate robust AML/CFT controls to prevent exploitation for transporting illicit goods, funds, and circumventing sanctions.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0070"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0070""
+  }
+]",AT0070,https://framework.amltrix.com/actors/AT0070
+x-amltrix-actor--6adea0e3-6d69-466d-b7bd-88188144e29f,x-amltrix-actor,Cryptocurrency Mixer,"A service or platform that pools and redistributes digital assets from multiple participants, obscuring direct traceability between the original sending and receiving addresses.","A cryptocurrency mixer pools and redistributes digital assets to obscure transaction trails, thereby impeding effective transaction monitoring and presenting heightened AML/CFT risks by enabling concealment of illicit or suspicious fund flows.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0090"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0090""
+  }
+]",AT0090,https://framework.amltrix.com/actors/AT0090
+x-amltrix-actor--f501022c-65fc-47dc-bad9-fa0918b34a52,x-amltrix-actor,Peer-to-Peer Exchange Operator,"Individuals or entities that enable direct exchanges of digital assets or currencies between participants, often through informal or decentralized platforms. They typically operate outside conventional financial intermediaries and connect buyers and sellers in a peer-to-peer environment.","Peer-to-Peer Exchange Operators are decentralized facilitators of direct digital asset transactions, often bypassing traditional financial intermediaries. This operational model introduces heightened AML/CFT vulnerabilities by potentially circumventing formal KYC/AML controls and enabling more anonymous trading environments.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0071"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0071""
+  }
+]",AT0071,https://framework.amltrix.com/actors/AT0071
+x-amltrix-actor--0aa1b5da-cdef-4246-915c-ddbf95acb015,x-amltrix-actor,Tax Evader,"An individual or entity that intentionally underreports income or otherwise fails to pay legally required taxes, retaining funds that would otherwise be owed.","A tax evader intentionally conceals or underreports income to avoid lawful tax obligations, which can serve as a predicate offense for money laundering and compound AML/CFT vulnerabilities. Their methods often involve opaque financial transactions that undermine transparency and facilitate illicit financial flows.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0072"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0072""
+  }
+]",AT0072,https://framework.amltrix.com/actors/AT0072
+x-amltrix-actor--904c2efc-77c9-4dba-84a8-b6c436ee2912,x-amltrix-actor,Business Owner,"An individual or entity holding ownership or controlling interest in a commercial enterprise, overseeing operations, finances, and strategic direction. Such owners may be sole proprietors, partners, or corporate shareholders.","Business Owners, who hold direct or indirect controlling interests and oversee financial and strategic decisions, pose inherent AML/CFT risks by potentially obscuring beneficial ownership or facilitating illicit financial flows. Their influence on corporate structures necessitates heightened due diligence and ongoing monitoring to mitigate money laundering and terrorist financing threats.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0073"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0073""
+  }
+]",AT0073,https://framework.amltrix.com/actors/AT0073
+x-amltrix-actor--3e647aaf-f4a3-4115-880f-fe0ae1512081,x-amltrix-actor,Clearing Firm,"Intermediaries that settle and clear trades in securities or derivatives markets, facilitating the exchange of payments or assets between trading parties.","Clearing firms serve as essential intermediaries that net and finalize securities or derivatives trades, thereby mitigating counterparty and settlement risk. Their central role in transaction flows makes them integral to AML/CFT risk mitigation efforts, as they must maintain robust surveillance and compliance controls to prevent illicit finance.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0094"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0094""
+  }
+]",AT0094,https://framework.amltrix.com/actors/AT0094
+x-amltrix-actor--994a8884-7016-42f0-b629-2e05ba4a746a,x-amltrix-actor,Trade Intermediary,"Individuals or entities that facilitate cross-border trade transactions, handling logistics, documentation, regulatory compliance, and coordination among buyers, sellers, and carriers.","Trade intermediaries are pivotal in cross-border transactions, coordinating logistics, documentation, and compliance; if inadequately monitored, their role and access to transactional channels can be exploited for trade-based money laundering or other illicit financial activities, making them critical to adversarial threat analyses and AML/CFT measures.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0077"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0077""
+  }
+]",AT0077,https://framework.amltrix.com/actors/AT0077
+x-amltrix-actor--fa4c2822-0a4b-4fc2-9145-c26f84999810,x-amltrix-actor,Cash-Intensive Business,"Enterprises that routinely handle large volumes of physical currency, such as restaurants, bars, or retail stores. These businesses frequently rely on financial institutions for depositing cash, managing payroll, and processing payments.","Cash-intensive businesses handle large volumes of physical currency that make them susceptible to money laundering and other illicit financial activities, requiring enhanced scrutiny and due diligence. Their ongoing reliance on financial institutions for depositing cash, payroll management, and payment processing underscores the need for robust AML/CFT controls and monitoring measures.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0098"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0098""
+  }
+]",AT0098,https://framework.amltrix.com/actors/AT0098
+x-amltrix-actor--0b5eeded-4fd7-403c-bfa1-1e634e7b182a,x-amltrix-actor,Public Official,"An individual appointed, elected, or employed by a government institution, exercising authority or responsibility in legislative, administrative, judicial, or military capacities. This includes roles in policymaking, awarding public contracts, or overseeing the allocation of public resources.","Public officials, who hold governmental authority in legislative, administrative, judicial, or military capacities, present heightened AML/CFT vulnerabilities due to their direct influence over policy, public contracts, and resource allocation. Their positions of trust and decision-making power make them susceptible to corruption, bribery, and misuse of authority, posing a significant threat within adversarial threat modelling.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0099"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0099""
+  }
+]",AT0099,https://framework.amltrix.com/actors/AT0099
+x-amltrix-actor--569004a6-9db3-4073-87a7-98216f3a1415,x-amltrix-actor,Trust Protector,"An individual or entity appointed to oversee or provide an additional check on a trustee’s actions, ensuring that fiduciary responsibilities are carried out. A trust protector may have the power to remove or replace the trustee or consent to modifications of the trust.","A Trust Protector is an oversight mechanism that monitors trustee conduct, wielding authority to remove or replace trustees or consent to trust modifications. By providing an additional layer of fiduciary scrutiny, this role mitigates vulnerabilities associated with the misuse of trust structures and supports AML/CFT compliance.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0078"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0078""
+  }
+]",AT0078,https://framework.amltrix.com/actors/AT0078
+x-amltrix-actor--78685fb2-5afd-4b41-b48d-70ccdc56b4a8,x-amltrix-actor,Legal Professional,"Licensed or qualified professionals such as lawyers, notaries, or business formation agents who provide legal representation, advice, and documentation for individuals, businesses, or organizations. They handle matters such as contract drafting, due diligence, property or business transactions, dispute resolution, and may interface with financial institutions on behalf of their clients.","Legal professionals act as crucial gatekeepers in AML/CFT contexts by structuring transactions, conducting due diligence, and interfacing with financial institutions on behalf of clients. Their privileged position can be exploited to conceal or facilitate illicit financial activities, making strong compliance and oversight essential.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0100"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0100""
+  }
+]",AT0100,https://framework.amltrix.com/actors/AT0100
+x-amltrix-actor--2289a419-f5c0-4274-878b-96929f422921,x-amltrix-actor,Virtual Currency ATM Operator,"An entity that owns or manages machines facilitating the exchange between virtual currencies and fiat currencies, providing terminals or kiosks for buying or selling virtual assets.","Virtual Currency ATM Operators provide physical kiosks for converting fiat to digital assets and vice versa, creating potential vulnerabilities for layering and other illicit financial activities. They must enforce stringent AML/CFT controls—such as robust KYC, transaction monitoring, and suspicious activity reporting—to mitigate heightened risks of money laundering and terrorist financing.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0101"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0101""
+  }
+]",AT0101,https://framework.amltrix.com/actors/AT0101
+x-amltrix-actor--0c675f99-33fe-4dcc-94f0-f626d510bcd9,x-amltrix-actor,Consultant or Advisor,"An individual or firm providing specialized guidance or intermediary services for personal or business affairs, often assisting with planning, documentation, and coordination among various stakeholders.","Consultants or advisors, providing specialized guidance and intermediary services across complex financial or corporate arrangements, can significantly influence the structuring and coordination of transactions and stakeholder activities. Their role as trusted facilitators makes them potential conduits for money laundering or terrorist financing if robust AML/CFT controls and due diligence measures are not adequately enforced.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0103"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0103""
+  }
+]",AT0103,https://framework.amltrix.com/actors/AT0103
+x-amltrix-actor--81193f02-57ef-45cf-8313-f997e24f164e,x-amltrix-actor,Organizational Official,"An individual or group authorized to direct or oversee the operations, finances, or strategic decisions of a business or other organization. This category includes top-level executives, finance-oriented roles, and management personnel.","Organizational Officials wield overarching control and decision-making authority across strategic, financial, and operational functions, placing them in a critical position to either enable or obstruct illicit financial activity. Their elevated oversight responsibilities demand stringent AML/CFT controls to mitigate the heightened risk of misuse of corporate structures and resources.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0104"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0104""
+  }
+]",AT0104,https://framework.amltrix.com/actors/AT0104
+x-amltrix-actor--16b4646f-8c2f-4849-8d41-16aaf2c73d42,x-amltrix-actor,Counterfeit Drug Manufacturer,"A Counterfeit Drug Manufacturer is an entity or individual involved in the illegal production and distribution of fake or unauthorized pharmaceutical products. These counterfeit drugs often mimic legitimate medications but may contain incorrect or harmful ingredients, incorrect dosages, or no active ingredients at all. The production and sale of counterfeit drugs pose significant risks to public health and safety, as they can lead to ineffective treatment, adverse health effects, and increased resistance to genuine medications. Counterfeit Drug Manufacturers operate covertly, often exploiting weaknesses in regulatory systems and supply chains to distribute their products.","Counterfeit Drug Manufacturers illicitly produce and distribute substandard or falsified pharmaceuticals, posing severe health and regulatory risks while generating illicit proceeds laundered through clandestine networks. By exploiting regulatory loopholes and fragmented supply chains, they undermine AML/CFT controls and facilitate broader financial crime.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0105"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0105""
+  }
+]",AT0105,https://framework.amltrix.com/actors/AT0105
+x-amltrix-actor--60532c51-1f9d-4e72-bdcd-9d3624cd5422,x-amltrix-actor,Offshore Entity,"A business or legal structure established outside the owner’s country of residence, typically in jurisdictions offering favorable tax or regulatory conditions, limited disclosure requirements, or strong confidentiality protections. Such entities can serve legitimate cross-border business, tax planning, or investment needs.","Offshore entities, while often established for valid cross-border or tax-driven purposes, pose heightened AML/CFT vulnerabilities due to their ability to obscure beneficial ownership, facilitate complex transaction layering, and exploit jurisdictional secrecy. Consequently, they represent a critical node in adversarial threat modelling, demanding rigorous due diligence and enhanced transparency measures.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0079"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0079""
+  }
+]",AT0079,https://framework.amltrix.com/actors/AT0079
+x-amltrix-actor--068e1104-e25c-48dd-bc74-b606ea1ec262,x-amltrix-actor,Auditor,"A professional who reviews and evaluates financial statements, internal controls, and regulatory compliance for organizations. Auditors may be internal employees or external service providers, providing assurance on the accuracy of financial records.","An auditor provides independent assurance on an organization’s financial records and internal controls, identifying and mitigating compliance vulnerabilities that adversaries could exploit for illicit financial activities. Their oversight ensures adherence to AML/CFT requirements, bolstering an institution’s ability to detect and prevent money laundering and terrorist financing threats.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0080"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0080""
+  }
+]",AT0080,https://framework.amltrix.com/actors/AT0080
+x-amltrix-actor--5e05bc98-9204-401f-a560-68b9a3e4b71b,x-amltrix-actor,Financial Institution,"Organizations licensed or registered to provide deposit-taking, lending, insurance, payment services, or investment management under regulatory oversight. They hold, manage, and transfer customer funds. This category includes banks, credit unions, and other regulated financial service providers.","Financial Institutions serve as critical gatekeepers in the financial system by holding, managing, and transferring customer funds, making them prime targets for illicit activities. They must implement rigorous AML/CFT measures to detect, prevent, and report potential money laundering and terrorist financing threats under strict regulatory oversight.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0083"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0083""
+  }
+]",AT0083,https://framework.amltrix.com/actors/AT0083
+x-amltrix-actor--aa7094cd-454d-4c54-b2a4-a3994782d947,x-amltrix-actor,Wealth Management Firm,"Organizations providing specialized financial and investment services, such as portfolio management, estate planning, and trust administration, often catering to clients with significant assets and operating in multiple jurisdictions.","Wealth management firms manage complex, cross-border portfolios and trust structures for high-net-worth clients, creating potential vulnerabilities for money laundering and terrorist financing through opaque ownership arrangements. Their specialized services, including estate planning and investment administration, necessitate robust due diligence and risk-based compliance controls to mitigate adversarial threats.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0084"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0084""
+  }
+]",AT0084,https://framework.amltrix.com/actors/AT0084
+x-amltrix-actor--4ea5db0f-8d77-43d7-8b34-841e74c83de1,x-amltrix-actor,Merchant,"A business that sells goods or services directly to consumers, commonly maintaining merchant accounts with financial institutions or payment service providers to accept and process transactions.","A merchant is an entity that sells goods or services directly to consumers and maintains merchant accounts with financial institutions or payment service providers, making it a potential channel for layering illicit funds. Consequently, robust KYC protocols, transaction monitoring, and ongoing due diligence are critical to mitigate money laundering and terrorist financing risks associated with merchant activities.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0085"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0085""
+  }
+]",AT0085,https://framework.amltrix.com/actors/AT0085
+x-amltrix-actor--fdbe39cd-29c4-4363-9cb0-6cea13f66098,x-amltrix-actor,Mobile Money Operator,"Entities providing transaction and payment services through mobile platforms, commonly enabling fund transfers, bill payments, and account management via mobile devices.","Mobile Money Operators provide digital transaction and payment services via mobile platforms, presenting heightened AML/CFT risk due to potentially rapid, cross-border fund transfers and limited face-to-face verification. They must implement stringent KYC, robust monitoring, and regulatory compliance measures to mitigate illicit financial flows.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0086"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0086""
+  }
+]",AT0086,https://framework.amltrix.com/actors/AT0086
+x-amltrix-actor--a28987ed-89ac-472c-a988-b77682b3c3b9,x-amltrix-actor,Asset Manager,"A professional or entity managing investment portfolios or funds on behalf of clients. They typically handle asset allocation, buy and sell activities, and investment strategy execution.","Asset managers act as pivotal intermediaries in allocating and overseeing client funds, posing potential AML/CFT risks due to the high volume of transactions under their control and the possibility for illicit layering activities. Effective due diligence, robust transaction monitoring, and adherence to regulatory guidelines are essential to mitigate these threats within the investment management lifecycle.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0087"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0087""
+  }
+]",AT0087,https://framework.amltrix.com/actors/AT0087
+x-amltrix-actor--2375373a-c3da-44d1-ab5b-c3b0dd42faea,x-amltrix-actor,Non-Profit Organization Director,"An individual responsible for overseeing the governance and mission of a non-profit organization. Such directors represent the organization, authorize transactions, and ensure overall compliance with applicable regulations.","A Non-Profit Organization Director holds ultimate authority over governance, funding approvals, and regulatory adherence, positioning them as a critical gatekeeper in detecting and preventing potential illicit financial flows within the nonprofit sector.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0088"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0088""
+  }
+]",AT0088,https://framework.amltrix.com/actors/AT0088
+x-amltrix-actor--30c19c71-c570-4f03-a6ca-daf3105816db,x-amltrix-actor,Non-Bank Financial Institution,"An entity providing financial services similar to those offered by banks but lacking a full banking license. Examples may include payday lenders, insurance companies, and money service businesses, each operating under specialized regulatory frameworks.","Operating under specialized and sometimes inconsistent regulatory regimes, Non-Bank Financial Institutions (e.g., payday lenders, insurance providers, and money service businesses) can present heightened AML/CFT exposure due to their broad range of services and clientele. They thus play a significant role in adversarial threat modelling as key nodes for layering, integration, and concealment of illicit funds.",2025-04-08T07:48:43.535442+00:00,2025-04-08T07:48:43.535442+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0089"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0089""
+  }
+]",AT0089,https://framework.amltrix.com/actors/AT0089
+x-amltrix-actor--1d741c11-ed81-4a0a-84ed-66689ee230cb,x-amltrix-actor,Terrorist Financier,"An individual or entity that collects or provides funds or other material support to terrorists, terrorist groups, or extremist operations.","Terrorist financiers are individuals or entities that raise, move, or channel funds to support extremist operations, leveraging both formal and informal financial networks to evade detection. They represent a critical AML/CFT vulnerability within adversarial threat modelling, necessitating stringent controls and heightened surveillance to disrupt terrorist funding streams.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0091"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0091""
+  }
+]",AT0091,https://framework.amltrix.com/actors/AT0091
+x-amltrix-actor--be90634a-fe8e-497d-843d-9e94da4b9837,x-amltrix-actor,Financial Advisor,"Professionals providing investment guidance, portfolio management, or financial planning to individuals or businesses. Their responsibilities often include analyzing financial goals and recommending suitable investment products.","Financial advisors serve as financial gatekeepers by providing investment guidance, portfolio management, and strategic planning, thereby influencing capital flows and investor profiles. In AML/CFT threat models, they pose both a critical defense against illicit financial activity through due diligence and compliance oversight, and a potential vulnerability if exploited by adversaries seeking to obscure illicit funds.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0092"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0092""
+  }
+]",AT0092,https://framework.amltrix.com/actors/AT0092
+x-amltrix-actor--fc733622-43b4-469a-94f5-d470b9fda467,x-amltrix-actor,Virtual Asset Service Provider,"An entity or business that offers services for exchanging, transferring, safekeeping, managing, or issuing digital assets. This category includes centralized and peer-to-peer trading platforms, decentralized finance protocols, wallet providers, and other digital asset platforms.","Virtual Asset Service Providers (VASPs) facilitate the exchange, transfer, custody, and issuance of digital assets across centralized, peer-to-peer, and decentralized platforms, exposing them to heightened AML/CFT vulnerabilities due to potential anonymity and rapid cross-border movement of funds. As critical gatekeepers within the crypto ecosystem, VASPs must implement robust compliance measures to mitigate illicit finance risks.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0093"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0093""
+  }
+]",AT0093,https://framework.amltrix.com/actors/AT0093
+x-amltrix-actor--3c0ad8d0-0a85-4df4-a0dd-18d0a8320286,x-amltrix-actor,Junket Operator,"An individual or business that arranges travel, credit, and related services for gamblers, acting as an intermediary between high-value clients and gambling establishments.","Junket Operators act as intermediaries for high-value patrons, facilitating credit, travel, and hosting services for casinos and gambling establishments; their role in managing large, often cross-border transactions poses heightened AML/CFT risks through potential layering of funds and unclear beneficial ownership structures.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0095"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0095""
+  }
+]",AT0095,https://framework.amltrix.com/actors/AT0095
+x-amltrix-actor--74fae302-e573-4de6-84b1-18f3c59975e9,x-amltrix-actor,Gambling Operator,"A business entity that provides gambling or betting services, such as casinos, betting shops, online platforms, or lotteries, typically operating under relevant licensing or regulation.","Gambling operators are licensed entities offering betting services (e.g., casinos, betting shops, online platforms, or lotteries) that handle high-volume transactions and face elevated money laundering and terrorist financing risks. Consequently, they must implement stringent AML/CFT controls, including robust customer due diligence, transaction monitoring, and regulatory reporting to mitigate illicit financial flows.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0096"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0096""
+  }
+]",AT0096,https://framework.amltrix.com/actors/AT0096
+x-amltrix-actor--1a682f77-7df4-44f2-a66d-7749295ed462,x-amltrix-actor,Supplier/Distributor,"Commercial entities involved in providing or dispersing goods and materials across industries. They often maintain financial relationships with banks and other institutions for trade, credit, and receivables management.","Suppliers/Distributors play a pivotal role in the supply chain by facilitating large-scale movement of goods and maintaining critical financial relationships for trade finance, credit, and receivables. Their expansive commercial transactions and payment flows create inherent AML/CFT vulnerabilities, potentially exposing them to trade-based money laundering and related illicit financial activities.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0097"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0097""
+  }
+]",AT0097,https://framework.amltrix.com/actors/AT0097
+x-amltrix-actor--aa40c122-957c-480e-8ea3-3a2c8e68f9b3,x-amltrix-actor,"Dealer in Precious Metals, Stones, or High-Value Goods","Individuals or entities engaged in the buying and selling of precious metals, gemstones, jewelry, or other high-value commodities. Such dealers typically operate in specialized markets where pricing can involve significant expertise or negotiation.","Dealers in precious metals, stones, or high-value goods facilitate large-value transactions and rely on specialized or negotiable pricing, creating opportunities for the concealment and movement of illicit funds. Their role in handling easily transportable assets with high, often opaque market value heightens their vulnerability to money laundering and terrorism financing activities.",2025-04-08T07:48:43.536081+00:00,2025-04-08T07:48:43.536081+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""AT0102"",
+    ""url"": ""https://framework.amltrix.com/actors/AT0102""
+  }
+]",AT0102,https://framework.amltrix.com/actors/AT0102
