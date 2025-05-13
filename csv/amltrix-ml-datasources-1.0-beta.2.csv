@@ -1,0 +1,367 @@
+STIX ID,Type,Data Source Name,Description,Short Description,Created,Modified,spec_version,x_mitre_is_subtechnique,x_mitre_parent_ref,x_mitre_aliases,External References,External ID,URL
+x-amltrix-data-source--a1f1c9df-347e-42a5-b05d-2d6def442477,x-amltrix-data-source,Account Activity Logs,"Detailed records of all actions within financial accounts, covering financial transactions and changes to account settings, including timestamps, user identifiers, and related metadata.","Account Activity Logs record every financial transaction and account setting change, capturing timestamps, user identifiers, and related metadata essential for uncovering anomalies and suspicious behaviors. They are critical for AML/CFT threat modeling, helping trace illicit fund flows and identify potential money laundering or terrorist financing activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0001"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0001""
+  }
+]",DS0001,https://framework.amltrix.com/data-sources/DS0001
+x-amltrix-data-source--7965d695-5a9c-468a-86e5-7525bc832dce,x-amltrix-data-source,Adverse Media & Court Filings,"Aggregated records from media sources and official legal documents (e.g., court filings, lawsuits) highlighting negative news, legal actions, and alleged misconduct associated with individuals or entities.","Adverse Media & Court Filings compiles negative news, legal actions, and related misconduct records from media outlets and official court documents, offering critical insights into potential illegal activities or reputational risks essential for AML/CFT threat assessments.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0003"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0003""
+  }
+]",DS0003,https://framework.amltrix.com/data-sources/DS0003
+x-amltrix-data-source--f05ebb25-0dd2-463c-8068-b6b7a668a22e,x-amltrix-data-source,Customs and Border Records,"Comprehensive records from customs and border authorities detailing the movement of goods and individuals, including imported and exported items, shipping routes, tariffs, and related documentation.","Customs and Border Records provide detailed insights into the cross-border movement of goods and individuals, capturing shipping routes, tariffs, and related documentation. These records are integral to detecting and investigating trade-based money laundering, illicit trafficking, and other complex cross-border financial crimes.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0004"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0004""
+  }
+]",DS0004,https://framework.amltrix.com/data-sources/DS0004
+x-amltrix-data-source--f4bb0de3-1074-4748-85f8-9f7a3c8d7613,x-amltrix-data-source,Money Service Business (MSB) Registries,"Official or government-run registries listing licensed money service businesses or remittance providers, including their licensing status and operational details.","Money Service Business (MSB) Registries provide authoritative lists of licensed MSBs or remittance providers, detailing their license status and operational scope. Such information is critical for AML/CFT threat modeling to verify legitimate operators, detect unauthorized activities, and identify potential risk patterns in financial transactions.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0029"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0029""
+  }
+]",DS0029,https://framework.amltrix.com/data-sources/DS0029
+x-amltrix-data-source--7a53a17d-3ddd-41ab-98f5-0ea32b80e3aa,x-amltrix-data-source,Geographical & Jurisdictional Risk Data,"Consolidated information on countries, regions, legal jurisdictions, and AML/CFT laws, regulations, and enforcement practices, used to assess geographic and regulatory risk and identify anomalies in financial transactions.","This dataset consolidates country-specific AML/CFT laws, regulations, and enforcement practices to identify high-risk regions and detect anomalies in financial transactions. By highlighting geographic and jurisdictional vulnerabilities, it is instrumental in assessing and mitigating AML/CFT threats.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0005"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0005""
+  }
+]",DS0005,https://framework.amltrix.com/data-sources/DS0005
+x-amltrix-data-source--7967e0a8-b6d1-4c23-956e-3a0e1936e200,x-amltrix-data-source,Professional Licensing & Affiliation Databases,"Databases containing information on professional roles, licenses, memberships, and affiliations.","Professional Licensing & Affiliation Databases provide oversight of valid professional roles and memberships, offering critical intelligence for verifying individuals’ credentials and identifying suspicious affiliations. They enhance AML/CFT threat modelling by uncovering unauthorized activities, enabling more effective detection of potential illicit networks.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0006"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0006""
+  }
+]",DS0006,https://framework.amltrix.com/data-sources/DS0006
+x-amltrix-data-source--7d5c64dd-a7f0-4da0-b0f8-3cfaf4298d4e,x-amltrix-data-source,Commodity Market Data,"Information on commodity prices, price indices, origins, types, and values, including historical and current market trends. Financial institutions may reference this data to assess and validate commodity-related transactions in contexts such as trade finance.","Commodity Market Data provides historical and current information on commodity prices, indices, origins, types, and values, enabling financial institutions to cross-verify the legitimacy of commodity-related transactions. In AML/CFT adversarial threat modelling, this data is crucial for detecting anomalies and uncovering potential trade-based money laundering activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0009"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0009""
+  }
+]",DS0009,https://framework.amltrix.com/data-sources/DS0009
+x-amltrix-data-source--fc1f6963-9b8c-419b-8ffc-a5713ef01a81,x-amltrix-data-source,Contractual and Invoice Data,"Information on contractual agreements and invoices, including payment terms, parties involved, invoice identifiers, amounts, and client details. Often referenced by financial institutions to validate account activity and confirm the legitimacy of business transactions.","Contractual and Invoice Data provides detailed insights into the nature and legitimacy of commercial relationships by capturing terms, parties, and transaction details. This information is essential in AML/CFT adversarial threat modelling to verify business authenticity, trace suspicious payments, and detect potential illicit financing activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0013"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0013""
+  }
+]",DS0013,https://framework.amltrix.com/data-sources/DS0013
+x-amltrix-data-source--a496aebc-9bb4-4acc-a666-95f2f7c9f526,x-amltrix-data-source,Currency Exchange Transactions,"Records of currency conversion activities, including spot trades, forward contracts, and swaps, typically covering timestamps, trading parties, exchange rates, volumes, and settlement details.","Currency Exchange Transactions capture the detailed mechanics of currency conversion activities—including trades, parties, rates, volumes, and settlements—and enable the identification of suspicious patterns and potential cross-border movements that may signal money laundering or terrorist financing risks.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0014"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0014""
+  }
+]",DS0014,https://framework.amltrix.com/data-sources/DS0014
+x-amltrix-data-source--e472ede5-f8aa-43a0-8120-1389375b409f,x-amltrix-data-source,Loan Agreements and Credit Facilities,"Formal contracts related to lending and credit products—such as personal loans, mortgages, credit cards, and lines of credit—detailing loan amounts, interest rates, repayment schedules, and collateral. These records enable financial institutions to assess borrowers, track repayment patterns, and identify irregular credit usage.","Loan agreements and credit facilities document key borrower details and credit terms, enabling financial institutions to detect irregular repayment or usage patterns that may indicate money laundering or terrorist financing.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0032"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0032""
+  }
+]",DS0032,https://framework.amltrix.com/data-sources/DS0032
+x-amltrix-data-source--ca78534c-3a0d-4036-88cc-006b7ef8e5fb,x-amltrix-data-source,Fraud Data,"Information on known or suspected fraudulent activities, including identity theft, payment card fraud, or scam patterns, compiled from reported incidents, industry warnings, or shared alerts.","Fraud Data captures critical intelligence on emerging and known fraudulent activities—such as identity theft, payment card fraud, and scam patterns—providing valuable insights into adversarial tactics and risk indicators. It enables financial institutions to proactively detect, assess, and counter evolving threats within AML/CFT frameworks.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0033"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0033""
+  }
+]",DS0033,https://framework.amltrix.com/data-sources/DS0033
+x-amltrix-data-source--2a81a527-0811-4d60-8814-abcf5a58d6c1,x-amltrix-data-source,Customs and Asset Seizure Records,"Official data on goods and financial assets seized by customs or enforcement authorities, including details about the items seized, parties involved, and any associated legal proceedings.","Customs and Asset Seizure Records provide official details on confiscated goods, financial assets, and the parties involved, enhancing visibility into cross-border illicit flows or suspicious activities. This information is crucial for identifying high-risk networks and potential legal or regulatory actions within AML/CFT adversarial threat modelling.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0015"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0015""
+  }
+]",DS0015,https://framework.amltrix.com/data-sources/DS0015
+x-amltrix-data-source--b7cc2890-cefa-4817-8f3b-99bce23f7faf,x-amltrix-data-source,Legal Documentation & Records,"Collections of binding legal documents—including contracts, deeds, court orders, and judgments—used to verify legal rights, obligations, and relationships in financial dealings.","Legal Documentation & Records provide authoritative evidence of parties’ rights and obligations in financial transactions, helping to validate ownership structures, legal relationships, and compliance obligations. By offering verifiable proof of lawful standing, they support the early detection and mitigation of suspicious activities in AML/CFT adversarial threat modeling.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0016"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0016""
+  }
+]",DS0016,https://framework.amltrix.com/data-sources/DS0016
+x-amltrix-data-source--fda51103-2c3b-4a07-b903-46693461db1a,x-amltrix-data-source,Geographical Transaction Data,"Location-based records of financial transactions, including origin, destination, amounts, timing, and relevant geolocation metadata for analyzing cross-border transactions and payment flows.","Geographical Transaction Data captures origin, destination, timing, amounts, and geolocation metadata for financial transactions, enabling the detection of suspicious cross-border flows. By highlighting jurisdictional interactions and transaction pathways, this data source is crucial for spotting potential AML/CFT threats and unraveling complex illicit networks.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0048"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0048""
+  }
+]",DS0048,https://framework.amltrix.com/data-sources/DS0048
+x-amltrix-data-source--249d7f78-108c-496b-b662-bf5935fd6742,x-amltrix-data-source,Politically Exposed Persons (PEP) Lists,"Databases detailing individuals holding prominent public or political positions, including their official roles, associated entities, and known affiliations.","PEP lists catalog individuals in or with close ties to prominent government roles, capturing their official positions and notable affiliations. This data source is integral for AML/CFT threat modeling, enabling institutions to identify and monitor high-risk exposure to bribery, corruption, or illicit financial activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0002"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0002""
+  }
+]",DS0002,https://framework.amltrix.com/data-sources/DS0002
+x-amltrix-data-source--d9c1bf94-d270-428f-8ef4-c82bdbf8079c,x-amltrix-data-source,"Financial, Business & Tax Records","Documentation and official filings covering an entity's financial activities, including balance sheets, profit-and-loss statements, tax returns, and related records. Typically referenced to evaluate an entity's financial stability, verify reported performance, and identify discrepancies or anomalies in financial profiles.","Financial, Business & Tax Records furnish verifiable insights into an entity’s financial health and transactions, enabling AML/CFT professionals to spot discrepancies, validate reported performance, and identify potential anomalies indicative of illicit activity.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0007"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0007""
+  }
+]",DS0007,https://framework.amltrix.com/data-sources/DS0007
+x-amltrix-data-source--8dfb6423-4da3-406f-9e65-a819afd3364c,x-amltrix-data-source,Digital Banking & Cybersecurity Event Data,"Information about online and mobile banking activities, including IP logs, device usage patterns, unauthorized access attempts, transaction anomalies, and related cybersecurity events.","This data source captures critical digital channel indicators—including IP logs, device fingerprints, and suspicious login attempts—that help institutions detect and investigate unauthorized transactions or anomalous activities. It bolsters AML/CFT threat modeling by providing key insights into potential cyber-enabled fraud, money laundering, and terrorist financing schemes occurring via online and mobile banking.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0008"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0008""
+  }
+]",DS0008,https://framework.amltrix.com/data-sources/DS0008
+x-amltrix-data-source--9508d9be-d848-4ff0-b337-c3a0575b613c,x-amltrix-data-source,Employee Records,"Comprehensive records of employee identities, roles, and relevant employment details, used to track internal accountability and detect potential conflicts of interest or misconduct.","Employee Records capture detailed information on employees’ identities, roles, and employment histories, enabling monitoring for insider threats and conflict-of-interest red flags. They are critical in AML/CFT threat modeling to help maintain internal accountability and prevent misconduct.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0028"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0028""
+  }
+]",DS0028,https://framework.amltrix.com/data-sources/DS0028
+x-amltrix-data-source--8eb8ca38-b798-40dd-a116-b3db89cdc59b,x-amltrix-data-source,Transaction Logs,"Comprehensive records of financial transactions across all channels, capturing both account details (e.g., ownership, balances) and transaction data (e.g., timestamps, amounts, currencies, parties, transaction identifiers). This includes deposits, withdrawals, wire transfers, card payments, ATM usage, investment trades, remittances, gaming transactions, peer-to-peer transfers, cryptocurrency flows, and other forms of money movement.","Transaction Logs provide comprehensive financial transaction records across all channels, capturing essential account details, transactional timestamps, amounts, currencies, and identifying information. They are pivotal in AML/CFT adversarial threat modeling by enabling the detection of suspicious patterns, tracing the flow of funds, and strengthening compliance monitoring.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0019"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0019""
+  }
+]",DS0019,https://framework.amltrix.com/data-sources/DS0019
+x-amltrix-data-source--2bba819d-f6cd-4bb3-8222-9de59dc5c6a9,x-amltrix-data-source,"Individual, Entity & Public Records Databases","Aggregated information on individuals and organizations from government registries, publicly available sources, and private third-party providers, including identity details, legal status, and beneficial ownership data.","These databases consolidate verified identity information, entity status, and beneficial ownership details from multiple sources, enabling comprehensive due diligence and risk assessments. Their use ensures more accurate identification of suspicious activity and helps prevent misuse of financial systems for illicit purposes.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0020"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0020""
+  }
+]",DS0020,https://framework.amltrix.com/data-sources/DS0020
+x-amltrix-data-source--36438e97-70df-41af-9551-4615cace9946,x-amltrix-data-source,Document Management Systems,"Centralized platforms for storing, organizing, and managing a variety of records—such as KYC files, contracts, and other supporting documents—typically providing secure retrieval, version control, access permissions, and audit trails.","Document Management Systems centralize and secure sensitive records such as KYC files and contracts, offering version control, access permissions, and audit trails. In AML/CFT adversarial threat modeling, they play a key role by enabling oversight of document integrity and user activities, helping detect unauthorized access or alterations.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0021"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0021""
+  }
+]",DS0021,https://framework.amltrix.com/data-sources/DS0021
+x-amltrix-data-source--89ab8372-43da-4ba7-936c-e77a1e40420f,x-amltrix-data-source,Product & Service Usage Data,"Consolidated data on how customers utilize financial products and services, including usage frequency, transaction volumes, product types, and related usage metrics.","This dataset provides holistic insights into how customers engage with financial offerings, capturing key metrics such as product usage frequency and transaction volumes. In AML/CFT threat modeling, it is crucial for detecting anomalies and suspicious activity patterns indicative of potential money laundering or terrorist financing.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0010"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0010""
+  }
+]",DS0010,https://framework.amltrix.com/data-sources/DS0010
+x-amltrix-data-source--96ecad22-bf09-4277-b00e-30fc75762e88,x-amltrix-data-source,Open-Source Intelligence (OSINT),"Publicly available information from websites, social media platforms, news outlets, and public records. This may include user profiles, corporate announcements, and other open data relevant to verifying identities and analyzing associations.","Open-Source Intelligence (OSINT) leverages publicly available data from websites, social media, news outlets, and public records to verify identities and uncover associations. In AML/CFT threat modelling, it provides critical insights into potential illicit networks and suspicious financial activities, thereby enhancing due diligence and risk mitigation.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0011"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0011""
+  }
+]",DS0011,https://framework.amltrix.com/data-sources/DS0011
+x-amltrix-data-source--bfbcb0db-ebb1-4d50-8beb-844e07b6a581,x-amltrix-data-source,Trust Information and Accounts,"Comprehensive information about trusts, including their structure, beneficiaries, trustees, associated financial accounts, transaction histories, and legal documentation. This data helps verify the legitimacy of trust-related activities and confirm the identities of key parties.","Trust Information and Accounts provides detailed data on the structure, beneficiaries, trustees, and financial histories of trusts, enabling thorough validation of trust-related activities. This information is critical for verifying identities, detecting suspicious transactions, and mitigating money laundering or terrorist financing risks.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0012"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0012""
+  }
+]",DS0012,https://framework.amltrix.com/data-sources/DS0012
+x-amltrix-data-source--d571c3f2-e078-498e-b137-bd2a3d91c73e,x-amltrix-data-source,Business Activity and Operations,"Data on a business’s commercial, industrial, or professional operations, including revenue figures, operating expenses, and related metrics, often compared with reported financial information to identify discrepancies or anomalies.","Business Activity and Operations data offers insights into a company’s revenue, expenses, and operational metrics, enabling the comparison of actual activity to reported financial information. These comparisons help uncover potential anomalies or discrepancies, facilitating the detection of money laundering or terrorist financing risks in AML/CFT threat modelling.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0030"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0030""
+  }
+]",DS0030,https://framework.amltrix.com/data-sources/DS0030
+x-amltrix-data-source--9306fe24-a095-45ab-bf4c-82d4ab50aedb,x-amltrix-data-source,Financial Audits,"Audit reports containing independent examinations of an organization's financial statements and internal controls, typically conducted by external auditors, providing an objective assessment of financial accuracy and compliance with accounting standards.","Financial audits offer a critical, independent assessment of an organization’s financial statements and internal controls, helping identify inaccuracies or compliance gaps that may signal money laundering or terrorist financing risks. Their robust, external perspective makes them a key data source in AML/CFT adversarial threat modeling, informing risk assessment and mitigation strategies.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0031"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0031""
+  }
+]",DS0031,https://framework.amltrix.com/data-sources/DS0031
+x-amltrix-data-source--62c9bec0-5f8c-43be-a695-717d5d30ecbd,x-amltrix-data-source,Safe Deposit Box Access Records,"Records tracking access to safe deposit boxes, including the date, time, and identity of the individual accessing the box.","Safe Deposit Box Access Records provide a chronological log of individuals’ box entries, including their identities, time, and date of access. This information is crucial for detecting suspicious usage patterns, linking individuals to potential illicit activities, and supporting AML/CFT investigations.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0034"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0034""
+  }
+]",DS0034,https://framework.amltrix.com/data-sources/DS0034
+x-amltrix-data-source--2cd130e8-45e9-4276-a4b6-bba0232ad9b8,x-amltrix-data-source,Online & Digital Payment Platform Data,"Consolidated records from online payment platforms, e-wallets, and fintech payment processors, covering transaction details, user identifiers, operational data, balances, transaction volumes, and related metadata.","This data source consolidates records from various digital payment platforms and e-wallets, offering detailed transactions, user identifiers, and operational metadata. It is critical for detecting high-risk behaviors, pinpointing suspicious patterns, and tracing illicit flows in digital payment networks within AML/CFT threat modeling.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0022"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0022""
+  }
+]",DS0022,https://framework.amltrix.com/data-sources/DS0022
+x-amltrix-data-source--2183f127-2360-42cb-98e2-049ffa1cb52b,x-amltrix-data-source,Financial Instrument & Securities Market Data,"Comprehensive datasets covering stocks, bonds, derivatives, and other investment vehicles, including the instrument’s name, type, issuer, maturity date, interest rate, real-time and historical pricing, trading volumes, and market trends. Financial institutions may reference this information to monitor investments and detect unusual price or volume movements.","Financial Instrument & Securities Market Data provides real-time and historical details for a wide range of investment vehicles, enabling the identification of abnormal price fluctuations and trading volumes. Its comprehensive coverage of instruments and market trends is critical in detecting suspicious transactions and potential money laundering or terrorist financing activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0035"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0035""
+  }
+]",DS0035,https://framework.amltrix.com/data-sources/DS0035
+x-amltrix-data-source--13fa5144-ad90-4deb-9397-d445e0244467,x-amltrix-data-source,Trade Documentation,"Official documents required for international trade, such as shipping logs, customs declarations, bills of lading, invoices, and certificates of origin. Often used to verify the legitimacy of cross-border transactions, confirm declared goods, and detect potential trade-based anomalies.","Trade Documentation, encompassing shipping logs, customs declarations, bills of lading, and related records, is crucial for validating cross-border transactions and uncovering potential trade-based anomalies. In AML/CFT adversarial threat modeling, these documents enable the detection of suspicious patterns and discrepancies that may indicate illicit trade-financing and money laundering schemes.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0036"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0036""
+  }
+]",DS0036,https://framework.amltrix.com/data-sources/DS0036
+x-amltrix-data-source--ecf6a43f-cba3-4e37-b4c6-682c4bd3c603,x-amltrix-data-source,Job Recruitment Data,"Records from online job recruitment platforms, including job postings, candidate applications, and employment details. These data can reveal unusual recruitment patterns or potential money mule schemes.","Job Recruitment Data provides insights into unusual hiring practices, such as the recruitment of money mules, supporting the detection and disruption of potential money laundering or terrorist financing activities. By examining candidate applications and employment details, investigators can identify suspicious patterns that signal illicit financial flows.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0037"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0037""
+  }
+]",DS0037,https://framework.amltrix.com/data-sources/DS0037
+x-amltrix-data-source--098ad200-de58-4156-a5eb-7e49ae5a4419,x-amltrix-data-source,Virtual Asset Service Provider (VASP) Data,"Data from Virtual Asset Service Providers, including detailed logs of digital asset transactions such as amounts, timestamps, wallet addresses, sender and receiver information, and associated account details, as well as user activity within cryptocurrency exchanges (e.g., trading volumes, order details, and user behaviors).","VASP data delivers granular insight into digital asset transaction patterns, user accounts, and exchanges, enabling detection of suspicious cryptocurrency activities. This detailed transactional and user behavior information is critical for identifying and mitigating money laundering and terrorist financing risks in virtual asset ecosystems.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0038"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0038""
+  }
+]",DS0038,https://framework.amltrix.com/data-sources/DS0038
+x-amltrix-data-source--e4f7cde4-ac9d-47a7-b90b-0763b79994e2,x-amltrix-data-source,KYC & Customer Due Diligence Records,"Comprehensive internal dataset containing verified customer identities, personal and business details, addresses, beneficial ownership information, account relationships, transaction summaries, risk metrics, financial statements, and business activity records.","KYC and Customer Due Diligence Records provide verified identities, beneficial ownership details, and in-depth financial and business activity information, serving as a key dataset for detecting and assessing risks in AML/CFT adversarial threat modeling. This dataset underpins customer profiling, supports compliance checks, and enhances anomaly detection across financial transactions.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0039"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0039""
+  }
+]",DS0039,https://framework.amltrix.com/data-sources/DS0039
+x-amltrix-data-source--239e3f68-019d-4295-9ca2-c189cc6afb3a,x-amltrix-data-source,ATM Usage & Geolocation Data,"Detailed records of ATM usage, including geolocation data, date and time stamps, transaction types and amounts, and other related metadata.","ATM Usage & Geolocation Data provides vital insights into customers’ transaction patterns—combining location, timing, and transaction metadata—to identify high-risk activities, suspicious withdrawals, or structuring attempts. By analyzing this granular data, financial institutions can enhance AML/CFT adversarial threat modeling through early detection of anomalous behavior tied to money laundering and terrorism financing.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0040"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0040""
+  }
+]",DS0040,https://framework.amltrix.com/data-sources/DS0040
+x-amltrix-data-source--ab07da4b-9670-4df0-9e49-65a3c21eeaa3,x-amltrix-data-source,Communication Records,"Records of electronic communications, including emails, phone calls, messaging apps, and social media, capturing metadata such as sender/receiver details and timestamps. Where legally permissible, the content may also be included. These logs can help identify suspicious instructions, insider collusion, or other high-risk interactions among individuals or entities.","Communication Records provide critical metadata and, where permissible, content of electronic interactions that uncover potential insider collusion, suspicious instructions, or other high-risk exchanges. By tracing communication patterns among individuals and entities, this data source enables targeted AML/CFT threat detection and investigation.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0042"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0042""
+  }
+]",DS0042,https://framework.amltrix.com/data-sources/DS0042
+x-amltrix-data-source--341e5da6-6bba-47c6-b17f-1759359b4f76,x-amltrix-data-source,Real Estate & High-Value Asset Ownership and Transaction Records,"Databases containing comprehensive information on the ownership, purchase, and transfer of real property and other high-value assets (such as vehicles, luxury goods, fine art, and precious metals). These records typically include details like property addresses, transaction dates, purchase values, involved parties, and beneficial ownership data.","This data source offers comprehensive details on real property and high-value asset ownership, including transaction dates, purchase values, and beneficial ownership information. It is critical for tracking hidden or complex asset holdings in AML/CFT threat modelling, helping to detect illicit financial flows and flag possible money laundering activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0043"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0043""
+  }
+]",DS0043,https://framework.amltrix.com/data-sources/DS0043
+x-amltrix-data-source--f142974a-aa5a-47d3-85f3-b260e9d0152b,x-amltrix-data-source,Commodity Transaction Data,"Detailed records of commodity purchases, sales, or exchanges, including transaction dates, parties involved, commodity types, quantities, and prices. These records help verify the legitimacy and scope of commodity-related transactions, especially in trade finance scenarios.","Commodity Transaction Data captures comprehensive details of commodity trades—including dates, parties, types, quantities, and prices—enabling verification of transaction legitimacy and scope. This data source is crucial for detecting anomalous or suspicious flows in trade finance, supporting effective AML/CFT threat assessments.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0044"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0044""
+  }
+]",DS0044,https://framework.amltrix.com/data-sources/DS0044
+x-amltrix-data-source--17af3322-0746-4f7b-8e6a-63786b79e54c,x-amltrix-data-source,Blockchain and Cryptocurrency Data,"Comprehensive data from public blockchain ledgers and related analytics, including transaction IDs, timestamps, sender and receiver addresses, and amounts for digital asset transactions.","This data source provides critical visibility into the flow of digital assets by capturing transaction IDs, timestamps, wallet addresses, and transaction amounts on public blockchain ledgers. It is essential for tracing illicit activities, identifying high-risk entities, and detecting patterns of money laundering or terrorist financing attempts involving cryptocurrencies.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0045"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0045""
+  }
+]",DS0045,https://framework.amltrix.com/data-sources/DS0045
+x-amltrix-data-source--ffa611fb-cbf7-4c38-ae8c-971d3cc6edc7,x-amltrix-data-source,Exchange & Trading Activity Records,"Records of trades and transactions on regulated financial exchanges, covering securities, commodities, derivatives, and cryptocurrencies. Typically includes trade volumes, dates, prices, counterparties, timestamps, transaction identifiers, and related compliance details.","Exchange & Trading Activity Records offer detailed insights into securities, commodities, derivatives, and cryptocurrency transactions, capturing key data points like trade volumes, dates, counterparties, and compliance indicators. They are critical for detecting potential illicit flows, anomalies, and patterns relevant to AML/CFT adversarial threat analysis.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0046"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0046""
+  }
+]",DS0046,https://framework.amltrix.com/data-sources/DS0046
+x-amltrix-data-source--3c39eeb5-342b-4e4d-90f5-94b972df4ca7,x-amltrix-data-source,Prepaid Card Transaction Data,"Information on transactions involving prepaid cards, including transaction amounts, frequencies, card identifiers, and overall usage patterns.","Prepaid Card Transaction Data offers insights into transaction amounts, frequencies, identifiers, and usage patterns of prepaid cards, providing a critical basis for detecting potentially suspicious transactions and identifying emerging threat patterns in AML/CFT analysis.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0017"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0017""
+  }
+]",DS0017,https://framework.amltrix.com/data-sources/DS0017
+x-amltrix-data-source--07f75df0-0123-4efe-9668-f6f71b50b802,x-amltrix-data-source,Correspondent and Cross-Border Transaction Data,"Information on cross-border financial transactions, covering transaction amounts, participating institutions, involved countries, currencies, settlement processes, and account relationships. This data is typically collected from banks, payment processors, and other intermediaries through correspondent banking relationships.","This dataset offers critical insight into cross-border money flows, including transaction details, institutional partnerships, and account relationships, enabling the detection of complex laundering structures and jurisdictional risk. By tracing the movement of funds and identifying high-risk or sanctioned endpoints, investigators can more effectively uncover and mitigate global money laundering and terrorism financing networks.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0047"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0047""
+  }
+]",DS0047,https://framework.amltrix.com/data-sources/DS0047
+x-amltrix-data-source--3acab503-e2fd-49ed-b773-6b85e7cca61b,x-amltrix-data-source,Sanctions Lists,"Sanctions lists are **official compilations of individuals, entities, and jurisdictions** subject to economic, trade, or financial restrictions imposed by governments and international bodies. These lists are a critical data source for Anti-Money Laundering (AML), Counter-Terrorist Financing (CTF), and Counter-Proliferation Financing (CPF) programs, as they help financial institutions identify **prohibited or high-risk parties** in transactions and customer relationships.  
+
+Sanctions lists may be maintained by national authorities, supranational organizations, or regulatory bodies. Key examples include:  
+- **United Nations Security Council (UNSC) Sanctions List** – Mandated by UN member states for global compliance.  
+- **Office of Foreign Assets Control (OFAC) – Specially Designated Nationals (SDN) List** – Maintained by the U.S. Department of Treasury.  
+- **EU Consolidated Sanctions List** – Covers EU-wide financial restrictions.  
+- **UK Sanctions List (OFSI)** – Maintained by the UK Office of Financial Sanctions Implementation.  
+- **Other Country-Specific Lists** – Such as Canada’s Consolidated Sanctions List, Australia’s DFAT List, and Russia’s counter-sanctions lists.  
+
+Sanctions lists are used in AML for:  
+1. **Customer Due Diligence (CDD) & Know Your Customer (KYC)** – Screening individuals and entities during onboarding.  
+2. **Transaction Monitoring & Screening** – Flagging or blocking transactions involving sanctioned parties.  
+3. **Investigations & Reporting** – Supporting Suspicious Activity Reports (SARs) and law enforcement collaboration.  
+4. **Trade Finance & Correspondent Banking** – Ensuring compliance in cross-border transactions and supply chains.  
+
+Sanctions lists typically include:  
+- **Full Name / Alias / Known Variations**  
+- **Date of Birth (DOB) / Place of Birth (POB)**  
+- **Passport / National ID Numbers**  
+- **Addresses (Registered & Known Locations)**  
+- **Business Affiliations / Linked Entities**  
+- **Sanctions Program / Designation Authority**  
+- **Reasons for Sanction (e.g., Terrorist Financing, WMD Proliferation, Human Rights Violations)**  
+- **Restrictions (Asset Freezes, Travel Bans, Trade Restrictions)**","Sanctions lists are official records of individuals, entities, and jurisdictions subject to financial or trade restrictions due to concerns like terrorism, proliferation, or human rights violations. These lists are essential for AML/CFT/CPF programs, helping institutions screen customers and transactions to prevent dealings with prohibited or high-risk parties.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0018"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0018""
+  }
+]",DS0018,https://framework.amltrix.com/data-sources/DS0018
+x-amltrix-data-source--85f102ec-3510-4886-9b35-4129ea4403ae,x-amltrix-data-source,Company & Beneficial Ownership Registries,"Consolidated records providing official or aggregated details of organizations, such as registration and incorporation data, licensing, shareholders, directors, ownership structures, partnership or trust information, and membership changes.","Company & Beneficial Ownership Registries consolidate key organizational data—including formation, shareholder and director details, and ownership structures—into a single authoritative source. They are crucial for uncovering hidden ownership networks and potential shell entities, making them an essential resource in AML/CFT adversarial threat modelling.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0049"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0049""
+  }
+]",DS0049,https://framework.amltrix.com/data-sources/DS0049
+x-amltrix-data-source--be6f45f6-8ba4-480d-baf2-46f68ebae3d0,x-amltrix-data-source,Bank Account Data,"Comprehensive data on individuals’ or entities’ bank accounts, including account numbers, ownership details, account types, balances, and transaction histories.","Bank Account Data provides detailed account information—such as account numbers, ownership details, balances, and transactions—essential for tracing illicit financial flows and identifying potential money laundering or terrorist financing activities. This data is critical for AML/CFT threat modeling because it reveals patterns of suspicious transfers and helps pinpoint high-risk individuals or entities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0023"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0023""
+  }
+]",DS0023,https://framework.amltrix.com/data-sources/DS0023
+x-amltrix-data-source--de9f1baa-7dcb-407d-8c3e-3c9501353371,x-amltrix-data-source,Asset Declarations,"Statements disclosing an individual’s or entity’s assets, liabilities, and financial interests, often required for public officials or certain high-profile individuals. These records provide a snapshot of declared wealth, enabling verification of stated financial positions.","Asset Declarations offer a verified snapshot of an individual’s or entity’s wealth, assisting AML/CFT professionals in detecting inconsistencies between declared and actual financial positions. By illuminating potential discrepancies or unexplained assets, they support the identification of suspicious financial activities, such as money-laundering or terrorist financing.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0024"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0024""
+  }
+]",DS0024,https://framework.amltrix.com/data-sources/DS0024
+x-amltrix-data-source--b19d6024-cc8a-4997-9e3b-a9d68737307e,x-amltrix-data-source,System & Network Access Logs,"Centralized logs capturing user and system activities, network and web traffic, authentication events, IP addresses, timestamps, URLs visited, user-agent strings, and other related details. These logs provide audit trails of user activities and help identify unauthorized access or unusual system interactions.","System & Network Access Logs provide a comprehensive record of user activities, authentication events, and traffic patterns, forming a critical evidence source for detecting and investigating potential AML/CFT threats. Their detailed audit trails enable stakeholders to identify unauthorized access, abnormal behavior, and early indicators of malicious tactics, strengthening overall defense mechanisms.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0025"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0025""
+  }
+]",DS0025,https://framework.amltrix.com/data-sources/DS0025
+x-amltrix-data-source--dd24375e-8ca6-45b5-9a7c-4e8878b38fb6,x-amltrix-data-source,Donation Platforms & Donor Records,"Records from online fundraising platforms and associated donation logs, including donor identities, amounts, contribution dates, and intended purposes.","Donation platform and donor records offer detailed insights into individual contributions, including donor identities, amounts, dates, and intended purposes, which help detect suspicious patterns, fund flows, or potential misuse in support of illicit activities.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0026"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0026""
+  }
+]",DS0026,https://framework.amltrix.com/data-sources/DS0026
+x-amltrix-data-source--67d6ba28-9421-4346-a418-8c969a16e884,x-amltrix-data-source,Document Verification,"Specialized systems or services that authenticate and validate official identification documents—such as passports or IDs—detecting potential forgeries, inconsistencies, or tampering.","Document Verification services confirm the legitimacy of official identification documents, detecting forgeries and inconsistencies to mitigate identity fraud risk. Integrating these checks into AML/CFT frameworks fortifies KYC processes and compliance efforts against illicit finance.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0027"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0027""
+  }
+]",DS0027,https://framework.amltrix.com/data-sources/DS0027
+x-amltrix-data-source--9a956b5b-fecf-4015-a7b1-89b0ba1e9204,x-amltrix-data-source,Casino and Gambling Transaction Records,"Comprehensive data on gambling transactions and activities, including aggregated information on game types, betting frequency, transaction amounts, participant identities, deposit and withdrawal data, and other relevant details across casinos and related operations.","Casino and Gambling Transaction Records provide a comprehensive view of gambling activities—covering game types, betting frequency, transaction amounts, participant identities, and deposit/withdrawal data—enabling investigators to detect high-risk patterns, uncover suspicious flows, and identify potential money laundering or terrorist financing schemes.",2025-04-02T13:25:50.677740+00:00,2025-04-02T13:25:50.677740+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""DS0041"",
+    ""url"": ""https://framework.amltrix.com/data-sources/DS0041""
+  }
+]",DS0041,https://framework.amltrix.com/data-sources/DS0041

@@ -967,627 +967,6 @@ Records of currency conversion activities, including spot trades, forward contra
 
 ---
 
-## [Loan Agreements and Credit Facilities](https://framework.amltrix.com/data-sources/DS0032)
-
-**Description:**
-Formal contracts related to lending and credit products—such as personal loans, mortgages, credit cards, and lines of credit—detailing loan amounts, interest rates, repayment schedules, and collateral. These records enable financial institutions to assess borrowers, track repayment patterns, and identify irregular credit usage.
-
-### Related Techniques
-- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Provides details on trade finance and credit instruments, including letters of credit issued for diamond shipments.
-- Helps uncover repeated financing requests tied to the same parcels at inflated valuations without sufficient justification.
-- [Pre-Shipment Finance Manipulation](https://framework.amltrix.com/techniques/T0072) — Includes detailed records of pre-shipment financing terms, such as loan amounts, repayment schedules, disbursement conditions, and collateral requirements. By comparing these agreements with purported export transactions, investigators can identify irregularities or inconsistencies that may indicate misuse of pre-shipment finance.
-- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Includes formal contracts and supporting details for loans, credit cards, and other financing.
-- Helps confirm whether submitted documents (e.g., invoices, applications) align with legitimate funding needs or signal fraudulent borrowing.
-- Allows investigators to cross-reference financed amounts with identified bogus claims, revealing potential false documentation or repetitive fraud patterns.
-- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Contains detailed loan contracts, repayment schedules, and credit facility terms for real estate acquisitions and refinances.
-- Helps uncover rapid or repeated refinancing of properties soon after purchase, a tactic commonly used to layer or extract illicit proceeds in high-cash-flow real estate schemes.
-- [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Contains records of loans, lines of credit, and the collateral used to finance trade transactions.
-- Identifies multiple invoicing schemes where the same invoice or shipping documentation is submitted for repeated financing requests.
-- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — These records provide details on the authorized borrower, repayment terms, and declared funding sources for loans and credit lines. By comparing actual repayments against documented agreements, financial institutions can detect suspicious third-party payments or structured deposits by individuals not listed in the contract, thereby uncovering potential layering or disguised ownership of funds.
-- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Provides formal contracts outlining syndicated loan terms and structures, including participating lenders, interest rates, repayment schedules, and collateral.
-- Facilitates identification of unusual or inflated loan amounts, repetitive amendments, or overlapping participants, revealing potential collusion or concealed beneficial ownership in trade finance arrangements.
-- [Junket-based Casino Transfers](https://framework.amltrix.com/techniques/T0107.004) — - Details formal credit arrangements between casinos, junket operators, and VIP customers, including loan amounts, interest rates, and repayment terms.
-- Identifies large or unjustified credit lines granted without legitimate wealth documentation, raising suspicion of money laundering.
-- [Payroll Deduction Loan Repayment](https://framework.amltrix.com/techniques/T0029) — - Include formal loan contracts and repayment schedules, detailing amounts, interest rates, terms, and associated collateral.
-- Facilitate cross-checking of actual repayment transactions against agreed-upon schedules to detect unusual repayment acceleration or multiple overlapping payroll-deduction notes.
-- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Facilitates thorough verification of letters of credit, standby letters of credit, and other trade finance instruments used in purported transactions. By reviewing loan terms, borrowing parties, repayment schedules, and beneficiary details, investigators can detect inflated or fraudulent trade transactions.
-- [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Documents details of credit lines, loan amounts, and collateral. By reviewing these records, one can detect overlapping or simultaneous financing instruments (e.g., multiple letters of credit) tied to the same underlying goods, revealing repeated invoice submissions.
-- [Loan Schemes](https://framework.amltrix.com/techniques/T0098) — - Contains principal amounts, repayment schedules, collateral details, borrower-lender identities, and other obligations.
-- Helps detect anomalies like repeated restructuring, strategic defaults, or nonexistent collateral arrangements.
-- Enables verification of the stated loan purpose against the actual use of funds, exposing fictitious or sham loan agreements.
-- [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Contains contractual records of letter of credit issuances, amendments, and repayment terms. Analyzing these documents helps identify frequent amendments, unusually large advance payments, or other credit irregularities symptomatic of red/green clause abuse.
-- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Contains details of loans, collateral, repayment schedules, and borrower profiles.
-- Detects suspicious collateral-based loans secured by precious metals or gemstones lacking proper ownership or origin documentation.
-- [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Comprehensively details the underlying collateral, supporting documentation, and obligations used to secure financing. This is useful in uncovering inflated or duplicated invoices used as collateral to disguise nonexistent transactions and launder funds under the pretense of legitimate credit arrangements.
-- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — Provides detailed information on trade finance instruments such as letters of credit and bills of exchange, including payment terms, collateral details, and parties involved. This data source is pivotal for identifying unusual amendments, inflated administrative costs, and repetitive re-invoicing structures that obscure the true value or legitimacy of shipped goods in trade-based schemes.
-- [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — Includes records of credit terms, disbursement, and repayment schedules tied to Bill of Exchange discounting or financing. Cross-referencing these details can reveal repayment from illicit funds, early payoffs, or misalignment with legitimate trade flows.
-
----
-
-## [Fraud Data](https://framework.amltrix.com/data-sources/DS0033)
-
-**Description:**
-Information on known or suspected fraudulent activities, including identity theft, payment card fraud, or scam patterns, compiled from reported incidents, industry warnings, or shared alerts.
-
-### Related Techniques
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Collects reported incidents and patterns of identity fraud, including known methods of forging documents or impersonating legitimate customers.
-- Allows cross-referencing of suspicious identity profiles against documented fraud cases.
-- Enhances detection by highlighting recurring impersonation patterns reported within the institution or by industry alerts.
-- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Compiles details of known or suspected fraudulent activities, including identity theft incidents and document-forgery methods. By matching incoming early superannuation withdrawal requests against these documented fraud patterns, investigators can quickly detect and block potentially forged or stolen identity claims.
-- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Contains known fraud or financial crime records for individuals or entities.
-- Helps identify high-risk parties engaged in questionable insurance or reinsurance schemes.
-- [Cross-Chain Bridges](https://framework.amltrix.com/techniques/T0005.002) — - Consolidates information on addresses and entities flagged for suspicious or illicit on-chain activities.
-- Assists in identifying linkages between cross-chain bridge transactions and known fraudulent addresses or watchlists.
-- Facilitates rapid detection of bridging patterns involving addresses previously reported for scams, hacks, or other unauthorized activities.
-- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Aggregates known or suspected fraudulent wallet addresses, flagged entities, and scam patterns.
-- Correlates donor or organizational information with existing fraud databases to identify potential illicit involvement or repeated risk signals.
-- Helps detect addresses using mixing or tumbling services previously associated with suspicious activity.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Aggregated information on known or suspected fraudulent activities includes identity theft reports, compromised personal data, and forged documentation patterns. By cross-referencing customer applications and account changes against these records, financial institutions can identify potential identity manipulation and investigate suspected synthetic or stolen identities more effectively.
-- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Consolidates reports of known or suspected fraud incidents, alert lists, and scam patterns.
-- Helps institutions detect repeat offenders, suspicious methodologies, or new fraud typologies.
-- Enables more targeted investigations where similar or identical fraud indicators appear (e.g., false invoicing patterns).
-- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Contains records of known or suspected fraudulent activities, identity theft cases, and scam patterns from industry sources and shared alerts.
-- Directly supports the detection of repeat fraudsters or stolen IDs used to apply for relief, enabling proactive identification of potential scams.
-- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Provides aggregated records on known or suspected fraudulent checks, forged or altered instruments, and repeated deposit scams. By cross-referencing newly deposited checks with these fraud databases, institutions can identify potential matches or suspicious patterns associated with remote deposit capture more quickly.
-- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Aggregates known or suspected identity theft records, compromised documents, and other fraud patterns.
-- Enables direct cross-checking of user-submitted IDs against known fraudulent profiles, revealing attempts to bypass remote verification with stolen or forged credentials.
-- [Unemployment Insurance Fraud](https://framework.amltrix.com/techniques/T0144.008) — - Consolidates information on identity theft, payment card fraud, and scam patterns.
-- Supports the detection of stolen or synthetic IDs used in fraudulent unemployment claims by cross-referencing known fraudulent identities.
-- Shares industry alerts on emerging unemployment fraud schemes, facilitating early identification of suspicious claims or accounts.
-- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — Provides records of known or suspected fraud, including scam patterns and reported incidents. This helps flag potential romance or social media recruitment approaches associated with money mule activities and identify accounts linked to similar fraud typologies.
-- [Cheque Fraud](https://framework.amltrix.com/techniques/T0144.010) — - Consolidates records on known or suspected fraudulent activities, including stolen checks, identity theft incidents, and frequently used scam techniques.
-- Enables cross-referencing of ongoing check fraud patterns or flagged payors with existing fraud alerts, supporting earlier detection of high-risk deposits.
-- [Online Gambling](https://framework.amltrix.com/techniques/T0017) — - Contains records of known or suspected fraudulent identities, including stolen or compromised payment credentials.
-- Enables detection of accounts opened using fraudulent details or stolen data.
-- Helps identify the use of compromised payment cards to fund online gambling accounts, linking suspicious identities to broader fraud patterns.
-- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — - Consolidates internal and shared industry intelligence regarding fraudulent activities.
-- Logs incidents of suspected or confirmed counterfeit currency, such as repeated serial numbers or device-flagged anomalies in deposited banknotes.
-- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Contains records of compromised payment methods, stolen card details, and prior fraudulent activity.
-- Supports identification of high-risk in-game currency acquisitions funded by illicit sources or unauthorized payment methods.
-- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — Tracks known or suspected fraudulent activities, including stolen credit cards, compromised accounts, and scam patterns. It helps detect repeated small-value card purchases or suspicious payment methods used to load gaming wallets, which are common tactics for laundering funds in virtual worlds.
-- [Online Game Currency Conversion](https://framework.amltrix.com/techniques/T0018) — - Consolidates repositories of known or suspected fraudulent activities related to stolen digital items, compromised gaming accounts, or ongoing scam patterns.
-- Enables financial institutions to flag transactions associated with recognized fraudulent game assets, preventing the rapid monetization of illicit tokens.
-- [Instant Exchange Services](https://framework.amltrix.com/techniques/T0032) — - Contains blacklisted addresses, compromised wallets, or known fraudulent accounts associated with prior illicit activity.
-- Supports rapid identification of suspected funds derived from or destined for illegal sources when instantly swapped or layered.
-- [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Aggregates known or suspected instances of fraudulent activity linked to individuals or entities.
-- Identifies parties with a history of document forgery or trade-based fraud.
-- Assists in detecting repeat offenders exploiting documentary collection mechanisms.
-- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Contains information on institutions or entities previously flagged for fraudulent activities or compliance breaches.
-- Assists in detecting lenders with a history of risky or noncompliant practices, possibly enabling syndicated trade loan manipulation.
-- [Lottery Scams](https://framework.amltrix.com/techniques/T0144.015) — Provides information on known or suspected fraudulent activities and scam patterns, including reported lottery scam typologies, associated email addresses or phone numbers, and patterns of advance fee fraud. Investigators use these details to cross-reference repeat perpetrators, identify recurring victim complaints, and detect transactions matching known lottery scam behaviors.
-- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Contains records of known fraudulent payment methods or compromised payment cards.  
-- Enables detection of deposits originating from stolen cards or flagged payment sources used to fund chip dumping accounts.  
-- Supports investigations by correlating fraudulent payment activity with rapid or unusual chip losses to conspirator accounts.
-- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Contains information on known or suspected fraudulent activities, entities, and individuals.
-- Flags tax agents or intermediaries with a history of involvement in fraudulent refund schemes.
-- Helps uncover networks of repeat offenders and patterns consistent with tax rebate fraud.
-- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Contains alerts, reports, and patterns associated with known scams, including telemarketing and phone-based fraud.
-- Facilitates the identification of vulnerable individuals, such as older adults, who may have been coerced into sending funds under false pretenses.
-- [Chargeback](https://framework.amltrix.com/techniques/T0091) — Fraud data consolidates reported and known fraudulent activities, including:
-
-- Documented patterns of identity theft, payment card fraud, and chargeback-related scams.
-- Correlation with known fraudulent profiles or blacklisted entities.
-
-By comparing disputed transactions against known fraud trends, investigators can identify malicious patterns underlying fraudulent chargebacks more quickly.
-- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Compiles reports of known or suspected fraudulent behavior, scam patterns, and associated entities. Financial institutions can cross-reference new investment clients or promoters with existing fraud alerts to identify potential links to previous scams or social engineering efforts.
-- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Contains detailed reports of known or suspected fraud incidents, including romance scam tactics and blacklisted identities (e.g., phone numbers, email addresses, account credentials).
-- Enables investigators to match ongoing suspicious activity against prior romance scam patterns, quickly identify repeat offenders, and spot recurring stories or ruses typical of romance mule recruitment.
-- Facilitates faster detection of emerging scam trends and potential links to organized fraud networks, strengthening AML efforts against romance scam recruiters.
-- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Consolidates records on reported and confirmed fraud incidents, including pig butchering scam typologies, associated phone numbers, email addresses, wallet addresses, or websites involved in scams.
-- Facilitates early detection by matching new activity against known fraudulent patterns, enabling timely intervention, enhanced investigations, and potential account restrictions.
-- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Contains records of known or suspected fraudulent activities, stolen personal data, or compromised identity details.
-- Supports cross-referencing newly submitted identity information against blacklists or detected fraud cases to identify potential fake or stolen KYC documentation.
-- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Consolidates histories of known or suspected fraud incidents, including impersonation scams, associated methods, and impacted accounts.
-
-- Helps investigators identify repeat or correlated deepfake-based scams and cross-reference impersonation techniques across multiple customer accounts or institutions.
-- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — - Compiles lists of flagged or blacklisted entities, accounts, and addresses linked to suspicious or illicit activities.
-- Helps identify vendor bank details matching known fraud or sanction databases, suggesting potential fake vendor involvement.
-- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Aggregates known scam patterns, reported incidents, and suspected fraudulent activity linked to false charitable appeals.
-- Supports investigative efforts by matching current fundraising behaviors with established fraud typologies or alerts.
-- [Insider Facilitation](https://framework.amltrix.com/techniques/T0021) — - Includes whistleblower tips, reported allegations of misconduct, and known or suspected internal fraud incidents.  
-- Helps uncover insider wrongdoing by consolidating internal reports and alerts on potential employee collusion or other misconduct.
-- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Centralizes reported incidents of unauthorized transactions, phishing attempts, or disputed charges.
-- Highlights patterns of disputed activity and connects known fraud events to compromised accounts, aiding in ongoing investigations.
-- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — Contains information on known or suspected fraudulent activities (e.g., scam phone numbers, email addresses, and patterns) specifically associated with advance fee fraud schemes. Financial institutions can cross-reference suspicious incoming payments or customer profiles against documented scam indicators, thereby enhancing the detection and investigation of potential 419 or lottery scam transactions.
-
----
-
-## [Customs and Asset Seizure Records](https://framework.amltrix.com/data-sources/DS0015)
-
-**Description:**
-Official data on goods and financial assets seized by customs or enforcement authorities, including details about the items seized, parties involved, and any associated legal proceedings.
-
-### Related Techniques
-- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Contains information on seized goods or financial assets related to customs violations or illicit trade.
-- Enables financial institutions to uncover previously interdicted shipments or assets linked to suspected traffickers.
-- Supports investigations by identifying repeated patterns of asset confiscations or associated parties.
-- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — Official data on goods and financial assets seized by customs or enforcement authorities, including details about the items seized, seizure location, and the parties involved. This helps:
-
-- Confirm direct ties to illicit tobacco shipments by linking seizures back to specific entities or transactions.
-- Identify patterns of repeated smuggling activity or use of specific routes and carriers for illegal tobacco transport.
-- [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — - Details goods or assets seized by customs or enforcement authorities, including the parties involved and documented reasons for seizure.
-- Identifies repeat offenders, networks, or methods linked to illicit arms smuggling, guiding further financial investigations and due diligence.
-- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Documents items and financial assets seized by authorities, including wildlife products, timber, or proceeds from illegal environmental activities.
-- Identifies arrested or flagged individuals/entities connected to environmental crimes.
-- Links seizures to financial accounts or shipments for potential money laundering investigations.
-- [Cross-Border Cash Smuggling](https://framework.amltrix.com/techniques/T0065) — - Document official seizures of undeclared or misdeclared currency at border points.
-- Provide details on seized assets, involved individuals, and any subsequent legal actions.
-- Enable investigators to match seized funds with suspected smuggling patterns or networks.
-- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Documents items seized by customs or enforcement authorities, including wildlife products and derivatives.
-- Provides details on parties involved and associated legal proceedings.
-- Helps financial institutions detect connections between customers and seized assets or shipments.
-- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Official documentation of goods and financial assets seized by customs or enforcement agencies.
-- Highlights instances where large sums of undeclared currency are intercepted at borders.
-- Assists investigations by revealing prior seizure incidents linked to individuals or networks consistently engaging in bulk cash smuggling.
-- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — Includes official records of seized shipments and assets, enabling the identification of known counterfeit pharmaceutical trafficking routes and the parties involved in illicit trade.
-- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Details on goods, cash, and assets confiscated at borders or during law enforcement operations.
-- Identifies parties involved in narcotics smuggling or laundering attempts and the nature of seized assets.
-- Supports ongoing financial investigations by confirming links between seized assets and suspected drug-related transactions.
-
----
-
-## [Legal Documentation & Records](https://framework.amltrix.com/data-sources/DS0016)
-
-**Description:**
-Collections of binding legal documents—including contracts, deeds, court orders, and judgments—used to verify legal rights, obligations, and relationships in financial dealings.
-
-### Related Techniques
-- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — - Encompasses binding legal and regulatory documents, including court orders, recorded statements, and other official records.
-- Allows financial institutions to track formal requests for transaction information, note any refusals citing immunity, and document legal steps taken against diplomatic or state-owned entities suspected of illicit activity.
-- [Off-the-Record Deals](https://framework.amltrix.com/techniques/T0095) — - Stores formal contracts, deeds, and legally binding documents validating asset transfers.
-- Identifies missing or incomplete legal paperwork for high-value transactions.
-- Highlights potential reliance on fictitious or backdated agreements to conceal true ownership changes.
-- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Contains binding legal documents, corporate filings, contracts, and court records. When different segments or departments hold only partial legal paperwork, these records help demonstrate that no single entity has a comprehensive view of financial or operational arrangements.
-- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — Provides official legal documents such as notarized deeds, court orders, and judgments. Cross-referencing these documents with submitted records helps detect forgery or fabrication, especially when criminals alter or counterfeit legal papers to legitimize financial transactions or misrepresent ownership and obligations.
-- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — Provides official legal documents, such as contracts, board resolutions, or court rulings, used in mergers or acquisitions. Key data points include:
-
-- Authentic copies of share purchase agreements, asset purchase agreements, and related legal instruments.
-- Signatory information, terms, and clauses that enable cross-verification of claimed M&A structures.
-
-By examining these records, investigators can detect contradictions, incomplete provisions, or unusual terms indicative of a fictitious transaction.
-- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Encompasses binding legal documents, including acquisition contracts, deeds, and corporate formation papers, revealing transaction terms, involved parties, and official approvals. This helps confirm legitimate purchase agreements or detect unusual clauses indicating potential laundering.
-- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Consists of incorporation papers, contracts, court records, and other legally binding documents.
-- Helps uncover discrepancies in ownership claims or shadow directors connected to sanctioned entities, emphasizing hidden beneficial owners.
-- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Comprises formation documents, contracts, and trust deeds, detailing legal frameworks.
-- Detects unusual or non-standard legal structures masking beneficial ownership.
-- Supports cross-checking official corporate documents with actual operational control.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Official arbitration filings, settlement agreements, tribunal decisions, and other binding legal records.  
-- Enables detection of fabricated or incomplete documentation, unusually rapid or collusive proceedings, and disproportionate settlement amounts—key indicators of arbitration settlement manipulation.
-- [Court System Manipulation](https://framework.amltrix.com/techniques/T0047) — Includes official legal documents such as court orders, judgments, motions, appeals, and related filings.
-
-How it supports AML detection:
-- Validates the legitimacy of legal settlements and identifies unusual legal procedures or accelerated rulings.
-- Detects repeated appeals against asset-freezing measures, suggesting deliberate tactics to shield illicit funds under the guise of legal processes.
-- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Includes official powers of attorney, signatory authorizations, and other legal instruments. Enables the detection of broad or indefinite delegations of authority that may conceal a true beneficial owner behind a proxy.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Encompass contracts, amendments, and other legally binding agreements.
-- Allow scrutiny of frequent or unusual changes in athlete image rights contract terms that facilitate repeated adjustments to payment amounts or ownership structures, indicating potential manipulation.
-- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Include employment contracts, NDAs, and other formal documentation provided to recruits.
-- Reveal clauses instructing recruits to use personal accounts for incoming funds without specifying legitimate business functions.
-- Support investigations by highlighting unusual or vague contract terms associated with money mule activities.
-- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Confirms the validity and chain of custody for bearer instruments through contracts, court filings, or related legal documents.
-- Allows compliance teams to substantiate stated ownership and trace prior holders of the instruments.
-- Reveals legal disputes or restrictions tied to bearer instruments, essential for comprehensive AML investigations.
-- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Include official legislative documents, court filings, and regulatory rulings on budget allocations or financial misconduct.  
-- Verify whether transfers or write-offs had legal authorization and note any resulting investigations or disciplinary measures taken against officials.
-- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Comprises official documents such as insurance contracts and claim documentation. This data helps identify fraudulent claims, such as insuring phantom vessels, and detect fabricated or staged events used to legitimize illicit payouts in offshore insurance schemes.
-- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Maintains validated court orders, official permits, and compliance filings, enabling confirmation of legitimate mining rights. This data source helps pinpoint entities operating without proper authorization or under fraudulent documentation.
-
----
-
-## [Geographical Transaction Data](https://framework.amltrix.com/data-sources/DS0048)
-
-**Description:**
-Location-based records of financial transactions, including origin, destination, amounts, timing, and relevant geolocation metadata for analyzing cross-border transactions and payment flows.
-
-### Related Techniques
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Identify significant cross-border transactions and the involved jurisdictions.
-- Highlight inflows from high-risk or poorly regulated regions used to fund construction projects.
-- Support enhanced due diligence on foreign investors whose geographic profile presents elevated AML risk.
-- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Maps transaction origin and destination locations against known customer activity patterns.
-- Reveals geographical inconsistencies (e.g., transactions initiated from regions not typical for legitimate account usage), indicating potential account takeover.
-- [Self-Hosted Cryptocurrency Wallets](https://framework.amltrix.com/techniques/T0034) — - Contains location-based transaction records, including origin, destination, and geolocation metadata.
-- Assists in detecting cross-border or multi-jurisdictional flows to and from self-hosted wallets, highlighting potential structuring or layering across different regions.
-- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Provides location-based records of financial transactions, including origins and destinations.
-- Facilitates detection of unusual diamond trading patterns involving high-risk or sanctioned jurisdictions.
-- [ATM Structuring](https://framework.amltrix.com/techniques/T0016.004) — - Incorporates location-based records of financial transactions, allowing direct comparison of the customer’s usual regions of economic activity against sudden or widespread ATM deposits in multiple areas.
-- Flags anomalies where deposit volumes and geographic dispersion deviate significantly from established norms, indicating possible structuring activities.
-- Aids in assessing whether ATM-related transactions are suspicious based on mapped proximity or cross-regional patterns without a legitimate business rationale.
-- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — Tracks geographic metadata for each transaction, revealing inconsistencies when P2P transfers originate from diverse or improbable locations that contradict the account holder’s profile.
-- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Tracks the origin and destination of in-game currency transactions, including cross-border flows and high-risk geographies.
-- Supports detection of large-volume in-game value movement involving jurisdictions known for lax AML regulations, lacking a legitimate business or gameplay rationale.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Captures location-based details of financial transactions, including origins, destinations, and timing.
-- Reveals geographically dispersed high-value purchases made in quick succession, indicating potential layering or deliberate confusion of regulatory jurisdictions.
-- [Online Game Currency Conversion](https://framework.amltrix.com/techniques/T0018) — - Details the origins and destinations of financial transactions, including country identifiers, cross-border flows, and associated metadata.
-- Enables monitoring of in-game currency exchanges traversing jurisdictions with lax AML controls, highlighting potential transnational laundering techniques.
-- [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - Captures origin, transit, and destination details for cross-border shipments and related financial flows.
-- Enables detection of unusual or circuitous shipping routes that may signal deliberate misinvoicing or masking of true shipment values.
-- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Provides detailed origin and destination metadata for financial transactions, including branch locations or regional identifiers.
-- Facilitates detection of rapid deposits in multiple distant areas, a hallmark of smurfing.
-- Enables geo-mapping of deposit clusters to spot emerging patterns inconsistent with a customer’s normal activity.
-- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Highlights fund movements originating from or destined for high-risk or offshore jurisdictions.
-- Identifies questionable premium payments or claim disbursements linked to secrecy locations, aiding in the detection of disguised cross-border layering.
-- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — Captures location-based details of financial transactions and shipping routes, including origin, destination, timestamps, and relevant geographic metadata. This data helps identify unusual or convoluted cross-border routing, last-minute changes to shipment destinations, and inconsistencies with normal trade lanes, all of which can signal trade-based laundering.
-- [Funnel Accounts](https://framework.amltrix.com/techniques/T0083) — - Tracks the origin, destination, and geo-coordinates of financial transactions.
-- Helps trace multi-jurisdictional routes and layering strategies indicative of funnel account schemes.
-- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Capture transactional origin and destination details with associated geolocation.
-- Highlight frequent remittances or financial flows to zones at high risk for human trafficking.
-- Cross-reference with other records to confirm suspicious movement of funds tied to exploitation networks.
-- [Crowdfunding Campaign Manipulation](https://framework.amltrix.com/techniques/T0044) — - Provides location-based records of financial transactions (e.g., IP addresses, geolocation metadata).
-- Allows comparison of donor origins against the campaign’s stated location or beneficiary region to detect anomalies.
-- Supports identification of potential layering, where illicit funds are split and routed from multiple jurisdictions.
-- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — Provides cross-border origin and destination data for mobile transactions. This data identifies unusual or high-risk jurisdictions and detects discrepancies between declared residency or business location and actual transaction flows, supporting the identification of layering and structuring patterns in mobile payments.
-- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Contains location-based records of financial transactions, capturing origin, destination, amounts, and geolocation metadata.
-- Enables identification of transaction clusters near vulnerable border areas or known smuggling corridors.
-- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Tracks transaction origin and destination points, including geolocation metadata.
-- Facilitates detection of unusual cross-border flows, especially where established banking channels are bypassed for lesser-regulated alternatives.
-- [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — - Tracks cross-border transfers involving professional intermediary accounts and identifies offshore or high-risk destinations.
-- Pinpoints transactions masked under client confidentiality, revealing risk patterns indicative of layering or integration strategies.
-- [Micro-Structuring](https://framework.amltrix.com/techniques/T0016.001) — - Provides location-based metadata for financial transactions, including the origin and destination of funds.
-- Identifies patterns of multiple micro-amount deposits from diverse regions funneling into a single account, a common indicator of micro-structuring.
-- [Vendor Impersonation](https://framework.amltrix.com/techniques/T0144.018) — - Tracks the geographic origin and destination of financial transactions, covering both domestic and cross-border movements.
-- Detects shifts in vendor payment routes or payments to atypical jurisdictions inconsistent with the vendor’s usual operations.
-- Helps flag potential higher-risk regions for closer scrutiny when a vendor's account details suddenly change.
-- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Provides origin and destination geolocation details for financial transactions.
-- Exposes irregular cross-regional inbound deposits labeled as ‘advance fees,’ helping to flag potential international or multi-regional scam activity.
-- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Provides geolocation details of financial transactions, including origin, destination, amounts, and related jurisdictional metadata.
-- Enables detection of mismatched currency flows involving locations not aligned with the customer’s declared business or residence.
-- Assists in identifying high-risk or unusual cross-border routes used to layer illicit funds.
-- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Reveals the origin and destination locations of fund flows, enabling analysts to identify unusual cross-border transfers orchestrated by professional intermediaries that exceed typical geographic coverage or regulatory norms.
-- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Tracks the origin and destination of cross-border transactions, highlighting specific jurisdictions, transaction volumes, and timing.
-- Helps reveal offshore routing patterns by shell companies leveraging jurisdictions with limited transparency, facilitating layering or obfuscation of transaction flows.
-- [Informal Value Transfer Systems](https://framework.amltrix.com/techniques/T0013) — - Tracks transaction origin and destination geolocation metadata.
-- Flags the channeling of funds through jurisdictions lacking robust banking oversight or commonly associated with hawala networks.
-- Helps correlate cross-border flows with customer profiles to identify unusual or unauthorized IVTS-related routes.
-- [Public WiFi Networks](https://framework.amltrix.com/techniques/T0015.003) — - Captures geolocation details for each transaction, allowing comparison of the actual transaction origin with the customer’s declared address or usual location.
-- Highlights anomalies when transactions originate from diverse or distant public WiFi hotspots in short timeframes, indicating possible location obfuscation.
-- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — Correlates transactions with their geographic origin or destination to reveal cross-border fund flows. In rug pull scenarios, sudden movements of capital to multiple or opaque jurisdictions may indicate layering efforts to obscure the funds' final recipients.
-- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — Contains location-based details of deposit and withdrawal activities, showing branch usage and distances from a customer’s usual business or residential areas. This data helps identify suspicious cluster deposits along domestic transport routes, consistent with bulk cash deliveries.
-- [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — - Captures origin, destination, and route details for financial movements.
-- Enables detection of frequent or repeated cross-border trips involving smaller declared amounts (smurfing).
-- Helps aggregate multiple declarations below thresholds that collectively sum to higher illicit totals.
-- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Tracks the originating and destination countries tied to financial transactions. This data:
-
-- Pinpoints repeated or high-value transfers to offshore locations.
-- Detects sudden geographic shifts in a customer’s transaction profile.
-- Supports investigation into layering tactics through multiple foreign jurisdictions.
-
----
-
-## [Politically Exposed Persons (PEP) Lists](https://framework.amltrix.com/data-sources/DS0002)
-
-**Description:**
-Databases detailing individuals holding prominent public or political positions, including their official roles, associated entities, and known affiliations.
-
-### Related Techniques
-- [Trust-Based Obfuscation](https://framework.amltrix.com/techniques/T0088.002) — - Identifies whether trust beneficiaries, trustees, or associated beneficial owners are PEPs.
-- Highlights increased ML/TF risk when prominent or politically connected individuals are shielded by trusts.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Screen project stakeholders against sanctioned or high-risk individuals who hold prominent public responsibilities.
-- Flag Politically Exposed Persons (PEPs) who invest in or facilitate construction contracts without legitimate, verified sources of wealth.
-- Assist in evaluating heightened risk factors associated with corruption or abuse of public office in the awarding of government construction projects.
-- [CBI or RBI-Based Identity Acquisition](https://framework.amltrix.com/techniques/T0024.001) — Provides directories of individuals occupying prominent public roles, their close associates, and known affiliations. Screening applicants against these lists:
-
-- Identifies high-risk or politically connected individuals seeking CBI/RBI.
-- Facilitates enhanced due diligence for potentially corrupt or sanctioned officials.
-
-Ensures financial institutions can detect and properly manage higher-risk applications that may exploit citizenship/residency programs for illicit gain.
-- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Provides details of individuals holding public or political roles, including their official positions and affiliations. This data helps identify hidden beneficial owners or proxies who may be politically exposed, triggering enhanced due diligence to uncover concealed ownership or control.
-- [Political Contributions](https://framework.amltrix.com/techniques/T0056) — PEP lists provide details on individuals holding prominent public or political roles and their known affiliations. Cross-referencing donors, intermediaries, or recipients against PEP lists can uncover potential bribery or political influence in campaign donations or lobbying activities, directly supporting AML investigations.
-- [Bribery](https://framework.amltrix.com/techniques/T0006) — - Contains details on individuals in prominent public or political positions, including official roles and affiliations.
-- Helps identify potential bribery targets or participants by flagging transactions and relationships involving PEPs, who are at heightened risk of corruption.
-- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Data elements: Names and known affiliations of individuals holding senior public or political offices and their close associates.  
-- AML Use: Identifies whether high-profile or politically influential figures are involved in sports club investments or sponsorship deals, highlighting increased corruption and money laundering risks.
-- [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — Identifies individuals holding public or political positions who may be involved in large-scale corruption schemes masked by fictitious consulting. Cross-referencing parties against PEP databases helps expose heightened risk scenarios where corrupt officials channel illicit funds through inflated advisory fees.
-- [Insurance Annuities](https://framework.amltrix.com/techniques/T0087) — - Identify individuals holding prominent public or political positions, as well as their close associates.
-- Increase risk assessment for high-profile or influential policyholders or beneficiaries.
-- Support enhanced due diligence to detect bribery- or corruption-related money laundering risks.
-
-Using PEP lists helps financial institutions ensure proper scrutiny of annuity contracts when politically exposed individuals are involved.
-- [Corruption](https://framework.amltrix.com/techniques/T0051) — Identifies public officials or individuals in prominent political roles, along with their known affiliations. In corruption scenarios, referencing PEP lists ensures transactions involving these high-risk individuals receive enhanced scrutiny, helping detect potential bribery or kickbacks.
-- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Catalogs individuals holding high-profile public or political roles, along with their known affiliations and designations.
-- Helps identify CBI/RBI investors who are PEPs seeking to potentially bypass enhanced scrutiny or exploit alternate citizenship pathways.
-- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — - Contains records of individuals holding prominent public or political positions and their associated entities.
-- Helps identify government officials in oil-rich countries who participate in or facilitate suspicious oil deals.
-- Flags potential corruption or bribery risks in manipulated oil and fuel transactions.
-- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Databases identifying individuals in high-profile political or public positions.
-- Critical for enhanced due diligence on investment company owners or significant shareholders who may pose elevated corruption and money laundering risks.
-- [Junket-based Casino Transfers](https://framework.amltrix.com/techniques/T0107.004) — - Comprehensive listings of PEPs and their associates, including their positions, affiliations, and risk designations.
-- Ensures enhanced due diligence for high-risk PEPs involved in junket-related transactions, mitigating corruption and money laundering risks.
-- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Includes data on individuals who hold (or have held) prominent public or political positions, along with known affiliations.
-- Reveals if MSB owners, directors, or connected parties are PEPs, raising corruption and high-risk flags.
-- Assists investigators in prioritizing scrutiny of MSBs potentially controlled or influenced by high-risk or politically exposed actors.
-- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Maintains databases of individuals in prominent public or political positions.
-- Alerts financial institutions to heightened corruption risks, including potential collusion with wildlife trafficking networks.
-- Enables closer scrutiny of transactions involving PEPs linked to wildlife transport permits or regulatory approvals.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Lists individuals holding senior public or political roles, including known positions and affiliations. Screening against these lists helps detect high-profile or corruption-related risks when significant business investments originate from politically exposed persons (PEPs).
-- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Includes information on individuals holding prominent public or political roles, their known associates, and relevant designations. This data source aids investigations by flagging newly appointed bank directors or executives who are PEPs or linked to criminal networks, which could potentially signal organized crime infiltration.
-- [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — PEP lists typically include names, government or political roles, associated entities, and known affiliations. By comparing awarding officials or beneficial owners against these lists, organizations can detect potential conflicts of interest, corruption, or collusive practices involving public officials in manipulated tenders.
-- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Provides profiles of individuals in public or political positions, including their official roles, known affiliates, and associated risk factors.
-- Enables identification of officials or close associates who may be diverting public funds, thereby focusing investigations on potential corruption.
-- Cross-checking PEP status with suspicious financial movements helps reveal misappropriation schemes and triggers enhanced due diligence where warranted.
-- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — PEP lists typically include:
-
-- Official roles or political functions, affiliations, and known associates.
-- Personal identification details (e.g., name variations, dates of birth).
-
-This data helps detect potential conflicts of interest or corrupt collusion if relief program disbursements or approvals involve individuals in positions of power, supporting investigations into government relief fraud schemes.
-- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — PEP lists typically include names, official roles, known affiliations, and relevant political or diplomatic positions. This data allows for the identification of diplomatic or state-related figures with potential immunity claims or official privileges, aiding in the detection and investigation of suspicious activity involving diplomatic channels.
-- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Lists high-ranking public officials and other individuals who may present heightened corruption or money laundering risks. Checking insurance policy owners or beneficiaries against PEP lists helps uncover politically connected parties exploiting offshore insurance schemes.
-- [Name Alteration](https://framework.amltrix.com/techniques/T0023.002) — Databases of individuals in high-level public or political roles often include aliases or variant spellings. Comparing customer names against PEP lists helps institutions uncover concealed PEP status that may arise from deliberate name alterations.
-
----
-
-## [Financial, Business & Tax Records](https://framework.amltrix.com/data-sources/DS0007)
-
-**Description:**
-Documentation and official filings covering an entity's financial activities, including balance sheets, profit-and-loss statements, tax returns, and related records. Typically referenced to evaluate an entity's financial stability, verify reported performance, and identify discrepancies or anomalies in financial profiles.
-
-### Related Techniques
-- [Loan Schemes](https://framework.amltrix.com/techniques/T0098) — - Covers audited statements, tax returns, and related filings indicating actual revenues, expenses, and operational capacity.
-- Reveals overstated or falsified financials used to secure subsidized loan terms or justify larger loan amounts.
-- Uncovers discrepancies between reported and true performance, flagging fraudulent activity in loan applications.
-- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Holds financial statements, profit-and-loss reports, and tax filings for entities.  
-- Enables validation of reported income or expenses against actual business performance, highlighting potential fraud.  
-- Helps spot discrepancies in revenues or asset flows that do not align with ordinary business operations, revealing artificial inflation or false documentation.
-- [Front Company](https://framework.amltrix.com/techniques/T0014) — - Includes official financial statements, tax returns, and detailed business performance metrics.  
-- Facilitates comparison of reported operating margins, revenues, and geographic coverage against industry norms to detect anomalies common in front company setups.
-- [Funnel Accounts](https://framework.amltrix.com/techniques/T0083) — - Includes official financial statements, business filings, and tax returns.
-- Validates whether sudden cross-border transfers or funnel deposit patterns align with legitimate financial activity, uncovering concealed or illicit proceeds.
-- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — Comprehensive financial statements, tax returns, and related filings demonstrate a vendor’s operational legitimacy. Cross-referencing reported business income, expenses, and tax liabilities helps uncover vendors with no genuine operational footprint, indicating a likely fake vendor setup.
-- [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — Contains formal financial statements, tax returns, and business filings detailing labor costs, revenues, and workforce information. This enables investigators to compare declared payroll expenses against official tax declarations, identify discrepancies (e.g., inflated wages), and uncover ghost or phantom employees by analyzing potential mismatches in reported labor costs and actual tax or financial records.
-- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Contain an entity’s financial statements, tax filings, and business performance data, enabling investigators to compare declared beneficial ownership structures against reported revenues, expenses, and tax obligations. This comparison helps identify inconsistencies that may indicate ownership manipulation.
-- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Covers tax filings, balance sheets, and other official business financials.
-- Supports cross-referencing declared figures with internal records, uncovering manipulations or missing entries indicative of tampering.
-- [Sports Sponsorship](https://framework.amltrix.com/techniques/T0129) — - Provides insight into the normal operating revenues and reported financials of clubs or sponsoring entities.
-- Enables comparison of typical business size to sponsorship sums, highlighting disproportionately large or unjustified sponsorship payments that may indicate laundering.
-- [Insurance Annuities](https://framework.amltrix.com/techniques/T0087) — - Provide official filings such as tax returns, balance sheets, and profit-and-loss statements.
-- Corroborate a policyholder’s declared financial capacity and sources of funds.
-- Reveal discrepancies between reported earnings or assets and large annuity contributions.
-
-These records help confirm the legitimacy of funds used for annuity purchases and detect potential misrepresentation or laundering of illicit proceeds.
-- [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Provides official financial statements, accounting records, and tax filings that can confirm or refute the legitimacy of reported liabilities. Facilitates cross-checking payables entries with declared expenses and verifying the authenticity of vendors or creditors. Supports identifying fabricated or inflated liabilities that do not match the entity’s operational or financial profile.
-- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Includes financial statements, tax returns, and other official filings.
-- Reveals discrepancies between reported business activities and actual financial performance.
-- Highlights a lack of genuine revenue or operational expenses, suggesting shell-type structures.
-- [Carbon Credit Trading](https://framework.amltrix.com/techniques/T0118) — - Offers insight into declared revenues, tax filings, and corporate financial statements.
-- Assists in detecting inconsistent VAT returns or questionable tax refund claims associated with carbon credit carousel schemes and advanced layering techniques.
-- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Official financial statements, tax returns, and related filings reflect reported revenues, expenses, and liabilities.
-- Help identify inconsistencies or manipulations in recorded figures by cross-checking against actual business transactions and historical filings.
-- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Encompasses financial statements, tax filings, and profit-and-loss reports.
-- Reveals discrepancies in reported valuations or manipulative accounting practices.
-- Assists investigators in verifying whether reported corporate finances match real economic activity.
-- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — Contains financial statements, corporate filings, and tax returns, revealing a business’s revenue streams, expenses, and overall financial health. It can confirm the absence of legitimate income supporting significant "storage fees" or inconsistent flows from multiple shell entities to the same private storage facility.
-- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Provides official filings and statements (e.g., balance sheets, tax returns, profit/loss statements).
-- Reveals discrepancies in reported revenue or business operations for companies suspected of concealing proceeds.
-- Assesses the legitimacy of cash flows from sectors prone to environmental crime (e.g., timber or fishing).
-- [Tax Evasion & Fraud](https://framework.amltrix.com/techniques/T0147) — - Provides official filings such as tax returns, profit-and-loss statements, and balance sheets.
-- Enables detection of discrepancies between stated and actual revenues, identification of misclassified expenditures, and confirmation of reported taxable income.
-- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Contains an entity's or individual's financial statements, tax returns, and other filings. By comparing declared financial capacity with large premium payments or policy redemptions in offshore schemes, anomalies indicating laundering or layering can be detected.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Official filings such as balance sheets, tax returns, and profit-and-loss statements.
-- Helps compare the financial capacity of parties with the settlement amounts claimed in arbitration, identifying disproportionate or dubious awards.
-- [Corruption](https://framework.amltrix.com/techniques/T0051) — Covers profit-and-loss statements, balance sheets, and tax returns, enabling verification of reported income and expenditures. In corruption probes, this data reveals hidden revenue streams, sham businesses, or inconsistencies suggesting kickbacks or embezzlement.
-- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Details an entity’s historical financial statements, declared tax information, and reported business activities.
-- Allows investigators to uncover discrepancies between the borrower’s actual capacity and the inflated loan amounts or trade volumes claimed in syndicated loan agreements.
-- [Renovation Cost Manipulation](https://framework.amltrix.com/techniques/T0124) — - Includes entities’ financial statements and tax filings, offering insights into reported revenue, operating expenses, and overall financial health.
-- Enables cross-verification of declared renovation costs against actual financial capacity and reported expenditures, highlighting discrepancies indicative of potential laundering.
-- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Data elements: Official financial statements, profit-and-loss reports, tax returns, and business filings showing the club’s broader financial health.
-- AML Utility: Enables cross-checking declared revenues from sponsorship, ticket sales, or transfers against verified financial disclosures, revealing inconsistencies that may indicate inflated income or laundered funds.
-- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Covers official financial statements, tax returns, and business filings detailing revenues, expenses, and profit/loss.
-- Enables cross-referencing of declared transfer pricing, royalty fees, or management fees with actual financial performance and tax filings to spot potential under-reporting or inflated rates.
-- [Investment Fund Manipulation](https://framework.amltrix.com/techniques/T0097) — These records disclose official financial statements, tax returns, and business performance data. By cross-referencing declared investment returns with official filings, investigators can detect inconsistencies that indicate manipulated valuations or fabricated performance. This helps confirm whether real operational data aligns with the reported fund performance, revealing potential misrepresentations or false returns central to investment fund manipulation.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Covers official financial statements, reported business income, and tax filings, enabling the detection of discrepancies between declared revenues and significant capital injections. Investigators can identify suspiciously high investments that lack clear justification and verify alignment with legitimate business performance.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Provide official filings such as financial statements, profit-and-loss reports, and tax returns of clubs and intermediaries.
-- Permit verification of declared endorsement or licensing revenues against actual commercial activities, uncovering discrepancies.
-- Detect potential tax irregularities and unsubstantiated income streams, indicative of inflated fees or nonexistent commercial exploitation tied to image rights deals.
-- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — - Includes official filings and statements regarding revenue, taxes, and overall financial performance.
-- Reveals whether reported cigarette revenues align with paid excise or import duties, helping to detect undeclared or underreported tobacco imports.
-- Uncovers discrepancies in tax filings or business revenues that could indicate proceeds from smuggling operations.
-- [Undeclared Earnings](https://framework.amltrix.com/techniques/T0137) — Includes official financial statements, profit-and-loss records, balance sheets, tax returns, and other formal business documents. This data:
-
-- Allows cross-checking of declared income against actual transaction histories to uncover underreported earnings.
-- Identifies significant gaps between reported revenue and observed cash inflows, indicating possible undeclared funds.
-- Provides insight into discrepancies within accountant-verified statements, aiming to detect complicit behavior in underreporting.
-- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Includes financial statements and tax filings documenting revenues, expenses, and payroll costs. Comparing these disclosures with known industry benchmarks can reveal underreported wages or hidden profits associated with forced labor practices.
-- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — Covers an entity’s financial statements, tax filings, and business performance disclosures. Investigators can compare the project's claimed business model with actual filings to uncover discrepancies, which are frequent indicators of exit scams and rug pulls.
-- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — Official financial filings, tax returns, and business statements are essential documents. Cross-referencing these records against relief program submissions can uncover discrepancies in reported revenue or operational scale, helping to expose misrepresentations used to qualify for government funds.
-- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Contains official tax returns, financial statements, business registrations, and related filings.
-- Allows cross-verification of claimed operating losses or payroll data used in relief applications.
-- Helps detect inflated or inconsistent financials that deviate from historical filings, indicating potential fraud or misrepresentations.
-- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Contains balance sheets, profit-and-loss statements, tax filings, and related financial documentation for property management or real estate entities.  
-
-- Enables cross-verification of declared operational income, rental revenue, and reported expenses against actual transaction flows, identifying discrepancies or inflated figures that suggest commingling.
-- [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Contains official financial statements, tax returns, and supporting business filings.
-- Enables comparison of reported turnover and VAT returns against actual documented income and expenses.
-- Detects discrepancies and anomalies indicative of carousel fraud, such as inflated or repetitive VAT refund claims.
-- [Accrual Manipulation](https://framework.amltrix.com/techniques/T0050.001) — Encompasses official financial statements, tax returns, and supporting business documentation. By reviewing details such as journal entries, balance sheets, and tax filings, investigators can spot irregular accrual entries, retroactive revenue adjustments, or unjustified reclassifications, all of which are hallmarks of accrual manipulation.
-- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Contains official financial statements, tax returns, and related disclosures for institutions and businesses. This data assists in detecting infiltration by identifying inconsistencies between reported bank financials and actual transaction volumes, suggesting that criminal insiders may be manipulating records to conceal illicit activities.
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Includes official financial statements, tax filings, and payroll records for a given entity.
-- Allows cross-referencing declared payroll liabilities and withholdings against actual reported headcounts and remuneration to detect potential underreporting.
-- Supports AML investigations by revealing discrepancies or anomalies in tax and financial disclosures, indicating possible payroll tax evasion activities.
-- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Includes official financial statements, tax returns, and related filings.
-- Reveals limited or fabricated financial footprints, indicating potential fictitious activity.
-
-This data underpins the identification of shell companies formed briefly for illicit transactions or fraudulent tax schemes.
-- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Provides official financial statements, tax filings, and business registrations detailing actual revenue, operational capacity, and corporate purpose.
-- Enables comparison of declared foreign capital injections against an entity’s legitimate financial profile to pinpoint discrepancies or lack of genuine commercial rationale.
-- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Covers official financial statements, tax returns, and corporate filings that outline an entity’s financial performance and obligations.
-- Assists investigators in verifying actual financial capacity and legitimate sources of capital purportedly used to meet CBI/RBI thresholds.
-- [Consulting Firm Schemes](https://framework.amltrix.com/techniques/T0098.001) — Provides official financial statements, tax returns, and related filings that help verify declared consulting revenues, operational expenses, and tax compliance. These records enable analysts to detect discrepancies in reported income, identify artificially inflated fees, and confirm whether criminals are using timely tax payments to appear more credible while concealing illicit proceeds.
-- [Agricultural Subsidy Fraud](https://framework.amltrix.com/techniques/T0144.012) — Covers official financial statements, tax returns, and declarations of income or expenses. Comparing reported farm revenues and declared operating costs with subsidy requests can reveal inconsistencies that indicate fraudulent subsidy claims.
-- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Includes official filings such as profit-and-loss statements, balance sheets, tax returns, and comparative valuations for similar entities. Investigators can verify declared purchase prices, revenue, and expenses against standard benchmarks or historical data, identifying overvalued or undervalued acquisitions or overstated profits used to mask illicit funds.
-- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Includes official tax returns, financial statements, and historical filing data.
-- Compares declared income, reported business performance, and past filing patterns against refund claims.
-- Detects discrepancies, elevated refund amounts, or unusually frequent filing cycles linked to fraudulent tax rebates.
-- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Includes official filings such as tax returns, balance sheets, and profit-and-loss statements.
-- Enables comparison of declared income or business revenues against high-value foreign real estate purchases.
-- Supports analysis of financial inconsistencies or anomalies indicative of money laundering activity through offshore property ownership.
-- [Rental Income Schemes](https://framework.amltrix.com/techniques/T0010.004) — - Provides official financial statements, tax returns, and other filings indicating declared rental income.
-- Allows comparison of reported rental revenue with actual deposit data or property ownership records to expose inconsistencies or evidence of laundering.
-- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Official filings and historical financial documents (e.g., tax returns, profit-and-loss statements).
-- AML Relevance: Confirms whether declared wages and business income match legitimate financial history and tax data, helping detect forged or overstated wage records.
-- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Contains official filings, tax returns, balance sheets, and profit-and-loss statements. Reviewing these documents helps confirm or refute an entity’s claimed investment performance and financial stability, flagging inconsistencies indicative of fraudulent activities.
-- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Documents reported financial statements, including wage expenses, payroll taxes, and business income.
-- Allows investigators to compare official wage expenditures against actual cash outflows, revealing concealed labor expenses for undocumented workers.
-- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Provide audited or official financial statements and filings. Investigators compare these records to internal transaction data or user-uploaded documents to detect mismatched balances, manipulated entries, or fabricated invoices.
-- [Dividend Stripping](https://framework.amltrix.com/techniques/T0147.003) — Contains official tax filings and financial statements revealing multiple or duplicative reimbursement claims for the same dividend. Cross-referencing this information with trading data helps uncover fraudulent dividend stripping schemes.
-- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Consolidates balance sheets, profit-and-loss statements, and official tax filings.
-- Verifies reported revenues, operating expenses, and agricultural yields against declared financial data to detect inconsistencies.
-- Identifies inflated or false financial statements used to disguise illicit funds as legitimate agribusiness income.
-- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Discloses officially filed financial statements, tax returns, and related documents. Used to identify mismatches between reported revenues and large amounts funneled through hawala channels, indicating potential illicit activity.
-- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Official filings such as tax returns, balance sheets, and profit-and-loss statements.
-- Comparative analysis can reveal discrepancies between an investment company’s reported activities and its actual financial operations, signaling possible laundering or false reporting.
-- [All-Cash Real Estate Transactions](https://framework.amltrix.com/techniques/T0010.005) — Offers official financial statements, tax returns, and business records to cross-verify declared income or assets with large all-cash real estate purchases, enabling the detection of unsubstantiated funds or unexplained wealth.
-- [Export Overvaluation](https://framework.amltrix.com/techniques/T0147.004) — - Supply official financial statements, tax returns, and other business filings to compare actual revenues, capacity, and tax claims.
-- Cross-check claimed export-related refunds or sudden revenue spikes against reported sales data and industry benchmarks to identify potential overvaluation.
-- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Contains official filings such as audited financial statements, operating expenditures, tax returns, and related documentation.
-- Reveals discrepancies between reported charitable expenditures and actual donation inflows, indicating potential misappropriation.
-- Aids investigators in matching the declared financial activity of non-profits against the real usage of funds.
-- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Include tax returns, financial statements, and official filings of revenue and expenses.
-- Comparing reported payroll expenses and tax liabilities with observed cash wage payouts helps detect under-reported income or hidden wage distributions.
-- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Includes balance sheets, profit-and-loss statements, and tax filings. Reviewing these records can uncover inconsistencies or a complete absence of legitimate financial documentation, which may indicate online-only or fictitious corporate entities.
-- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Comprises official financial statements, profit-and-loss reports, and tax filings.
-- Reveals discrepancies between reported sales and declared income, helping identify fabricated or overstated revenue streams.
-- Corroborates or contradicts claims of legitimate commercial activity through comparison with operational capacity and transactional records.
-- [Protection Payments](https://framework.amltrix.com/techniques/T0049.002) — Includes official financial statements, tax filings, and detailed business expense records. 
-
-- Detects discrepancies between reported income and actual cash deposits that may signal extortion.
-- Highlights unexplained or excessive expenses aligning with protection payment demands.
-- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Review audited financials, tax returns, and reported revenue to validate the insurer’s legitimate business scale.
-- Detect discrepancies or unusually rapid growth in assets, mismatched premiums versus claims, and large tax write-offs suggesting laundering via inflated premiums or bogus claims.
-- [Pension Fund Contributions](https://framework.amltrix.com/techniques/T0037) — Official financial statements and tax filings (e.g., tax returns, audited financials) verify an individual’s or entity’s declared income sources, wealth levels, and tax obligations. This data helps detect discrepancies between reported finances and large or frequent pension contributions, identifying potential illicit fund injections, layering, or unexplained rollovers within pension schemes.
-- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Contains audited financial statements, profit-and-loss reports, and filed tax returns.
-- Assists in identifying revenue inconsistencies, such as reported earnings far exceeding plausible operational capacity.
-- Reveals discrepancies between declared jewelry sales and external market or transactional evidence.
-- [Entertainment Venture Fronts](https://framework.amltrix.com/techniques/T0014.006) — - Contains official financial statements, tax filings, and business registrations.
-- Supports verification of claimed production budgets, event expenses, and sponsorship income in entertainment ventures.
-- Identifies discrepancies between reported income and actual tax declarations or listed expenses that may indicate laundering.
-- [Bond Investments](https://framework.amltrix.com/techniques/T0061.004) — Contains official filings of earnings, taxes, and business revenues. Cross-referencing these records with substantial bond returns helps detect discrepancies, such as significantly higher interest income than reported income, suggesting potential laundering using bond instruments.
-- [Service Contract Manipulation](https://framework.amltrix.com/techniques/T0098) — - Includes financial statements, profit-and-loss records, and tax filings.
-- Compares declared consulting revenues with operational capacity or industry benchmarks.
-- Identifies unsubstantiated or over-inflated revenue claims intended to legitimize illicit funds.
-- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Documents an entity’s financial statements, business performance, and tax filings, revealing discrepancies between declared production volumes and actual revenues. This helps detect undeclared or underreported income linked to illicit mineral sales.
-
----
-
-## [Digital Banking & Cybersecurity Event Data](https://framework.amltrix.com/data-sources/DS0008)
-
-**Description:**
-Information about online and mobile banking activities, including IP logs, device usage patterns, unauthorized access attempts, transaction anomalies, and related cybersecurity events.
-
-### Related Techniques
-- [Self-Hosted Cryptocurrency Wallets](https://framework.amltrix.com/techniques/T0034) — - Provides IP logs, device usage patterns, login timestamps, and alerts on suspicious behavior.
-- Helps detect unusual login patterns, rapid address changes, or dispersed wallet usage indicative of potential money laundering through self-hosted wallets.
-- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Tracks device attributes such as operating system, time zone, language settings, and user-agent details.
-- Helps identify suspicious session anomalies or rapid changes in device fingerprints consistent with rotating proxy usage.
-- Strengthens AML investigations by flagging inconsistent device characteristics originating from potentially anonymized connections.
-- [Educational Institution Schemes](https://framework.amltrix.com/techniques/T0019.001) — - Includes IP logs, device usage patterns, and alerts on unauthorized access attempts within online banking portals.
-- Assists in detecting compromised accounts, unusual login activity, or cybersecurity incidents correlating with the fraudulent redirection of educational institution payments.
-- [Stock Manipulation](https://framework.amltrix.com/techniques/T0094.001) — - Captures IP addresses, device identifiers, and login timestamps across online and mobile trading platforms.
-- Enables detection of multiple trading accounts accessed from the same device or location, helping to uncover coordinated or collusive trading patterns.
-- Highlights suspicious or unauthorized login attempts, supporting the identification of orchestrated manipulation using advanced electronic trading channels.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Logs and analyzes account access patterns, device fingerprints, and profile modification events. Excessive or repeated alterations to personal details after account opening can indicate identity manipulation efforts or account takeovers.
-- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Captures IP addresses, device fingerprints, and session details for online banking, helping identify the repeated use of the same device or IP to deposit checks into multiple accounts under different names. This supports AML investigations of remote deposit capture abuse and potential collusive activity.
-- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — - Captures patch deployment history, vulnerability scans, and intrusion attempts, revealing gaps where core systems may be exploited.
-- Logs cybersecurity events, such as suspicious network traffic or repeated failed authentication attempts, indicating potential compromise of bank infrastructure.
-- Helps link unpatched software vulnerabilities to observed manipulations of AML or transaction monitoring systems.
-- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — Captures IP addresses, device identifiers, and other technical details, enabling the detection of overlapping user fingerprints across supposedly unrelated P2P accounts.
-- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — Logs authentication events, device fingerprints, and IP addresses. This data helps detect multiple or unexpected devices accessing newly opened accounts, indicating possible external control or 'mule herding,' which is commonly seen in money mule recruitment.
-- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - Provides IP logs, device usage patterns, and connection details for each online banking session or transaction.
-- Enables monitoring and flagging of repeated access attempts from known anonymizing networks (e.g., Tor exit nodes, VPN endpoints).
-- Assists investigators in correlating suspicious IP usage or rapid geolocation changes to detect potential misuse of anonymity tools and mitigate laundering risks.
-- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — Includes IP addresses, device identifiers, and geolocation data for mobile payment platforms. This data allows for the detection of device or geographic anomalies, such as multiple wallet registrations from the same device or IP address mismatches. It supports the investigation of layered account usage, cross-border activities, and rapid fund transfers.
-- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — Collects device fingerprints, IP addresses, login timestamps, and other cybersecurity signals within digital banking channels. Correlating these with suspicious voice-based transactions helps uncover deepfake impersonation by spotting anomalous device or network usage.
-- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — - Captures online banking events, including IP usage, device fingerprints, and account access details.
-- Identifies consistent VPN usage in account opening or management activities.
-- Supports AML investigations by correlating suspicious login methods with KYC records to detect potentially hidden user locations.
-- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Tracks failed login attempts, device fingerprints, and suspicious cybersecurity events (e.g., flagged IPs, unauthorized login alerts).
-
-- Supports the detection of compromised accounts by revealing repeated access attempts, new device usage, or known malicious IP indicators.
-- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Includes records of software usage, transaction anomalies, and unauthorized access attempts. Investigators identify unapproved plugins or scripts used to manipulate transaction data in real-time, bypassing standard logs.
-- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Monitors account creation and closure patterns, revealing rapid account turnover potentially linked to transient mining operations.
-- Tracks anomalous login attempts or suspicious device usage associated with mining payment flows.
-- Flags repeated or coordinated account activities that may facilitate the layering of illicit proceeds through multiple digital channels.
-- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Tracks user session information, IP logs, and transaction status changes, highlighting repeated initiation and quick cancellation of small transactions used to gauge thresholds.
-- Supports investigation of abnormal login patterns and rapid reversals, suggesting deliberate testing of AML controls.
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Track device fingerprints, IP addresses, and session metadata to identify repeated usage patterns across supposedly distinct accounts.
-- Detect anomalies in remote onboarding or login behavior to indicate potential impersonation or account takeover.
-- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Captures IP addresses, device usage patterns, and authentication attempts, enabling the detection of multiple remote account creations from the same device or IP range.
-- Identifies the use of proxies, VPNs, or other anonymizing services during account registration or verification.
-- Monitors aborted verification procedures followed by immediate re-attempts under new credentials or data, helping to reveal suspicious patterns indicative of remote verification bypass.
-- [Lottery Winnings](https://framework.amltrix.com/techniques/T0107.001) — Encompasses IP logs, device usage patterns, and login activity for online and mobile platforms. In lottery schemes, this data:
-
-- Detects geographically dispersed IP addresses or multiple devices used for lottery ticket purchases.
-- Flags unusual account access patterns linked to suspicious ticket-buying or prize-redemption activity.
-- Supports investigation of compromised or third-party account usage.
-- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Monitors IP addresses, device fingerprints, and network activity for digital banking sessions.
-- Identifies inconsistencies between a customer’s claimed location and the actual device or network attributes, revealing possible fake identities or impersonation.
-- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — Captures IP addresses, device fingerprints, and usage patterns in online banking environments. It reveals multiple account creations from the same device or IP address and detects anonymizing tools such as VPNs and proxies. This data helps identify unusual remote onboarding behaviors consistent with online identity deception.
-- [Public WiFi Networks](https://framework.amltrix.com/techniques/T0015.003) — - Provides IP logs, device usage patterns, and session metadata from online and mobile banking channels, revealing whether connections originate from public, potentially unsecured hotspots.
-- Identifies VPN or proxy usage layered on public WiFi, helping detect deliberate obfuscation of user location and identity.
-- Correlates multiple session logs to expose suspicious simultaneous or rapid-sequence logins from disparate public IP addresses, indicating potential coordinated misuse.
-- [Onion over VPN](https://framework.amltrix.com/techniques/T0015.005) — - Records login attempts, authentication failures, and suspicious device/browser fingerprints.
-- Highlights anomalies in user session patterns (e.g., sudden IP address changes, usage of known anonymizing IPs).
-- Assists in correlating frequent or failed logins through Tor/VPN networks with potential illicit activity masked by multi-layered encryption.
-- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Encompasses cybersecurity alerts, malware detections, unauthorized access attempts, and suspicious system events.
-- Uncovers malicious code or anomalies specifically designed to alter or erase transaction records.
-- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Tracks IP addresses, device fingerprints, and account creation patterns to identify coordinated or high-risk activities in offshore gambling.
-- Detects large volumes of new high-value accounts or potential fraudulent access attempts, indicating layering schemes.
-
-These data points assist compliance teams in investigating suspicious digital behavior linked to under-monitored offshore gambling sites.
-
----
-
-## [Employee Records](https://framework.amltrix.com/data-sources/DS0028)
-
-**Description:**
-Comprehensive records of employee identities, roles, and relevant employment details, used to track internal accountability and detect potential conflicts of interest or misconduct.
-
-### Related Techniques
-- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — - Provide detailed information on employees' identities, roles, and internal privileges.
-- Help identify staff with elevated permissions or unusual responsibilities that could facilitate internal system manipulation.
-- Support investigations into potential insider collusion or unauthorized overrides of AML controls within the institution's infrastructure.
-- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Maintains comprehensive data on officially registered employees, including their roles, wages, and tax-related information.
-- Exposes discrepancies between declared workforce details and the actual labor force observed on-site, highlighting off-the-books payments to undocumented workers.
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Encompasses detailed internal HR data on employee identities, roles, wages, and employment status.
-- Enables cross-checking of reported employee numbers, compensation amounts, and workforce composition against actual records.
-- Supports detection of hidden or misrepresented employees and underreported wages used in payroll tax evasion schemes.
-- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Details employee identities, roles, and employment history. Frequent staffing changes or limited knowledge transfer in key roles, as reflected in these records, may indicate siloed or intentionally constrained awareness of overall transactions.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Cross-check official staff rosters against wage disbursements to reveal non-existent employees or inflated payroll costs.
-- Identify discrepancies between declared roles and actual work performed on construction projects.
-- Flag large or repeated wage payments to individuals lacking verifiable employment credentials.
-- [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — - Provides official HR data for all employees, including personal details, roles, and employment status.
-- Enables cross-checking of payroll recipients against verified employees to identify ghost employees or inflated workforce counts.
-- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — Contains identity and employment details for betting shop staff, including roles and responsibilities, enabling the detection of potential staff collusion or conflicts of interest. This data helps investigators confirm whether employees are improperly overriding AML checks or ignoring suspicious betting patterns in exchange for financial gain.
-- [Payroll Deduction Loan Repayment](https://framework.amltrix.com/techniques/T0029) — Contains official HR or employer database details, including job position, salary, and employment status, to validate the legitimacy of an individual's payroll deductions. This helps detect fictitious or fraudulent employment arrangements used to obscure illicit loan repayments.
-- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Document employees’ roles, responsibilities, and hierarchical structures.
-- Help detect potential collusion or management override in financial recordkeeping by identifying individuals with the authority to alter accrual entries or bypass internal controls.
-- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Contains detailed information on employees, including identities, roles, and wages. These records can reveal inconsistencies in reported payroll expenditures, such as underpayment or 'ghost' employees, commonly seen in forced labor operations. Cross-referencing employee rosters with actual labor output helps detect exploitation.
-- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Contains data on employee identities, roles, salaries, and employment status.
-- Comparing actual staffing levels with reported payroll outlays can expose ghost employees or inflated headcounts, revealing off-the-books payments indicative of potential money laundering or tax evasion.
-- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Contains official HR or payroll data confirming employee identities, roles, and workforce size.
-- Validates or refutes exaggerated payroll or headcount claims made to justify inflated relief amounts.
-- Helps detect nonexistent employees or erroneous workforce records used to secure larger disbursements.
-- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Document staff roles, responsibilities, and authority levels. Investigators determine whether a single individual has the ability to create, approve, and modify digital transactions, uncovering insufficient segregation of duties that enables manipulation.
-- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Contain identities, roles, and employment history of staff entrusted with managing or approving public fund disbursements.  
-- Identify anomalies such as a single individual holding uncommonly broad financial authority or refusal to follow mandatory leave policies, possibly hiding ongoing embezzlement.
-- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Provide details of employee identities, roles, and payroll data.
-- Help identify false or suspicious wage payments, non-existent employees, and underreported labor in potential forced-labor fronts.
-- Enable cross-checking payroll expenses against actual workforce operations to detect exploitation patterns.
-- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Contains employee roles, salaries, and job responsibilities, enabling cross-referencing of claimed expenses with typical job-related outlays. This helps identify employees filing excessive or anomalous reimbursements and potential collusion, such as multiple employees submitting identical receipts.
-- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Contains comprehensive details on employees, including positions, hire dates, qualifications, and role changes. This data helps detect infiltration by revealing rapid or repeated shifts in senior management or the appointment of unqualified personnel, both of which can signify that criminals are placing loyal individuals in key decision-making roles.
-- [Insider Facilitation](https://framework.amltrix.com/techniques/T0021) — - Include details of employees’ roles, responsibilities, vacation history, disciplinary actions, and training records.  
-- Allow detection of employees who avoid taking leave to hide illicit activities or who have prior compliance issues suggesting high insider risk.
-- [Bribery](https://framework.amltrix.com/techniques/T0006) — - Maintains employee identities, roles, compensation, and leave patterns.
-- Facilitates the detection of unusual increases in personal wealth, refusal to delegate tasks, and other potential red flags of bribery or corruption.
-- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Contains detailed staff employment data, roles, and affiliations within the financial institution.
-- Reveals potential conflicts of interest or unusual staff assignments that could facilitate illicit activities.
-- Supports internal investigations to identify complicit employees who may manipulate compliance measures or reporting processes.
-- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Maintains comprehensive employment data, including the number of staff, roles, payroll information, and dates of employment.
-- Validates whether a call center’s reported workforce aligns with the revenue they claim, revealing potential exaggerations or fictitious staff listings.
-- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Comprehensive details on employee identities, roles, and employment history.
-- AML Relevance: Validates legitimate employee information and helps expose fraudulent or nonexistent employees that are central to the scheme.
-
----
-
 ## [Transaction Logs](https://framework.amltrix.com/data-sources/DS0019)
 
 **Description:**
@@ -2135,6 +1514,131 @@ This directly supports identifying short-lived shell entities used for quick lau
 
 ---
 
+## [Loan Agreements and Credit Facilities](https://framework.amltrix.com/data-sources/DS0032)
+
+**Description:**
+Formal contracts related to lending and credit products—such as personal loans, mortgages, credit cards, and lines of credit—detailing loan amounts, interest rates, repayment schedules, and collateral. These records enable financial institutions to assess borrowers, track repayment patterns, and identify irregular credit usage.
+
+### Related Techniques
+- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Provides details on trade finance and credit instruments, including letters of credit issued for diamond shipments.
+- Helps uncover repeated financing requests tied to the same parcels at inflated valuations without sufficient justification.
+- [Pre-Shipment Finance Manipulation](https://framework.amltrix.com/techniques/T0072) — Includes detailed records of pre-shipment financing terms, such as loan amounts, repayment schedules, disbursement conditions, and collateral requirements. By comparing these agreements with purported export transactions, investigators can identify irregularities or inconsistencies that may indicate misuse of pre-shipment finance.
+- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Includes formal contracts and supporting details for loans, credit cards, and other financing.
+- Helps confirm whether submitted documents (e.g., invoices, applications) align with legitimate funding needs or signal fraudulent borrowing.
+- Allows investigators to cross-reference financed amounts with identified bogus claims, revealing potential false documentation or repetitive fraud patterns.
+- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Contains detailed loan contracts, repayment schedules, and credit facility terms for real estate acquisitions and refinances.
+- Helps uncover rapid or repeated refinancing of properties soon after purchase, a tactic commonly used to layer or extract illicit proceeds in high-cash-flow real estate schemes.
+- [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Contains records of loans, lines of credit, and the collateral used to finance trade transactions.
+- Identifies multiple invoicing schemes where the same invoice or shipping documentation is submitted for repeated financing requests.
+- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — These records provide details on the authorized borrower, repayment terms, and declared funding sources for loans and credit lines. By comparing actual repayments against documented agreements, financial institutions can detect suspicious third-party payments or structured deposits by individuals not listed in the contract, thereby uncovering potential layering or disguised ownership of funds.
+- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Provides formal contracts outlining syndicated loan terms and structures, including participating lenders, interest rates, repayment schedules, and collateral.
+- Facilitates identification of unusual or inflated loan amounts, repetitive amendments, or overlapping participants, revealing potential collusion or concealed beneficial ownership in trade finance arrangements.
+- [Junket-based Casino Transfers](https://framework.amltrix.com/techniques/T0107.004) — - Details formal credit arrangements between casinos, junket operators, and VIP customers, including loan amounts, interest rates, and repayment terms.
+- Identifies large or unjustified credit lines granted without legitimate wealth documentation, raising suspicion of money laundering.
+- [Payroll Deduction Loan Repayment](https://framework.amltrix.com/techniques/T0029) — - Include formal loan contracts and repayment schedules, detailing amounts, interest rates, terms, and associated collateral.
+- Facilitate cross-checking of actual repayment transactions against agreed-upon schedules to detect unusual repayment acceleration or multiple overlapping payroll-deduction notes.
+- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Facilitates thorough verification of letters of credit, standby letters of credit, and other trade finance instruments used in purported transactions. By reviewing loan terms, borrowing parties, repayment schedules, and beneficiary details, investigators can detect inflated or fraudulent trade transactions.
+- [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Documents details of credit lines, loan amounts, and collateral. By reviewing these records, one can detect overlapping or simultaneous financing instruments (e.g., multiple letters of credit) tied to the same underlying goods, revealing repeated invoice submissions.
+- [Loan Schemes](https://framework.amltrix.com/techniques/T0098) — - Contains principal amounts, repayment schedules, collateral details, borrower-lender identities, and other obligations.
+- Helps detect anomalies like repeated restructuring, strategic defaults, or nonexistent collateral arrangements.
+- Enables verification of the stated loan purpose against the actual use of funds, exposing fictitious or sham loan agreements.
+- [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Contains contractual records of letter of credit issuances, amendments, and repayment terms. Analyzing these documents helps identify frequent amendments, unusually large advance payments, or other credit irregularities symptomatic of red/green clause abuse.
+- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Contains details of loans, collateral, repayment schedules, and borrower profiles.
+- Detects suspicious collateral-based loans secured by precious metals or gemstones lacking proper ownership or origin documentation.
+- [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Comprehensively details the underlying collateral, supporting documentation, and obligations used to secure financing. This is useful in uncovering inflated or duplicated invoices used as collateral to disguise nonexistent transactions and launder funds under the pretense of legitimate credit arrangements.
+- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — Provides detailed information on trade finance instruments such as letters of credit and bills of exchange, including payment terms, collateral details, and parties involved. This data source is pivotal for identifying unusual amendments, inflated administrative costs, and repetitive re-invoicing structures that obscure the true value or legitimacy of shipped goods in trade-based schemes.
+- [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — Includes records of credit terms, disbursement, and repayment schedules tied to Bill of Exchange discounting or financing. Cross-referencing these details can reveal repayment from illicit funds, early payoffs, or misalignment with legitimate trade flows.
+
+---
+
+## [Fraud Data](https://framework.amltrix.com/data-sources/DS0033)
+
+**Description:**
+Information on known or suspected fraudulent activities, including identity theft, payment card fraud, or scam patterns, compiled from reported incidents, industry warnings, or shared alerts.
+
+### Related Techniques
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Collects reported incidents and patterns of identity fraud, including known methods of forging documents or impersonating legitimate customers.
+- Allows cross-referencing of suspicious identity profiles against documented fraud cases.
+- Enhances detection by highlighting recurring impersonation patterns reported within the institution or by industry alerts.
+- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Compiles details of known or suspected fraudulent activities, including identity theft incidents and document-forgery methods. By matching incoming early superannuation withdrawal requests against these documented fraud patterns, investigators can quickly detect and block potentially forged or stolen identity claims.
+- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Contains known fraud or financial crime records for individuals or entities.
+- Helps identify high-risk parties engaged in questionable insurance or reinsurance schemes.
+- [Cross-Chain Bridges](https://framework.amltrix.com/techniques/T0005.002) — - Consolidates information on addresses and entities flagged for suspicious or illicit on-chain activities.
+- Assists in identifying linkages between cross-chain bridge transactions and known fraudulent addresses or watchlists.
+- Facilitates rapid detection of bridging patterns involving addresses previously reported for scams, hacks, or other unauthorized activities.
+- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Aggregates known or suspected fraudulent wallet addresses, flagged entities, and scam patterns.
+- Correlates donor or organizational information with existing fraud databases to identify potential illicit involvement or repeated risk signals.
+- Helps detect addresses using mixing or tumbling services previously associated with suspicious activity.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Aggregated information on known or suspected fraudulent activities includes identity theft reports, compromised personal data, and forged documentation patterns. By cross-referencing customer applications and account changes against these records, financial institutions can identify potential identity manipulation and investigate suspected synthetic or stolen identities more effectively.
+- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Consolidates reports of known or suspected fraud incidents, alert lists, and scam patterns.
+- Helps institutions detect repeat offenders, suspicious methodologies, or new fraud typologies.
+- Enables more targeted investigations where similar or identical fraud indicators appear (e.g., false invoicing patterns).
+- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Contains records of known or suspected fraudulent activities, identity theft cases, and scam patterns from industry sources and shared alerts.
+- Directly supports the detection of repeat fraudsters or stolen IDs used to apply for relief, enabling proactive identification of potential scams.
+- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Provides aggregated records on known or suspected fraudulent checks, forged or altered instruments, and repeated deposit scams. By cross-referencing newly deposited checks with these fraud databases, institutions can identify potential matches or suspicious patterns associated with remote deposit capture more quickly.
+- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Aggregates known or suspected identity theft records, compromised documents, and other fraud patterns.
+- Enables direct cross-checking of user-submitted IDs against known fraudulent profiles, revealing attempts to bypass remote verification with stolen or forged credentials.
+- [Unemployment Insurance Fraud](https://framework.amltrix.com/techniques/T0144.008) — - Consolidates information on identity theft, payment card fraud, and scam patterns.
+- Supports the detection of stolen or synthetic IDs used in fraudulent unemployment claims by cross-referencing known fraudulent identities.
+- Shares industry alerts on emerging unemployment fraud schemes, facilitating early identification of suspicious claims or accounts.
+- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — Provides records of known or suspected fraud, including scam patterns and reported incidents. This helps flag potential romance or social media recruitment approaches associated with money mule activities and identify accounts linked to similar fraud typologies.
+- [Cheque Fraud](https://framework.amltrix.com/techniques/T0144.010) — - Consolidates records on known or suspected fraudulent activities, including stolen checks, identity theft incidents, and frequently used scam techniques.
+- Enables cross-referencing of ongoing check fraud patterns or flagged payors with existing fraud alerts, supporting earlier detection of high-risk deposits.
+- [Online Gambling](https://framework.amltrix.com/techniques/T0017) — - Contains records of known or suspected fraudulent identities, including stolen or compromised payment credentials.
+- Enables detection of accounts opened using fraudulent details or stolen data.
+- Helps identify the use of compromised payment cards to fund online gambling accounts, linking suspicious identities to broader fraud patterns.
+- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — - Consolidates internal and shared industry intelligence regarding fraudulent activities.
+- Logs incidents of suspected or confirmed counterfeit currency, such as repeated serial numbers or device-flagged anomalies in deposited banknotes.
+- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Contains records of compromised payment methods, stolen card details, and prior fraudulent activity.
+- Supports identification of high-risk in-game currency acquisitions funded by illicit sources or unauthorized payment methods.
+- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — Tracks known or suspected fraudulent activities, including stolen credit cards, compromised accounts, and scam patterns. It helps detect repeated small-value card purchases or suspicious payment methods used to load gaming wallets, which are common tactics for laundering funds in virtual worlds.
+- [Online Game Currency Conversion](https://framework.amltrix.com/techniques/T0018) — - Consolidates repositories of known or suspected fraudulent activities related to stolen digital items, compromised gaming accounts, or ongoing scam patterns.
+- Enables financial institutions to flag transactions associated with recognized fraudulent game assets, preventing the rapid monetization of illicit tokens.
+- [Instant Exchange Services](https://framework.amltrix.com/techniques/T0032) — - Contains blacklisted addresses, compromised wallets, or known fraudulent accounts associated with prior illicit activity.
+- Supports rapid identification of suspected funds derived from or destined for illegal sources when instantly swapped or layered.
+- [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Aggregates known or suspected instances of fraudulent activity linked to individuals or entities.
+- Identifies parties with a history of document forgery or trade-based fraud.
+- Assists in detecting repeat offenders exploiting documentary collection mechanisms.
+- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Contains information on institutions or entities previously flagged for fraudulent activities or compliance breaches.
+- Assists in detecting lenders with a history of risky or noncompliant practices, possibly enabling syndicated trade loan manipulation.
+- [Lottery Scams](https://framework.amltrix.com/techniques/T0144.015) — Provides information on known or suspected fraudulent activities and scam patterns, including reported lottery scam typologies, associated email addresses or phone numbers, and patterns of advance fee fraud. Investigators use these details to cross-reference repeat perpetrators, identify recurring victim complaints, and detect transactions matching known lottery scam behaviors.
+- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Contains records of known fraudulent payment methods or compromised payment cards.  
+- Enables detection of deposits originating from stolen cards or flagged payment sources used to fund chip dumping accounts.  
+- Supports investigations by correlating fraudulent payment activity with rapid or unusual chip losses to conspirator accounts.
+- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Contains information on known or suspected fraudulent activities, entities, and individuals.
+- Flags tax agents or intermediaries with a history of involvement in fraudulent refund schemes.
+- Helps uncover networks of repeat offenders and patterns consistent with tax rebate fraud.
+- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Contains alerts, reports, and patterns associated with known scams, including telemarketing and phone-based fraud.
+- Facilitates the identification of vulnerable individuals, such as older adults, who may have been coerced into sending funds under false pretenses.
+- [Chargeback](https://framework.amltrix.com/techniques/T0091) — Fraud data consolidates reported and known fraudulent activities, including:
+
+- Documented patterns of identity theft, payment card fraud, and chargeback-related scams.
+- Correlation with known fraudulent profiles or blacklisted entities.
+
+By comparing disputed transactions against known fraud trends, investigators can identify malicious patterns underlying fraudulent chargebacks more quickly.
+- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Compiles reports of known or suspected fraudulent behavior, scam patterns, and associated entities. Financial institutions can cross-reference new investment clients or promoters with existing fraud alerts to identify potential links to previous scams or social engineering efforts.
+- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Contains detailed reports of known or suspected fraud incidents, including romance scam tactics and blacklisted identities (e.g., phone numbers, email addresses, account credentials).
+- Enables investigators to match ongoing suspicious activity against prior romance scam patterns, quickly identify repeat offenders, and spot recurring stories or ruses typical of romance mule recruitment.
+- Facilitates faster detection of emerging scam trends and potential links to organized fraud networks, strengthening AML efforts against romance scam recruiters.
+- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Consolidates records on reported and confirmed fraud incidents, including pig butchering scam typologies, associated phone numbers, email addresses, wallet addresses, or websites involved in scams.
+- Facilitates early detection by matching new activity against known fraudulent patterns, enabling timely intervention, enhanced investigations, and potential account restrictions.
+- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Contains records of known or suspected fraudulent activities, stolen personal data, or compromised identity details.
+- Supports cross-referencing newly submitted identity information against blacklists or detected fraud cases to identify potential fake or stolen KYC documentation.
+- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Consolidates histories of known or suspected fraud incidents, including impersonation scams, associated methods, and impacted accounts.
+
+- Helps investigators identify repeat or correlated deepfake-based scams and cross-reference impersonation techniques across multiple customer accounts or institutions.
+- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — - Compiles lists of flagged or blacklisted entities, accounts, and addresses linked to suspicious or illicit activities.
+- Helps identify vendor bank details matching known fraud or sanction databases, suggesting potential fake vendor involvement.
+- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Aggregates known scam patterns, reported incidents, and suspected fraudulent activity linked to false charitable appeals.
+- Supports investigative efforts by matching current fundraising behaviors with established fraud typologies or alerts.
+- [Insider Facilitation](https://framework.amltrix.com/techniques/T0021) — - Includes whistleblower tips, reported allegations of misconduct, and known or suspected internal fraud incidents.  
+- Helps uncover insider wrongdoing by consolidating internal reports and alerts on potential employee collusion or other misconduct.
+- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Centralizes reported incidents of unauthorized transactions, phishing attempts, or disputed charges.
+- Highlights patterns of disputed activity and connects known fraud events to compromised accounts, aiding in ongoing investigations.
+- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — Contains information on known or suspected fraudulent activities (e.g., scam phone numbers, email addresses, and patterns) specifically associated with advance fee fraud schemes. Financial institutions can cross-reference suspicious incoming payments or customer profiles against documented scam indicators, thereby enhancing the detection and investigation of potential 419 or lottery scam transactions.
+
+---
+
 ## [Individual, Entity & Public Records Databases](https://framework.amltrix.com/data-sources/DS0020)
 
 **Description:**
@@ -2252,378 +1756,6 @@ Centralized platforms for storing, organizing, and managing a variety of records
 - [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Store and organize relevant legal, financial, and corporate documents, including formation records, contracts, and due diligence files. By reviewing version histories, access logs, and stored documents, investigators can identify inconsistencies, missing data, or other anomalies linked to suspicious intermediary activities.
 - [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — - Central storage of official tender documentation, including bid submissions and withdrawal notices.
 - Version control and audit trails help detect synchronized proposals, last-minute amendments, and abrupt withdrawals, indicating possible collusive bid manipulation.
-
----
-
-## [Product & Service Usage Data](https://framework.amltrix.com/data-sources/DS0010)
-
-**Description:**
-Consolidated data on how customers utilize financial products and services, including usage frequency, transaction volumes, product types, and related usage metrics.
-
-### Related Techniques
-- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — - Details how accounts utilize financial products and services, including usage frequency, transaction volumes, and service types.
-
-By comparing typical diplomatic mission usage with actual activities, investigators can detect anomalies, such as personal expenditures or sudden spikes in service usage, pointing to potential misuse of diplomatic privileges.
-- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Shows how insurance policies are utilized, including the frequency of claims, early cancellations, or unusual usage patterns.
-- Reveals abnormal usage such as short policy durations, large refunds, or partial surrenders, indicating potential manipulation.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Consolidates information on a customer's typical usage patterns and transaction volumes across financial products.
-- Helps identify anomalous spikes in product usage (e.g., sudden or repeated purchases of expensive goods) that may indicate laundering via high-value asset transactions.
-- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — - Documents the normal range and frequency of product or service usage (e.g., transaction size, refund rates) under typical merchant conditions.
-- Highlights anomalies such as unusual spikes in refund or credit activity and repetitive small incoming payments without legitimate rationale.
-- Enables investigators to spot funneling or structuring tactics designed to commingle illicit proceeds with normal merchant transactions.
-- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — Shows how accounts engage with the gaming platform (e.g., login frequency, game progression, social interactions). Comparing normal user behavior against accounts focused on frequent digital asset trades without genuine gameplay helps detect laundering in virtual worlds.
-- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Tracks customer usage patterns across financial products, including remote deposit capture, detailing sudden shifts in deposit channel preferences or high-value check deposits. Such data aids AML detection by identifying anomalous RDC usage and deviations from expected customer behavior.
-- [Insurance Policy Overfunding](https://framework.amltrix.com/techniques/T0090.002) — - Monitors multiple insurance product purchases under a single customer account and subsequent early redemptions or cancellations.
-- Identifies unusual usage timelines, such as policy cancellations soon after purchase, which are inconsistent with normal policy life cycles.
-- Tracks changes in beneficiary details shortly before disbursement requests, potentially indicating layering attempts.
-- Highlights customer willingness to incur financial penalties or fees for quick withdrawals, suggesting laundering through policy surrenders.
-- Reveals cross-institution or historical patterns of repeated purchase-and-redeem cycles, indicating systematic money laundering behavior.
-- Captures customer focus on early redemption terms, signaling potential misuse of flexible insurance products.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Details how a business or account holder utilizes specific financial products and services, including usage frequency and transaction methods. This helps identify investments made predominantly in cash or through opaque channels that deviate from sector norms.
-- [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — - Tracks the lifecycle of insurance products, including policy inception, premium schedules, and early surrender events.
-- Identifies patterns of frequent or early surrenders, highlighting potentially illicit layering or integration through seemingly legitimate insurance payouts.
-- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Consolidates customer usage patterns across financial products and services.
-- Highlights sudden or unusual increases in collectible auction activity by customers not previously engaged in such trading.
-- Detects abrupt shifts in usage volumes that may signify layering or integration of illicit funds under the guise of collectible transactions.
-- [Loyalty Points](https://framework.amltrix.com/techniques/T0106) — Tracks historical usage patterns of loyalty programs, including normal accumulation and redemption behaviors, enabling the detection of sudden changes in point usage volume or frequency. This helps uncover abrupt increases or rapid redemptions commonly associated with the layering of illicit funds through loyalty schemes.
-- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Monitors changes in an entity’s product or service lines to newly introduce offshore gambling.
-- Tracks usage frequency and transaction volumes tied to gambling services, detecting anomalies or sudden spikes.
-
-These insights confirm the legitimacy of declared gambling operations and flag abrupt shifts in business focus indicative of potential money laundering schemes.
-- [Financial Product Overfunding](https://framework.amltrix.com/techniques/T0086) — Aggregates detailed metrics on how financial products are actually utilized, including usage frequency, transaction volumes, and product feature engagement. For overfunding schemes, it reveals customers who show minimal legitimate interest and instead focus on rapid, high-volume deposits and early withdrawals, indicating potential laundering.
-- [Foreign Exchange Manipulation in Trade](https://framework.amltrix.com/techniques/T0081) — - Provides insights into how customers utilize specific financial products and services, including frequency, volumes, and product types.
-- Reveals patterns where foreign exchange or hedging products are deployed gratuitously or at odds with a company’s stated operational needs.
-- Aids in flagging customers whose FX usage deviates significantly from their usual business profile, indicating potential manipulation.
-
----
-
-## [Open-Source Intelligence (OSINT)](https://framework.amltrix.com/data-sources/DS0011)
-
-**Description:**
-Publicly available information from websites, social media platforms, news outlets, and public records. This may include user profiles, corporate announcements, and other open data relevant to verifying identities and analyzing associations.
-
-### Related Techniques
-- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Gleans publicly available information from social media, online forums, and websites to verify personal or business claims.
-- Identifies negative news or scam alerts about fraudulent trading platforms promoted in pig butchering.
-- Corroborates suspicious relationship-building activities or questionable investment endorsements.
-- [Front Company](https://framework.amltrix.com/techniques/T0014) — - Includes public records, website data, and social media posts to verify physical premises and examine the legitimacy of stated operations.  
-- Detects inconsistencies when businesses claim active operations at addresses that appear vacant, shared, or virtual, suggesting a possible front.
-- [Online Game Currency Conversion](https://framework.amltrix.com/techniques/T0018) — - Gathers publicly available data from the dark web, social media, and other sources, including listings of stolen gaming assets.
-- Assists in correlating suspicious in-game items, compromised accounts, or large-scale item theft with potential laundering schemes.
-- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — - Includes publicly accessible data from social media, forums, and websites advertising quick-money schemes or job offers targeting potential money mules.
-- Provides insights into mule recruitment networks and communications, enabling analysts to cross-reference online postings with individuals opening new accounts.
-- Reveals social media patterns or user interactions that indicate potential involvement in organized mule activities.
-- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — Encompasses publicly available data from websites, social media, news outlets, and public records. This information helps identify duplicate product listings, verify inconsistent business claims, and detect newly established websites with suspiciously high transaction volumes or minimal online presence, revealing potential fraudulent e-storefronts.
-- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Gathers publicly accessible information from media, websites, and social platforms to confirm affiliations and identify risks.
-- Verifies connections between payers and individuals employed by border or port authorities who may be complicit in smuggling.
-- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Collects publicly available data from news articles, social media, corporate announcements, and other open platforms about professional intermediaries. This enables investigators to uncover adverse information, suspicious associations, or regulatory red flags linked to these service providers.
-- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — - Aggregates publicly accessible information, including social media posts, online marketplaces, and specialized forums.
-- Can reveal possession or advertisement of counterfeiting equipment, suspicious behaviors, or associations not captured in traditional banking data.
-- [Insurance Annuities](https://framework.amltrix.com/techniques/T0087) — - Aggregate publicly available information on intermediaries or brokers, including websites, social media, and news sources.
-- Verify regulatory status and licensing, identifying potential unlicensed or complicit operators.
-- Check for negative media coverage, historical sanctions, or collusion.
-
-OSINT investigations support detecting rogue or uncredentialed brokers who may facilitate illicit annuity schemes.
-- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Incorporates publicly available information—websites, social media, public records—to verify claimed operations.
-- Identifies lack of valid business premises, employees, or other signs of a functional enterprise.
-- Corroborates (or refutes) reported commercial activities for shell company detection.
-- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — Collects publicly available information from websites, social media, and online forums to identify suspicious or misleading job postings that promise easy income for transferring funds, a key indicator of money mule recruitment.
-- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — - Publicly accessible information from media outlets, websites, and social platforms.
-
-Open Source Intelligence (OSINT) can uncover reports of unusual diplomatic shipments, abuses of immunity, or repeated diplomatic pouch usage to transport financial instruments, aiding investigators in corroborating suspicious activity claims.
-- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Identifies cloud-based or remote mining providers widely reported to have negligible KYC or AML controls.
-- Correlates negative news, user reviews, or regulatory warnings about mining platforms that bad actors exploit.
-- Provides context on emerging trends, enabling investigators to pinpoint newly listed unregulated mining services.
-- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Gathers publicly available data from social media and other online platforms regarding campaign details, user aliases, and beneficiary information.
-- Enables monitoring of altered or repeatedly re-launched fundraising campaigns, revealing potential deceptive practices in fraudulent social media fundraising.
-- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - Collects publicly available information, including any dark web affiliations, onion addresses, or marketplace references.
-- Assists in correlating anonymized financial transactions with reported dark web activities, identifying potential links to illicit marketplaces or hidden user identities.
-- [Renovation Cost Manipulation](https://framework.amltrix.com/techniques/T0124) — - Gathers publicly available information, such as local building regulations, licensing data, and contractor business profiles.
-- Enables verification of contractors’ operational histories and reported construction projects, identifying fictitious or unsubstantiated renovation claims.
-- [Piracy](https://framework.amltrix.com/techniques/T0148) — Publicly available information from news outlets, social media, and maritime forums regarding piracy incidents, ransom demands, or facilitators supports investigations by revealing potential networks, negotiation patterns, or newly emerged suspects tied to ransom laundering.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Publicly available data from social media, news sources, and other online platforms can confirm or contradict customers' submitted personal details. This information helps identify inconsistencies or evidence of stolen or fabricated identities involved in identity manipulation schemes.
-- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Data elements: Publicly available information, such as player market valuations, club ownership disclosures, media reports on sponsors, and industry analytics.  
-- AML Use: Enables cross-referencing public player valuation benchmarks, confirming sponsor legitimacy, and verifying reported attendance figures, helping to detect artificially inflated revenues and questionable sponsor arrangements.
-- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Includes information from public websites, social media platforms, and news outlets, which may contain misleading or false statements regarding securities or assets.
-- Helps detect pump-and-dump schemes by identifying coordinated promotional campaigns or negative disinformation that artificially manipulates market sentiment.
-- [Investment Fund Manipulation](https://framework.amltrix.com/techniques/T0097) — Publicly available information, including news articles, corporate websites, and social media, can reveal contradictions in a fund’s declared operations, beneficial ownership, or performance claims, potentially exposing manipulative practices.
-- [Crowdfunding Campaign Manipulation](https://framework.amltrix.com/techniques/T0044) — - Gathers publicly available data from social media, news outlets, and official campaign pages.
-- Assists in validating the authenticity of fundraising narratives by identifying vague or inconsistent details.
-- Helps detect multiple campaigns operated by the same entity or overlapping beneficiary information.
-- [Social Media Mule Recruitment](https://framework.amltrix.com/techniques/T0140.001) — - Gathers publicly available social media data, online postings, and user reports.
-- Identifies suspicious recruitment ads, scam alerts, or negative coverage regarding purported social media 'employers.'
-- Correlates the timing of job postings or discussions with observed account activity, supporting direct linkage to money mule schemes.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Involves publicly available information from websites, social media, and news outlets.
-- Helps confirm whether any genuine promotional or marketing campaigns actually occurred, thereby detecting fabricated or nonexistent sponsorship activities used to launder illicit funds.
-- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Provides publicly available data on phone numbers, domain registrations, IP addresses, and other digital footprints.  
-- Enables verification of newly registered domains or unrecognized phone numbers used in deepfake impersonation attempts, helping flag suspicious contact points not associated with legitimate account holders.
-- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Aggregates publicly available data (websites, social media, official announcements) on purported lotteries, timeshares, or inheritance processes.
-- Assists in verifying whether advertised schemes are genuine or part of advance fee fraud by uncovering discrepancies or confirming there is no legitimate underlying entity.
-- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Provides reference data on known Tor exit nodes, proxy IP addresses, and suspicious hosting services.
-- Enables cross-checking of session and transaction IPs against publicly documented anonymizing networks.
-- Helps investigators identify IP ranges frequently associated with criminal or high-risk proxy usage, thereby enhancing AML detection and investigation capabilities.
-- [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — - Provides publicly available information on auction house policies and participant identity requirements, uncovering potential gaps in AML controls.
-- Identifies private or sealed bidding processes that facilitate anonymity and hinder oversight.
-- Supports investigations by revealing unregulated or high-risk auction platforms frequently used to conceal illicit funds.
-- [Cross-Chain Bridges](https://framework.amltrix.com/techniques/T0005.002) — - Aggregates publicly available information about decentralized bridge platforms, including KYC policies and user experiences.
-- Allows investigators to identify minimal-KYC or non-compliant bridges used to facilitate illicit cross-chain transfers.
-- Supports enhanced due diligence by verifying public disclosures (e.g., social media, community forums, platform announcements) around cross-chain services and user activities.
-- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — Includes publicly available data from websites, social media, forums, and news outlets. Investigators can detect abrupt project website shutdowns, unverified or anonymous online personas, and social media hype campaigns, which are warning signs of a rug pull. OSINT also helps verify project claims and track online footprints that may reveal fraudulent or rapidly abandoned crypto ventures.
-- [Phishing Mule Recruitment](https://framework.amltrix.com/techniques/T0140.002) — - Provides domain registration details, social media, and public postings.
-- Enables checks for newly registered or impersonated domains and unrealistic online job adverts.
-- Helps identify phishing or scam recruitment tactics pointing to money mule recruitment schemes.
-- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Collects publicly available information (e.g., company websites, social media, business directories) to verify vendor legitimacy. Discrepancies between claimed vendors on expense reports and publicly documented entities can reveal shell or non-existent vendors used for fraudulent expense reimbursements.
-- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — Aggregates publicly available data from news outlets, social media, and websites to identify reported incidents of artifact theft, looting, or suspicious auctions. This information can verify or refute provenance claims, highlight known smuggling networks, and reveal any publicly documented controversies related to the parties or artifacts.
-- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Aggregates publicly accessible data from websites, social media, news articles, and other open records.
-- Confirms whether a listed company address is merely virtual or a mailbox service, indicating potential misuse of a shelf company lacking any real operational footprint.
-- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Verifies the legitimacy of registered business addresses, revealing virtual offices or mail-drop services.
-- Corroborates the absence of genuine commercial premises.
-
-This helps confirm ephemeral shell companies that lack a real operational footprint.
-- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Gathers publicly accessible data such as online profiles, social media posts, and scammer blacklists.
-- Assists investigators in correlating suspicious account usage or identities with known romance scam masterminds or commonly reported ruses.
-- Facilitates cross-referencing of personal details against widely circulated romance scam scripts or flagged recruiter profiles.
-- [Custodial Mixers](https://framework.amltrix.com/techniques/T0003.001) — - Aggregates publicly available information on custodial mixer operators, including location and regulatory status.
-- Assists in identifying mixers operating in jurisdictions with minimal AML oversight or those flagged for illicit activities, thereby supporting enhanced due diligence.
-- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Gathers publicly available information from websites, social media, and other open data sources.
-- Assists in detecting online advertisements or solicitations of sexual services, linking them to illicit financial flows.
-- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Publicly available information from social media platforms, websites, and online forums.
-- Detects suspicious activities or communications referencing the grooming and exploitation of minors, enabling more targeted financial investigations.
-- [Tokenized Fundraisings](https://framework.amltrix.com/techniques/T0144.013) — - Aggregates publicly available information such as social media updates, domain registrations, corporate announcements, and other online data.
-- Validates project documentation and team credentials by comparing them against credible sources and identifying plagiarized materials.
-- Detects sudden removal or alteration of websites or social media profiles, signaling potential exit scams or fraudulent conduct.
-- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Provides publicly accessible data—including social media, press releases, and NGO/grant registrations—that can validate or refute claimed philanthropic activities. In the event of sham NGO or foundation usage within agribusiness or charitable contexts, OSINT helps confirm the absence of genuine charitable operations.
-- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Compiles publicly available information, such as online forums, auction listings, and dealer credentials.
-- Supports verification of claimed provenance and valuation for collectibles, detecting inconsistencies or missing documentation.
-- Identifies unverified or questionable dealers lacking legitimate track records.
-- Cross-references external data to confirm the authenticity of claimed sales or the existence of particular high-value items.
-- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Publicly available information from social media, news outlets, and other open data sources.
-- AML Relevance: Helps detect nonexistent or dubious employment histories and spot red flags like fake profiles or inconsistent public records.
-- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Aggregates publicly available information, such as social media, news reports, and web content, to verify declared ownership structures and identify undisclosed relationships. This process helps uncover adverse media or hidden affiliations that may confirm proxy arrangements.
-- [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — OSINT involves gathering publicly available information from websites, social media, and other open sources to verify a firm's actual business presence, operational footprint, and staff. These details help identify virtual or shell offices that may indicate a fictitious consulting setup.
-- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — Includes public data from websites, social media, and other open channels, enabling the monitoring of unregulated online marketplaces, suspicious digital advertising, and unverifiable pharmaceutical brand promotion to help detect counterfeit medicine networks.
-- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Includes publicly accessible information from websites, social media, and forums. This data helps scrutinize promotional claims, track abrupt changes in disclaimers, and analyze recruitment tactics used in fraudulent 'guaranteed return' investment schemes.
-- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Collect publicly available information from job boards, social media, and other online platforms.
-- Aid in detecting unrealistic recruitment ads, mass unsolicited offers, or suspicious online communication patterns.
-- Help verify employer legitimacy and identify posts referencing quick payment processing jobs with minimal skills required.
-- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Includes publicly available information from websites, social media, and news outlets about third-party developers or software tools used for transaction manipulation. Investigators verify whether external parties are offering or facilitating digital document forgery or unauthorized transaction editing.
-- [Node Exchange Provisioning](https://framework.amltrix.com/techniques/T0013.003) — Aggregates publicly available information (e.g., websites, social media, news) that may reveal unregulated money exchangers, informal networks, or references to off-the-record currency exchanges. By examining this data, investigators can identify key players or brokers facilitating NEP.
-- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Collects publicly accessible information, such as social media, online forums, and web content.
-- Identifies discussions or recruitment postings for underground cash courier or informal money-transfer networks.
-- Supports AML investigations by uncovering potential relationships or organizational structures that facilitate bulk cash smuggling.
-- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Combines public records, news articles, and local sources to verify actual farming operations or the legitimacy of NGOs/foundations claimed to support agribusiness.  
-- Identifies whether agribusinesses exist in remote or non-productive locations and reveals any lack of real activity.  
-- Detects potential shell foundations or NGOs by confirming or refuting reported philanthropic or operational activities in the agricultural sector.  
-- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Aggregates public information from websites, social media, forums, and surface or dark web listings.
-- Detects advertisements for precursor chemicals, equipment, and potential leads on supplier or broker networks.
-- Assists in investigating suspicious entities and verifying the legitimacy of claimed business operations.
-- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Publicly available information from websites, social media, corporate registries, and news outlets.
-- Helps verify the investment company’s stated operations and legitimacy, flagging minimal online footprints or contradictory public information indicative of shell or front entities.
-- [Sector-Specific Document Manipulation](https://framework.amltrix.com/techniques/T0012.003) — - Publicly accessible information from websites, media outlets, social networks, and industry directories is used to verify whether purported licensing authorities or documents exist and match official references.
-- This enables the detection of fabricated credentials or organizations by cross-checking claimed sector compliance against recognized regulatory bodies and published industry standards.
-- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — Provides publicly available reference data on market pricing for virtual items, external RMT platforms, and user activities. This supports the detection of inflated or irregular pricing structures and the identification of unregulated marketplaces facilitating cross-platform trades.
-- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Leverages publicly accessible data sources, such as domain registrations, website content, and contact details, to identify suspicious overlaps or entire absences of legitimate activity associated with virtual enterprises. OSINT can reveal multiple entities sharing identical addresses, phone numbers, or other corporate details, suggesting potential shell setups.
-- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Gathers publicly accessible data from news outlets, social media, and investigative reports.
-- Provides insights on private couriers, hidden shipment methods, or emerging smuggling trends related to precious commodities.
-- [Protection Payments](https://framework.amltrix.com/techniques/T0049.002) — Aggregates public data, such as news articles, social media, and publicly available records, on individuals and entities. 
-
-- Verifies if recipients labeled as charity, donation, or membership fee beneficiaries are actually paramilitary or extremist groups demanding protection payments.
-- Helps confirm or refute suspicious affiliations not evident in internal banking data.
-- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Verify the physical presence, staff, and operational legitimacy of the captive insurer.
-- Uncover external media or public records revealing nonexistent offices, fake claim events, or questionable business backgrounds of key personnel.
-- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Aggregates publicly accessible data such as brand information, corporate announcements, and product authenticity details.
-- Allows verification of claims about jewelry origin, quality, or business legitimacy by cross-checking publicly available information.
-- Assists in detecting misrepresentations or contradictions in advertised versus actual business operations.
-- [CBI or RBI-Based Identity Acquisition](https://framework.amltrix.com/techniques/T0024.001) — - Collects publicly accessible data from websites, social media, and news reports to verify the legitimacy of individuals and agents.
-- Uncovers unlicensed intermediaries or suspicious practices in CBI/RBI applications, including inflated fees or questionable accreditation.
-- Supports AML detection by revealing the presence of fraudulent or non-compliant advisors and identifying red flags in applicant backgrounds.
-- [Political Contributions](https://framework.amltrix.com/techniques/T0056) — - Consists of publicly available records, including news articles, social media, and official announcements, useful for verifying claimed lobbying activities.
-- Allows cross-checking a lobbyist’s or donor’s public profiles, ensuring stated political or advocacy engagements are genuine.
-- Detects inconsistencies between reported lobbying expenses and verifiable public events or hearings.
-- [Match-Fixing](https://framework.amltrix.com/techniques/T0107.005) — - Aggregates publicly available data from news outlets, social media, and official publications.
-- Enables correlation of reported match anomalies or rumored bribery incidents with suspicious betting patterns.
-- Supports gathering additional context on participants, events, and potential integrity breaches tied to match-fixing.
-- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Aggregates publicly available data from forums, marketplaces, and social platforms where in-game currency or items might be traded at unofficial exchange rates.
-- Helps investigators link accounts or individuals advertising or conducting illicit third-party exchanges, facilitating the detection of unregulated trades.
-- [Ponzi Schemes](https://framework.amltrix.com/techniques/T0144.019) — Captures public-facing information on promotional activities, referral campaigns, and network-driven recruitment. This helps reveal the marketing and recruitment patterns typical of a Ponzi scheme and uncovers social media or online platforms used to solicit new investors.
-- [Underground Gambling](https://framework.amltrix.com/techniques/T0107.007) — - Gathers publicly accessible information from news outlets, social media, and community forums that may reference unlicensed or underground gambling venues.
-
-- Identifies local reporting on illicit activities, neighborhood complaints, or advertisements for unregulated gambling, supporting investigations into hidden or unregistered operators.
-
----
-
-## [Trust Information and Accounts](https://framework.amltrix.com/data-sources/DS0012)
-
-**Description:**
-Comprehensive information about trusts, including their structure, beneficiaries, trustees, associated financial accounts, transaction histories, and legal documentation. This data helps verify the legitimacy of trust-related activities and confirm the identities of key parties.
-
-### Related Techniques
-- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — - Provides details on trust structures, including settlors, beneficiaries, trustees, and related account activities.
-- Supports verification of opaque trusts used to mask beneficial ownership in cross-border asset management arrangements.
-- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — Contains in-depth records of trusts, including settlors, trustees, beneficiaries, and related financial accounts. 
-
-- Clarifies ownership structures where trusts are used to hide real estate holdings in foreign jurisdictions.
-- Aids in identifying ultimate beneficial owners and detecting potentially suspicious trust arrangements supporting cross-border property transactions.
-- [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — Provides detailed records on trust structures, trustees, beneficiaries, and transactional histories. By analyzing the formation and activity of legal trusts, investigators can detect unusual IOLTA or trust account usage and reveal hidden beneficial ownership concealed by professional secrecy claims.
-- [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Contains information on trustees, beneficiaries, and trust agreements, helping identify layers of control established by intermediaries.
-- Supports verification of whether a trust arrangement is legitimate or used to conceal beneficial ownership.
-- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Offers comprehensive records of trust structures, trustees, beneficiaries, historical amendments, and related financial accounts. Reviewing these details can uncover beneficiary manipulations, repeated changes to controlling parties, and inconsistencies with the stated trust purpose.
-- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Provides details on trust deeds, trustees, beneficiaries, and associated accounts. Professional intermediaries may establish or administer trusts to conceal ultimate ownership, and these records help detect such hidden relationships or unexplained trust activities.
-- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Details fiduciary or mutual trust fund arrangements, including trustees, beneficiaries, and transaction histories.
-- Uncovers hidden contributors or pooled funds behind foreign investments, revealing obscured beneficial ownership across multiple participants.
-- [Asset Cloaking](https://framework.amltrix.com/techniques/T0009) — - Contains trust deeds, trustee and beneficiary information, and associated financial accounts.
-- Helps uncover trust-based layering or private foundations that mask beneficial owners.
-- Enables validation of reported trust activities to detect suspicious or undisclosed controlling parties.
-- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Provides comprehensive details on trust structures, including beneficiaries, trustees, associated financial accounts, and transaction histories.
-- Helps uncover hidden beneficial ownership or multi-layered corporate vehicles used in multi-jurisdiction arrangements.
-- Cross-referencing trust documents (e.g., balance sheets, tax returns) with corporate filings can reveal unexplained ownership patterns or suspicious relationships.
-- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Provides comprehensive information on trust structures, trustees, beneficiaries, associated accounts, and transaction histories. This data helps:
-
-- Identify potential involvement of offshore trusts designed to obscure true ownership.
-- Verify the identities of beneficiaries and trustees who may be linked to layering activities.
-- Track cross-border financial flows passing through trust accounts, supporting detection of offshore layering schemes.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Detailed records of trusts, including their structure, trustees, beneficiaries, and account activities.
-- Identifies hidden ownership or complex trust layers behind arbitration participants, suggesting collusion or concealment of illicit beneficiaries.
-- [Trust-Based Obfuscation](https://framework.amltrix.com/techniques/T0088.002) — - Provides official trust deeds, trustee and beneficiary details, powers of attorney, and signatory records.
-- Enables detection of undisclosed or frequently changing beneficial owners and nominal trustees.
-- Helps identify suspicious signatory or beneficiary changes that reveal trust-based obfuscation attempts.
-
----
-
-## [Business Activity and Operations](https://framework.amltrix.com/data-sources/DS0030)
-
-**Description:**
-Data on a business’s commercial, industrial, or professional operations, including revenue figures, operating expenses, and related metrics, often compared with reported financial information to identify discrepancies or anomalies.
-
-### Related Techniques
-- [Common Offenses](https://framework.amltrix.com/techniques/T0146) — - Provides operational metrics such as revenue figures, foot traffic data, and expense patterns.
-- Enables comparison between reported revenues and actual business capacity, highlighting unexplained cash surges.
-- Assists in identifying suspicious spikes in reported income at smaller businesses that may be used to launder proceeds of common offenses.
-- [Tokenized Fundraisings](https://framework.amltrix.com/techniques/T0144.013) — - Documents a project's operational scope, revenue, expenditures, and resources.
-- Compares declared project goals or developmental capacity with the funds reportedly raised, identifying potential discrepancies indicative of fraudulent fundraising.
-- Highlights mismatches between stated progress and actual business viability or investment requirements.
-- [Agricultural Subsidy Fraud](https://framework.amltrix.com/techniques/T0144.012) — Detailed records of a business’s operational metrics include actual production levels, livestock counts, farmland acreage, and operating costs. Comparing this operational data against claimed capacities in subsidy applications can reveal potential discrepancies, exposing inflated or falsified production figures.
-- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Detailed records of a business’s real-world operations, revenues, expenses, and relevant operational metrics.
-- Facilitates comparison of declared call center capacity (staffing, facilities, overhead) to reported income, highlighting potential inconsistencies indicative of fictitious operations.
-- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Offers detailed operational metrics, including production capacity, revenue figures, operating expenses, and comparative industry benchmarks.
-- Enables detection of inflated or fabricated costs (e.g., seeds, fertilizers) and abnormal revenue patterns not aligning with typical agribusiness norms.
-- Confirms whether government subsidies or operational claims match actual production output for farmland or livestock.
-- Aids in verifying real on-site activities and identifying ghost operations lacking tangible agricultural output.
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Includes records of a business’s operating scale, revenue figures, and typical expense allocations.
-- Enables direct comparison of declared payroll taxes and workforce sizes to industry norms and operational benchmarks.
-- Assists in flagging anomalously low reported payroll obligations inconsistent with actual business activity.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Provide baseline industry metrics (e.g., typical cost structures, staffing needs) for construction projects to help identify inflated or unjustified expenses.
-- Offer comparative data on usual operational scope and spending patterns to reveal anomalies in cost estimates or invoices.
-- Support ongoing assessment of a company’s actual construction activity against stated business operations.
-- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Reveals an entity’s actual operational scope, risk exposure, and typical insurance needs.
-- Identifies mismatches between legitimate business activity and the scale of insurance premiums or claims, suggesting manipulation.
-- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — - Contains operational data on a merchant’s declared products, services, and revenue streams.  
-- Helps investigators compare a merchant’s stated business model against actual transactions, identifying mismatches that may signal unauthorized or illicit deposit activity.  
-- Supports validation of declared sales volumes, preventing criminals from hiding illegal fund flows under legitimate business operations.
-- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Captures operational details such as workforce size, machinery, and production capacity. Discrepancies in reported small-scale activity versus large trade volumes may indicate the integration of illicitly mined minerals into official output.
-- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Provides data on a business's commercial scale, revenues, and operational scope.
-- Helps AML teams detect inconsistencies between declared diamond trading activities and actual business operations.
-- [Accrual Manipulation](https://framework.amltrix.com/techniques/T0050.001) — Data on a company’s actual commercial operations—such as revenue generation, production processes, and day-to-day transactions—allows for cross-checking against accrued amounts in financial statements. Discrepancies between real operational output and reported accrual balances can signal fraudulent manipulations.
-- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Reflects the practical operational scale, such as sales volumes, workforce size, and inventory data, of the entity.
-- Allows comparison of declared jewelry income or transaction volumes against actual capacity.
-- Highlights businesses claiming large throughput with negligible operational footprint, indicating possible front activity.
-- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Contains information about a property's typical revenue-generating activities, occupant levels, historical performance metrics, and operational scale.
-- Enables comparison of stated occupancy or usage rates with actual transaction volumes, aiding in the detection of abnormally high income and potential mixing of illicit funds.
-- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Includes data on revenue streams, operational scope, and market presence of a business.
-- Supports detection of abnormal expansions, sudden shifts in operations, or uncharacteristic activities tied to sanctioned markets or entities.
-- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Contain operational data (daily revenue, production, sales figures) reflecting actual business activities.
-- Enable comparison between genuine operational results and reported financial statements, exposing inflated or fabricated revenues and manipulated accruals.
-- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Provides data on a company’s commercial operations, revenue figures, operating expenses, and other key metrics. By comparing declared labor costs with industry norms, investigators can spot suspiciously low payroll expenses or hidden workers, which are indicators of forced labor exploitation.
-- [Front Company](https://framework.amltrix.com/techniques/T0014) — - Documents actual operational metrics, such as inventory levels, supply costs, and operational capacity, that can be contrasted with declared revenues.
-- Helps reveal when a purportedly legitimate company shows minimal or inconsistent real activity, a common sign of a front.
-- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Examines an enterprise’s operating footprint, including payroll, facilities, and other operational metrics, to confirm actual commercial activities. Discrepancies between purported revenues and a lack of real expenses or infrastructure can signal a virtual enterprise used for laundering.
-- [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Details a company’s normal business functions, operational capacity, and financial performance.
-- Helps validate claimed trade volumes, product lines, and shipping requirements.
-- Reveals potential misalignment between declared cargo and actual business operations in documentary collection transactions.
-- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Provides insight into an entity’s real operational outputs, revenue streams, and organizational scale.
-- Allows comparison of claimed trade capacity and loan repayment feasibility to actual business performance, highlighting inflated or fabricated trade finance needs.
-- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — Encompasses a company’s operational metrics, revenue streams, and expected cash handling practices. By comparing declared business activities with observed domestic cash deposits, investigators can identify sudden, unexplained surges in cash flows indicative of bulk cash delivery schemes.
-- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Provides insight into a business’s commercial activities, revenue streams, and operating expenses.
-- Allows verification of actual operational history or downturn claims against the relief application’s stated figures.
-- Identifies discrepancies where a business’s claimed losses or scale of operations do not match observed commercial activity, indicating potential fraud.
-- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Examine the captive insurer’s operational footprint, including workforce size, operational sites, and actual insurance coverage volumes.
-- Compare basic operating metrics (policy count, claims ratio) to industry norms, detecting anomalies such as high premiums with negligible claims or fictitious risk coverage.
-- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Provides insight into a customer’s declared commercial operations and expenses, including energy consumption profiles.
-- Allows comparisons between reported mining capacity (e.g., hardware count, power usage) and actual outputs observed on the blockchain.
-- Helps identify discrepancies where declared operations do not match suspiciously high mining yields.
-- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Contains verified information on a company's actual operations, revenues, and expenses.
-- Assists in determining whether corporate entities are truly active or serve as shells.
-- Helps compare reported economic activity against financial statements to detect inconsistencies or fabrication.
-- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Includes data on an entity’s real operational presence, staffing, physical assets, and business activities.
-- Helps determine whether affiliated entities charging each other for services or goods actually conduct legitimate operations, thereby exposing shell or paper companies used in transfer pricing schemes.
-- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Detail revenue figures, operational capacity, and expenses for businesses.
-- Reveal discrepancies in claimed operations, such as bars or massage parlors, when fronts are used to launder trafficking proceeds.
-- Highlight unusual operational patterns or inflated revenues indicating forced labor exploitation.
-- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Includes historical sales, production capacity, or operational data for the businesses involved in trade finance. By comparing financed amounts or volumes with typical production or sales figures, investigators can identify disproportionate or anomalous loan requests or invoices.
-- [Circular Transactions](https://framework.amltrix.com/techniques/T0039) — - Contains information about a business's operations, including revenue, operating expenses, and employee counts.
-- Helps identify discrepancies when large transaction volumes are not consistent with the entity's actual operational capacity, suggesting circular movement of funds.
-- [Entertainment Venture Fronts](https://framework.amltrix.com/techniques/T0014.006) — - Holds operational data such as attendance records, event scheduling, performance metrics, and ticket sales.
-- Enables AML teams to compare reported event revenues or sponsorship deals with actual attendance to reveal inflated or fabricated income.
-- Helps detect front usage where reported activity significantly exceeds verifiable operational evidence.
-- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Details actual operational metrics (e.g., production output, sales volumes, service capacity) that enable comparison of real performance against reported financials. This helps reveal inconsistencies such as inflated revenue, understated costs, or disconnected growth trends typical of laundering schemes through allegedly legitimate businesses.
-- [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — Details on a business’s revenues, expenses, and operational scale. Cross-checking these figures against Bill of Exchange amounts can expose suspiciously large or inconsistent transactions that do not align with the entity’s typical business profile.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Data on a company’s usual commercial scale, revenue, and expenditures.  
-- Enables comparison between typical operations and the size or nature of arbitration claims, uncovering potential staged or inflated disputes.
-- [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Holds information on a company’s operational practices, revenues, and typical transaction volume. This data allows for the detection of repeated invoicing beyond normal business activity or scale, indicating potential abuse of trade finance arrangements.
-- [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Provides insight into a business’s genuine operational presence, such as physical premises, inventory, and workforce data.
-- Allows investigators to compare the declared business scope with actual operations.
-- Identifies the limited or nonexistent activity typical of shell entities used in carousel schemes.
-- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Information on a business’s operational history, revenue, and day-to-day activities.
-- AML Relevance: Reveals a lack of real commercial operations and legitimate payroll outflows, exposing fabricated employer-employee relationships.
-- [Consulting Firm Schemes](https://framework.amltrix.com/techniques/T0098.001) — - Details a firm's day-to-day operational scope, staffing levels, physical premises, and overhead.
-- Highlights discrepancies where reported consulting revenue far exceeds observable business capacity or real-world operations.
-- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — Data capturing core business operations includes actual revenue, expenses, and operational metrics. By comparing stated deal values with verifiable business performance, investigators can identify artificially inflated or deflated valuations in M&A transactions. This process helps uncover sham acquisitions or manipulated valuations, which are frequently seen in fictitious M&A schemes.
-- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Provides information on a company's declared commercial operations, revenues, expenses, and overall business metrics.  
-- Enables comparison of actual activity levels against the official incorporation timeline, identifying cases where a shelf company's older registration date contradicts its minimal or nonexistent operational history.
-- [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Contains data on an entity’s core business lines, production capacity, and typical revenue streams. Comparing these operational details with large or frequent red/green clause LC transactions can uncover inconsistencies or fraudulent usage.
-- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Documents an entity’s operational scale, staffing, and production capacities.
-- Highlights discrepancies where significant foreign investments do not translate into visible business expansion, suggesting falsely declared economic activity.
-- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Documents reported business activities, revenue sources, and operational footprints.
-- Enables comparison between declared operations and actual cross-jurisdiction transactions.
-- Aids in detecting shell or dormant companies lacking legitimate activity in multi-layered structures.
-- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — - Includes operational metrics, procurement cycles, staffing levels, and other core business data.
-- Allows comparison of claimed vendor activity against realistic operational patterns, helping to identify anomalies consistent with fake vendor usage.
-- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Document sanctioned budgets, standard workflows, and operational spending for government entities.  
-- Compare declared activities or projects with actual financial outflows to detect inflated expenditures or phantom projects indicative of misappropriation.
-- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Assesses the real operational capacity and customer engagement for purported offshore gambling services.
-- Compares declared gambling activities with actual records of gaming infrastructure or user volumes.
-
-Such comparisons help expose sham or non-operational gambling businesses that launder illicit funds under the guise of legitimate revenue.
-- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Compares the declared business purpose with actual operational evidence (e.g., revenues, operational records).
-- Highlights discrepancies when an entity claims a commercial purpose but shows no tangible activity.
-
-These insights expose the lack of genuine business operations characteristic of temporary shell companies.
-- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Provides records of a charity’s stated projects, operational scope, and activities.
-- Enables cross-checking of reported philanthropic activities against actual resources allocated.
-- Helps detect whether incoming donations are consistent with legitimate programming or suggest that funds are being diverted.
-- [Extortion](https://framework.amltrix.com/techniques/T0049) — Contains data on a company’s operational metrics, such as sales figures, expenses, or foot traffic. These records help: 
-
-- Compare reported operational performance against declared revenue spikes potentially fueled by coerced payments.
-- Identify inconsistent or unsubstantiated inflows indicating extortion proceeds disguised as legitimate business income.
-- [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — - Data Provided: Information on a company’s operational scope, revenue streams, and typical commercial activities.
-- AML Relevance: Determines whether declared trades align with the entity’s legitimate business profile or signal fictitious deals beyond its normal operations.
-- [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Catalogs a company's day-to-day operations, revenue streams, and operational capacity.
-- Comparing these operational metrics with high-value or frequent invoices supports the detection of artificially inflated or fabricated trade transactions.
-- [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — - Captures the overall scope of an entity’s operations, including production volumes, client base, and typical employee headcount.
-- Allows comparison of reported payroll outlays with actual business size, revenues, and operational scale to detect inflated wages or fabricated workforce claims.
-- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Details the nature, scope, and operational scale of a business, including revenue patterns and expense structures.
-- Identifying excessive reliance on untracked cash wage payments compared to industry norms can reveal concealed or illicit payroll practices.
-- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Provides data about a business's core operations, revenue streams, and expenses, indicating genuine economic activity or the lack thereof.
-- Helps detect shell or newly formed entities set up purely to fulfill minimum CBI/RBI investment criteria without genuine commercial operations.
-- [Remote Mining](https://framework.amltrix.com/techniques/T0020.001) — - Details a company’s operational metrics, including revenue streams, production capacity, and allocated resources.
-- Helps compare reported mining hash rates or production levels with financial inflows/outflows to detect inconsistencies suggesting money laundering.
-- [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Contains records of the entity’s stated line of business, operational scope, revenue sources, and expense categories. This allows for a comparison between claimed activities and the nature of recorded payables to detect incongruent or fabricated liabilities.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Tracks operational capabilities, production volumes, and growth patterns, enabling investigators to identify sudden expansions or capital inflows that exceed normal growth rates and lack a justifiable commercial rationale.
-- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Details the operational scope, revenues, and expenses of a company. Comparing these metrics with investors' returns or marketing claims helps expose sham operations or shell entities carrying out fraudulent investment promotions.
-- [Tax Evasion & Fraud](https://framework.amltrix.com/techniques/T0147) — - Contains actual operating details, including revenue figures and expenses.
-- Allows comparison of declared business results with real operational data to spot underreporting or misclassification of expenses aimed at tax evasion.
-- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Provides an organization’s operational metrics, reported revenues, and business capacity.
-- Identifies sudden spikes in reported sales without corresponding operational evidence, signaling potentially fictitious or inflated revenues.
 
 ---
 
@@ -3092,6 +2224,88 @@ By leveraging VASP data, investigators can trace crypto swaps across multiple pl
 - Supports identifying micro-structuring through repeated low-value crypto transfers, which collectively mask larger laundering schemes.
 - [DeFi Transactions](https://framework.amltrix.com/techniques/T0067.004) — Contains aggregator or exchange transaction logs, user account details, and usage patterns, allowing investigators to correlate wallet addresses, detect chain-hopping events, and link suspicious DeFi activity to identifiable user accounts where possible.
 - [Governance Token Obfuscation](https://framework.amltrix.com/techniques/T0067.003) — Includes detailed logs from centralized or semi-decentralized exchanges and bridging platforms, capturing user account data, transaction details, and flows of governance tokens. This data helps investigators trace conversions, link user identities, and detect suspicious patterns when governance tokens are moved or swapped, complementing on-chain analysis.
+
+---
+
+## [Customs and Asset Seizure Records](https://framework.amltrix.com/data-sources/DS0015)
+
+**Description:**
+Official data on goods and financial assets seized by customs or enforcement authorities, including details about the items seized, parties involved, and any associated legal proceedings.
+
+### Related Techniques
+- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Contains information on seized goods or financial assets related to customs violations or illicit trade.
+- Enables financial institutions to uncover previously interdicted shipments or assets linked to suspected traffickers.
+- Supports investigations by identifying repeated patterns of asset confiscations or associated parties.
+- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — Official data on goods and financial assets seized by customs or enforcement authorities, including details about the items seized, seizure location, and the parties involved. This helps:
+
+- Confirm direct ties to illicit tobacco shipments by linking seizures back to specific entities or transactions.
+- Identify patterns of repeated smuggling activity or use of specific routes and carriers for illegal tobacco transport.
+- [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — - Details goods or assets seized by customs or enforcement authorities, including the parties involved and documented reasons for seizure.
+- Identifies repeat offenders, networks, or methods linked to illicit arms smuggling, guiding further financial investigations and due diligence.
+- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Documents items and financial assets seized by authorities, including wildlife products, timber, or proceeds from illegal environmental activities.
+- Identifies arrested or flagged individuals/entities connected to environmental crimes.
+- Links seizures to financial accounts or shipments for potential money laundering investigations.
+- [Cross-Border Cash Smuggling](https://framework.amltrix.com/techniques/T0065) — - Document official seizures of undeclared or misdeclared currency at border points.
+- Provide details on seized assets, involved individuals, and any subsequent legal actions.
+- Enable investigators to match seized funds with suspected smuggling patterns or networks.
+- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Documents items seized by customs or enforcement authorities, including wildlife products and derivatives.
+- Provides details on parties involved and associated legal proceedings.
+- Helps financial institutions detect connections between customers and seized assets or shipments.
+- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Official documentation of goods and financial assets seized by customs or enforcement agencies.
+- Highlights instances where large sums of undeclared currency are intercepted at borders.
+- Assists investigations by revealing prior seizure incidents linked to individuals or networks consistently engaging in bulk cash smuggling.
+- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — Includes official records of seized shipments and assets, enabling the identification of known counterfeit pharmaceutical trafficking routes and the parties involved in illicit trade.
+- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Details on goods, cash, and assets confiscated at borders or during law enforcement operations.
+- Identifies parties involved in narcotics smuggling or laundering attempts and the nature of seized assets.
+- Supports ongoing financial investigations by confirming links between seized assets and suspected drug-related transactions.
+
+---
+
+## [Legal Documentation & Records](https://framework.amltrix.com/data-sources/DS0016)
+
+**Description:**
+Collections of binding legal documents—including contracts, deeds, court orders, and judgments—used to verify legal rights, obligations, and relationships in financial dealings.
+
+### Related Techniques
+- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — - Encompasses binding legal and regulatory documents, including court orders, recorded statements, and other official records.
+- Allows financial institutions to track formal requests for transaction information, note any refusals citing immunity, and document legal steps taken against diplomatic or state-owned entities suspected of illicit activity.
+- [Off-the-Record Deals](https://framework.amltrix.com/techniques/T0095) — - Stores formal contracts, deeds, and legally binding documents validating asset transfers.
+- Identifies missing or incomplete legal paperwork for high-value transactions.
+- Highlights potential reliance on fictitious or backdated agreements to conceal true ownership changes.
+- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Contains binding legal documents, corporate filings, contracts, and court records. When different segments or departments hold only partial legal paperwork, these records help demonstrate that no single entity has a comprehensive view of financial or operational arrangements.
+- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — Provides official legal documents such as notarized deeds, court orders, and judgments. Cross-referencing these documents with submitted records helps detect forgery or fabrication, especially when criminals alter or counterfeit legal papers to legitimize financial transactions or misrepresent ownership and obligations.
+- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — Provides official legal documents, such as contracts, board resolutions, or court rulings, used in mergers or acquisitions. Key data points include:
+
+- Authentic copies of share purchase agreements, asset purchase agreements, and related legal instruments.
+- Signatory information, terms, and clauses that enable cross-verification of claimed M&A structures.
+
+By examining these records, investigators can detect contradictions, incomplete provisions, or unusual terms indicative of a fictitious transaction.
+- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Encompasses binding legal documents, including acquisition contracts, deeds, and corporate formation papers, revealing transaction terms, involved parties, and official approvals. This helps confirm legitimate purchase agreements or detect unusual clauses indicating potential laundering.
+- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Consists of incorporation papers, contracts, court records, and other legally binding documents.
+- Helps uncover discrepancies in ownership claims or shadow directors connected to sanctioned entities, emphasizing hidden beneficial owners.
+- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Comprises formation documents, contracts, and trust deeds, detailing legal frameworks.
+- Detects unusual or non-standard legal structures masking beneficial ownership.
+- Supports cross-checking official corporate documents with actual operational control.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Official arbitration filings, settlement agreements, tribunal decisions, and other binding legal records.  
+- Enables detection of fabricated or incomplete documentation, unusually rapid or collusive proceedings, and disproportionate settlement amounts—key indicators of arbitration settlement manipulation.
+- [Court System Manipulation](https://framework.amltrix.com/techniques/T0047) — Includes official legal documents such as court orders, judgments, motions, appeals, and related filings.
+
+How it supports AML detection:
+- Validates the legitimacy of legal settlements and identifies unusual legal procedures or accelerated rulings.
+- Detects repeated appeals against asset-freezing measures, suggesting deliberate tactics to shield illicit funds under the guise of legal processes.
+- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Includes official powers of attorney, signatory authorizations, and other legal instruments. Enables the detection of broad or indefinite delegations of authority that may conceal a true beneficial owner behind a proxy.
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Encompass contracts, amendments, and other legally binding agreements.
+- Allow scrutiny of frequent or unusual changes in athlete image rights contract terms that facilitate repeated adjustments to payment amounts or ownership structures, indicating potential manipulation.
+- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Include employment contracts, NDAs, and other formal documentation provided to recruits.
+- Reveal clauses instructing recruits to use personal accounts for incoming funds without specifying legitimate business functions.
+- Support investigations by highlighting unusual or vague contract terms associated with money mule activities.
+- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Confirms the validity and chain of custody for bearer instruments through contracts, court filings, or related legal documents.
+- Allows compliance teams to substantiate stated ownership and trace prior holders of the instruments.
+- Reveals legal disputes or restrictions tied to bearer instruments, essential for comprehensive AML investigations.
+- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Include official legislative documents, court filings, and regulatory rulings on budget allocations or financial misconduct.  
+- Verify whether transfers or write-offs had legal authorization and note any resulting investigations or disciplinary measures taken against officials.
+- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Comprises official documents such as insurance contracts and claim documentation. This data helps identify fraudulent claims, such as insuring phantom vessels, and detect fabricated or staged events used to legitimize illicit payouts in offshore insurance schemes.
+- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Maintains validated court orders, official permits, and compliance filings, enabling confirmation of legitimate mining rights. This data source helps pinpoint entities operating without proper authorization or under fraudulent documentation.
 
 ---
 
@@ -3795,6 +3009,85 @@ This evidence helps tie suspicious activity to specific social media recruiters 
 
 ---
 
+## [Geographical Transaction Data](https://framework.amltrix.com/data-sources/DS0048)
+
+**Description:**
+Location-based records of financial transactions, including origin, destination, amounts, timing, and relevant geolocation metadata for analyzing cross-border transactions and payment flows.
+
+### Related Techniques
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Identify significant cross-border transactions and the involved jurisdictions.
+- Highlight inflows from high-risk or poorly regulated regions used to fund construction projects.
+- Support enhanced due diligence on foreign investors whose geographic profile presents elevated AML risk.
+- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Maps transaction origin and destination locations against known customer activity patterns.
+- Reveals geographical inconsistencies (e.g., transactions initiated from regions not typical for legitimate account usage), indicating potential account takeover.
+- [Self-Hosted Cryptocurrency Wallets](https://framework.amltrix.com/techniques/T0034) — - Contains location-based transaction records, including origin, destination, and geolocation metadata.
+- Assists in detecting cross-border or multi-jurisdictional flows to and from self-hosted wallets, highlighting potential structuring or layering across different regions.
+- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Provides location-based records of financial transactions, including origins and destinations.
+- Facilitates detection of unusual diamond trading patterns involving high-risk or sanctioned jurisdictions.
+- [ATM Structuring](https://framework.amltrix.com/techniques/T0016.004) — - Incorporates location-based records of financial transactions, allowing direct comparison of the customer’s usual regions of economic activity against sudden or widespread ATM deposits in multiple areas.
+- Flags anomalies where deposit volumes and geographic dispersion deviate significantly from established norms, indicating possible structuring activities.
+- Aids in assessing whether ATM-related transactions are suspicious based on mapped proximity or cross-regional patterns without a legitimate business rationale.
+- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — Tracks geographic metadata for each transaction, revealing inconsistencies when P2P transfers originate from diverse or improbable locations that contradict the account holder’s profile.
+- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Tracks the origin and destination of in-game currency transactions, including cross-border flows and high-risk geographies.
+- Supports detection of large-volume in-game value movement involving jurisdictions known for lax AML regulations, lacking a legitimate business or gameplay rationale.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Captures location-based details of financial transactions, including origins, destinations, and timing.
+- Reveals geographically dispersed high-value purchases made in quick succession, indicating potential layering or deliberate confusion of regulatory jurisdictions.
+- [Online Game Currency Conversion](https://framework.amltrix.com/techniques/T0018) — - Details the origins and destinations of financial transactions, including country identifiers, cross-border flows, and associated metadata.
+- Enables monitoring of in-game currency exchanges traversing jurisdictions with lax AML controls, highlighting potential transnational laundering techniques.
+- [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - Captures origin, transit, and destination details for cross-border shipments and related financial flows.
+- Enables detection of unusual or circuitous shipping routes that may signal deliberate misinvoicing or masking of true shipment values.
+- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Provides detailed origin and destination metadata for financial transactions, including branch locations or regional identifiers.
+- Facilitates detection of rapid deposits in multiple distant areas, a hallmark of smurfing.
+- Enables geo-mapping of deposit clusters to spot emerging patterns inconsistent with a customer’s normal activity.
+- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Highlights fund movements originating from or destined for high-risk or offshore jurisdictions.
+- Identifies questionable premium payments or claim disbursements linked to secrecy locations, aiding in the detection of disguised cross-border layering.
+- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — Captures location-based details of financial transactions and shipping routes, including origin, destination, timestamps, and relevant geographic metadata. This data helps identify unusual or convoluted cross-border routing, last-minute changes to shipment destinations, and inconsistencies with normal trade lanes, all of which can signal trade-based laundering.
+- [Funnel Accounts](https://framework.amltrix.com/techniques/T0083) — - Tracks the origin, destination, and geo-coordinates of financial transactions.
+- Helps trace multi-jurisdictional routes and layering strategies indicative of funnel account schemes.
+- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Capture transactional origin and destination details with associated geolocation.
+- Highlight frequent remittances or financial flows to zones at high risk for human trafficking.
+- Cross-reference with other records to confirm suspicious movement of funds tied to exploitation networks.
+- [Crowdfunding Campaign Manipulation](https://framework.amltrix.com/techniques/T0044) — - Provides location-based records of financial transactions (e.g., IP addresses, geolocation metadata).
+- Allows comparison of donor origins against the campaign’s stated location or beneficiary region to detect anomalies.
+- Supports identification of potential layering, where illicit funds are split and routed from multiple jurisdictions.
+- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — Provides cross-border origin and destination data for mobile transactions. This data identifies unusual or high-risk jurisdictions and detects discrepancies between declared residency or business location and actual transaction flows, supporting the identification of layering and structuring patterns in mobile payments.
+- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Contains location-based records of financial transactions, capturing origin, destination, amounts, and geolocation metadata.
+- Enables identification of transaction clusters near vulnerable border areas or known smuggling corridors.
+- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Tracks transaction origin and destination points, including geolocation metadata.
+- Facilitates detection of unusual cross-border flows, especially where established banking channels are bypassed for lesser-regulated alternatives.
+- [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — - Tracks cross-border transfers involving professional intermediary accounts and identifies offshore or high-risk destinations.
+- Pinpoints transactions masked under client confidentiality, revealing risk patterns indicative of layering or integration strategies.
+- [Micro-Structuring](https://framework.amltrix.com/techniques/T0016.001) — - Provides location-based metadata for financial transactions, including the origin and destination of funds.
+- Identifies patterns of multiple micro-amount deposits from diverse regions funneling into a single account, a common indicator of micro-structuring.
+- [Vendor Impersonation](https://framework.amltrix.com/techniques/T0144.018) — - Tracks the geographic origin and destination of financial transactions, covering both domestic and cross-border movements.
+- Detects shifts in vendor payment routes or payments to atypical jurisdictions inconsistent with the vendor’s usual operations.
+- Helps flag potential higher-risk regions for closer scrutiny when a vendor's account details suddenly change.
+- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Provides origin and destination geolocation details for financial transactions.
+- Exposes irregular cross-regional inbound deposits labeled as ‘advance fees,’ helping to flag potential international or multi-regional scam activity.
+- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Provides geolocation details of financial transactions, including origin, destination, amounts, and related jurisdictional metadata.
+- Enables detection of mismatched currency flows involving locations not aligned with the customer’s declared business or residence.
+- Assists in identifying high-risk or unusual cross-border routes used to layer illicit funds.
+- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Reveals the origin and destination locations of fund flows, enabling analysts to identify unusual cross-border transfers orchestrated by professional intermediaries that exceed typical geographic coverage or regulatory norms.
+- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Tracks the origin and destination of cross-border transactions, highlighting specific jurisdictions, transaction volumes, and timing.
+- Helps reveal offshore routing patterns by shell companies leveraging jurisdictions with limited transparency, facilitating layering or obfuscation of transaction flows.
+- [Informal Value Transfer Systems](https://framework.amltrix.com/techniques/T0013) — - Tracks transaction origin and destination geolocation metadata.
+- Flags the channeling of funds through jurisdictions lacking robust banking oversight or commonly associated with hawala networks.
+- Helps correlate cross-border flows with customer profiles to identify unusual or unauthorized IVTS-related routes.
+- [Public WiFi Networks](https://framework.amltrix.com/techniques/T0015.003) — - Captures geolocation details for each transaction, allowing comparison of the actual transaction origin with the customer’s declared address or usual location.
+- Highlights anomalies when transactions originate from diverse or distant public WiFi hotspots in short timeframes, indicating possible location obfuscation.
+- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — Correlates transactions with their geographic origin or destination to reveal cross-border fund flows. In rug pull scenarios, sudden movements of capital to multiple or opaque jurisdictions may indicate layering efforts to obscure the funds' final recipients.
+- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — Contains location-based details of deposit and withdrawal activities, showing branch usage and distances from a customer’s usual business or residential areas. This data helps identify suspicious cluster deposits along domestic transport routes, consistent with bulk cash deliveries.
+- [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — - Captures origin, destination, and route details for financial movements.
+- Enables detection of frequent or repeated cross-border trips involving smaller declared amounts (smurfing).
+- Helps aggregate multiple declarations below thresholds that collectively sum to higher illicit totals.
+- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Tracks the originating and destination countries tied to financial transactions. This data:
+
+- Pinpoints repeated or high-value transfers to offshore locations.
+- Detects sudden geographic shifts in a customer’s transaction profile.
+- Supports investigation into layering tactics through multiple foreign jurisdictions.
+
+---
+
 ## [Real Estate & High-Value Asset Ownership and Transaction Records](https://framework.amltrix.com/data-sources/DS0043)
 
 **Description:**
@@ -3932,6 +3225,713 @@ This data aids in identifying suspicious trading activity and the potential laun
 - [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Captures actual commodity purchase/sale records, including volumes, prices, and counterparties.
 - Enables direct comparison of real commodity trades with invoiced details to detect inflated or underpriced entries.
 - [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — Provides detailed records of commodity trades, including transaction dates, parties involved, commodity types, quantities, and purchase prices. By comparing actual commodity transaction data against shipping documents or invoices, investigators can detect fabricated or mismatched trade flows indicative of fictitious cross-border deals.
+
+---
+
+## [Politically Exposed Persons (PEP) Lists](https://framework.amltrix.com/data-sources/DS0002)
+
+**Description:**
+Databases detailing individuals holding prominent public or political positions, including their official roles, associated entities, and known affiliations.
+
+### Related Techniques
+- [Trust-Based Obfuscation](https://framework.amltrix.com/techniques/T0088.002) — - Identifies whether trust beneficiaries, trustees, or associated beneficial owners are PEPs.
+- Highlights increased ML/TF risk when prominent or politically connected individuals are shielded by trusts.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Screen project stakeholders against sanctioned or high-risk individuals who hold prominent public responsibilities.
+- Flag Politically Exposed Persons (PEPs) who invest in or facilitate construction contracts without legitimate, verified sources of wealth.
+- Assist in evaluating heightened risk factors associated with corruption or abuse of public office in the awarding of government construction projects.
+- [CBI or RBI-Based Identity Acquisition](https://framework.amltrix.com/techniques/T0024.001) — Provides directories of individuals occupying prominent public roles, their close associates, and known affiliations. Screening applicants against these lists:
+
+- Identifies high-risk or politically connected individuals seeking CBI/RBI.
+- Facilitates enhanced due diligence for potentially corrupt or sanctioned officials.
+
+Ensures financial institutions can detect and properly manage higher-risk applications that may exploit citizenship/residency programs for illicit gain.
+- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Provides details of individuals holding public or political roles, including their official positions and affiliations. This data helps identify hidden beneficial owners or proxies who may be politically exposed, triggering enhanced due diligence to uncover concealed ownership or control.
+- [Political Contributions](https://framework.amltrix.com/techniques/T0056) — PEP lists provide details on individuals holding prominent public or political roles and their known affiliations. Cross-referencing donors, intermediaries, or recipients against PEP lists can uncover potential bribery or political influence in campaign donations or lobbying activities, directly supporting AML investigations.
+- [Bribery](https://framework.amltrix.com/techniques/T0006) — - Contains details on individuals in prominent public or political positions, including official roles and affiliations.
+- Helps identify potential bribery targets or participants by flagging transactions and relationships involving PEPs, who are at heightened risk of corruption.
+- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Data elements: Names and known affiliations of individuals holding senior public or political offices and their close associates.  
+- AML Use: Identifies whether high-profile or politically influential figures are involved in sports club investments or sponsorship deals, highlighting increased corruption and money laundering risks.
+- [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — Identifies individuals holding public or political positions who may be involved in large-scale corruption schemes masked by fictitious consulting. Cross-referencing parties against PEP databases helps expose heightened risk scenarios where corrupt officials channel illicit funds through inflated advisory fees.
+- [Insurance Annuities](https://framework.amltrix.com/techniques/T0087) — - Identify individuals holding prominent public or political positions, as well as their close associates.
+- Increase risk assessment for high-profile or influential policyholders or beneficiaries.
+- Support enhanced due diligence to detect bribery- or corruption-related money laundering risks.
+
+Using PEP lists helps financial institutions ensure proper scrutiny of annuity contracts when politically exposed individuals are involved.
+- [Corruption](https://framework.amltrix.com/techniques/T0051) — Identifies public officials or individuals in prominent political roles, along with their known affiliations. In corruption scenarios, referencing PEP lists ensures transactions involving these high-risk individuals receive enhanced scrutiny, helping detect potential bribery or kickbacks.
+- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Catalogs individuals holding high-profile public or political roles, along with their known affiliations and designations.
+- Helps identify CBI/RBI investors who are PEPs seeking to potentially bypass enhanced scrutiny or exploit alternate citizenship pathways.
+- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — - Contains records of individuals holding prominent public or political positions and their associated entities.
+- Helps identify government officials in oil-rich countries who participate in or facilitate suspicious oil deals.
+- Flags potential corruption or bribery risks in manipulated oil and fuel transactions.
+- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Databases identifying individuals in high-profile political or public positions.
+- Critical for enhanced due diligence on investment company owners or significant shareholders who may pose elevated corruption and money laundering risks.
+- [Junket-based Casino Transfers](https://framework.amltrix.com/techniques/T0107.004) — - Comprehensive listings of PEPs and their associates, including their positions, affiliations, and risk designations.
+- Ensures enhanced due diligence for high-risk PEPs involved in junket-related transactions, mitigating corruption and money laundering risks.
+- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Includes data on individuals who hold (or have held) prominent public or political positions, along with known affiliations.
+- Reveals if MSB owners, directors, or connected parties are PEPs, raising corruption and high-risk flags.
+- Assists investigators in prioritizing scrutiny of MSBs potentially controlled or influenced by high-risk or politically exposed actors.
+- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Maintains databases of individuals in prominent public or political positions.
+- Alerts financial institutions to heightened corruption risks, including potential collusion with wildlife trafficking networks.
+- Enables closer scrutiny of transactions involving PEPs linked to wildlife transport permits or regulatory approvals.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Lists individuals holding senior public or political roles, including known positions and affiliations. Screening against these lists helps detect high-profile or corruption-related risks when significant business investments originate from politically exposed persons (PEPs).
+- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Includes information on individuals holding prominent public or political roles, their known associates, and relevant designations. This data source aids investigations by flagging newly appointed bank directors or executives who are PEPs or linked to criminal networks, which could potentially signal organized crime infiltration.
+- [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — PEP lists typically include names, government or political roles, associated entities, and known affiliations. By comparing awarding officials or beneficial owners against these lists, organizations can detect potential conflicts of interest, corruption, or collusive practices involving public officials in manipulated tenders.
+- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Provides profiles of individuals in public or political positions, including their official roles, known affiliates, and associated risk factors.
+- Enables identification of officials or close associates who may be diverting public funds, thereby focusing investigations on potential corruption.
+- Cross-checking PEP status with suspicious financial movements helps reveal misappropriation schemes and triggers enhanced due diligence where warranted.
+- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — PEP lists typically include:
+
+- Official roles or political functions, affiliations, and known associates.
+- Personal identification details (e.g., name variations, dates of birth).
+
+This data helps detect potential conflicts of interest or corrupt collusion if relief program disbursements or approvals involve individuals in positions of power, supporting investigations into government relief fraud schemes.
+- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — PEP lists typically include names, official roles, known affiliations, and relevant political or diplomatic positions. This data allows for the identification of diplomatic or state-related figures with potential immunity claims or official privileges, aiding in the detection and investigation of suspicious activity involving diplomatic channels.
+- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Lists high-ranking public officials and other individuals who may present heightened corruption or money laundering risks. Checking insurance policy owners or beneficiaries against PEP lists helps uncover politically connected parties exploiting offshore insurance schemes.
+- [Name Alteration](https://framework.amltrix.com/techniques/T0023.002) — Databases of individuals in high-level public or political roles often include aliases or variant spellings. Comparing customer names against PEP lists helps institutions uncover concealed PEP status that may arise from deliberate name alterations.
+
+---
+
+## [Financial, Business & Tax Records](https://framework.amltrix.com/data-sources/DS0007)
+
+**Description:**
+Documentation and official filings covering an entity's financial activities, including balance sheets, profit-and-loss statements, tax returns, and related records. Typically referenced to evaluate an entity's financial stability, verify reported performance, and identify discrepancies or anomalies in financial profiles.
+
+### Related Techniques
+- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Discloses officially filed financial statements, tax returns, and related documents. Used to identify mismatches between reported revenues and large amounts funneled through hawala channels, indicating potential illicit activity.
+- [Loan Schemes](https://framework.amltrix.com/techniques/T0098) — - Covers audited statements, tax returns, and related filings indicating actual revenues, expenses, and operational capacity.
+- Reveals overstated or falsified financials used to secure subsidized loan terms or justify larger loan amounts.
+- Uncovers discrepancies between reported and true performance, flagging fraudulent activity in loan applications.
+- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Includes financial statements and tax filings documenting revenues, expenses, and payroll costs. Comparing these disclosures with known industry benchmarks can reveal underreported wages or hidden profits associated with forced labor practices.
+- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Contains balance sheets, profit-and-loss statements, tax filings, and related financial documentation for property management or real estate entities.  
+
+- Enables cross-verification of declared operational income, rental revenue, and reported expenses against actual transaction flows, identifying discrepancies or inflated figures that suggest commingling.
+- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Encompasses financial statements, tax filings, and profit-and-loss reports.
+- Reveals discrepancies in reported valuations or manipulative accounting practices.
+- Assists investigators in verifying whether reported corporate finances match real economic activity.
+- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Holds financial statements, profit-and-loss reports, and tax filings for entities.  
+- Enables validation of reported income or expenses against actual business performance, highlighting potential fraud.  
+- Helps spot discrepancies in revenues or asset flows that do not align with ordinary business operations, revealing artificial inflation or false documentation.
+- [Sports Sponsorship](https://framework.amltrix.com/techniques/T0129) — - Provides insight into the normal operating revenues and reported financials of clubs or sponsoring entities.
+- Enables comparison of typical business size to sponsorship sums, highlighting disproportionately large or unjustified sponsorship payments that may indicate laundering.
+- [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Provides official financial statements, accounting records, and tax filings that can confirm or refute the legitimacy of reported liabilities. Facilitates cross-checking payables entries with declared expenses and verifying the authenticity of vendors or creditors. Supports identifying fabricated or inflated liabilities that do not match the entity’s operational or financial profile.
+- [Carbon Credit Trading](https://framework.amltrix.com/techniques/T0118) — - Offers insight into declared revenues, tax filings, and corporate financial statements.
+- Assists in detecting inconsistent VAT returns or questionable tax refund claims associated with carbon credit carousel schemes and advanced layering techniques.
+- [Front Company](https://framework.amltrix.com/techniques/T0014) — - Includes official financial statements, tax returns, and detailed business performance metrics.  
+- Facilitates comparison of reported operating margins, revenues, and geographic coverage against industry norms to detect anomalies common in front company setups.
+- [Funnel Accounts](https://framework.amltrix.com/techniques/T0083) — - Includes official financial statements, business filings, and tax returns.
+- Validates whether sudden cross-border transfers or funnel deposit patterns align with legitimate financial activity, uncovering concealed or illicit proceeds.
+- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — Comprehensive financial statements, tax returns, and related filings demonstrate a vendor’s operational legitimacy. Cross-referencing reported business income, expenses, and tax liabilities helps uncover vendors with no genuine operational footprint, indicating a likely fake vendor setup.
+- [Corruption](https://framework.amltrix.com/techniques/T0051) — Covers profit-and-loss statements, balance sheets, and tax returns, enabling verification of reported income and expenditures. In corruption probes, this data reveals hidden revenue streams, sham businesses, or inconsistencies suggesting kickbacks or embezzlement.
+- [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — Contains formal financial statements, tax returns, and business filings detailing labor costs, revenues, and workforce information. This enables investigators to compare declared payroll expenses against official tax declarations, identify discrepancies (e.g., inflated wages), and uncover ghost or phantom employees by analyzing potential mismatches in reported labor costs and actual tax or financial records.
+- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Contain an entity’s financial statements, tax filings, and business performance data, enabling investigators to compare declared beneficial ownership structures against reported revenues, expenses, and tax obligations. This comparison helps identify inconsistencies that may indicate ownership manipulation.
+- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Covers tax filings, balance sheets, and other official business financials.
+- Supports cross-referencing declared figures with internal records, uncovering manipulations or missing entries indicative of tampering.
+- [Insurance Annuities](https://framework.amltrix.com/techniques/T0087) — - Provide official filings such as tax returns, balance sheets, and profit-and-loss statements.
+- Corroborate a policyholder’s declared financial capacity and sources of funds.
+- Reveal discrepancies between reported earnings or assets and large annuity contributions.
+
+These records help confirm the legitimacy of funds used for annuity purchases and detect potential misrepresentation or laundering of illicit proceeds.
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Provide official filings such as financial statements, profit-and-loss reports, and tax returns of clubs and intermediaries.
+- Permit verification of declared endorsement or licensing revenues against actual commercial activities, uncovering discrepancies.
+- Detect potential tax irregularities and unsubstantiated income streams, indicative of inflated fees or nonexistent commercial exploitation tied to image rights deals.
+- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Includes financial statements, tax returns, and other official filings.
+- Reveals discrepancies between reported business activities and actual financial performance.
+- Highlights a lack of genuine revenue or operational expenses, suggesting shell-type structures.
+- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Official financial statements, tax returns, and related filings reflect reported revenues, expenses, and liabilities.
+- Help identify inconsistencies or manipulations in recorded figures by cross-checking against actual business transactions and historical filings.
+- [Undeclared Earnings](https://framework.amltrix.com/techniques/T0137) — Includes official financial statements, profit-and-loss records, balance sheets, tax returns, and other formal business documents. This data:
+
+- Allows cross-checking of declared income against actual transaction histories to uncover underreported earnings.
+- Identifies significant gaps between reported revenue and observed cash inflows, indicating possible undeclared funds.
+- Provides insight into discrepancies within accountant-verified statements, aiming to detect complicit behavior in underreporting.
+- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — Contains financial statements, corporate filings, and tax returns, revealing a business’s revenue streams, expenses, and overall financial health. It can confirm the absence of legitimate income supporting significant "storage fees" or inconsistent flows from multiple shell entities to the same private storage facility.
+- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Provides official filings and statements (e.g., balance sheets, tax returns, profit/loss statements).
+- Reveals discrepancies in reported revenue or business operations for companies suspected of concealing proceeds.
+- Assesses the legitimacy of cash flows from sectors prone to environmental crime (e.g., timber or fishing).
+- [Tax Evasion & Fraud](https://framework.amltrix.com/techniques/T0147) — - Provides official filings such as tax returns, profit-and-loss statements, and balance sheets.
+- Enables detection of discrepancies between stated and actual revenues, identification of misclassified expenditures, and confirmation of reported taxable income.
+- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — Covers an entity’s financial statements, tax filings, and business performance disclosures. Investigators can compare the project's claimed business model with actual filings to uncover discrepancies, which are frequent indicators of exit scams and rug pulls.
+- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — Official financial filings, tax returns, and business statements are essential documents. Cross-referencing these records against relief program submissions can uncover discrepancies in reported revenue or operational scale, helping to expose misrepresentations used to qualify for government funds.
+- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Contains official tax returns, financial statements, business registrations, and related filings.
+- Allows cross-verification of claimed operating losses or payroll data used in relief applications.
+- Helps detect inflated or inconsistent financials that deviate from historical filings, indicating potential fraud or misrepresentations.
+- [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Contains official financial statements, tax returns, and supporting business filings.
+- Enables comparison of reported turnover and VAT returns against actual documented income and expenses.
+- Detects discrepancies and anomalies indicative of carousel fraud, such as inflated or repetitive VAT refund claims.
+- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Contains an entity's or individual's financial statements, tax returns, and other filings. By comparing declared financial capacity with large premium payments or policy redemptions in offshore schemes, anomalies indicating laundering or layering can be detected.
+- [Accrual Manipulation](https://framework.amltrix.com/techniques/T0050.001) — Encompasses official financial statements, tax returns, and supporting business documentation. By reviewing details such as journal entries, balance sheets, and tax filings, investigators can spot irregular accrual entries, retroactive revenue adjustments, or unjustified reclassifications, all of which are hallmarks of accrual manipulation.
+- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Includes official financial statements, tax returns, and related filings.
+- Reveals limited or fabricated financial footprints, indicating potential fictitious activity.
+
+This data underpins the identification of shell companies formed briefly for illicit transactions or fraudulent tax schemes.
+- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Provides official financial statements, tax filings, and business registrations detailing actual revenue, operational capacity, and corporate purpose.
+- Enables comparison of declared foreign capital injections against an entity’s legitimate financial profile to pinpoint discrepancies or lack of genuine commercial rationale.
+- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Covers official financial statements, tax returns, and corporate filings that outline an entity’s financial performance and obligations.
+- Assists investigators in verifying actual financial capacity and legitimate sources of capital purportedly used to meet CBI/RBI thresholds.
+- [Consulting Firm Schemes](https://framework.amltrix.com/techniques/T0098.001) — Provides official financial statements, tax returns, and related filings that help verify declared consulting revenues, operational expenses, and tax compliance. These records enable analysts to detect discrepancies in reported income, identify artificially inflated fees, and confirm whether criminals are using timely tax payments to appear more credible while concealing illicit proceeds.
+- [Agricultural Subsidy Fraud](https://framework.amltrix.com/techniques/T0144.012) — Covers official financial statements, tax returns, and declarations of income or expenses. Comparing reported farm revenues and declared operating costs with subsidy requests can reveal inconsistencies that indicate fraudulent subsidy claims.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Official filings such as balance sheets, tax returns, and profit-and-loss statements.
+- Helps compare the financial capacity of parties with the settlement amounts claimed in arbitration, identifying disproportionate or dubious awards.
+- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Details an entity’s historical financial statements, declared tax information, and reported business activities.
+- Allows investigators to uncover discrepancies between the borrower’s actual capacity and the inflated loan amounts or trade volumes claimed in syndicated loan agreements.
+- [Renovation Cost Manipulation](https://framework.amltrix.com/techniques/T0124) — - Includes entities’ financial statements and tax filings, offering insights into reported revenue, operating expenses, and overall financial health.
+- Enables cross-verification of declared renovation costs against actual financial capacity and reported expenditures, highlighting discrepancies indicative of potential laundering.
+- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Includes official filings such as profit-and-loss statements, balance sheets, tax returns, and comparative valuations for similar entities. Investigators can verify declared purchase prices, revenue, and expenses against standard benchmarks or historical data, identifying overvalued or undervalued acquisitions or overstated profits used to mask illicit funds.
+- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Includes official tax returns, financial statements, and historical filing data.
+- Compares declared income, reported business performance, and past filing patterns against refund claims.
+- Detects discrepancies, elevated refund amounts, or unusually frequent filing cycles linked to fraudulent tax rebates.
+- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Includes official filings such as tax returns, balance sheets, and profit-and-loss statements.
+- Enables comparison of declared income or business revenues against high-value foreign real estate purchases.
+- Supports analysis of financial inconsistencies or anomalies indicative of money laundering activity through offshore property ownership.
+- [Rental Income Schemes](https://framework.amltrix.com/techniques/T0010.004) — - Provides official financial statements, tax returns, and other filings indicating declared rental income.
+- Allows comparison of reported rental revenue with actual deposit data or property ownership records to expose inconsistencies or evidence of laundering.
+- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Official filings and historical financial documents (e.g., tax returns, profit-and-loss statements).
+- AML Relevance: Confirms whether declared wages and business income match legitimate financial history and tax data, helping detect forged or overstated wage records.
+- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Data elements: Official financial statements, profit-and-loss reports, tax returns, and business filings showing the club’s broader financial health.
+- AML Utility: Enables cross-checking declared revenues from sponsorship, ticket sales, or transfers against verified financial disclosures, revealing inconsistencies that may indicate inflated income or laundered funds.
+- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Contains official filings, tax returns, balance sheets, and profit-and-loss statements. Reviewing these documents helps confirm or refute an entity’s claimed investment performance and financial stability, flagging inconsistencies indicative of fraudulent activities.
+- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Documents reported financial statements, including wage expenses, payroll taxes, and business income.
+- Allows investigators to compare official wage expenditures against actual cash outflows, revealing concealed labor expenses for undocumented workers.
+- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Provide audited or official financial statements and filings. Investigators compare these records to internal transaction data or user-uploaded documents to detect mismatched balances, manipulated entries, or fabricated invoices.
+- [Dividend Stripping](https://framework.amltrix.com/techniques/T0147.003) — Contains official tax filings and financial statements revealing multiple or duplicative reimbursement claims for the same dividend. Cross-referencing this information with trading data helps uncover fraudulent dividend stripping schemes.
+- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Consolidates balance sheets, profit-and-loss statements, and official tax filings.
+- Verifies reported revenues, operating expenses, and agricultural yields against declared financial data to detect inconsistencies.
+- Identifies inflated or false financial statements used to disguise illicit funds as legitimate agribusiness income.
+- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Official filings such as tax returns, balance sheets, and profit-and-loss statements.
+- Comparative analysis can reveal discrepancies between an investment company’s reported activities and its actual financial operations, signaling possible laundering or false reporting.
+- [All-Cash Real Estate Transactions](https://framework.amltrix.com/techniques/T0010.005) — Offers official financial statements, tax returns, and business records to cross-verify declared income or assets with large all-cash real estate purchases, enabling the detection of unsubstantiated funds or unexplained wealth.
+- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Covers official financial statements, tax returns, and business filings detailing revenues, expenses, and profit/loss.
+- Enables cross-referencing of declared transfer pricing, royalty fees, or management fees with actual financial performance and tax filings to spot potential under-reporting or inflated rates.
+- [Export Overvaluation](https://framework.amltrix.com/techniques/T0147.004) — - Supply official financial statements, tax returns, and other business filings to compare actual revenues, capacity, and tax claims.
+- Cross-check claimed export-related refunds or sudden revenue spikes against reported sales data and industry benchmarks to identify potential overvaluation.
+- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Comprises official financial statements, profit-and-loss reports, and tax filings.
+- Reveals discrepancies between reported sales and declared income, helping identify fabricated or overstated revenue streams.
+- Corroborates or contradicts claims of legitimate commercial activity through comparison with operational capacity and transactional records.
+- [Investment Fund Manipulation](https://framework.amltrix.com/techniques/T0097) — These records disclose official financial statements, tax returns, and business performance data. By cross-referencing declared investment returns with official filings, investigators can detect inconsistencies that indicate manipulated valuations or fabricated performance. This helps confirm whether real operational data aligns with the reported fund performance, revealing potential misrepresentations or false returns central to investment fund manipulation.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Covers official financial statements, reported business income, and tax filings, enabling the detection of discrepancies between declared revenues and significant capital injections. Investigators can identify suspiciously high investments that lack clear justification and verify alignment with legitimate business performance.
+- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — - Includes official filings and statements regarding revenue, taxes, and overall financial performance.
+- Reveals whether reported cigarette revenues align with paid excise or import duties, helping to detect undeclared or underreported tobacco imports.
+- Uncovers discrepancies in tax filings or business revenues that could indicate proceeds from smuggling operations.
+- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Contains official financial statements, tax returns, and related disclosures for institutions and businesses. This data assists in detecting infiltration by identifying inconsistencies between reported bank financials and actual transaction volumes, suggesting that criminal insiders may be manipulating records to conceal illicit activities.
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Includes official financial statements, tax filings, and payroll records for a given entity.
+- Allows cross-referencing declared payroll liabilities and withholdings against actual reported headcounts and remuneration to detect potential underreporting.
+- Supports AML investigations by revealing discrepancies or anomalies in tax and financial disclosures, indicating possible payroll tax evasion activities.
+- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Contains official filings such as audited financial statements, operating expenditures, tax returns, and related documentation.
+- Reveals discrepancies between reported charitable expenditures and actual donation inflows, indicating potential misappropriation.
+- Aids investigators in matching the declared financial activity of non-profits against the real usage of funds.
+- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Include tax returns, financial statements, and official filings of revenue and expenses.
+- Comparing reported payroll expenses and tax liabilities with observed cash wage payouts helps detect under-reported income or hidden wage distributions.
+- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Includes balance sheets, profit-and-loss statements, and tax filings. Reviewing these records can uncover inconsistencies or a complete absence of legitimate financial documentation, which may indicate online-only or fictitious corporate entities.
+- [Protection Payments](https://framework.amltrix.com/techniques/T0049.002) — Includes official financial statements, tax filings, and detailed business expense records. 
+
+- Detects discrepancies between reported income and actual cash deposits that may signal extortion.
+- Highlights unexplained or excessive expenses aligning with protection payment demands.
+- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Review audited financials, tax returns, and reported revenue to validate the insurer’s legitimate business scale.
+- Detect discrepancies or unusually rapid growth in assets, mismatched premiums versus claims, and large tax write-offs suggesting laundering via inflated premiums or bogus claims.
+- [Pension Fund Contributions](https://framework.amltrix.com/techniques/T0037) — Official financial statements and tax filings (e.g., tax returns, audited financials) verify an individual’s or entity’s declared income sources, wealth levels, and tax obligations. This data helps detect discrepancies between reported finances and large or frequent pension contributions, identifying potential illicit fund injections, layering, or unexplained rollovers within pension schemes.
+- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Contains audited financial statements, profit-and-loss reports, and filed tax returns.
+- Assists in identifying revenue inconsistencies, such as reported earnings far exceeding plausible operational capacity.
+- Reveals discrepancies between declared jewelry sales and external market or transactional evidence.
+- [Entertainment Venture Fronts](https://framework.amltrix.com/techniques/T0014.006) — - Contains official financial statements, tax filings, and business registrations.
+- Supports verification of claimed production budgets, event expenses, and sponsorship income in entertainment ventures.
+- Identifies discrepancies between reported income and actual tax declarations or listed expenses that may indicate laundering.
+- [Bond Investments](https://framework.amltrix.com/techniques/T0061.004) — Contains official filings of earnings, taxes, and business revenues. Cross-referencing these records with substantial bond returns helps detect discrepancies, such as significantly higher interest income than reported income, suggesting potential laundering using bond instruments.
+- [Service Contract Manipulation](https://framework.amltrix.com/techniques/T0098) — - Includes financial statements, profit-and-loss records, and tax filings.
+- Compares declared consulting revenues with operational capacity or industry benchmarks.
+- Identifies unsubstantiated or over-inflated revenue claims intended to legitimize illicit funds.
+- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Documents an entity’s financial statements, business performance, and tax filings, revealing discrepancies between declared production volumes and actual revenues. This helps detect undeclared or underreported income linked to illicit mineral sales.
+
+---
+
+## [Digital Banking & Cybersecurity Event Data](https://framework.amltrix.com/data-sources/DS0008)
+
+**Description:**
+Information about online and mobile banking activities, including IP logs, device usage patterns, unauthorized access attempts, transaction anomalies, and related cybersecurity events.
+
+### Related Techniques
+- [Self-Hosted Cryptocurrency Wallets](https://framework.amltrix.com/techniques/T0034) — - Provides IP logs, device usage patterns, login timestamps, and alerts on suspicious behavior.
+- Helps detect unusual login patterns, rapid address changes, or dispersed wallet usage indicative of potential money laundering through self-hosted wallets.
+- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Tracks device attributes such as operating system, time zone, language settings, and user-agent details.
+- Helps identify suspicious session anomalies or rapid changes in device fingerprints consistent with rotating proxy usage.
+- Strengthens AML investigations by flagging inconsistent device characteristics originating from potentially anonymized connections.
+- [Educational Institution Schemes](https://framework.amltrix.com/techniques/T0019.001) — - Includes IP logs, device usage patterns, and alerts on unauthorized access attempts within online banking portals.
+- Assists in detecting compromised accounts, unusual login activity, or cybersecurity incidents correlating with the fraudulent redirection of educational institution payments.
+- [Stock Manipulation](https://framework.amltrix.com/techniques/T0094.001) — - Captures IP addresses, device identifiers, and login timestamps across online and mobile trading platforms.
+- Enables detection of multiple trading accounts accessed from the same device or location, helping to uncover coordinated or collusive trading patterns.
+- Highlights suspicious or unauthorized login attempts, supporting the identification of orchestrated manipulation using advanced electronic trading channels.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Logs and analyzes account access patterns, device fingerprints, and profile modification events. Excessive or repeated alterations to personal details after account opening can indicate identity manipulation efforts or account takeovers.
+- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Captures IP addresses, device fingerprints, and session details for online banking, helping identify the repeated use of the same device or IP to deposit checks into multiple accounts under different names. This supports AML investigations of remote deposit capture abuse and potential collusive activity.
+- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — - Captures patch deployment history, vulnerability scans, and intrusion attempts, revealing gaps where core systems may be exploited.
+- Logs cybersecurity events, such as suspicious network traffic or repeated failed authentication attempts, indicating potential compromise of bank infrastructure.
+- Helps link unpatched software vulnerabilities to observed manipulations of AML or transaction monitoring systems.
+- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — Captures IP addresses, device identifiers, and other technical details, enabling the detection of overlapping user fingerprints across supposedly unrelated P2P accounts.
+- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — Logs authentication events, device fingerprints, and IP addresses. This data helps detect multiple or unexpected devices accessing newly opened accounts, indicating possible external control or 'mule herding,' which is commonly seen in money mule recruitment.
+- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - Provides IP logs, device usage patterns, and connection details for each online banking session or transaction.
+- Enables monitoring and flagging of repeated access attempts from known anonymizing networks (e.g., Tor exit nodes, VPN endpoints).
+- Assists investigators in correlating suspicious IP usage or rapid geolocation changes to detect potential misuse of anonymity tools and mitigate laundering risks.
+- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — Includes IP addresses, device identifiers, and geolocation data for mobile payment platforms. This data allows for the detection of device or geographic anomalies, such as multiple wallet registrations from the same device or IP address mismatches. It supports the investigation of layered account usage, cross-border activities, and rapid fund transfers.
+- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — Collects device fingerprints, IP addresses, login timestamps, and other cybersecurity signals within digital banking channels. Correlating these with suspicious voice-based transactions helps uncover deepfake impersonation by spotting anomalous device or network usage.
+- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — - Captures online banking events, including IP usage, device fingerprints, and account access details.
+- Identifies consistent VPN usage in account opening or management activities.
+- Supports AML investigations by correlating suspicious login methods with KYC records to detect potentially hidden user locations.
+- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Tracks failed login attempts, device fingerprints, and suspicious cybersecurity events (e.g., flagged IPs, unauthorized login alerts).
+
+- Supports the detection of compromised accounts by revealing repeated access attempts, new device usage, or known malicious IP indicators.
+- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Includes records of software usage, transaction anomalies, and unauthorized access attempts. Investigators identify unapproved plugins or scripts used to manipulate transaction data in real-time, bypassing standard logs.
+- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Monitors account creation and closure patterns, revealing rapid account turnover potentially linked to transient mining operations.
+- Tracks anomalous login attempts or suspicious device usage associated with mining payment flows.
+- Flags repeated or coordinated account activities that may facilitate the layering of illicit proceeds through multiple digital channels.
+- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Tracks user session information, IP logs, and transaction status changes, highlighting repeated initiation and quick cancellation of small transactions used to gauge thresholds.
+- Supports investigation of abnormal login patterns and rapid reversals, suggesting deliberate testing of AML controls.
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Track device fingerprints, IP addresses, and session metadata to identify repeated usage patterns across supposedly distinct accounts.
+- Detect anomalies in remote onboarding or login behavior to indicate potential impersonation or account takeover.
+- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Captures IP addresses, device usage patterns, and authentication attempts, enabling the detection of multiple remote account creations from the same device or IP range.
+- Identifies the use of proxies, VPNs, or other anonymizing services during account registration or verification.
+- Monitors aborted verification procedures followed by immediate re-attempts under new credentials or data, helping to reveal suspicious patterns indicative of remote verification bypass.
+- [Lottery Winnings](https://framework.amltrix.com/techniques/T0107.001) — Encompasses IP logs, device usage patterns, and login activity for online and mobile platforms. In lottery schemes, this data:
+
+- Detects geographically dispersed IP addresses or multiple devices used for lottery ticket purchases.
+- Flags unusual account access patterns linked to suspicious ticket-buying or prize-redemption activity.
+- Supports investigation of compromised or third-party account usage.
+- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Monitors IP addresses, device fingerprints, and network activity for digital banking sessions.
+- Identifies inconsistencies between a customer’s claimed location and the actual device or network attributes, revealing possible fake identities or impersonation.
+- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — Captures IP addresses, device fingerprints, and usage patterns in online banking environments. It reveals multiple account creations from the same device or IP address and detects anonymizing tools such as VPNs and proxies. This data helps identify unusual remote onboarding behaviors consistent with online identity deception.
+- [Public WiFi Networks](https://framework.amltrix.com/techniques/T0015.003) — - Provides IP logs, device usage patterns, and session metadata from online and mobile banking channels, revealing whether connections originate from public, potentially unsecured hotspots.
+- Identifies VPN or proxy usage layered on public WiFi, helping detect deliberate obfuscation of user location and identity.
+- Correlates multiple session logs to expose suspicious simultaneous or rapid-sequence logins from disparate public IP addresses, indicating potential coordinated misuse.
+- [Onion over VPN](https://framework.amltrix.com/techniques/T0015.005) — - Records login attempts, authentication failures, and suspicious device/browser fingerprints.
+- Highlights anomalies in user session patterns (e.g., sudden IP address changes, usage of known anonymizing IPs).
+- Assists in correlating frequent or failed logins through Tor/VPN networks with potential illicit activity masked by multi-layered encryption.
+- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Encompasses cybersecurity alerts, malware detections, unauthorized access attempts, and suspicious system events.
+- Uncovers malicious code or anomalies specifically designed to alter or erase transaction records.
+- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Tracks IP addresses, device fingerprints, and account creation patterns to identify coordinated or high-risk activities in offshore gambling.
+- Detects large volumes of new high-value accounts or potential fraudulent access attempts, indicating layering schemes.
+
+These data points assist compliance teams in investigating suspicious digital behavior linked to under-monitored offshore gambling sites.
+
+---
+
+## [Employee Records](https://framework.amltrix.com/data-sources/DS0028)
+
+**Description:**
+Comprehensive records of employee identities, roles, and relevant employment details, used to track internal accountability and detect potential conflicts of interest or misconduct.
+
+### Related Techniques
+- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — - Provide detailed information on employees' identities, roles, and internal privileges.
+- Help identify staff with elevated permissions or unusual responsibilities that could facilitate internal system manipulation.
+- Support investigations into potential insider collusion or unauthorized overrides of AML controls within the institution's infrastructure.
+- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Maintains comprehensive data on officially registered employees, including their roles, wages, and tax-related information.
+- Exposes discrepancies between declared workforce details and the actual labor force observed on-site, highlighting off-the-books payments to undocumented workers.
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Encompasses detailed internal HR data on employee identities, roles, wages, and employment status.
+- Enables cross-checking of reported employee numbers, compensation amounts, and workforce composition against actual records.
+- Supports detection of hidden or misrepresented employees and underreported wages used in payroll tax evasion schemes.
+- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Details employee identities, roles, and employment history. Frequent staffing changes or limited knowledge transfer in key roles, as reflected in these records, may indicate siloed or intentionally constrained awareness of overall transactions.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Cross-check official staff rosters against wage disbursements to reveal non-existent employees or inflated payroll costs.
+- Identify discrepancies between declared roles and actual work performed on construction projects.
+- Flag large or repeated wage payments to individuals lacking verifiable employment credentials.
+- [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — - Provides official HR data for all employees, including personal details, roles, and employment status.
+- Enables cross-checking of payroll recipients against verified employees to identify ghost employees or inflated workforce counts.
+- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — Contains identity and employment details for betting shop staff, including roles and responsibilities, enabling the detection of potential staff collusion or conflicts of interest. This data helps investigators confirm whether employees are improperly overriding AML checks or ignoring suspicious betting patterns in exchange for financial gain.
+- [Payroll Deduction Loan Repayment](https://framework.amltrix.com/techniques/T0029) — Contains official HR or employer database details, including job position, salary, and employment status, to validate the legitimacy of an individual's payroll deductions. This helps detect fictitious or fraudulent employment arrangements used to obscure illicit loan repayments.
+- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Document employees’ roles, responsibilities, and hierarchical structures.
+- Help detect potential collusion or management override in financial recordkeeping by identifying individuals with the authority to alter accrual entries or bypass internal controls.
+- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Contains detailed information on employees, including identities, roles, and wages. These records can reveal inconsistencies in reported payroll expenditures, such as underpayment or 'ghost' employees, commonly seen in forced labor operations. Cross-referencing employee rosters with actual labor output helps detect exploitation.
+- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Contains data on employee identities, roles, salaries, and employment status.
+- Comparing actual staffing levels with reported payroll outlays can expose ghost employees or inflated headcounts, revealing off-the-books payments indicative of potential money laundering or tax evasion.
+- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Contains official HR or payroll data confirming employee identities, roles, and workforce size.
+- Validates or refutes exaggerated payroll or headcount claims made to justify inflated relief amounts.
+- Helps detect nonexistent employees or erroneous workforce records used to secure larger disbursements.
+- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Document staff roles, responsibilities, and authority levels. Investigators determine whether a single individual has the ability to create, approve, and modify digital transactions, uncovering insufficient segregation of duties that enables manipulation.
+- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Contain identities, roles, and employment history of staff entrusted with managing or approving public fund disbursements.  
+- Identify anomalies such as a single individual holding uncommonly broad financial authority or refusal to follow mandatory leave policies, possibly hiding ongoing embezzlement.
+- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Provide details of employee identities, roles, and payroll data.
+- Help identify false or suspicious wage payments, non-existent employees, and underreported labor in potential forced-labor fronts.
+- Enable cross-checking payroll expenses against actual workforce operations to detect exploitation patterns.
+- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Contains employee roles, salaries, and job responsibilities, enabling cross-referencing of claimed expenses with typical job-related outlays. This helps identify employees filing excessive or anomalous reimbursements and potential collusion, such as multiple employees submitting identical receipts.
+- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Contains comprehensive details on employees, including positions, hire dates, qualifications, and role changes. This data helps detect infiltration by revealing rapid or repeated shifts in senior management or the appointment of unqualified personnel, both of which can signify that criminals are placing loyal individuals in key decision-making roles.
+- [Insider Facilitation](https://framework.amltrix.com/techniques/T0021) — - Include details of employees’ roles, responsibilities, vacation history, disciplinary actions, and training records.  
+- Allow detection of employees who avoid taking leave to hide illicit activities or who have prior compliance issues suggesting high insider risk.
+- [Bribery](https://framework.amltrix.com/techniques/T0006) — - Maintains employee identities, roles, compensation, and leave patterns.
+- Facilitates the detection of unusual increases in personal wealth, refusal to delegate tasks, and other potential red flags of bribery or corruption.
+- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Contains detailed staff employment data, roles, and affiliations within the financial institution.
+- Reveals potential conflicts of interest or unusual staff assignments that could facilitate illicit activities.
+- Supports internal investigations to identify complicit employees who may manipulate compliance measures or reporting processes.
+- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Maintains comprehensive employment data, including the number of staff, roles, payroll information, and dates of employment.
+- Validates whether a call center’s reported workforce aligns with the revenue they claim, revealing potential exaggerations or fictitious staff listings.
+- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Comprehensive details on employee identities, roles, and employment history.
+- AML Relevance: Validates legitimate employee information and helps expose fraudulent or nonexistent employees that are central to the scheme.
+
+---
+
+## [Product & Service Usage Data](https://framework.amltrix.com/data-sources/DS0010)
+
+**Description:**
+Consolidated data on how customers utilize financial products and services, including usage frequency, transaction volumes, product types, and related usage metrics.
+
+### Related Techniques
+- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — - Details how accounts utilize financial products and services, including usage frequency, transaction volumes, and service types.
+
+By comparing typical diplomatic mission usage with actual activities, investigators can detect anomalies, such as personal expenditures or sudden spikes in service usage, pointing to potential misuse of diplomatic privileges.
+- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Shows how insurance policies are utilized, including the frequency of claims, early cancellations, or unusual usage patterns.
+- Reveals abnormal usage such as short policy durations, large refunds, or partial surrenders, indicating potential manipulation.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Consolidates information on a customer's typical usage patterns and transaction volumes across financial products.
+- Helps identify anomalous spikes in product usage (e.g., sudden or repeated purchases of expensive goods) that may indicate laundering via high-value asset transactions.
+- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — - Documents the normal range and frequency of product or service usage (e.g., transaction size, refund rates) under typical merchant conditions.
+- Highlights anomalies such as unusual spikes in refund or credit activity and repetitive small incoming payments without legitimate rationale.
+- Enables investigators to spot funneling or structuring tactics designed to commingle illicit proceeds with normal merchant transactions.
+- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — Shows how accounts engage with the gaming platform (e.g., login frequency, game progression, social interactions). Comparing normal user behavior against accounts focused on frequent digital asset trades without genuine gameplay helps detect laundering in virtual worlds.
+- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Tracks customer usage patterns across financial products, including remote deposit capture, detailing sudden shifts in deposit channel preferences or high-value check deposits. Such data aids AML detection by identifying anomalous RDC usage and deviations from expected customer behavior.
+- [Insurance Policy Overfunding](https://framework.amltrix.com/techniques/T0090.002) — - Monitors multiple insurance product purchases under a single customer account and subsequent early redemptions or cancellations.
+- Identifies unusual usage timelines, such as policy cancellations soon after purchase, which are inconsistent with normal policy life cycles.
+- Tracks changes in beneficiary details shortly before disbursement requests, potentially indicating layering attempts.
+- Highlights customer willingness to incur financial penalties or fees for quick withdrawals, suggesting laundering through policy surrenders.
+- Reveals cross-institution or historical patterns of repeated purchase-and-redeem cycles, indicating systematic money laundering behavior.
+- Captures customer focus on early redemption terms, signaling potential misuse of flexible insurance products.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Details how a business or account holder utilizes specific financial products and services, including usage frequency and transaction methods. This helps identify investments made predominantly in cash or through opaque channels that deviate from sector norms.
+- [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — - Tracks the lifecycle of insurance products, including policy inception, premium schedules, and early surrender events.
+- Identifies patterns of frequent or early surrenders, highlighting potentially illicit layering or integration through seemingly legitimate insurance payouts.
+- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Consolidates customer usage patterns across financial products and services.
+- Highlights sudden or unusual increases in collectible auction activity by customers not previously engaged in such trading.
+- Detects abrupt shifts in usage volumes that may signify layering or integration of illicit funds under the guise of collectible transactions.
+- [Loyalty Points](https://framework.amltrix.com/techniques/T0106) — Tracks historical usage patterns of loyalty programs, including normal accumulation and redemption behaviors, enabling the detection of sudden changes in point usage volume or frequency. This helps uncover abrupt increases or rapid redemptions commonly associated with the layering of illicit funds through loyalty schemes.
+- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Monitors changes in an entity’s product or service lines to newly introduce offshore gambling.
+- Tracks usage frequency and transaction volumes tied to gambling services, detecting anomalies or sudden spikes.
+
+These insights confirm the legitimacy of declared gambling operations and flag abrupt shifts in business focus indicative of potential money laundering schemes.
+- [Financial Product Overfunding](https://framework.amltrix.com/techniques/T0086) — Aggregates detailed metrics on how financial products are actually utilized, including usage frequency, transaction volumes, and product feature engagement. For overfunding schemes, it reveals customers who show minimal legitimate interest and instead focus on rapid, high-volume deposits and early withdrawals, indicating potential laundering.
+- [Foreign Exchange Manipulation in Trade](https://framework.amltrix.com/techniques/T0081) — - Provides insights into how customers utilize specific financial products and services, including frequency, volumes, and product types.
+- Reveals patterns where foreign exchange or hedging products are deployed gratuitously or at odds with a company’s stated operational needs.
+- Aids in flagging customers whose FX usage deviates significantly from their usual business profile, indicating potential manipulation.
+
+---
+
+## [Open-Source Intelligence (OSINT)](https://framework.amltrix.com/data-sources/DS0011)
+
+**Description:**
+Publicly available information from websites, social media platforms, news outlets, and public records. This may include user profiles, corporate announcements, and other open data relevant to verifying identities and analyzing associations.
+
+### Related Techniques
+- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Gleans publicly available information from social media, online forums, and websites to verify personal or business claims.
+- Identifies negative news or scam alerts about fraudulent trading platforms promoted in pig butchering.
+- Corroborates suspicious relationship-building activities or questionable investment endorsements.
+- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — - Includes publicly accessible data from social media, forums, and websites advertising quick-money schemes or job offers targeting potential money mules.
+- Provides insights into mule recruitment networks and communications, enabling analysts to cross-reference online postings with individuals opening new accounts.
+- Reveals social media patterns or user interactions that indicate potential involvement in organized mule activities.
+- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — Encompasses publicly available data from websites, social media, news outlets, and public records. This information helps identify duplicate product listings, verify inconsistent business claims, and detect newly established websites with suspiciously high transaction volumes or minimal online presence, revealing potential fraudulent e-storefronts.
+- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Collects publicly available data from news articles, social media, corporate announcements, and other open platforms about professional intermediaries. This enables investigators to uncover adverse information, suspicious associations, or regulatory red flags linked to these service providers.
+- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — - Aggregates publicly accessible information, including social media posts, online marketplaces, and specialized forums.
+- Can reveal possession or advertisement of counterfeiting equipment, suspicious behaviors, or associations not captured in traditional banking data.
+- [Front Company](https://framework.amltrix.com/techniques/T0014) — - Includes public records, website data, and social media posts to verify physical premises and examine the legitimacy of stated operations.  
+- Detects inconsistencies when businesses claim active operations at addresses that appear vacant, shared, or virtual, suggesting a possible front.
+- [Online Game Currency Conversion](https://framework.amltrix.com/techniques/T0018) — - Gathers publicly available data from the dark web, social media, and other sources, including listings of stolen gaming assets.
+- Assists in correlating suspicious in-game items, compromised accounts, or large-scale item theft with potential laundering schemes.
+- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Gathers publicly accessible information from media, websites, and social platforms to confirm affiliations and identify risks.
+- Verifies connections between payers and individuals employed by border or port authorities who may be complicit in smuggling.
+- [Insurance Annuities](https://framework.amltrix.com/techniques/T0087) — - Aggregate publicly available information on intermediaries or brokers, including websites, social media, and news sources.
+- Verify regulatory status and licensing, identifying potential unlicensed or complicit operators.
+- Check for negative media coverage, historical sanctions, or collusion.
+
+OSINT investigations support detecting rogue or uncredentialed brokers who may facilitate illicit annuity schemes.
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Involves publicly available information from websites, social media, and news outlets.
+- Helps confirm whether any genuine promotional or marketing campaigns actually occurred, thereby detecting fabricated or nonexistent sponsorship activities used to launder illicit funds.
+- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Incorporates publicly available information—websites, social media, public records—to verify claimed operations.
+- Identifies lack of valid business premises, employees, or other signs of a functional enterprise.
+- Corroborates (or refutes) reported commercial activities for shell company detection.
+- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — Collects publicly available information from websites, social media, and online forums to identify suspicious or misleading job postings that promise easy income for transferring funds, a key indicator of money mule recruitment.
+- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Aggregates publicly available data (websites, social media, official announcements) on purported lotteries, timeshares, or inheritance processes.
+- Assists in verifying whether advertised schemes are genuine or part of advance fee fraud by uncovering discrepancies or confirming there is no legitimate underlying entity.
+- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Provides reference data on known Tor exit nodes, proxy IP addresses, and suspicious hosting services.
+- Enables cross-checking of session and transaction IPs against publicly documented anonymizing networks.
+- Helps investigators identify IP ranges frequently associated with criminal or high-risk proxy usage, thereby enhancing AML detection and investigation capabilities.
+- [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — - Provides publicly available information on auction house policies and participant identity requirements, uncovering potential gaps in AML controls.
+- Identifies private or sealed bidding processes that facilitate anonymity and hinder oversight.
+- Supports investigations by revealing unregulated or high-risk auction platforms frequently used to conceal illicit funds.
+- [Cross-Chain Bridges](https://framework.amltrix.com/techniques/T0005.002) — - Aggregates publicly available information about decentralized bridge platforms, including KYC policies and user experiences.
+- Allows investigators to identify minimal-KYC or non-compliant bridges used to facilitate illicit cross-chain transfers.
+- Supports enhanced due diligence by verifying public disclosures (e.g., social media, community forums, platform announcements) around cross-chain services and user activities.
+- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — Includes publicly available data from websites, social media, forums, and news outlets. Investigators can detect abrupt project website shutdowns, unverified or anonymous online personas, and social media hype campaigns, which are warning signs of a rug pull. OSINT also helps verify project claims and track online footprints that may reveal fraudulent or rapidly abandoned crypto ventures.
+- [Phishing Mule Recruitment](https://framework.amltrix.com/techniques/T0140.002) — - Provides domain registration details, social media, and public postings.
+- Enables checks for newly registered or impersonated domains and unrealistic online job adverts.
+- Helps identify phishing or scam recruitment tactics pointing to money mule recruitment schemes.
+- [Diplomatic Channels](https://framework.amltrix.com/techniques/T0084) — - Publicly accessible information from media outlets, websites, and social platforms.
+
+Open Source Intelligence (OSINT) can uncover reports of unusual diplomatic shipments, abuses of immunity, or repeated diplomatic pouch usage to transport financial instruments, aiding investigators in corroborating suspicious activity claims.
+- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Collects publicly available information (e.g., company websites, social media, business directories) to verify vendor legitimacy. Discrepancies between claimed vendors on expense reports and publicly documented entities can reveal shell or non-existent vendors used for fraudulent expense reimbursements.
+- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — Aggregates publicly available data from news outlets, social media, and websites to identify reported incidents of artifact theft, looting, or suspicious auctions. This information can verify or refute provenance claims, highlight known smuggling networks, and reveal any publicly documented controversies related to the parties or artifacts.
+- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Identifies cloud-based or remote mining providers widely reported to have negligible KYC or AML controls.
+- Correlates negative news, user reviews, or regulatory warnings about mining platforms that bad actors exploit.
+- Provides context on emerging trends, enabling investigators to pinpoint newly listed unregulated mining services.
+- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Aggregates publicly accessible data from websites, social media, news articles, and other open records.
+- Confirms whether a listed company address is merely virtual or a mailbox service, indicating potential misuse of a shelf company lacking any real operational footprint.
+- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Verifies the legitimacy of registered business addresses, revealing virtual offices or mail-drop services.
+- Corroborates the absence of genuine commercial premises.
+
+This helps confirm ephemeral shell companies that lack a real operational footprint.
+- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Gathers publicly accessible data such as online profiles, social media posts, and scammer blacklists.
+- Assists investigators in correlating suspicious account usage or identities with known romance scam masterminds or commonly reported ruses.
+- Facilitates cross-referencing of personal details against widely circulated romance scam scripts or flagged recruiter profiles.
+- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Gathers publicly available data from social media and other online platforms regarding campaign details, user aliases, and beneficiary information.
+- Enables monitoring of altered or repeatedly re-launched fundraising campaigns, revealing potential deceptive practices in fraudulent social media fundraising.
+- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Gathers publicly available information from websites, social media, and other open data sources.
+- Assists in detecting online advertisements or solicitations of sexual services, linking them to illicit financial flows.
+- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - Collects publicly available information, including any dark web affiliations, onion addresses, or marketplace references.
+- Assists in correlating anonymized financial transactions with reported dark web activities, identifying potential links to illicit marketplaces or hidden user identities.
+- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Publicly available information from social media platforms, websites, and online forums.
+- Detects suspicious activities or communications referencing the grooming and exploitation of minors, enabling more targeted financial investigations.
+- [Tokenized Fundraisings](https://framework.amltrix.com/techniques/T0144.013) — - Aggregates publicly available information such as social media updates, domain registrations, corporate announcements, and other online data.
+- Validates project documentation and team credentials by comparing them against credible sources and identifying plagiarized materials.
+- Detects sudden removal or alteration of websites or social media profiles, signaling potential exit scams or fraudulent conduct.
+- [Renovation Cost Manipulation](https://framework.amltrix.com/techniques/T0124) — - Gathers publicly available information, such as local building regulations, licensing data, and contractor business profiles.
+- Enables verification of contractors’ operational histories and reported construction projects, identifying fictitious or unsubstantiated renovation claims.
+- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Provides publicly accessible data—including social media, press releases, and NGO/grant registrations—that can validate or refute claimed philanthropic activities. In the event of sham NGO or foundation usage within agribusiness or charitable contexts, OSINT helps confirm the absence of genuine charitable operations.
+- [Piracy](https://framework.amltrix.com/techniques/T0148) — Publicly available information from news outlets, social media, and maritime forums regarding piracy incidents, ransom demands, or facilitators supports investigations by revealing potential networks, negotiation patterns, or newly emerged suspects tied to ransom laundering.
+- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Compiles publicly available information, such as online forums, auction listings, and dealer credentials.
+- Supports verification of claimed provenance and valuation for collectibles, detecting inconsistencies or missing documentation.
+- Identifies unverified or questionable dealers lacking legitimate track records.
+- Cross-references external data to confirm the authenticity of claimed sales or the existence of particular high-value items.
+- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Publicly available information from social media, news outlets, and other open data sources.
+- AML Relevance: Helps detect nonexistent or dubious employment histories and spot red flags like fake profiles or inconsistent public records.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Publicly available data from social media, news sources, and other online platforms can confirm or contradict customers' submitted personal details. This information helps identify inconsistencies or evidence of stolen or fabricated identities involved in identity manipulation schemes.
+- [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — OSINT involves gathering publicly available information from websites, social media, and other open sources to verify a firm's actual business presence, operational footprint, and staff. These details help identify virtual or shell offices that may indicate a fictitious consulting setup.
+- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Data elements: Publicly available information, such as player market valuations, club ownership disclosures, media reports on sponsors, and industry analytics.  
+- AML Use: Enables cross-referencing public player valuation benchmarks, confirming sponsor legitimacy, and verifying reported attendance figures, helping to detect artificially inflated revenues and questionable sponsor arrangements.
+- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — Includes public data from websites, social media, and other open channels, enabling the monitoring of unregulated online marketplaces, suspicious digital advertising, and unverifiable pharmaceutical brand promotion to help detect counterfeit medicine networks.
+- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Includes publicly accessible information from websites, social media, and forums. This data helps scrutinize promotional claims, track abrupt changes in disclaimers, and analyze recruitment tactics used in fraudulent 'guaranteed return' investment schemes.
+- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Collect publicly available information from job boards, social media, and other online platforms.
+- Aid in detecting unrealistic recruitment ads, mass unsolicited offers, or suspicious online communication patterns.
+- Help verify employer legitimacy and identify posts referencing quick payment processing jobs with minimal skills required.
+- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Includes publicly available information from websites, social media, and news outlets about third-party developers or software tools used for transaction manipulation. Investigators verify whether external parties are offering or facilitating digital document forgery or unauthorized transaction editing.
+- [Node Exchange Provisioning](https://framework.amltrix.com/techniques/T0013.003) — Aggregates publicly available information (e.g., websites, social media, news) that may reveal unregulated money exchangers, informal networks, or references to off-the-record currency exchanges. By examining this data, investigators can identify key players or brokers facilitating NEP.
+- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Collects publicly accessible information, such as social media, online forums, and web content.
+- Identifies discussions or recruitment postings for underground cash courier or informal money-transfer networks.
+- Supports AML investigations by uncovering potential relationships or organizational structures that facilitate bulk cash smuggling.
+- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Combines public records, news articles, and local sources to verify actual farming operations or the legitimacy of NGOs/foundations claimed to support agribusiness.  
+- Identifies whether agribusinesses exist in remote or non-productive locations and reveals any lack of real activity.  
+- Detects potential shell foundations or NGOs by confirming or refuting reported philanthropic or operational activities in the agricultural sector.  
+- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Aggregates public information from websites, social media, forums, and surface or dark web listings.
+- Detects advertisements for precursor chemicals, equipment, and potential leads on supplier or broker networks.
+- Assists in investigating suspicious entities and verifying the legitimacy of claimed business operations.
+- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Publicly available information from websites, social media, corporate registries, and news outlets.
+- Helps verify the investment company’s stated operations and legitimacy, flagging minimal online footprints or contradictory public information indicative of shell or front entities.
+- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — Provides publicly available reference data on market pricing for virtual items, external RMT platforms, and user activities. This supports the detection of inflated or irregular pricing structures and the identification of unregulated marketplaces facilitating cross-platform trades.
+- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Includes information from public websites, social media platforms, and news outlets, which may contain misleading or false statements regarding securities or assets.
+- Helps detect pump-and-dump schemes by identifying coordinated promotional campaigns or negative disinformation that artificially manipulates market sentiment.
+- [Investment Fund Manipulation](https://framework.amltrix.com/techniques/T0097) — Publicly available information, including news articles, corporate websites, and social media, can reveal contradictions in a fund’s declared operations, beneficial ownership, or performance claims, potentially exposing manipulative practices.
+- [Crowdfunding Campaign Manipulation](https://framework.amltrix.com/techniques/T0044) — - Gathers publicly available data from social media, news outlets, and official campaign pages.
+- Assists in validating the authenticity of fundraising narratives by identifying vague or inconsistent details.
+- Helps detect multiple campaigns operated by the same entity or overlapping beneficiary information.
+- [Social Media Mule Recruitment](https://framework.amltrix.com/techniques/T0140.001) — - Gathers publicly available social media data, online postings, and user reports.
+- Identifies suspicious recruitment ads, scam alerts, or negative coverage regarding purported social media 'employers.'
+- Correlates the timing of job postings or discussions with observed account activity, supporting direct linkage to money mule schemes.
+- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Provides publicly available data on phone numbers, domain registrations, IP addresses, and other digital footprints.  
+- Enables verification of newly registered domains or unrecognized phone numbers used in deepfake impersonation attempts, helping flag suspicious contact points not associated with legitimate account holders.
+- [Custodial Mixers](https://framework.amltrix.com/techniques/T0003.001) — - Aggregates publicly available information on custodial mixer operators, including location and regulatory status.
+- Assists in identifying mixers operating in jurisdictions with minimal AML oversight or those flagged for illicit activities, thereby supporting enhanced due diligence.
+- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Aggregates publicly available information, such as social media, news reports, and web content, to verify declared ownership structures and identify undisclosed relationships. This process helps uncover adverse media or hidden affiliations that may confirm proxy arrangements.
+- [Sector-Specific Document Manipulation](https://framework.amltrix.com/techniques/T0012.003) — - Publicly accessible information from websites, media outlets, social networks, and industry directories is used to verify whether purported licensing authorities or documents exist and match official references.
+- This enables the detection of fabricated credentials or organizations by cross-checking claimed sector compliance against recognized regulatory bodies and published industry standards.
+- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Leverages publicly accessible data sources, such as domain registrations, website content, and contact details, to identify suspicious overlaps or entire absences of legitimate activity associated with virtual enterprises. OSINT can reveal multiple entities sharing identical addresses, phone numbers, or other corporate details, suggesting potential shell setups.
+- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Gathers publicly accessible data from news outlets, social media, and investigative reports.
+- Provides insights on private couriers, hidden shipment methods, or emerging smuggling trends related to precious commodities.
+- [Protection Payments](https://framework.amltrix.com/techniques/T0049.002) — Aggregates public data, such as news articles, social media, and publicly available records, on individuals and entities. 
+
+- Verifies if recipients labeled as charity, donation, or membership fee beneficiaries are actually paramilitary or extremist groups demanding protection payments.
+- Helps confirm or refute suspicious affiliations not evident in internal banking data.
+- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Verify the physical presence, staff, and operational legitimacy of the captive insurer.
+- Uncover external media or public records revealing nonexistent offices, fake claim events, or questionable business backgrounds of key personnel.
+- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Aggregates publicly accessible data such as brand information, corporate announcements, and product authenticity details.
+- Allows verification of claims about jewelry origin, quality, or business legitimacy by cross-checking publicly available information.
+- Assists in detecting misrepresentations or contradictions in advertised versus actual business operations.
+- [CBI or RBI-Based Identity Acquisition](https://framework.amltrix.com/techniques/T0024.001) — - Collects publicly accessible data from websites, social media, and news reports to verify the legitimacy of individuals and agents.
+- Uncovers unlicensed intermediaries or suspicious practices in CBI/RBI applications, including inflated fees or questionable accreditation.
+- Supports AML detection by revealing the presence of fraudulent or non-compliant advisors and identifying red flags in applicant backgrounds.
+- [Political Contributions](https://framework.amltrix.com/techniques/T0056) — - Consists of publicly available records, including news articles, social media, and official announcements, useful for verifying claimed lobbying activities.
+- Allows cross-checking a lobbyist’s or donor’s public profiles, ensuring stated political or advocacy engagements are genuine.
+- Detects inconsistencies between reported lobbying expenses and verifiable public events or hearings.
+- [Match-Fixing](https://framework.amltrix.com/techniques/T0107.005) — - Aggregates publicly available data from news outlets, social media, and official publications.
+- Enables correlation of reported match anomalies or rumored bribery incidents with suspicious betting patterns.
+- Supports gathering additional context on participants, events, and potential integrity breaches tied to match-fixing.
+- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Aggregates publicly available data from forums, marketplaces, and social platforms where in-game currency or items might be traded at unofficial exchange rates.
+- Helps investigators link accounts or individuals advertising or conducting illicit third-party exchanges, facilitating the detection of unregulated trades.
+- [Ponzi Schemes](https://framework.amltrix.com/techniques/T0144.019) — Captures public-facing information on promotional activities, referral campaigns, and network-driven recruitment. This helps reveal the marketing and recruitment patterns typical of a Ponzi scheme and uncovers social media or online platforms used to solicit new investors.
+- [Underground Gambling](https://framework.amltrix.com/techniques/T0107.007) — - Gathers publicly accessible information from news outlets, social media, and community forums that may reference unlicensed or underground gambling venues.
+
+- Identifies local reporting on illicit activities, neighborhood complaints, or advertisements for unregulated gambling, supporting investigations into hidden or unregistered operators.
+
+---
+
+## [Trust Information and Accounts](https://framework.amltrix.com/data-sources/DS0012)
+
+**Description:**
+Comprehensive information about trusts, including their structure, beneficiaries, trustees, associated financial accounts, transaction histories, and legal documentation. This data helps verify the legitimacy of trust-related activities and confirm the identities of key parties.
+
+### Related Techniques
+- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — - Provides details on trust structures, including settlors, beneficiaries, trustees, and related account activities.
+- Supports verification of opaque trusts used to mask beneficial ownership in cross-border asset management arrangements.
+- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — Contains in-depth records of trusts, including settlors, trustees, beneficiaries, and related financial accounts. 
+
+- Clarifies ownership structures where trusts are used to hide real estate holdings in foreign jurisdictions.
+- Aids in identifying ultimate beneficial owners and detecting potentially suspicious trust arrangements supporting cross-border property transactions.
+- [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — Provides detailed records on trust structures, trustees, beneficiaries, and transactional histories. By analyzing the formation and activity of legal trusts, investigators can detect unusual IOLTA or trust account usage and reveal hidden beneficial ownership concealed by professional secrecy claims.
+- [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Contains information on trustees, beneficiaries, and trust agreements, helping identify layers of control established by intermediaries.
+- Supports verification of whether a trust arrangement is legitimate or used to conceal beneficial ownership.
+- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Offers comprehensive records of trust structures, trustees, beneficiaries, historical amendments, and related financial accounts. Reviewing these details can uncover beneficiary manipulations, repeated changes to controlling parties, and inconsistencies with the stated trust purpose.
+- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Provides details on trust deeds, trustees, beneficiaries, and associated accounts. Professional intermediaries may establish or administer trusts to conceal ultimate ownership, and these records help detect such hidden relationships or unexplained trust activities.
+- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Details fiduciary or mutual trust fund arrangements, including trustees, beneficiaries, and transaction histories.
+- Uncovers hidden contributors or pooled funds behind foreign investments, revealing obscured beneficial ownership across multiple participants.
+- [Asset Cloaking](https://framework.amltrix.com/techniques/T0009) — - Contains trust deeds, trustee and beneficiary information, and associated financial accounts.
+- Helps uncover trust-based layering or private foundations that mask beneficial owners.
+- Enables validation of reported trust activities to detect suspicious or undisclosed controlling parties.
+- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Provides comprehensive details on trust structures, including beneficiaries, trustees, associated financial accounts, and transaction histories.
+- Helps uncover hidden beneficial ownership or multi-layered corporate vehicles used in multi-jurisdiction arrangements.
+- Cross-referencing trust documents (e.g., balance sheets, tax returns) with corporate filings can reveal unexplained ownership patterns or suspicious relationships.
+- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Provides comprehensive information on trust structures, trustees, beneficiaries, associated accounts, and transaction histories. This data helps:
+
+- Identify potential involvement of offshore trusts designed to obscure true ownership.
+- Verify the identities of beneficiaries and trustees who may be linked to layering activities.
+- Track cross-border financial flows passing through trust accounts, supporting detection of offshore layering schemes.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Detailed records of trusts, including their structure, trustees, beneficiaries, and account activities.
+- Identifies hidden ownership or complex trust layers behind arbitration participants, suggesting collusion or concealment of illicit beneficiaries.
+- [Trust-Based Obfuscation](https://framework.amltrix.com/techniques/T0088.002) — - Provides official trust deeds, trustee and beneficiary details, powers of attorney, and signatory records.
+- Enables detection of undisclosed or frequently changing beneficial owners and nominal trustees.
+- Helps identify suspicious signatory or beneficiary changes that reveal trust-based obfuscation attempts.
+
+---
+
+## [Business Activity and Operations](https://framework.amltrix.com/data-sources/DS0030)
+
+**Description:**
+Data on a business’s commercial, industrial, or professional operations, including revenue figures, operating expenses, and related metrics, often compared with reported financial information to identify discrepancies or anomalies.
+
+### Related Techniques
+- [Common Offenses](https://framework.amltrix.com/techniques/T0146) — - Provides operational metrics such as revenue figures, foot traffic data, and expense patterns.
+- Enables comparison between reported revenues and actual business capacity, highlighting unexplained cash surges.
+- Assists in identifying suspicious spikes in reported income at smaller businesses that may be used to launder proceeds of common offenses.
+- [Tokenized Fundraisings](https://framework.amltrix.com/techniques/T0144.013) — - Documents a project's operational scope, revenue, expenditures, and resources.
+- Compares declared project goals or developmental capacity with the funds reportedly raised, identifying potential discrepancies indicative of fraudulent fundraising.
+- Highlights mismatches between stated progress and actual business viability or investment requirements.
+- [Agricultural Subsidy Fraud](https://framework.amltrix.com/techniques/T0144.012) — Detailed records of a business’s operational metrics include actual production levels, livestock counts, farmland acreage, and operating costs. Comparing this operational data against claimed capacities in subsidy applications can reveal potential discrepancies, exposing inflated or falsified production figures.
+- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Detailed records of a business’s real-world operations, revenues, expenses, and relevant operational metrics.
+- Facilitates comparison of declared call center capacity (staffing, facilities, overhead) to reported income, highlighting potential inconsistencies indicative of fictitious operations.
+- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Offers detailed operational metrics, including production capacity, revenue figures, operating expenses, and comparative industry benchmarks.
+- Enables detection of inflated or fabricated costs (e.g., seeds, fertilizers) and abnormal revenue patterns not aligning with typical agribusiness norms.
+- Confirms whether government subsidies or operational claims match actual production output for farmland or livestock.
+- Aids in verifying real on-site activities and identifying ghost operations lacking tangible agricultural output.
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Includes records of a business’s operating scale, revenue figures, and typical expense allocations.
+- Enables direct comparison of declared payroll taxes and workforce sizes to industry norms and operational benchmarks.
+- Assists in flagging anomalously low reported payroll obligations inconsistent with actual business activity.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Provide baseline industry metrics (e.g., typical cost structures, staffing needs) for construction projects to help identify inflated or unjustified expenses.
+- Offer comparative data on usual operational scope and spending patterns to reveal anomalies in cost estimates or invoices.
+- Support ongoing assessment of a company’s actual construction activity against stated business operations.
+- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Reveals an entity’s actual operational scope, risk exposure, and typical insurance needs.
+- Identifies mismatches between legitimate business activity and the scale of insurance premiums or claims, suggesting manipulation.
+- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — - Contains operational data on a merchant’s declared products, services, and revenue streams.  
+- Helps investigators compare a merchant’s stated business model against actual transactions, identifying mismatches that may signal unauthorized or illicit deposit activity.  
+- Supports validation of declared sales volumes, preventing criminals from hiding illegal fund flows under legitimate business operations.
+- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Captures operational details such as workforce size, machinery, and production capacity. Discrepancies in reported small-scale activity versus large trade volumes may indicate the integration of illicitly mined minerals into official output.
+- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Provides data on a business's commercial scale, revenues, and operational scope.
+- Helps AML teams detect inconsistencies between declared diamond trading activities and actual business operations.
+- [Accrual Manipulation](https://framework.amltrix.com/techniques/T0050.001) — Data on a company’s actual commercial operations—such as revenue generation, production processes, and day-to-day transactions—allows for cross-checking against accrued amounts in financial statements. Discrepancies between real operational output and reported accrual balances can signal fraudulent manipulations.
+- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Reflects the practical operational scale, such as sales volumes, workforce size, and inventory data, of the entity.
+- Allows comparison of declared jewelry income or transaction volumes against actual capacity.
+- Highlights businesses claiming large throughput with negligible operational footprint, indicating possible front activity.
+- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Contains information about a property's typical revenue-generating activities, occupant levels, historical performance metrics, and operational scale.
+- Enables comparison of stated occupancy or usage rates with actual transaction volumes, aiding in the detection of abnormally high income and potential mixing of illicit funds.
+- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Includes data on revenue streams, operational scope, and market presence of a business.
+- Supports detection of abnormal expansions, sudden shifts in operations, or uncharacteristic activities tied to sanctioned markets or entities.
+- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Contain operational data (daily revenue, production, sales figures) reflecting actual business activities.
+- Enable comparison between genuine operational results and reported financial statements, exposing inflated or fabricated revenues and manipulated accruals.
+- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Provides data on a company’s commercial operations, revenue figures, operating expenses, and other key metrics. By comparing declared labor costs with industry norms, investigators can spot suspiciously low payroll expenses or hidden workers, which are indicators of forced labor exploitation.
+- [Front Company](https://framework.amltrix.com/techniques/T0014) — - Documents actual operational metrics, such as inventory levels, supply costs, and operational capacity, that can be contrasted with declared revenues.
+- Helps reveal when a purportedly legitimate company shows minimal or inconsistent real activity, a common sign of a front.
+- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Examines an enterprise’s operating footprint, including payroll, facilities, and other operational metrics, to confirm actual commercial activities. Discrepancies between purported revenues and a lack of real expenses or infrastructure can signal a virtual enterprise used for laundering.
+- [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Details a company’s normal business functions, operational capacity, and financial performance.
+- Helps validate claimed trade volumes, product lines, and shipping requirements.
+- Reveals potential misalignment between declared cargo and actual business operations in documentary collection transactions.
+- [Syndicated Trade Loan Manipulation](https://framework.amltrix.com/techniques/T0078) — - Provides insight into an entity’s real operational outputs, revenue streams, and organizational scale.
+- Allows comparison of claimed trade capacity and loan repayment feasibility to actual business performance, highlighting inflated or fabricated trade finance needs.
+- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — Encompasses a company’s operational metrics, revenue streams, and expected cash handling practices. By comparing declared business activities with observed domestic cash deposits, investigators can identify sudden, unexplained surges in cash flows indicative of bulk cash delivery schemes.
+- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Provides insight into a business’s commercial activities, revenue streams, and operating expenses.
+- Allows verification of actual operational history or downturn claims against the relief application’s stated figures.
+- Identifies discrepancies where a business’s claimed losses or scale of operations do not match observed commercial activity, indicating potential fraud.
+- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Examine the captive insurer’s operational footprint, including workforce size, operational sites, and actual insurance coverage volumes.
+- Compare basic operating metrics (policy count, claims ratio) to industry norms, detecting anomalies such as high premiums with negligible claims or fictitious risk coverage.
+- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Provides insight into a customer’s declared commercial operations and expenses, including energy consumption profiles.
+- Allows comparisons between reported mining capacity (e.g., hardware count, power usage) and actual outputs observed on the blockchain.
+- Helps identify discrepancies where declared operations do not match suspiciously high mining yields.
+- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Contains verified information on a company's actual operations, revenues, and expenses.
+- Assists in determining whether corporate entities are truly active or serve as shells.
+- Helps compare reported economic activity against financial statements to detect inconsistencies or fabrication.
+- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Includes data on an entity’s real operational presence, staffing, physical assets, and business activities.
+- Helps determine whether affiliated entities charging each other for services or goods actually conduct legitimate operations, thereby exposing shell or paper companies used in transfer pricing schemes.
+- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Detail revenue figures, operational capacity, and expenses for businesses.
+- Reveal discrepancies in claimed operations, such as bars or massage parlors, when fronts are used to launder trafficking proceeds.
+- Highlight unusual operational patterns or inflated revenues indicating forced labor exploitation.
+- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Includes historical sales, production capacity, or operational data for the businesses involved in trade finance. By comparing financed amounts or volumes with typical production or sales figures, investigators can identify disproportionate or anomalous loan requests or invoices.
+- [Circular Transactions](https://framework.amltrix.com/techniques/T0039) — - Contains information about a business's operations, including revenue, operating expenses, and employee counts.
+- Helps identify discrepancies when large transaction volumes are not consistent with the entity's actual operational capacity, suggesting circular movement of funds.
+- [Entertainment Venture Fronts](https://framework.amltrix.com/techniques/T0014.006) — - Holds operational data such as attendance records, event scheduling, performance metrics, and ticket sales.
+- Enables AML teams to compare reported event revenues or sponsorship deals with actual attendance to reveal inflated or fabricated income.
+- Helps detect front usage where reported activity significantly exceeds verifiable operational evidence.
+- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — Details actual operational metrics (e.g., production output, sales volumes, service capacity) that enable comparison of real performance against reported financials. This helps reveal inconsistencies such as inflated revenue, understated costs, or disconnected growth trends typical of laundering schemes through allegedly legitimate businesses.
+- [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — Details on a business’s revenues, expenses, and operational scale. Cross-checking these figures against Bill of Exchange amounts can expose suspiciously large or inconsistent transactions that do not align with the entity’s typical business profile.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Data on a company’s usual commercial scale, revenue, and expenditures.  
+- Enables comparison between typical operations and the size or nature of arbitration claims, uncovering potential staged or inflated disputes.
+- [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Holds information on a company’s operational practices, revenues, and typical transaction volume. This data allows for the detection of repeated invoicing beyond normal business activity or scale, indicating potential abuse of trade finance arrangements.
+- [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Provides insight into a business’s genuine operational presence, such as physical premises, inventory, and workforce data.
+- Allows investigators to compare the declared business scope with actual operations.
+- Identifies the limited or nonexistent activity typical of shell entities used in carousel schemes.
+- [Fictitious Employer-Employee Fraud](https://framework.amltrix.com/techniques/T0144.016) — - Data Provided: Information on a business’s operational history, revenue, and day-to-day activities.
+- AML Relevance: Reveals a lack of real commercial operations and legitimate payroll outflows, exposing fabricated employer-employee relationships.
+- [Consulting Firm Schemes](https://framework.amltrix.com/techniques/T0098.001) — - Details a firm's day-to-day operational scope, staffing levels, physical premises, and overhead.
+- Highlights discrepancies where reported consulting revenue far exceeds observable business capacity or real-world operations.
+- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — Data capturing core business operations includes actual revenue, expenses, and operational metrics. By comparing stated deal values with verifiable business performance, investigators can identify artificially inflated or deflated valuations in M&A transactions. This process helps uncover sham acquisitions or manipulated valuations, which are frequently seen in fictitious M&A schemes.
+- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Provides information on a company's declared commercial operations, revenues, expenses, and overall business metrics.  
+- Enables comparison of actual activity levels against the official incorporation timeline, identifying cases where a shelf company's older registration date contradicts its minimal or nonexistent operational history.
+- [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Contains data on an entity’s core business lines, production capacity, and typical revenue streams. Comparing these operational details with large or frequent red/green clause LC transactions can uncover inconsistencies or fraudulent usage.
+- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Documents an entity’s operational scale, staffing, and production capacities.
+- Highlights discrepancies where significant foreign investments do not translate into visible business expansion, suggesting falsely declared economic activity.
+- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Documents reported business activities, revenue sources, and operational footprints.
+- Enables comparison between declared operations and actual cross-jurisdiction transactions.
+- Aids in detecting shell or dormant companies lacking legitimate activity in multi-layered structures.
+- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — - Includes operational metrics, procurement cycles, staffing levels, and other core business data.
+- Allows comparison of claimed vendor activity against realistic operational patterns, helping to identify anomalies consistent with fake vendor usage.
+- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Document sanctioned budgets, standard workflows, and operational spending for government entities.  
+- Compare declared activities or projects with actual financial outflows to detect inflated expenditures or phantom projects indicative of misappropriation.
+- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Assesses the real operational capacity and customer engagement for purported offshore gambling services.
+- Compares declared gambling activities with actual records of gaming infrastructure or user volumes.
+
+Such comparisons help expose sham or non-operational gambling businesses that launder illicit funds under the guise of legitimate revenue.
+- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Compares the declared business purpose with actual operational evidence (e.g., revenues, operational records).
+- Highlights discrepancies when an entity claims a commercial purpose but shows no tangible activity.
+
+These insights expose the lack of genuine business operations characteristic of temporary shell companies.
+- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Provides records of a charity’s stated projects, operational scope, and activities.
+- Enables cross-checking of reported philanthropic activities against actual resources allocated.
+- Helps detect whether incoming donations are consistent with legitimate programming or suggest that funds are being diverted.
+- [Extortion](https://framework.amltrix.com/techniques/T0049) — Contains data on a company’s operational metrics, such as sales figures, expenses, or foot traffic. These records help: 
+
+- Compare reported operational performance against declared revenue spikes potentially fueled by coerced payments.
+- Identify inconsistent or unsubstantiated inflows indicating extortion proceeds disguised as legitimate business income.
+- [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — - Data Provided: Information on a company’s operational scope, revenue streams, and typical commercial activities.
+- AML Relevance: Determines whether declared trades align with the entity’s legitimate business profile or signal fictitious deals beyond its normal operations.
+- [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Catalogs a company's day-to-day operations, revenue streams, and operational capacity.
+- Comparing these operational metrics with high-value or frequent invoices supports the detection of artificially inflated or fabricated trade transactions.
+- [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — - Captures the overall scope of an entity’s operations, including production volumes, client base, and typical employee headcount.
+- Allows comparison of reported payroll outlays with actual business size, revenues, and operational scale to detect inflated wages or fabricated workforce claims.
+- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Details the nature, scope, and operational scale of a business, including revenue patterns and expense structures.
+- Identifying excessive reliance on untracked cash wage payments compared to industry norms can reveal concealed or illicit payroll practices.
+- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Provides data about a business's core operations, revenue streams, and expenses, indicating genuine economic activity or the lack thereof.
+- Helps detect shell or newly formed entities set up purely to fulfill minimum CBI/RBI investment criteria without genuine commercial operations.
+- [Remote Mining](https://framework.amltrix.com/techniques/T0020.001) — - Details a company’s operational metrics, including revenue streams, production capacity, and allocated resources.
+- Helps compare reported mining hash rates or production levels with financial inflows/outflows to detect inconsistencies suggesting money laundering.
+- [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Contains records of the entity’s stated line of business, operational scope, revenue sources, and expense categories. This allows for a comparison between claimed activities and the nature of recorded payables to detect incongruent or fabricated liabilities.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Tracks operational capabilities, production volumes, and growth patterns, enabling investigators to identify sudden expansions or capital inflows that exceed normal growth rates and lack a justifiable commercial rationale.
+- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Details the operational scope, revenues, and expenses of a company. Comparing these metrics with investors' returns or marketing claims helps expose sham operations or shell entities carrying out fraudulent investment promotions.
+- [Tax Evasion & Fraud](https://framework.amltrix.com/techniques/T0147) — - Contains actual operating details, including revenue figures and expenses.
+- Allows comparison of declared business results with real operational data to spot underreporting or misclassification of expenses aimed at tax evasion.
+- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Provides an organization’s operational metrics, reported revenues, and business capacity.
+- Identifies sudden spikes in reported sales without corresponding operational evidence, signaling potentially fictitious or inflated revenues.
 
 ---
 
@@ -4154,6 +4154,7 @@ By monitoring prepaid card activity, investigators can uncover layering strategi
 Information on cross-border financial transactions, covering transaction amounts, participating institutions, involved countries, currencies, settlement processes, and account relationships. This data is typically collected from banks, payment processors, and other intermediaries through correspondent banking relationships.
 
 ### Related Techniques
+- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Captures cross-border transaction details and intermediary relationships, revealing potentially unlicensed or informal channels used in hawala arrangements, where funds are transferred across jurisdictions outside formal banking routes.
 - [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Contains details of cross-border payments, including intermediary banks, countries of origin/destination, currencies, and settlement methods.
 - Detects rapid layering of funds across multiple jurisdictions to obscure origins, a common tactic in pig butchering.
 - Assists in tracing international pathways that lack commercial or personal justification.
@@ -4162,13 +4163,24 @@ Information on cross-border financial transactions, covering transaction amounts
 - [Currency Exchange Conversions](https://framework.amltrix.com/techniques/T0115) — - Captures cross-border wire transfers involving different countries and currencies.
 - Facilitates the identification of multi-jurisdictional layering by linking currency conversion activities to subsequent international transfers.
 - Enables the detection of high-risk patterns where criminals quickly move converted funds to foreign accounts.
+- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — Provides detailed records of international transaction flows, including originating and beneficiary institutions, involved countries, currencies, and settlement processes. This data helps identify cross-border funds movement indicative of multi-jurisdictional money mule networks, revealing patterns where mules funnel illicit proceeds through multiple accounts across different regions.
+- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — - Provides comprehensive views of cross-border transactions, including sending/receiving institutions, countries, currencies, and settlement details.
+- Identifies the geographic dispersion of remittances and traces funds converging on a single beneficiary.
+- Aids in uncovering layering strategies that leverage multiple regions to obscure the origin of illicit proceeds.
+- [Automated Transaction Systems](https://framework.amltrix.com/techniques/T0026) — Contains comprehensive information on cross-border financial transactions, including details on participating institutions, origin and destination countries, currencies, settlement processes, and account relationships. Given the rapid rerouting of funds across multiple jurisdictions in automated layering schemes, this data is essential for detecting suspicious multi-jurisdictional flows and identifying potentially orchestrated cross-border transactions designed to obscure illicit origins.
+- [Sports Sponsorship](https://framework.amltrix.com/techniques/T0129) — - Details cross-border transfers, currencies, and financial intermediaries connected to sponsorship or image-rights payments.
+- Highlights repeated inflows from high-risk jurisdictions and offshore accounts, aligning with known methods of layering illicit funds through international sports deals.
+- [Carbon Credit Trading](https://framework.amltrix.com/techniques/T0118) — - Contains details of cross-border transactions, including amounts, currencies, involved financial institutions, and beneficiary jurisdictions.
+- Crucial for detecting rapid, complex fund flows across multiple countries linked to carbon credit payments and immediate transfers through special-purpose vehicles.
 - [Front Company](https://framework.amltrix.com/techniques/T0014) — - Tracks cross-border payments, involved institutions, jurisdictions, and transaction details.  
 - Identifies unsubstantiated foreign transfers or high-value cross-border flows inconsistent with the stated commercial profile, indicative of potential front company laundering.
-- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — Provides detailed records of international transaction flows, including originating and beneficiary institutions, involved countries, currencies, and settlement processes. This data helps identify cross-border funds movement indicative of multi-jurisdictional money mule networks, revealing patterns where mules funnel illicit proceeds through multiple accounts across different regions.
 - [Online Gambling](https://framework.amltrix.com/techniques/T0017) — - Contains details on cross-border wires, correspondent banking relationships, intermediary banks, and settlement processes.
 - Reveals the movement of funds to or from high-risk or lightly regulated jurisdictions.
 - Assists investigators in tracing complex cross-border layers of gambling-related transactions.
-- [Automated Transaction Systems](https://framework.amltrix.com/techniques/T0026) — Contains comprehensive information on cross-border financial transactions, including details on participating institutions, origin and destination countries, currencies, settlement processes, and account relationships. Given the rapid rerouting of funds across multiple jurisdictions in automated layering schemes, this data is essential for detecting suspicious multi-jurisdictional flows and identifying potentially orchestrated cross-border transactions designed to obscure illicit origins.
+- [Corruption](https://framework.amltrix.com/techniques/T0051) — Tracks international fund movements, including originating and beneficiary institutions, currencies, and settlement details. This data is crucial for identifying high-risk cross-border transfers tied to corrupt officials moving illicit proceeds offshore.
+- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Contains information on international transaction flows passing through correspondent banking channels, including amounts, sending/receiving institutions, and involved countries.
+- Reveals cross-border deposits and subsequent fund transfers that may hide illicit proceeds.
+- Supports investigations into the rapid movement of aggregated funds across multiple financial institutions abroad.
 - [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — Contains information on cross-border financial transactions and the institutions involved, covering origins, destinations, currencies, and settlement details. This data assists in:
 
 - Identifying frequent or high-value movement of precious metals or gemstones across jurisdictions incongruent with a customer’s usual operations.
@@ -4179,9 +4191,18 @@ Information on cross-border financial transactions, covering transaction amounts
 - [Offshore or Secrecy Exploitation](https://framework.amltrix.com/techniques/T0062) — - Consolidates cross-border payment flows, including involved financial institutions, jurisdictions, currencies, and settlement information.
 - Pinpoints high-risk or secrecy jurisdictions in transaction chains, helping to track layered or repeated transfers designed to obscure beneficial ownership.
 - Supports the investigation of offshore or secrecy exploitation by maintaining a clear record of international money movements and counterparty relationships.
-- [Sports Sponsorship](https://framework.amltrix.com/techniques/T0129) — - Details cross-border transfers, currencies, and financial intermediaries connected to sponsorship or image-rights payments.
-- Highlights repeated inflows from high-risk jurisdictions and offshore accounts, aligning with known methods of layering illicit funds through international sports deals.
+- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — - Captures information on cross-border payments, correspondent banking relationships, and involved jurisdictions.
+- Highlights unusual payment flows and layering across multiple countries when funds pass through FTZs.
+- Provides details to confirm whether declared routing aligns with legitimate business needs.
+- [Countertrade](https://framework.amltrix.com/techniques/T0079) — Includes cross-border financial transactions, participating institutions, currencies, and settlement details. This data helps investigators:
+
+- Identify missing or anomalous payment records, suggesting the use of informal channels for settlement.
+- Track the movement of funds across jurisdictions to expose potential laundering patterns.
 - [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — Captures details of cross-border financial transactions, including currencies, amounts, originators, beneficiaries, and participating financial institutions. This data helps identify sanctioned or high-risk jurisdictions and uncovers potential sanctions evasion by analyzing transaction patterns and corridors.
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Documents cross-border financial flows, including involved jurisdictions and intermediary banks.
+- Helps track offshore payment routes and identify secrecy-prone regions, exposing layering or other steps undertaken to obscure the origin of illicit funds in image rights deals.
+- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — - Contains information on cross-border transactions, including origin and destination countries, currencies, involved banks, and transaction volumes.
+- Highlights inconsistencies in cross-border gold transfers and identifies geographic anomalies not aligned with the customer's profile or business.
 - [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Contains records of international financial transfers, including intermediaries, involved countries, and transaction details.
 - Helps detect structuring or layering across multiple jurisdictions commonly used to obscure drug proceeds.
 - Supports tracing funds back to their origin or through complex networks of correspondent accounts linked to drug syndicates.
@@ -4189,42 +4210,106 @@ Information on cross-border financial transactions, covering transaction amounts
 - Helps trace complex layering through multiple shell entities across different countries.
 - Identifies high-volume or frequent transfers that lack a legitimate economic purpose.
 - [Correspondent Banking](https://framework.amltrix.com/techniques/T0104) — Provides detailed records of cross-border wires, including originator and beneficiary details, amounts, currencies, involved institutions, and settlement processes. This helps detect frequent or suspicious patterns, identify missing or incomplete originator/beneficiary data, and flag potential layering or infiltration of illicit funds within the correspondent banking chain.
-- [Carbon Credit Trading](https://framework.amltrix.com/techniques/T0118) — - Contains details of cross-border transactions, including amounts, currencies, involved financial institutions, and beneficiary jurisdictions.
-- Crucial for detecting rapid, complex fund flows across multiple countries linked to carbon credit payments and immediate transfers through special-purpose vehicles.
+- [Investment in Financial Instruments](https://framework.amltrix.com/techniques/T0061) — Tracks cross-border financial flows, including involved institutions, jurisdictions, settlement processes, and currency exchanges. By examining these transaction records, investigators can pinpoint complex layering across multiple jurisdictions, detect irregular fund movements, and identify unsubstantiated cross-border investment transfers.
+- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Details cross-border payments, including sending and receiving institutions, countries involved, transaction amounts, and frequency.
+- Helps identify unusual or frequent overseas transfers associated with mule accounts, particularly those lacking legitimate business or personal rationale.
+- [Unlicensed MSBs](https://framework.amltrix.com/techniques/T0013.001) — - Contains records of cross-border transactions, including sending and receiving institutions, jurisdictions, and transaction amounts.
+- Detects unregistered MSBs moving funds internationally without proper oversight.
+- Identifies questionable or high-risk inter-jurisdictional payment flows commonly exploited by illicit MSBs.
 - [Cross-Border Payment Routing](https://framework.amltrix.com/techniques/T0121) — This data includes cross-border transaction amounts, participating institutions, involved countries, currencies, settlement processes, and account relationships. It enables tracing of intermediary banks and jurisdictions used within transaction chains, identifying anomalies such as omitted standardized data fields, routing through high-risk jurisdictions, and layering across multiple regulators.
+- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — - Documents financial transfers across multiple jurisdictions, including originating and beneficiary institutions, as well as settlement details.
+- Helps identify the rapid movement of funds that are disproportionate to legitimate oil business structures.
+- Provides insight into networks or payment channels frequently used to layer proceeds derived from manipulated oil transactions.
 - [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Covers international transaction details, including amounts, counterparties, currencies, and involved institutions.
 - Enables pinpointing regions or corridors linked to high-risk commodity trafficking routes.
 - Assists in identifying unusual cross-border flows not aligned with legitimate trade activities.
 - [Tax Evasion & Fraud](https://framework.amltrix.com/techniques/T0147) — - Logs cross-border remittances, participating banks, currencies, and settlement details.
 - Helps detect unreported offshore flows or profit shifting across jurisdictions designed to minimize tax liabilities.
+- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Contains details on cross-border transfers, including involved jurisdictions, currencies, and settlement processes.
+- Helps identify international layering or rapid fund displacement associated with advance fee fraud proceeds, particularly when scammers move victim payments offshore quickly to evade detection.
 - [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Tracks cross-border payment flows, including involved banks, currencies, and jurisdictions.
 - Identifies unusual routing or fragmentation of payments tied to documentary collection transactions.
 - Helps uncover multi-bank involvement or transactions lacking commercial rationale, indicative of possible manipulations.
+- [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Captures cross-border transaction details, covering participating financial institutions, currencies, and settlement processes. Analyzing these records reveals foreign reloads, withdrawals, and transfers linked to offshore e-wallets or prepaid cards, highlighting potential layering through secrecy jurisdictions.
+- [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Captures details of cross-border funds transfers (e.g., amounts, involved banks, jurisdictions).
+- Permits identification of repetitive or circular money flows across multiple accounts in different countries.
+- Reveals patterns consistent with carousel fraud's cyclical trade and VAT-based illicit proceeds.
+- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — Provides details of cross-border wires and related transactions, including amounts, originating and destination countries, and financial intermediaries. This data helps identify suspicious or high-value cross-border transfers linked to antiquities transactions that do not match the customer’s declared business operations.
+- [Wire Transfer Chains](https://framework.amltrix.com/techniques/T0070.001) — - Details intermediary banks, routing information, and settlement processes for cross-border wires.
+- Helps trace funds through multiple financial institutions and countries, revealing the layering chain in wire transfer schemes.
 - [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Captures cross-border fund transfers, including correspondent banking details, originating and destination countries, and transaction amounts. This data reveals suspicious cross-border flows into or out of offshore insurance policies.
+- [Virtual Token](https://framework.amltrix.com/techniques/T0067) — - Covers cross-border financial flows, associated institutions, currencies, and settlement processes.
+- Enables correlation of stablecoin or token movements with foreign transactions, helping detect abrupt cross-border layering or swift swaps intended to evade oversight.
+- Supports identification of uncharacteristic international fund transfers that align with virtual token obfuscation strategies.
+- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Covers cross-border financial transactions with details on amounts, currencies, jurisdictions, settlement chains, and account relationships.
+- Helps identify repeated cross-border layering or jurisdiction mismatches in currency conversion flows, supporting the investigation of structured transactions routed through multiple countries.
+- [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — - Data Provided: Details on cross-border payment flows, corresponding financial institutions, and involved jurisdictions.  
+- AML Relevance: Tracks complex international fund transfers that may indicate layering attempts via fictitious trade routes, highlighting risky jurisdictional patterns.
+- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Covers routing details, involved financial institutions, originating countries, and settlement processes for cross-border transactions.
+- Identifies funds sourced from or passing through offshore financial centers with lax AML controls, indicating potentially illicit foreign investments.
+- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Details transactions routed through correspondent banks or cross-border channels, identifying sending institutions, recipient accounts, and countries of origin/destination.
+- Reveals large incoming transfers from high-risk or non-cooperative jurisdictions specifically directed into CBI/RBI-related accounts, supporting scrutiny of unexplained inflows.
+- [Informal Value Transfer Systems](https://framework.amltrix.com/techniques/T0013) — - Includes detailed records of cross-border transactions, participating financial institutions, currencies, and settlement processes.
+- Facilitates identification of repetitive or high-volume international flows to jurisdictions associated with hawala or other IVTS.
+- Assists in flagging unusual settlement patterns bypassing standard wire transfers or regulated channels.
+- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — Information tracks international fund transfers, detailing intermediary banks, routing paths, currencies, and involved jurisdictions. This data allows investigators to trace complex cross-border flows under the guise of M&A deals, exposing potential layering or concealment tactics common in fictitious or inflated M&A transactions.
 - [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — - Documents cross-border payment flows, intermediary banks, and settlement routes.
 - Exposes hidden or layered transactions processed through multiple payment service providers.
 - Supports deeper scrutiny of foreign-based agents and sub-agents masking the ultimate origin or destination of funds.
-- [Corruption](https://framework.amltrix.com/techniques/T0051) — Tracks international fund movements, including originating and beneficiary institutions, currencies, and settlement details. This data is crucial for identifying high-risk cross-border transfers tied to corrupt officials moving illicit proceeds offshore.
-- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Contains information on international transaction flows passing through correspondent banking channels, including amounts, sending/receiving institutions, and involved countries.
-- Reveals cross-border deposits and subsequent fund transfers that may hide illicit proceeds.
-- Supports investigations into the rapid movement of aggregated funds across multiple financial institutions abroad.
+- [Over-the-Counter Cryptocurrency Trading](https://framework.amltrix.com/techniques/T0114) — Captures cross-border payments, including settlement details, involved institutions, and participating jurisdictions. This data assists in detecting significant inbound or outbound transfers routed through OTC brokers, potentially indicating unregulated international flows.
+- [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Details cross-border payment flows, correspondent banking relationships, and participating financial entities. This data helps identify overlapping financing of the same shipment or services through different institutions, which is a key indicator of multiple invoicing activity.
+- [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — - Covers international transactions routed through correspondent banking relationships, including originating and beneficiary institutions, involved countries, and transaction amounts.
+
+- Enables tracing of funds flowing to or from known conflict zones or arms-producing regions, revealing high-risk corridors associated with illicit arms trade.
+- [Illegal Logging](https://framework.amltrix.com/techniques/T0145.001) — Captures cross-border payment details, including origin and beneficiary banks, involved jurisdictions, and transaction values. By analyzing international flows, it highlights the transnational layering of illegal logging proceeds and flags unusual routing patterns.
+- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Provides information on cross-border transactions and correspondent banking relationships.
+- Reveals patterns of layered transfers across jurisdictions used to distance illicit wildlife proceeds from their origin.
+- Facilitates the identification of high-risk corridors or account relationships indicative of laundering activity.
+- [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — - Records cross-border and correspondent banking flows associated with insurance premium payments and policy payouts.
+- Flags transactions from or to high-risk jurisdictions, indicating potential layering through multiple regions.
+- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Contains details of international financial transactions, including amounts, currencies, geographic routing, and participating financial institutions.
+- Assists in uncovering cross-border layering and complex payment flows commonly used to conceal illicit proceeds from child exploitation.
+- [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — Covers multi-jurisdictional financial flows linked to Bill of Exchange arrangements, including transaction pathways, intermediary banks, and cross-border payment details. This data can reveal layering and circuitous routes typical of trade-based money laundering.
+- [Timeshare Scams](https://framework.amltrix.com/techniques/T0144.014) — - Tracks cross-border fund flows and intermediary banks for timeshare fee transactions.
+- Identifies payments to offshore jurisdictions or accounts with no legitimate business rationale.
+- Highlights unusual international transfer patterns inconsistent with genuine real estate or closing services.
+- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Covers cross-border payment information, including foreign currency flows and remittance channels.
+- Identifies unlicensed or informal pathways used to route tax refunds offshore, potentially avoiding regulatory scrutiny.
+- Reveals patterns of layering and fund diversion involving international transfers.
 - [Piracy](https://framework.amltrix.com/techniques/T0148) — Details of international wire transfers, including transaction amounts, involved countries, intermediaries, and settlement processes. This data reveals how ransom funds may be moved across multiple jurisdictions, aiding in detecting layered flows aimed at concealing illicit maritime piracy proceeds.
 - [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Encompasses cross-border transaction details, including amounts, jurisdictions, and participating institutions. Identifies partial transaction patterns spread across different banks or countries, revealing a lack of a unified overview and indicating possible knowledge compartmentalization.
-- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — - Captures information on cross-border payments, correspondent banking relationships, and involved jurisdictions.
-- Highlights unusual payment flows and layering across multiple countries when funds pass through FTZs.
-- Provides details to confirm whether declared routing aligns with legitimate business needs.
+- [Lottery Scams](https://framework.amltrix.com/techniques/T0144.015) — Documents cross-border wires and transactions routed through multiple institutions or jurisdictions. Investigators can identify structuring or layering across remittance channels—a common tactic in lottery scams—by tracing the flow of funds associated with suspicious accounts or recurring scam references in payment details.
+- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Captures transaction details for cross-border payments, including amounts, originating and beneficiary banks, jurisdictions, and settlement routes.
+- Enables monitoring of funds transferred from offshore sources into foreign real estate acquisitions.
+- Helps detect unusual cross-border flows potentially linked to laundering via foreign property holdings.
+- [Hot Transfers](https://framework.amltrix.com/techniques/T0013.002) — - Consolidates cross-border transaction details, including institutions involved, countries of origin and destination, currencies, and settlement processes.
+
+This data helps expose net settlement flows across multiple jurisdictions that bypass standard banking or MSB channels, a hallmark of Hot Transfers.
+- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — Details cross-border funds flow and participating financial institutions, facilitating the detection of suspicious international transfers linked to unregulated pharmaceutical shipments or payments.
+- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Provide details on cross-border money flows, beneficiaries, and involved financial institutions.
+- Expose international transfers from or to suspicious jurisdictions.
+- Help confirm whether the rapid cross-border movement of funds aligns with a fake job scheme.
+- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Details cross-border transactions, including intermediary and beneficiary institutions, currencies, and involved jurisdictions. This data:
+
+- Reveals multi-hop routing through multiple foreign banks to disguise fund origins.
+- Highlights repeated correspondent relationships in high-secrecy jurisdictions.
+- Aids in tracing complex layering schemes involving offshore financial institutions.
+- [Node Exchange Provisioning](https://framework.amltrix.com/techniques/T0013.003) — Captures cross-border financial flows, detailing transaction amounts, locations, and intermediary institutions. Analysis can reveal patterns where funds move among multiple jurisdictions without transparent business purposes, consistent with NEP’s rapid cross-currency exchanges.
 - [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — Provides detailed records of international funds transfers, including amounts, participant institutions, routing details, and settlement processes. Investigators can:
 
 - Compare electronically transferred funds with declared cash movements to uncover inconsistencies.
 - Detect layering attempts by tracing cross-border flows through multiple jurisdictions.
 - Identify suspicious patterns in cross-border transactions that do not align with legitimate business activities or declared sums.
+- [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — - Covers cross-border payment flows, detailing sending and receiving institutions, involved countries, amounts, and settlement timelines.
+- Helps reveal potential layering of smuggled diamond proceeds through multiple jurisdictions or financial institutions.
+- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Information on international wires, intermediary banks, and beneficiary locations.
+- Allows tracing of funds routed through multiple jurisdictions, highlighting layering patterns or transfers to secrecy havens often used by illicit private funds.
 - [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Details on cross-border fund flows, including amounts, counterparties, jurisdictions, and payment intermediaries.
 - Aids in identifying repetitive or circuitous inter-company transfers that may indicate artificially layered transactions or inflated/deflated transfer pricing across multiple jurisdictions.
+- [Export Overvaluation](https://framework.amltrix.com/techniques/T0147.004) — - Tracks international financial transfers, including intermediary banks, ultimate beneficiaries, and cross-border account relationships.
+- Identifies complex layering or routing patterns used to shuttle inflated export proceeds to unrelated third-party accounts.
+- Helps pinpoint final destinations of suspicious cross-border payments.
 - [Virtual IBANs](https://framework.amltrix.com/techniques/T0027) — Captures cross-border transaction details, such as origin and destination countries, intermediary banks, currencies, and settlement paths. This helps identify multi-jurisdictional layering or suspicious rerouting of funds via virtual IBANs, clarifying the true flow of funds and highlighting potential high-risk regions involved.
-- [Countertrade](https://framework.amltrix.com/techniques/T0079) — Includes cross-border financial transactions, participating institutions, currencies, and settlement details. This data helps investigators:
-
-- Identify missing or anomalous payment records, suggesting the use of informal channels for settlement.
-- Track the movement of funds across jurisdictions to expose potential laundering patterns.
 - [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — - Tracks cross-border reinsurance payments to detect unusually large or frequent transactions.
 - Highlights offshore reinsurance flows potentially aimed at hiding illicit proceeds or layering schemes.
 - [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — Provides details of cross-border funds transfers, including sending and receiving financial institutions, involved countries, currencies, amounts, and settlement processes. This information is vital for tracing value shifts across jurisdictions following or in conjunction with mirror trading, revealing suspicious layering or rapid flow of proceeds internationally.
@@ -4242,97 +4327,12 @@ Information on cross-border financial transactions, covering transaction amounts
 - [Black Market Peso Exchange](https://framework.amltrix.com/techniques/T0013.005) — - Data Provided: Information on international financial transactions, intermediary banks, payer/payee details, settlement processes, involved jurisdictions, and currency flows.
 
 - Direct AML Relevance: Uncovers third-party or intermediary payments common in Black Market Peso Exchange, revealing cross-border transfers that bypass regulated channels or official exchange rates.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Documents cross-border financial flows, including involved jurisdictions and intermediary banks.
-- Helps track offshore payment routes and identify secrecy-prone regions, exposing layering or other steps undertaken to obscure the origin of illicit funds in image rights deals.
-- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — - Contains information on cross-border transactions, including origin and destination countries, currencies, involved banks, and transaction volumes.
-- Highlights inconsistencies in cross-border gold transfers and identifies geographic anomalies not aligned with the customer's profile or business.
-- [Investment in Financial Instruments](https://framework.amltrix.com/techniques/T0061) — Tracks cross-border financial flows, including involved institutions, jurisdictions, settlement processes, and currency exchanges. By examining these transaction records, investigators can pinpoint complex layering across multiple jurisdictions, detect irregular fund movements, and identify unsubstantiated cross-border investment transfers.
-- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Details cross-border payments, including sending and receiving institutions, countries involved, transaction amounts, and frequency.
-- Helps identify unusual or frequent overseas transfers associated with mule accounts, particularly those lacking legitimate business or personal rationale.
-- [Unlicensed MSBs](https://framework.amltrix.com/techniques/T0013.001) — - Contains records of cross-border transactions, including sending and receiving institutions, jurisdictions, and transaction amounts.
-- Detects unregistered MSBs moving funds internationally without proper oversight.
-- Identifies questionable or high-risk inter-jurisdictional payment flows commonly exploited by illicit MSBs.
-- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — - Documents financial transfers across multiple jurisdictions, including originating and beneficiary institutions, as well as settlement details.
-- Helps identify the rapid movement of funds that are disproportionate to legitimate oil business structures.
-- Provides insight into networks or payment channels frequently used to layer proceeds derived from manipulated oil transactions.
-- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Contains details on cross-border transfers, including involved jurisdictions, currencies, and settlement processes.
-- Helps identify international layering or rapid fund displacement associated with advance fee fraud proceeds, particularly when scammers move victim payments offshore quickly to evade detection.
-- [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Captures cross-border transaction details, covering participating financial institutions, currencies, and settlement processes. Analyzing these records reveals foreign reloads, withdrawals, and transfers linked to offshore e-wallets or prepaid cards, highlighting potential layering through secrecy jurisdictions.
 - [Cuckoo Smurfing](https://framework.amltrix.com/techniques/T0016.002) — - Details cross-border remittances, including intermediary banks, jurisdictions, and settlement processes.
 - Identifies unexplained routing changes or partial arrivals consistent with hijacked inbound transfers typical of cuckoo smurfing.
-- [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Captures details of cross-border funds transfers (e.g., amounts, involved banks, jurisdictions).
-- Permits identification of repetitive or circular money flows across multiple accounts in different countries.
-- Reveals patterns consistent with carousel fraud's cyclical trade and VAT-based illicit proceeds.
-- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — Provides details of cross-border wires and related transactions, including amounts, originating and destination countries, and financial intermediaries. This data helps identify suspicious or high-value cross-border transfers linked to antiquities transactions that do not match the customer’s declared business operations.
-- [Wire Transfer Chains](https://framework.amltrix.com/techniques/T0070.001) — - Details intermediary banks, routing information, and settlement processes for cross-border wires.
-- Helps trace funds through multiple financial institutions and countries, revealing the layering chain in wire transfer schemes.
-- [Virtual Token](https://framework.amltrix.com/techniques/T0067) — - Covers cross-border financial flows, associated institutions, currencies, and settlement processes.
-- Enables correlation of stablecoin or token movements with foreign transactions, helping detect abrupt cross-border layering or swift swaps intended to evade oversight.
-- Supports identification of uncharacteristic international fund transfers that align with virtual token obfuscation strategies.
 - [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Captures details of cross-border transactions, participating institutions, involved jurisdictions, and newly added correspondent banking relationships. This information helps detect infiltration by revealing sudden growth in high-risk cross-border activities or the rapid expansion of correspondent ties in jurisdictions known for lax AML enforcement, indicating criminals leveraging a controlled institution to layer illicit funds.
-- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Covers cross-border financial transactions with details on amounts, currencies, jurisdictions, settlement chains, and account relationships.
-- Helps identify repeated cross-border layering or jurisdiction mismatches in currency conversion flows, supporting the investigation of structured transactions routed through multiple countries.
-- [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — - Data Provided: Details on cross-border payment flows, corresponding financial institutions, and involved jurisdictions.  
-- AML Relevance: Tracks complex international fund transfers that may indicate layering attempts via fictitious trade routes, highlighting risky jurisdictional patterns.
-- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Covers routing details, involved financial institutions, originating countries, and settlement processes for cross-border transactions.
-- Identifies funds sourced from or passing through offshore financial centers with lax AML controls, indicating potentially illicit foreign investments.
-- [Investment Through CBI/RBI](https://framework.amltrix.com/techniques/T0061.002) — - Details transactions routed through correspondent banks or cross-border channels, identifying sending institutions, recipient accounts, and countries of origin/destination.
-- Reveals large incoming transfers from high-risk or non-cooperative jurisdictions specifically directed into CBI/RBI-related accounts, supporting scrutiny of unexplained inflows.
-- [Informal Value Transfer Systems](https://framework.amltrix.com/techniques/T0013) — - Includes detailed records of cross-border transactions, participating financial institutions, currencies, and settlement processes.
-- Facilitates identification of repetitive or high-volume international flows to jurisdictions associated with hawala or other IVTS.
-- Assists in flagging unusual settlement patterns bypassing standard wire transfers or regulated channels.
-- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — Information tracks international fund transfers, detailing intermediary banks, routing paths, currencies, and involved jurisdictions. This data allows investigators to trace complex cross-border flows under the guise of M&A deals, exposing potential layering or concealment tactics common in fictitious or inflated M&A transactions.
-- [Over-the-Counter Cryptocurrency Trading](https://framework.amltrix.com/techniques/T0114) — Captures cross-border payments, including settlement details, involved institutions, and participating jurisdictions. This data assists in detecting significant inbound or outbound transfers routed through OTC brokers, potentially indicating unregulated international flows.
-- [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Details cross-border payment flows, correspondent banking relationships, and participating financial entities. This data helps identify overlapping financing of the same shipment or services through different institutions, which is a key indicator of multiple invoicing activity.
-- [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — - Covers international transactions routed through correspondent banking relationships, including originating and beneficiary institutions, involved countries, and transaction amounts.
-
-- Enables tracing of funds flowing to or from known conflict zones or arms-producing regions, revealing high-risk corridors associated with illicit arms trade.
-- [Illegal Logging](https://framework.amltrix.com/techniques/T0145.001) — Captures cross-border payment details, including origin and beneficiary banks, involved jurisdictions, and transaction values. By analyzing international flows, it highlights the transnational layering of illegal logging proceeds and flags unusual routing patterns.
-- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Provides information on cross-border transactions and correspondent banking relationships.
-- Reveals patterns of layered transfers across jurisdictions used to distance illicit wildlife proceeds from their origin.
-- Facilitates the identification of high-risk corridors or account relationships indicative of laundering activity.
-- [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — - Records cross-border and correspondent banking flows associated with insurance premium payments and policy payouts.
-- Flags transactions from or to high-risk jurisdictions, indicating potential layering through multiple regions.
-- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Contains details of international financial transactions, including amounts, currencies, geographic routing, and participating financial institutions.
-- Assists in uncovering cross-border layering and complex payment flows commonly used to conceal illicit proceeds from child exploitation.
-- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — - Provides comprehensive views of cross-border transactions, including sending/receiving institutions, countries, currencies, and settlement details.
-- Identifies the geographic dispersion of remittances and traces funds converging on a single beneficiary.
-- Aids in uncovering layering strategies that leverage multiple regions to obscure the origin of illicit proceeds.
-- [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — Covers multi-jurisdictional financial flows linked to Bill of Exchange arrangements, including transaction pathways, intermediary banks, and cross-border payment details. This data can reveal layering and circuitous routes typical of trade-based money laundering.
-- [Timeshare Scams](https://framework.amltrix.com/techniques/T0144.014) — - Tracks cross-border fund flows and intermediary banks for timeshare fee transactions.
-- Identifies payments to offshore jurisdictions or accounts with no legitimate business rationale.
-- Highlights unusual international transfer patterns inconsistent with genuine real estate or closing services.
-- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Covers cross-border payment information, including foreign currency flows and remittance channels.
-- Identifies unlicensed or informal pathways used to route tax refunds offshore, potentially avoiding regulatory scrutiny.
-- Reveals patterns of layering and fund diversion involving international transfers.
-- [Lottery Scams](https://framework.amltrix.com/techniques/T0144.015) — Documents cross-border wires and transactions routed through multiple institutions or jurisdictions. Investigators can identify structuring or layering across remittance channels—a common tactic in lottery scams—by tracing the flow of funds associated with suspicious accounts or recurring scam references in payment details.
-- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Captures transaction details for cross-border payments, including amounts, originating and beneficiary banks, jurisdictions, and settlement routes.
-- Enables monitoring of funds transferred from offshore sources into foreign real estate acquisitions.
-- Helps detect unusual cross-border flows potentially linked to laundering via foreign property holdings.
-- [Hot Transfers](https://framework.amltrix.com/techniques/T0013.002) — - Consolidates cross-border transaction details, including institutions involved, countries of origin and destination, currencies, and settlement processes.
-
-This data helps expose net settlement flows across multiple jurisdictions that bypass standard banking or MSB channels, a hallmark of Hot Transfers.
 - [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — Captures international wire transfers, participating countries, and associated beneficiaries or intermediaries. Highlights rapid or high-volume fund movements routed through proxy-held accounts to obscure the original source or beneficial owner.
-- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — Details cross-border funds flow and participating financial institutions, facilitating the detection of suspicious international transfers linked to unregulated pharmaceutical shipments or payments.
-- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Provide details on cross-border money flows, beneficiaries, and involved financial institutions.
-- Expose international transfers from or to suspicious jurisdictions.
-- Help confirm whether the rapid cross-border movement of funds aligns with a fake job scheme.
-- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Details cross-border transactions, including intermediary and beneficiary institutions, currencies, and involved jurisdictions. This data:
-
-- Reveals multi-hop routing through multiple foreign banks to disguise fund origins.
-- Highlights repeated correspondent relationships in high-secrecy jurisdictions.
-- Aids in tracing complex layering schemes involving offshore financial institutions.
 - [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Captures international fund transfers across multiple institutions. Monitoring these flows is critical for tracing how red/green clause LC proceeds are rapidly dispersed, layered, or redirected to diverse jurisdictions without a clear commercial purpose.
-- [Node Exchange Provisioning](https://framework.amltrix.com/techniques/T0013.003) — Captures cross-border financial flows, detailing transaction amounts, locations, and intermediary institutions. Analysis can reveal patterns where funds move among multiple jurisdictions without transparent business purposes, consistent with NEP’s rapid cross-currency exchanges.
-- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Captures cross-border transaction details and intermediary relationships, revealing potentially unlicensed or informal channels used in hawala arrangements, where funds are transferred across jurisdictions outside formal banking routes.
-- [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — - Covers cross-border payment flows, detailing sending and receiving institutions, involved countries, amounts, and settlement timelines.
-- Helps reveal potential layering of smuggled diamond proceeds through multiple jurisdictions or financial institutions.
-- [Investment Companies](https://framework.amltrix.com/techniques/T0061.003) — - Information on international wires, intermediary banks, and beneficiary locations.
-- Allows tracing of funds routed through multiple jurisdictions, highlighting layering patterns or transfers to secrecy havens often used by illicit private funds.
 - [Multi-Currency Swap](https://framework.amltrix.com/techniques/T0115.002) — Captures cross-border payment flows, including involved jurisdictions, transaction amounts, and counterparties. By highlighting frequent shifts between countries with varying AML regulations, this data helps identify structured layering strategies that exploit less-regulated corridors.
-- [Export Overvaluation](https://framework.amltrix.com/techniques/T0147.004) — - Tracks international financial transfers, including intermediary banks, ultimate beneficiaries, and cross-border account relationships.
-- Identifies complex layering or routing patterns used to shuttle inflated export proceeds to unrelated third-party accounts.
-- Helps pinpoint final destinations of suspicious cross-border payments.
 - [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Details cross-border payments, correspondent banking arrangements, and involved jurisdictions.
 - Helps identify high-frequency or repeated payments linked to the same diamond shipments, indicating potential layering.
 - [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - Contains settlement and routing details for international payments, including involved countries, intermediary banks, and transaction amounts.
@@ -4443,6 +4443,286 @@ Sanctions lists typically include:
 - [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Comprises official lists of individuals, entities, and jurisdictions subject to economic or financial restrictions.
 - Enables the screening of donors, beneficiaries, or affiliated parties who may be designated or tied to terrorist organizations.
 - Helps detect and block funds linked to sanctioned or prohibited entities attempting to exploit charitable structures.
+
+---
+
+## [System & Network Access Logs](https://framework.amltrix.com/data-sources/DS0025)
+
+**Description:**
+Centralized logs capturing user and system activities, network and web traffic, authentication events, IP addresses, timestamps, URLs visited, user-agent strings, and other related details. These logs provide audit trails of user activities and help identify unauthorized access or unusual system interactions.
+
+### Related Techniques
+- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Tracks user logins, account modifications, and system actions preceding early superannuation withdrawal filings. Alerts investigators to unauthorized activity or rapid account changes consistent with fraudulent or stolen identity claims.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Records device and network usage data, including login IP addresses, timestamps, and session activities. Conflicts between declared residence and consistent foreign IP origins can reveal misrepresented location details indicative of identity manipulation.
+- [Chain Hop](https://framework.amltrix.com/techniques/T0005) — - Captures IP addresses, authentication events, and device fingerprints correlated with blockchain bridging transactions.
+- Identifies irregular login patterns and rapid device or IP changes that align with cross-chain hops, suggesting potential illicit access or layered laundering attempts.
+- [Insider Facilitation](https://framework.amltrix.com/techniques/T0021) — - Track user activity in banking and AML systems, including authentication events, access privileges, override submissions, and data modifications.
+- Reveal patterns of employees disabling alerts, bypassing controls, or making suspicious system changes consistent with insider facilitation.
+- [In-Person Gambling Imitation](https://framework.amltrix.com/techniques/T0107) — - Records IP addresses, user authentication events, and device usage within gambling platforms.
+- Correlates multiple gambling accounts linked by common IPs or devices, helping detect collusive behavior or funneling of funds to a single account.
+- Supports investigations into suspicious transactions and staff involvement by providing audit trails of account access and administrative actions.
+- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — - Provides user login records, including IP addresses, timestamps, device information, and geolocation data.
+- Enables identification of known VPN or proxy endpoints and detection of sudden, improbable location changes.
+- Facilitates investigation by correlating unusual login patterns with potential layering or obfuscation attempts.
+- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — Tracks user authentication events, IP addresses, device fingerprints, and account activities across multiple platforms. This reveals potential connections or repeat logins indicative of coordinated cross-game transfers or clandestine 'gifting' strategies.
+- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Captures user login events, IP addresses, device fingerprints, and related session data within gaming platforms.
+- Helps identify clusters of interlinked player accounts, item transfer patterns, and minimal legitimate game activity despite large in-game transactions.
+- [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — Centralized logs capture user actions and system activity, including edits to transaction details or supporting documentation. These logs help detect unauthorized changes to transaction purposes after scrutiny.
+- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — Collects user login details, IP addresses, session timestamps, and device information. It aids in detecting frequently changing IPs, multiple concurrent connections, or cross-region logins—patterns often associated with layered laundering activities in virtual worlds.
+- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - Captures network traces, IP addresses, authentication events, and multi-hop routing paths.
+- Helps investigators observe the use of layered encryption or repeated connections from Tor, VPNs, or proxy servers, pinpointing suspicious anonymity-driven access during financial transactions.
+- [Automated Transaction Systems](https://framework.amltrix.com/techniques/T0026) — - Captures IP addresses, user authentication events, and device information associated with transaction initiations.
+- Helps identify unusual device usage or script-driven accesses that can indicate automated or bot-driven transfers.
+- Enables correlation of suspicious transaction patterns with specific login events and potential unauthorized system activities.
+- [Darknet Marketplace Transactions](https://framework.amltrix.com/techniques/T0100) — - Captures user access points, including IP addresses, timestamps, and authentication details.
+- Helps identify the use of Tor or other anonymizing services during logins and transaction sessions, which is frequently associated with Darknet marketplace activity.
+- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Captures user actions within internal systems, including timestamps, login details, and administrative overrides.
+- Identifies repeated or unjustified suppression of AML alerts, manual overrides of monitoring rules, and other complicit staff activities.
+- Enables auditors and investigators to trace potential internal collusion that allows illicit transactions to remain undetected.
+- [Cryptojacking](https://framework.amltrix.com/techniques/T0020.002) — Provides details of user sessions, device resource usage (e.g., CPU/GPU consumption), IP addresses, and network connections. This information helps detect unauthorized cryptomining software or unusual outbound traffic to cryptomining pools, enabling timely identification and investigation of cryptojacking activities.
+- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Records IP addresses, timestamps, and user sessions associated with account access.
+- Helps correlate suspicious login events (e.g., from unexpected locations or times) with possible account takeover activity.
+- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Captures login events, IP addresses, and network usage patterns.
+- Identifies VPN or proxy usage that may hide the true location of mining equipment or cloud-based services.
+- Helps detect anomalous remote access and potential obfuscation methods used by illicit miners.
+- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — Captures user login activities, IP addresses, device IDs, and related metadata for e-commerce or payment apps. This data helps identify suspicious usage patterns, such as multiple transactions from the same IP or device under different accounts, revealing potentially coordinated manipulation.
+- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Contains IP addresses, device fingerprints, login timestamps, and other network metadata.
+- Identifies cases where multiple purportedly separate player accounts share common access points, indicating potential collusion.
+- Assists in uncovering suspicious account overlaps, rapid logins from the same device, and other anomalies consistent with chip dumping schemes.
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Record IP addresses, device identifiers, and login timestamps, highlighting geographic or device inconsistencies with the claimed identity.
+- Provide audit trails to investigate unauthorized sessions and potential misuse of stolen or fabricated credentials.
+- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Captures user authentication events, IP addresses, timestamps, and changes to account settings (e.g., email, phone).
+- Allows detection of unusual or repeated contact detail updates following large inbound 'fee' payments, a common indicator in advance fee fraud schemes.
+- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Tracks user access events, including logins, timestamps, and IP addresses. By correlating expense report modifications with these logs, investigators can detect suspicious after-hours edits, backdating attempts, or repeated modification patterns that indicate intentional fraud.
+- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — - Track user logins, attempted logins, and changes to system configurations (e.g., AML thresholds, security settings).
+- Provide timestamps, user credentials, and activity trails to help investigators detect unauthorized overrides or suspicious after-hours access to administrative functions.
+- Facilitate the identification of insider collusion by correlating access patterns with altered AML triggers or disabled security protocols.
+- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Captures detailed traces of user activities, system configurations, and monitoring rule changes. This data helps uncover unauthorized tampering with AML software or the disabling of compliance alerts by insiders, a hallmark tactic when criminals infiltrate a financial institution to suppress detection.
+- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Tracks the usage of remote control or screen-sharing tools during the verification process.
+- Logs user and system activities (e.g., IP addresses, timestamps, application launches) to identify potential third-party manipulation of the verification interface.
+- Helps uncover suspicious remote sessions that may subvert legitimate biometric or ID checks.
+- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Records IP addresses, device information, session timestamps, and login attempts.
+- Identifies logins or transaction instructions originating from IPs linked to known scam call centers or high-risk jurisdictions.
+- Supports investigative efforts by mapping suspicious access patterns to pig butchering scam networks.
+- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Captures detailed user and system activities, including IP addresses, login timestamps, and authentication events.
+- Helps identify suspicious account creation patterns, such as multiple new accounts from the same device or location, and the repeated use of compromised credentials tied to fake or stolen identities.
+- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Logs user authentication, IP addresses, session details, and potential anonymity software usage (e.g., Tor).
+- Identifies suspicious network activity consistent with dark web access used to procure precursor chemicals or equipment.
+- Correlates unusual access patterns with financial transaction events.
+- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Contains records of authentication events, user logins, and network activity, including timestamps, IP addresses, and session details.
+- Assists in detecting anomalous successful voice-based authentication attempts or unusual logins that may reveal bypassed security checks due to deepfake impersonation.
+- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — Captures staff logins, system changes, overrides of transactions or betting records, and any irregular use of internal systems. Such logs help detect unauthorized tampering or selective bypassing of AML checks for high-value players, indicating potential collusion or malicious insider activity in betting shops.
+- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — Captures detailed user session data, including instances of remote desktop or screen-sharing software used during onboarding. This helps to uncover hidden user environments or bypassed identity verification protocols in remote account setups.
+- [Smurfing](https://framework.amltrix.com/techniques/T0016.005) — Captures IP addresses, device identifiers, and login timestamps. This data aids smurfing investigations by:
+
+- Identifying multiple accounts accessed from the same device or IP, signaling potential collusion or single-user control of several smurf accounts.
+- Pinpointing suspicious login patterns that correlate with bursts of small deposits in different accounts.
+- [Wash Trading](https://framework.amltrix.com/techniques/T0094.002) — - Captures IP addresses, device identifiers, login timestamps, and network session data.
+- Reveals patterns of multiple trading accounts or wallets being accessed from the same devices or locations, indicating potential self-dealing.
+- Enhances investigations by corroborating evidence of collusion through shared system access points.
+- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Collects session data, including IP addresses, user-agent strings, timestamps, and authentication events.
+- Enables correlation of these IPs with known proxy networks, Tor exit nodes, or suspicious short-term hosting services.
+- Facilitates detection of frequent or abrupt IP address changes that indicate possible rotating proxy usage.
+- Supports investigation by providing a clear audit trail of user sessions and highlighting anomalous network access patterns.
+- [Bribery](https://framework.amltrix.com/techniques/T0006) — - Tracks user activities, including overrides and clearance of high-risk transactions.
+- Identifies unauthorized modifications to AML controls, indicative of bribed insiders covering illicit transactions.
+- [Instant Exchange Services](https://framework.amltrix.com/techniques/T0032) — - Tracks IP addresses, device details, login timestamps, and possible use of anonymizing tools (e.g., VPNs).
+- Detects unusual access patterns, suggesting attempts to conceal user location or identity on instant exchange platforms.
+- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Tracks user logins, session activities, IP addresses, and record modification events.
+- Helps pinpoint unauthorized or off-hours access corresponding to suspected alterations in financial records.
+- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Record user activities, authentication events, network traffic, and any attempts to bypass audit functions. Investigators analyze unauthorized balance adjustments or overridden logging mechanisms to identify digital tampering with financial records.
+- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Captures IP addresses, timestamps, and user authentication details for account creation and trading platform access.
+- Identifies multiple new accounts associated with the same IP or location, suggesting coordinated manipulative trading.
+- Provides audit trails useful in correlating suspicious trading patterns with specific network access events.
+- [Onion over VPN](https://framework.amltrix.com/techniques/T0015.005) — - Captures IP addresses, authentication events, and timestamps for user logins and web traffic.
+- Allows detection of repeated access attempts from Tor exit nodes or known VPN servers.
+- Enables investigators to correlate anomalous login locations with potential use of anonymous networking techniques, supporting timely identification of Onion over VPN usage.
+- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Includes IP addresses, device identifiers, timestamps, and user session records tied to account logins.
+- Helps detect multiple supposedly different accounts operated from the same endpoint or device, indicating potential mule networks or account takeovers.
+- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Capture detailed records of user logins, access times, and system alterations.
+- Reveal unauthorized updates to government financial systems or records, supporting the detection of tampering or falsified entries that mask stolen funds.
+
+---
+
+## [Donation Platforms & Donor Records](https://framework.amltrix.com/data-sources/DS0026)
+
+**Description:**
+Records from online fundraising platforms and associated donation logs, including donor identities, amounts, contribution dates, and intended purposes.
+
+### Related Techniques
+- [Educational Institution Schemes](https://framework.amltrix.com/techniques/T0019.001) — - Captures donor identities, contribution amounts, and donation histories from online fundraising or donation platforms.
+- Verifies whether a purported campaign actually exists, helping detect sudden, unexplained inflows labeled as charitable gifts.
+- Cross-checks donor legitimacy against KYC or external profiles to identify anomalies suggesting a laundering scheme.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Track funds donated for nonprofit-driven construction initiatives, verifying final recipients and usage.
+- Flag movements of donated assets into personal or affiliate accounts, revealing misuse or misappropriation.
+- Detect signs of layering where charitable funds are redirected under false pretexts of building community infrastructure.
+- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — Provides logs of donors, donation amounts, timestamps, and any recorded details from crowdfunding or charitable donation platforms. This data enables investigators to:
+
+- Track unusual spikes or patterns in donations.
+- Identify recurring donors, cross-reference incomplete donor details, or detect multiple donations originating from high-risk sources.
+- Correlate donation flow with other indicators (e.g., lack of disclosed fund sources, inadequate KYC) to uncover potential laundering activity within charitable organizations.
+- [Disguised Remittance Transfers](https://framework.amltrix.com/techniques/T0040.001) — Collects data from online fundraising platforms, including donor identities, amounts, and stated purposes. This allows investigators to distinguish genuine contributions from remittances falsely labeled as charitable donations, a common tactic for disguising illicit funds.
+- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Provides detailed campaign and donor information, including donor identities, donation amounts, timestamps, and references to specific causes.
+- Enables detection of repeat or suspicious donations across multiple campaigns, verifies the authenticity of fundraising appeals, and links them to personal accounts instead of legitimate nonprofit organizations.
+- [Crowdfunding Campaign Manipulation](https://framework.amltrix.com/techniques/T0044) — - Contains donor account details, donation timestamps, amounts, and associated metadata (e.g., IP addresses).
+- Reveals suspicious patterns such as newly created accounts, repeated or large donations from a small group, or inconsistencies in donor profiles.
+- Assists in detecting layered contributions aimed at obscuring the origin of illicit funds.
+- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Logs contributions made via online fundraising or charitable platforms, including donor identities, amounts, and timestamps.
+- Exposes suspicious or fabricated charitable campaigns used to solicit fraudulent donations.
+- Enables cross-checking of donation patterns against known fraud markers (e.g., misappropriated funds, repeated small deposits).
+- [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — Logs of donations, donor identities, and designated recipient information allow for the verification of whether purported charitable contributions align with credible charitable organizations, helping to identify possible misrepresentation.
+- [Political Contributions](https://framework.amltrix.com/techniques/T0056) — This data source comprises records from online fundraising platforms, capturing donor identities, contribution amounts, timestamps, and intended purposes. Examining these logs helps identify suspicious donation patterns, detect multiple reimbursements, and confirm compliance with campaign finance rules, thereby aiding in the detection of illicit political contributions.
+
+---
+
+## [Document Verification](https://framework.amltrix.com/data-sources/DS0027)
+
+**Description:**
+Specialized systems or services that authenticate and validate official identification documents—such as passports or IDs—detecting potential forgeries, inconsistencies, or tampering.
+
+### Related Techniques
+- [Illegal Logging](https://framework.amltrix.com/techniques/T0145.001) — Authenticates official logging permits to confirm their validity and detect forgery or tampering. By verifying permit security features and confirming legitimate issuing authorities, it helps uncover falsified documentation used to justify illegal timber harvesting.
+- [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — - Validates the authenticity of official identification documents for auction participants.
+- Ensures that buyer and seller identities are legitimate, mitigating the risk of straw identities or shell entities.
+- Supports AML investigations by confirming the lawful identity of individuals placing or receiving high-value bids.
+- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Validates the authenticity of supporting documents, including medical certificates and hardship statements, by checking for alterations, duplicate details, or other red flags indicative of forged paperwork in early superannuation claims.
+- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Authenticates and validates identity documents, checking for forgeries or inconsistencies.
+- Detects incomplete or invalid identification details used by workers receiving off-the-books wages, indicating possible undocumented status.
+- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — Provides cross-border routing details (e.g., intermediary banks and institutions, sending jurisdictions) to confirm whether remittances follow expected paths. Deviations from the intended route or unexpected foreign participants may indicate the infiltration of illicit proceeds via cuckoo smurfing.
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Employs specialized systems to authenticate official identification documents such as passports and IDs.
+- Confirming the validity of employee credentials helps detect forged or falsified identities used to conceal true payroll liabilities.
+- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — Checks the authenticity and integrity of submitted documents, such as identification, business licenses, or financial statements. By identifying forgeries or alterations, it helps detect falsified eligibility data used to secure government relief funds.
+- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — Performs automated checks on remotely submitted identification documents, reviewing document metadata, security features, and potential editing traces, to detect synthetic or falsified identities used in remote onboarding. This directly exposes attempts to evade standard face-to-face verification by forging or altering digital documents.
+- [Cross-Border Settlement Document Manipulation](https://framework.amltrix.com/techniques/T0012.001) — - Provides specialized tools and forensic checks to identify tampering, forgery, or digital manipulation in key documents.  
+- Enhances the validation of cross-border settlement paperwork by flagging signs of fabricated or altered records, strengthening fraud detection beyond standard trade data reviews.
+- [Off-the-Record Deals](https://framework.amltrix.com/techniques/T0095) — - Authenticates and validates official contracts, ownership documents, and identification records.
+- Detects forgeries, inconsistencies, or fraudulent paperwork that enable off-the-record deals by bypassing formal documentation requirements.
+- Ensures legal records are genuine, preventing criminals from relying on fictitious agreements to conceal asset ownership or transfers.
+- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Performs authenticity checks on official identification documents, detecting forgeries or tampering.
+- Facilitates comprehensive comparisons of submitted ID documents across multiple accounts, identifying repeated use of manipulated credentials.
+- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — Offers specialized checks and authentication for identity documents, detecting inconsistencies or forgeries. This is particularly relevant for identifying individuals who present multiple passports or citizenship documents, verifying if those documents correspond to the same person, and flagging potentially fraudulent multi-citizenship claims.
+- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Authenticates and assesses the legitimacy of documents prepared or submitted by professional intermediaries, such as incorporation papers, legal contracts, or notarized statements. This helps detect forgeries, altered records, or fraudulent documentation that fuel money laundering schemes.
+- [Deceptive Tax Filings](https://framework.amltrix.com/techniques/T0014.007) — Performs authenticity checks on uploaded or filed documents, detecting forgeries or tampering in tax returns and supporting evidence (e.g., financial statements). This helps identify fabricated or manipulated filings indicative of deceptive tax practices.
+- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Specialized systems authenticate official IDs, passports, or other credentials, detecting potential forgeries or tampering.
+- They support the identification of minors misrepresented as adults and criminals using fraudulent documents to obscure their involvement in child exploitation.
+- [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — Provides specialized checks to confirm the authenticity of invoices, receipts, donation letters, and other supporting documentation used to justify transaction purposes. This helps identify forgeries or alterations indicative of misrepresented fund intentions.
+- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Validates the authenticity and integrity of digital identification documents submitted during account setup or ownership changes. Identifying forged or inconsistent documentation helps expose fictitious owners and online-only corporate setups.
+- [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Authenticates identification documents provided by intermediaries, detecting potential forgeries or mismatches.
+- Flags inconsistent or incomplete documentation, suggesting nominee or straw-man involvement.
+- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Validates the authenticity of identification documents or corporate paperwork submitted by donors or representatives.
+- Detects discrepancies, forgeries, or tampering in official IDs, passports, or charity registration documents.
+- Assists in preventing the misuse of falsified documentation to mask true identities or beneficial ownership within non-profits.
+- [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Provides authentication results for submitted identification documents, highlighting any forgeries or inconsistencies. Detecting falsified IDs is essential when criminals exploit minimal verification protocols offered by offshore prepaid and e-wallet providers.
+- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Authenticates identification documents to detect forged or tampered IDs used by hawala brokers or their customers. Ensures legitimate identity data is on file, helping to uncover individuals operating under false credentials.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Validates the authenticity of official documents and certificates.
+- Detects forged or inconsistent provenance, authenticity, or ownership records commonly used to launder illicit funds via high-value goods (e.g., artwork, collectibles).
+- [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Verifies the authenticity and security features of official documents.
+- Detects signs of alteration or tampering in shipping documents, bills of lading, or invoices.
+- Supports the identification of forged documentation commonly exploited in documentary collection schemes.
+- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Verifies the authenticity of submitted identification forms and supporting documents for nonprofit or charitable registration.
+- Detects forged, inconsistent, or missing documentation commonly seen when perpetrators cannot substantiate claims in fraudulent social media fundraising.
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Assesses the authenticity of provided identification documents to detect potential forgeries, tampering, or photo-layering.
+- Facilitates real-time validation of document data fields against official templates and standards, exposing mismatches often seen in impersonation schemes.
+- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Employs specialized systems to authenticate passports, IDs, and other official documents.
+- Detects forged or altered documents frequently used to facilitate illegal cross-border travel in smuggling operations.
+- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Specialized systems or services authenticate security features, design elements, and embedded data on official identification documents.
+- They detect anomalies in passports, IDs, or other paperwork, indicating forgery or alteration, which is crucial for uncovering falsified identities or misrepresented information.
+- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Performs automated authenticity checks on user-submitted ID documents, detecting tampering (e.g., mismatched photos or altered text).
+- Compares biometric data from the user’s submission against legitimate reference data to spot potential mismatches.
+- Flags repeated re-uploads of the same or slightly altered documents, allowing detection of fraudulent attempts to bypass remote verification.
+- [Asset Valuation Manipulation](https://framework.amltrix.com/techniques/T0045) — Specialized systems or services authenticate official documents, such as appraisals or asset certificates. They help detect forged or altered valuation reports and inconsistencies in ownership or provenance records, thereby mitigating attempts to legitimize manipulated valuations.
+- [CBI or RBI-Based Identity Acquisition](https://framework.amltrix.com/techniques/T0024.001) — - Validates passports, residency permits, and other official documents to check for forgeries, alterations, or tampering.
+- Directly supports investigations into false identities or misrepresented personal histories submitted for CBI/RBI applications.
+- Ensures institutions can authenticate documents and detect potential fraudulent background information used to obtain a second citizenship or residency status.
+- [Sector-Specific Document Manipulation](https://framework.amltrix.com/techniques/T0012.003) — - Specialized services or systems that authenticate formal documents by checking issuance details, seals, and official security features.
+- Identifies forged, altered, or otherwise invalid specialized permits and sector licenses used to conceal illicit operations behind seemingly legitimate paperwork.
+- [Agricultural Subsidy Fraud](https://framework.amltrix.com/techniques/T0144.012) — Automated tools and processes for detecting forgeries or alterations in official documents, such as farmland registration papers, property deeds, or production reports. This data helps confirm the legitimacy of records provided to support subsidy claims.
+- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Validates official identification documents (e.g., passports, IDs) to detect forgeries or inconsistencies.
+- Helps identify individuals traveling under multiple identities or using falsified documents.
+- Crucial in disrupting cash courier schemes reliant on false travel credentials to evade border checks.
+- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Utilizes specialized methods to validate the authenticity of documents by identifying formatting anomalies or edits.
+- Enables quick detection of tampered account statements, invoices, or other financial records.
+- [Forging or Altering Financial Instruments](https://framework.amltrix.com/techniques/T0126) — - Employs forensic checks and specialized analyses (e.g., digital watermark verification, overwritten text detection) to authenticate financial documents.
+- Enables investigators to quickly spot signs of physical or digital tampering in letters of credit or other financial instruments.
+- [Unemployment Insurance Fraud](https://framework.amltrix.com/techniques/T0144.008) — Authenticates official identification documents used for unemployment benefit claims by identifying forgeries, tampering, or synthetic identities. This is achieved by comparing document data with authoritative sources and verifying security features.
+- [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — - Authenticates official documents, such as Kimberley Process Certificates, detecting forgeries, altered certificate numbers, or missing signatures.
+- Supports direct verification of diamond provenance claims, which is crucial for uncovering fraudulent shipping or licensing documents.
+- [Cheque Fraud](https://framework.amltrix.com/techniques/T0144.010) — - Analyzes physical or scanned checks for chemical alterations, tampered payee fields, or other signs of forgery.
+- Enables proactive identification of check 'washing' techniques before funds are released.
+- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Verifies the authenticity of government-issued identification documents, detecting forgeries or inconsistencies.
+- Helps ensure that individuals involved in potentially fraudulent romance-driven transactions are accurately identified.
+- Mitigates the risk of fake or stolen identities used by romance scam recruiters or the recruited mules.
+- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Employs tools and databases to authenticate identity documents (passports, IDs) and detect forgeries or inconsistencies.
+- Identifies fraudulent or altered documents used to open accounts or revise identity details in pig butchering schemes.
+- Supports enhanced due diligence when customer identification records repeatedly change without plausible explanation.
+- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Specializes in authenticating official identification documents, detecting tampering, and validating biometric or facial data.
+- Enables institutions to identify forged or altered IDs, inconsistent metadata, or mass-produced fake documents used in account openings.
+- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Authenticates and validates official identification documents and business records.
+- Detects forged, tampered, or inconsistent documentation used in relief applications.
+- Ensures the integrity of supporting documents, revealing potential identity theft or misrepresented financial statements.
+- [Name Alteration](https://framework.amltrix.com/techniques/T0023.002) — Systems or services that authenticate passports, IDs, or supporting documents used for name changes by examining security features, photographs, and issuing details. These checks expose forged or tampered documents, revealing fraudulent name alterations.
+- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — Specialized systems authenticate official documents, including provenance or authenticity certificates for cultural artifacts. This data helps detect forged or altered documents used to justify the illicit origin or inflated values of artifacts, enabling more accurate due diligence.
+- [Safe Deposit Boxes](https://framework.amltrix.com/techniques/T0043) — Authenticates and validates official identification documents, helping detect forged IDs or inconsistencies when criminals attempt to rent deposit boxes under false names or third-party identities.
+- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Specializes in authenticating official documents such as passports, IDs, and business registrations.
+- Highlights potential forgeries or tampered identification used to submit fraudulent claims or applications.
+- Supports investigators in confirming legitimate documentation for loans, invoices, and government program eligibility.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Examines official identification documents, through physical checks or digital forensics, for signs of forgery, incomplete security features, suspicious metadata, or image manipulation. This directly helps uncover tampered or falsified documents used in identity manipulation.
+- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Authenticates physical bearer certificates, detecting forged or altered documentation.
+- Verifies issuance dates, certificate numbers, and other security features, ensuring the instrument’s legitimacy.
+- Helps investigators confirm or refute claims of rightful ownership or chain of custody for bearer instruments.
+- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — - Validates the authenticity of official identification documents used for remittance transactions.
+- Detects forged or altered IDs, as well as the repeated use of different documents by the same sender.
+- Assists in identifying individuals who systematically evade controls by using multiple or false identities to remain under reporting thresholds.
+- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Authenticates and detects alterations in official permits, licenses, and geological surveys. This is critical for identifying falsified paperwork often used to legitimize illegally extracted minerals.
+- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Authenticates and examines submitted paperwork, such as signatures or official documents, for potential tampering or forgery. This helps uncover falsified signatures on expense forms commonly used in expense report fraud.
+- [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — - Authenticates official identification documents presented by policyholders or premium payers.
+- Detects forged or manipulated documents used to obscure true identities and facilitate illicit policy purchases and early surrenders.
+- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Authenticates and validates official documents, including tax certificates or returns.
+- Identifies potential forgeries, alterations, or inconsistencies supporting fraudulent refund claims.
+- Ensures submitted tax paperwork aligns with legitimate records.
+
+---
+
+## [Casino and Gambling Transaction Records](https://framework.amltrix.com/data-sources/DS0041)
+
+**Description:**
+Comprehensive data on gambling transactions and activities, including aggregated information on game types, betting frequency, transaction amounts, participant identities, deposit and withdrawal data, and other relevant details across casinos and related operations.
+
+### Related Techniques
+- [Immediate Cash Conversion](https://framework.amltrix.com/techniques/T0105) — - Monitors chip purchases, redemptions, and related gambling activity.
+- Detects scenarios where customers purchase large amounts of chips and immediately redeem them for cash with minimal gameplay.
+- [Over-the-Counter Cryptocurrency Trading](https://framework.amltrix.com/techniques/T0114) — Details gambling-related transactions, including deposit, withdrawal, and betting activity. When cross-analyzed with OTC trading data, these records help uncover overlapping cash-based or chip redemption behaviors that intersect with OTC conversions, adding additional layers of anonymity.
+- [Lottery Winnings](https://framework.amltrix.com/techniques/T0107.001) — Provides comprehensive data on gambling-related transactions, including lottery ticket purchases and prize redemptions. Such records enable investigators to:
+
+- Track high-frequency or large-volume lottery ticket purchases.
+- Identify unusual or repeated winnings and prize redemption patterns.
+- Detect potential third-party claimants or sudden shifts in gambling behavior indicative of lottery-based money laundering.
+- [Junket-based Casino Transfers](https://framework.amltrix.com/techniques/T0107.004) — - Contains detailed betting outcomes, deposit and withdrawal amounts, timestamps, and overall transaction histories.
+- Enables detection of abnormal gambling outcomes or minimal betting prior to large withdrawals, suggesting contrived or layering transactions.
+- [Match-Fixing](https://framework.amltrix.com/techniques/T0107.005) — - Provides comprehensive records of all betting transactions, including deposit amounts, bet types, frequencies, and win/loss outcomes.
+- Enables detection of rapid deposit-withdrawal cycles, correlated or simultaneous bets from multiple accounts, and consistently successful wagers on unlikely outcomes.
+- Supports investigation of match-fixing by uncovering anomalous betting patterns, sudden shifts in wager size, and suspicious timing relative to sporting events.
+- [Electronic Gaming Machine Ticket Redemption](https://framework.amltrix.com/techniques/T0054) — Contains detailed records of TITO (ticket-in, ticket-out) issuance and redemption, amounts inserted into electronic gaming machines, timestamps, betting activity, and payout details. This data enables tracking minimal-play or no-play scenarios, rapid cash-outs, and the overall flow of funds through gaming machines, helping detect patterns consistent with illicit layering or integration.
+- [Casino Mule Networks](https://framework.amltrix.com/techniques/T0011.003) — - Captures buy-ins, chip redemptions, and negotiable instrument issuance, including timestamps, amounts, and patron identities.
+- Reveals minimal or nonexistent gaming activity, rapid chip conversions, and sequential cashier transactions, supporting the detection of structuring or layering within casino mule networks.
+- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Provides comprehensive logs of gambling transactions and gameplay, including buy-ins, bet sizes, transaction timestamps, game outcomes, and associated player identifiers.
+- Enables direct detection of suspicious transfers of chips through unusual patterns of wins and losses, repeated large losses from the same accounts, and collusive gameplay indicative of chip dumping.
+- Facilitates investigations by correlating deposit or withdrawal data with anomalous bet amounts and rapid chip movements.
+- [Underground Gambling](https://framework.amltrix.com/techniques/T0107.007) — - Provides detailed records of gambling-related activities, including bet placements, winnings, payouts, and player identities.
+  
+- Enables analysts to track unusual patterns in betting behavior, detect consistently high payouts, identify accounts engaging in structuring or frequent large transactions, and investigate suspected underground gambling operations.
+- [In-Person Gambling Imitation](https://framework.amltrix.com/techniques/T0107) — - Captures detailed data on gambling transactions, including chip purchases, redemption amounts, timestamps, and wagering activity.
+- Helps identify minimal betting with rapid chip redemption, structured buy-ins or redemptions under reporting thresholds, and suspicious patterns indicating chip-dumping or match-fixing.
+- Facilitates cross-checking receipts and time-stamped records to detect forged documentation or staff collusion in in-person gambling environments.
+- [Casino Chip Conversions](https://framework.amltrix.com/techniques/T0107.006) — - Provides granular details of chip purchases, redemptions, TITO vouchers, and patron identities.
+- Logs each wager and payout event, enabling analysis of minimal gambling, large or frequent buy-ins, and rapid cash-outs.
+- Includes ticket serial numbers, issuance timestamps, and machine reconciliation records, supporting detection of forged receipts or inconsistencies between winnings claimed and actual gaming activity.
+- Helps identify unusual chip transfers among patrons and patterns of staged losses or transfers immediately preceding redemptions.
+- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — Includes detailed logs of wagers placed, stakes, frequencies, amounts won or lost, and associated identities. This granular view of betting activity allows for the detection of structured bets, repetitive small wagers below reporting thresholds, unusually high-value wins, or potential staff overrides of compliance checks—all pertinent to uncovering manipulations in licensed betting shops.
+- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Verify the legitimacy of betting activity behind large deposits, payouts, or alleged gaming proceeds.
+- Compare deposit and withdrawal data with customer betting patterns to detect inconsistencies.
+
+Monitoring these records helps reveal nonexistent or minimal gambling activity used to legitimize illicit funds as gaming revenue.
 
 ---
 
@@ -4955,285 +5235,5 @@ Statements disclosing an individual’s or entity’s assets, liabilities, and f
 - Helps detect unexplained wealth or discrepancies indicative of bribe receipts or hidden income sources.
 - [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Disclose an official’s legally declared assets, liabilities, and income sources.  
 - Cross-referencing declared wealth with actual account balances and purchases can uncover unexplained enrichment indicative of misappropriated public funds.
-
----
-
-## [System & Network Access Logs](https://framework.amltrix.com/data-sources/DS0025)
-
-**Description:**
-Centralized logs capturing user and system activities, network and web traffic, authentication events, IP addresses, timestamps, URLs visited, user-agent strings, and other related details. These logs provide audit trails of user activities and help identify unauthorized access or unusual system interactions.
-
-### Related Techniques
-- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Tracks user logins, account modifications, and system actions preceding early superannuation withdrawal filings. Alerts investigators to unauthorized activity or rapid account changes consistent with fraudulent or stolen identity claims.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Records device and network usage data, including login IP addresses, timestamps, and session activities. Conflicts between declared residence and consistent foreign IP origins can reveal misrepresented location details indicative of identity manipulation.
-- [Chain Hop](https://framework.amltrix.com/techniques/T0005) — - Captures IP addresses, authentication events, and device fingerprints correlated with blockchain bridging transactions.
-- Identifies irregular login patterns and rapid device or IP changes that align with cross-chain hops, suggesting potential illicit access or layered laundering attempts.
-- [Insider Facilitation](https://framework.amltrix.com/techniques/T0021) — - Track user activity in banking and AML systems, including authentication events, access privileges, override submissions, and data modifications.
-- Reveal patterns of employees disabling alerts, bypassing controls, or making suspicious system changes consistent with insider facilitation.
-- [In-Person Gambling Imitation](https://framework.amltrix.com/techniques/T0107) — - Records IP addresses, user authentication events, and device usage within gambling platforms.
-- Correlates multiple gambling accounts linked by common IPs or devices, helping detect collusive behavior or funneling of funds to a single account.
-- Supports investigations into suspicious transactions and staff involvement by providing audit trails of account access and administrative actions.
-- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — - Provides user login records, including IP addresses, timestamps, device information, and geolocation data.
-- Enables identification of known VPN or proxy endpoints and detection of sudden, improbable location changes.
-- Facilitates investigation by correlating unusual login patterns with potential layering or obfuscation attempts.
-- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — Tracks user authentication events, IP addresses, device fingerprints, and account activities across multiple platforms. This reveals potential connections or repeat logins indicative of coordinated cross-game transfers or clandestine 'gifting' strategies.
-- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Captures user login events, IP addresses, device fingerprints, and related session data within gaming platforms.
-- Helps identify clusters of interlinked player accounts, item transfer patterns, and minimal legitimate game activity despite large in-game transactions.
-- [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — Centralized logs capture user actions and system activity, including edits to transaction details or supporting documentation. These logs help detect unauthorized changes to transaction purposes after scrutiny.
-- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — Collects user login details, IP addresses, session timestamps, and device information. It aids in detecting frequently changing IPs, multiple concurrent connections, or cross-region logins—patterns often associated with layered laundering activities in virtual worlds.
-- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - Captures network traces, IP addresses, authentication events, and multi-hop routing paths.
-- Helps investigators observe the use of layered encryption or repeated connections from Tor, VPNs, or proxy servers, pinpointing suspicious anonymity-driven access during financial transactions.
-- [Automated Transaction Systems](https://framework.amltrix.com/techniques/T0026) — - Captures IP addresses, user authentication events, and device information associated with transaction initiations.
-- Helps identify unusual device usage or script-driven accesses that can indicate automated or bot-driven transfers.
-- Enables correlation of suspicious transaction patterns with specific login events and potential unauthorized system activities.
-- [Darknet Marketplace Transactions](https://framework.amltrix.com/techniques/T0100) — - Captures user access points, including IP addresses, timestamps, and authentication details.
-- Helps identify the use of Tor or other anonymizing services during logins and transaction sessions, which is frequently associated with Darknet marketplace activity.
-- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Captures user actions within internal systems, including timestamps, login details, and administrative overrides.
-- Identifies repeated or unjustified suppression of AML alerts, manual overrides of monitoring rules, and other complicit staff activities.
-- Enables auditors and investigators to trace potential internal collusion that allows illicit transactions to remain undetected.
-- [Cryptojacking](https://framework.amltrix.com/techniques/T0020.002) — Provides details of user sessions, device resource usage (e.g., CPU/GPU consumption), IP addresses, and network connections. This information helps detect unauthorized cryptomining software or unusual outbound traffic to cryptomining pools, enabling timely identification and investigation of cryptojacking activities.
-- [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Records IP addresses, timestamps, and user sessions associated with account access.
-- Helps correlate suspicious login events (e.g., from unexpected locations or times) with possible account takeover activity.
-- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — - Captures login events, IP addresses, and network usage patterns.
-- Identifies VPN or proxy usage that may hide the true location of mining equipment or cloud-based services.
-- Helps detect anomalous remote access and potential obfuscation methods used by illicit miners.
-- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — Captures user login activities, IP addresses, device IDs, and related metadata for e-commerce or payment apps. This data helps identify suspicious usage patterns, such as multiple transactions from the same IP or device under different accounts, revealing potentially coordinated manipulation.
-- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Contains IP addresses, device fingerprints, login timestamps, and other network metadata.
-- Identifies cases where multiple purportedly separate player accounts share common access points, indicating potential collusion.
-- Assists in uncovering suspicious account overlaps, rapid logins from the same device, and other anomalies consistent with chip dumping schemes.
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Record IP addresses, device identifiers, and login timestamps, highlighting geographic or device inconsistencies with the claimed identity.
-- Provide audit trails to investigate unauthorized sessions and potential misuse of stolen or fabricated credentials.
-- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Captures user authentication events, IP addresses, timestamps, and changes to account settings (e.g., email, phone).
-- Allows detection of unusual or repeated contact detail updates following large inbound 'fee' payments, a common indicator in advance fee fraud schemes.
-- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Tracks user access events, including logins, timestamps, and IP addresses. By correlating expense report modifications with these logs, investigators can detect suspicious after-hours edits, backdating attempts, or repeated modification patterns that indicate intentional fraud.
-- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — - Track user logins, attempted logins, and changes to system configurations (e.g., AML thresholds, security settings).
-- Provide timestamps, user credentials, and activity trails to help investigators detect unauthorized overrides or suspicious after-hours access to administrative functions.
-- Facilitate the identification of insider collusion by correlating access patterns with altered AML triggers or disabled security protocols.
-- [Infiltration and Control of Banking Institutions](https://framework.amltrix.com/techniques/T0099) — Captures detailed traces of user activities, system configurations, and monitoring rule changes. This data helps uncover unauthorized tampering with AML software or the disabling of compliance alerts by insiders, a hallmark tactic when criminals infiltrate a financial institution to suppress detection.
-- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Tracks the usage of remote control or screen-sharing tools during the verification process.
-- Logs user and system activities (e.g., IP addresses, timestamps, application launches) to identify potential third-party manipulation of the verification interface.
-- Helps uncover suspicious remote sessions that may subvert legitimate biometric or ID checks.
-- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Records IP addresses, device information, session timestamps, and login attempts.
-- Identifies logins or transaction instructions originating from IPs linked to known scam call centers or high-risk jurisdictions.
-- Supports investigative efforts by mapping suspicious access patterns to pig butchering scam networks.
-- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Captures detailed user and system activities, including IP addresses, login timestamps, and authentication events.
-- Helps identify suspicious account creation patterns, such as multiple new accounts from the same device or location, and the repeated use of compromised credentials tied to fake or stolen identities.
-- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Logs user authentication, IP addresses, session details, and potential anonymity software usage (e.g., Tor).
-- Identifies suspicious network activity consistent with dark web access used to procure precursor chemicals or equipment.
-- Correlates unusual access patterns with financial transaction events.
-- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Contains records of authentication events, user logins, and network activity, including timestamps, IP addresses, and session details.
-- Assists in detecting anomalous successful voice-based authentication attempts or unusual logins that may reveal bypassed security checks due to deepfake impersonation.
-- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — Captures staff logins, system changes, overrides of transactions or betting records, and any irregular use of internal systems. Such logs help detect unauthorized tampering or selective bypassing of AML checks for high-value players, indicating potential collusion or malicious insider activity in betting shops.
-- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — Captures detailed user session data, including instances of remote desktop or screen-sharing software used during onboarding. This helps to uncover hidden user environments or bypassed identity verification protocols in remote account setups.
-- [Smurfing](https://framework.amltrix.com/techniques/T0016.005) — Captures IP addresses, device identifiers, and login timestamps. This data aids smurfing investigations by:
-
-- Identifying multiple accounts accessed from the same device or IP, signaling potential collusion or single-user control of several smurf accounts.
-- Pinpointing suspicious login patterns that correlate with bursts of small deposits in different accounts.
-- [Wash Trading](https://framework.amltrix.com/techniques/T0094.002) — - Captures IP addresses, device identifiers, login timestamps, and network session data.
-- Reveals patterns of multiple trading accounts or wallets being accessed from the same devices or locations, indicating potential self-dealing.
-- Enhances investigations by corroborating evidence of collusion through shared system access points.
-- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Collects session data, including IP addresses, user-agent strings, timestamps, and authentication events.
-- Enables correlation of these IPs with known proxy networks, Tor exit nodes, or suspicious short-term hosting services.
-- Facilitates detection of frequent or abrupt IP address changes that indicate possible rotating proxy usage.
-- Supports investigation by providing a clear audit trail of user sessions and highlighting anomalous network access patterns.
-- [Bribery](https://framework.amltrix.com/techniques/T0006) — - Tracks user activities, including overrides and clearance of high-risk transactions.
-- Identifies unauthorized modifications to AML controls, indicative of bribed insiders covering illicit transactions.
-- [Instant Exchange Services](https://framework.amltrix.com/techniques/T0032) — - Tracks IP addresses, device details, login timestamps, and possible use of anonymizing tools (e.g., VPNs).
-- Detects unusual access patterns, suggesting attempts to conceal user location or identity on instant exchange platforms.
-- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Tracks user logins, session activities, IP addresses, and record modification events.
-- Helps pinpoint unauthorized or off-hours access corresponding to suspected alterations in financial records.
-- [Digital Document & Transaction Manipulation](https://framework.amltrix.com/techniques/T0012.002) — Record user activities, authentication events, network traffic, and any attempts to bypass audit functions. Investigators analyze unauthorized balance adjustments or overridden logging mechanisms to identify digital tampering with financial records.
-- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Captures IP addresses, timestamps, and user authentication details for account creation and trading platform access.
-- Identifies multiple new accounts associated with the same IP or location, suggesting coordinated manipulative trading.
-- Provides audit trails useful in correlating suspicious trading patterns with specific network access events.
-- [Onion over VPN](https://framework.amltrix.com/techniques/T0015.005) — - Captures IP addresses, authentication events, and timestamps for user logins and web traffic.
-- Allows detection of repeated access attempts from Tor exit nodes or known VPN servers.
-- Enables investigators to correlate anomalous login locations with potential use of anonymous networking techniques, supporting timely identification of Onion over VPN usage.
-- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Includes IP addresses, device identifiers, timestamps, and user session records tied to account logins.
-- Helps detect multiple supposedly different accounts operated from the same endpoint or device, indicating potential mule networks or account takeovers.
-- [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Capture detailed records of user logins, access times, and system alterations.
-- Reveal unauthorized updates to government financial systems or records, supporting the detection of tampering or falsified entries that mask stolen funds.
-
----
-
-## [Donation Platforms & Donor Records](https://framework.amltrix.com/data-sources/DS0026)
-
-**Description:**
-Records from online fundraising platforms and associated donation logs, including donor identities, amounts, contribution dates, and intended purposes.
-
-### Related Techniques
-- [Educational Institution Schemes](https://framework.amltrix.com/techniques/T0019.001) — - Captures donor identities, contribution amounts, and donation histories from online fundraising or donation platforms.
-- Verifies whether a purported campaign actually exists, helping detect sudden, unexplained inflows labeled as charitable gifts.
-- Cross-checks donor legitimacy against KYC or external profiles to identify anomalies suggesting a laundering scheme.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Track funds donated for nonprofit-driven construction initiatives, verifying final recipients and usage.
-- Flag movements of donated assets into personal or affiliate accounts, revealing misuse or misappropriation.
-- Detect signs of layering where charitable funds are redirected under false pretexts of building community infrastructure.
-- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — Provides logs of donors, donation amounts, timestamps, and any recorded details from crowdfunding or charitable donation platforms. This data enables investigators to:
-
-- Track unusual spikes or patterns in donations.
-- Identify recurring donors, cross-reference incomplete donor details, or detect multiple donations originating from high-risk sources.
-- Correlate donation flow with other indicators (e.g., lack of disclosed fund sources, inadequate KYC) to uncover potential laundering activity within charitable organizations.
-- [Disguised Remittance Transfers](https://framework.amltrix.com/techniques/T0040.001) — Collects data from online fundraising platforms, including donor identities, amounts, and stated purposes. This allows investigators to distinguish genuine contributions from remittances falsely labeled as charitable donations, a common tactic for disguising illicit funds.
-- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Provides detailed campaign and donor information, including donor identities, donation amounts, timestamps, and references to specific causes.
-- Enables detection of repeat or suspicious donations across multiple campaigns, verifies the authenticity of fundraising appeals, and links them to personal accounts instead of legitimate nonprofit organizations.
-- [Crowdfunding Campaign Manipulation](https://framework.amltrix.com/techniques/T0044) — - Contains donor account details, donation timestamps, amounts, and associated metadata (e.g., IP addresses).
-- Reveals suspicious patterns such as newly created accounts, repeated or large donations from a small group, or inconsistencies in donor profiles.
-- Assists in detecting layered contributions aimed at obscuring the origin of illicit funds.
-- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Logs contributions made via online fundraising or charitable platforms, including donor identities, amounts, and timestamps.
-- Exposes suspicious or fabricated charitable campaigns used to solicit fraudulent donations.
-- Enables cross-checking of donation patterns against known fraud markers (e.g., misappropriated funds, repeated small deposits).
-- [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — Logs of donations, donor identities, and designated recipient information allow for the verification of whether purported charitable contributions align with credible charitable organizations, helping to identify possible misrepresentation.
-- [Political Contributions](https://framework.amltrix.com/techniques/T0056) — This data source comprises records from online fundraising platforms, capturing donor identities, contribution amounts, timestamps, and intended purposes. Examining these logs helps identify suspicious donation patterns, detect multiple reimbursements, and confirm compliance with campaign finance rules, thereby aiding in the detection of illicit political contributions.
-
----
-
-## [Document Verification](https://framework.amltrix.com/data-sources/DS0027)
-
-**Description:**
-Specialized systems or services that authenticate and validate official identification documents—such as passports or IDs—detecting potential forgeries, inconsistencies, or tampering.
-
-### Related Techniques
-- [Illegal Logging](https://framework.amltrix.com/techniques/T0145.001) — Authenticates official logging permits to confirm their validity and detect forgery or tampering. By verifying permit security features and confirming legitimate issuing authorities, it helps uncover falsified documentation used to justify illegal timber harvesting.
-- [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — - Validates the authenticity of official identification documents for auction participants.
-- Ensures that buyer and seller identities are legitimate, mitigating the risk of straw identities or shell entities.
-- Supports AML investigations by confirming the lawful identity of individuals placing or receiving high-value bids.
-- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Validates the authenticity of supporting documents, including medical certificates and hardship statements, by checking for alterations, duplicate details, or other red flags indicative of forged paperwork in early superannuation claims.
-- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Authenticates and validates identity documents, checking for forgeries or inconsistencies.
-- Detects incomplete or invalid identification details used by workers receiving off-the-books wages, indicating possible undocumented status.
-- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — Provides cross-border routing details (e.g., intermediary banks and institutions, sending jurisdictions) to confirm whether remittances follow expected paths. Deviations from the intended route or unexpected foreign participants may indicate the infiltration of illicit proceeds via cuckoo smurfing.
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Employs specialized systems to authenticate official identification documents such as passports and IDs.
-- Confirming the validity of employee credentials helps detect forged or falsified identities used to conceal true payroll liabilities.
-- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — Checks the authenticity and integrity of submitted documents, such as identification, business licenses, or financial statements. By identifying forgeries or alterations, it helps detect falsified eligibility data used to secure government relief funds.
-- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — Performs automated checks on remotely submitted identification documents, reviewing document metadata, security features, and potential editing traces, to detect synthetic or falsified identities used in remote onboarding. This directly exposes attempts to evade standard face-to-face verification by forging or altering digital documents.
-- [Cross-Border Settlement Document Manipulation](https://framework.amltrix.com/techniques/T0012.001) — - Provides specialized tools and forensic checks to identify tampering, forgery, or digital manipulation in key documents.  
-- Enhances the validation of cross-border settlement paperwork by flagging signs of fabricated or altered records, strengthening fraud detection beyond standard trade data reviews.
-- [Off-the-Record Deals](https://framework.amltrix.com/techniques/T0095) — - Authenticates and validates official contracts, ownership documents, and identification records.
-- Detects forgeries, inconsistencies, or fraudulent paperwork that enable off-the-record deals by bypassing formal documentation requirements.
-- Ensures legal records are genuine, preventing criminals from relying on fictitious agreements to conceal asset ownership or transfers.
-- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Performs authenticity checks on official identification documents, detecting forgeries or tampering.
-- Facilitates comprehensive comparisons of submitted ID documents across multiple accounts, identifying repeated use of manipulated credentials.
-- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — Offers specialized checks and authentication for identity documents, detecting inconsistencies or forgeries. This is particularly relevant for identifying individuals who present multiple passports or citizenship documents, verifying if those documents correspond to the same person, and flagging potentially fraudulent multi-citizenship claims.
-- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — Authenticates and assesses the legitimacy of documents prepared or submitted by professional intermediaries, such as incorporation papers, legal contracts, or notarized statements. This helps detect forgeries, altered records, or fraudulent documentation that fuel money laundering schemes.
-- [Deceptive Tax Filings](https://framework.amltrix.com/techniques/T0014.007) — Performs authenticity checks on uploaded or filed documents, detecting forgeries or tampering in tax returns and supporting evidence (e.g., financial statements). This helps identify fabricated or manipulated filings indicative of deceptive tax practices.
-- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Specialized systems authenticate official IDs, passports, or other credentials, detecting potential forgeries or tampering.
-- They support the identification of minors misrepresented as adults and criminals using fraudulent documents to obscure their involvement in child exploitation.
-- [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — Provides specialized checks to confirm the authenticity of invoices, receipts, donation letters, and other supporting documentation used to justify transaction purposes. This helps identify forgeries or alterations indicative of misrepresented fund intentions.
-- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — Validates the authenticity and integrity of digital identification documents submitted during account setup or ownership changes. Identifying forged or inconsistent documentation helps expose fictitious owners and online-only corporate setups.
-- [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Authenticates identification documents provided by intermediaries, detecting potential forgeries or mismatches.
-- Flags inconsistent or incomplete documentation, suggesting nominee or straw-man involvement.
-- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Validates the authenticity of identification documents or corporate paperwork submitted by donors or representatives.
-- Detects discrepancies, forgeries, or tampering in official IDs, passports, or charity registration documents.
-- Assists in preventing the misuse of falsified documentation to mask true identities or beneficial ownership within non-profits.
-- [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Provides authentication results for submitted identification documents, highlighting any forgeries or inconsistencies. Detecting falsified IDs is essential when criminals exploit minimal verification protocols offered by offshore prepaid and e-wallet providers.
-- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Authenticates identification documents to detect forged or tampered IDs used by hawala brokers or their customers. Ensures legitimate identity data is on file, helping to uncover individuals operating under false credentials.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Validates the authenticity of official documents and certificates.
-- Detects forged or inconsistent provenance, authenticity, or ownership records commonly used to launder illicit funds via high-value goods (e.g., artwork, collectibles).
-- [Documentary Collection Manipulation](https://framework.amltrix.com/techniques/T0077) — - Verifies the authenticity and security features of official documents.
-- Detects signs of alteration or tampering in shipping documents, bills of lading, or invoices.
-- Supports the identification of forged documentation commonly exploited in documentary collection schemes.
-- [Fraudulent Social Media Fundraising](https://framework.amltrix.com/techniques/T0144.011) — - Verifies the authenticity of submitted identification forms and supporting documents for nonprofit or charitable registration.
-- Detects forged, inconsistent, or missing documentation commonly seen when perpetrators cannot substantiate claims in fraudulent social media fundraising.
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Assesses the authenticity of provided identification documents to detect potential forgeries, tampering, or photo-layering.
-- Facilitates real-time validation of document data fields against official templates and standards, exposing mismatches often seen in impersonation schemes.
-- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Employs specialized systems to authenticate passports, IDs, and other official documents.
-- Detects forged or altered documents frequently used to facilitate illegal cross-border travel in smuggling operations.
-- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Specialized systems or services authenticate security features, design elements, and embedded data on official identification documents.
-- They detect anomalies in passports, IDs, or other paperwork, indicating forgery or alteration, which is crucial for uncovering falsified identities or misrepresented information.
-- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Performs automated authenticity checks on user-submitted ID documents, detecting tampering (e.g., mismatched photos or altered text).
-- Compares biometric data from the user’s submission against legitimate reference data to spot potential mismatches.
-- Flags repeated re-uploads of the same or slightly altered documents, allowing detection of fraudulent attempts to bypass remote verification.
-- [Asset Valuation Manipulation](https://framework.amltrix.com/techniques/T0045) — Specialized systems or services authenticate official documents, such as appraisals or asset certificates. They help detect forged or altered valuation reports and inconsistencies in ownership or provenance records, thereby mitigating attempts to legitimize manipulated valuations.
-- [CBI or RBI-Based Identity Acquisition](https://framework.amltrix.com/techniques/T0024.001) — - Validates passports, residency permits, and other official documents to check for forgeries, alterations, or tampering.
-- Directly supports investigations into false identities or misrepresented personal histories submitted for CBI/RBI applications.
-- Ensures institutions can authenticate documents and detect potential fraudulent background information used to obtain a second citizenship or residency status.
-- [Sector-Specific Document Manipulation](https://framework.amltrix.com/techniques/T0012.003) — - Specialized services or systems that authenticate formal documents by checking issuance details, seals, and official security features.
-- Identifies forged, altered, or otherwise invalid specialized permits and sector licenses used to conceal illicit operations behind seemingly legitimate paperwork.
-- [Agricultural Subsidy Fraud](https://framework.amltrix.com/techniques/T0144.012) — Automated tools and processes for detecting forgeries or alterations in official documents, such as farmland registration papers, property deeds, or production reports. This data helps confirm the legitimacy of records provided to support subsidy claims.
-- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Validates official identification documents (e.g., passports, IDs) to detect forgeries or inconsistencies.
-- Helps identify individuals traveling under multiple identities or using falsified documents.
-- Crucial in disrupting cash courier schemes reliant on false travel credentials to evade border checks.
-- [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Utilizes specialized methods to validate the authenticity of documents by identifying formatting anomalies or edits.
-- Enables quick detection of tampered account statements, invoices, or other financial records.
-- [Forging or Altering Financial Instruments](https://framework.amltrix.com/techniques/T0126) — - Employs forensic checks and specialized analyses (e.g., digital watermark verification, overwritten text detection) to authenticate financial documents.
-- Enables investigators to quickly spot signs of physical or digital tampering in letters of credit or other financial instruments.
-- [Unemployment Insurance Fraud](https://framework.amltrix.com/techniques/T0144.008) — Authenticates official identification documents used for unemployment benefit claims by identifying forgeries, tampering, or synthetic identities. This is achieved by comparing document data with authoritative sources and verifying security features.
-- [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — - Authenticates official documents, such as Kimberley Process Certificates, detecting forgeries, altered certificate numbers, or missing signatures.
-- Supports direct verification of diamond provenance claims, which is crucial for uncovering fraudulent shipping or licensing documents.
-- [Cheque Fraud](https://framework.amltrix.com/techniques/T0144.010) — - Analyzes physical or scanned checks for chemical alterations, tampered payee fields, or other signs of forgery.
-- Enables proactive identification of check 'washing' techniques before funds are released.
-- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Verifies the authenticity of government-issued identification documents, detecting forgeries or inconsistencies.
-- Helps ensure that individuals involved in potentially fraudulent romance-driven transactions are accurately identified.
-- Mitigates the risk of fake or stolen identities used by romance scam recruiters or the recruited mules.
-- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Employs tools and databases to authenticate identity documents (passports, IDs) and detect forgeries or inconsistencies.
-- Identifies fraudulent or altered documents used to open accounts or revise identity details in pig butchering schemes.
-- Supports enhanced due diligence when customer identification records repeatedly change without plausible explanation.
-- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Specializes in authenticating official identification documents, detecting tampering, and validating biometric or facial data.
-- Enables institutions to identify forged or altered IDs, inconsistent metadata, or mass-produced fake documents used in account openings.
-- [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Authenticates and validates official identification documents and business records.
-- Detects forged, tampered, or inconsistent documentation used in relief applications.
-- Ensures the integrity of supporting documents, revealing potential identity theft or misrepresented financial statements.
-- [Name Alteration](https://framework.amltrix.com/techniques/T0023.002) — Systems or services that authenticate passports, IDs, or supporting documents used for name changes by examining security features, photographs, and issuing details. These checks expose forged or tampered documents, revealing fraudulent name alterations.
-- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — Specialized systems authenticate official documents, including provenance or authenticity certificates for cultural artifacts. This data helps detect forged or altered documents used to justify the illicit origin or inflated values of artifacts, enabling more accurate due diligence.
-- [Safe Deposit Boxes](https://framework.amltrix.com/techniques/T0043) — Authenticates and validates official identification documents, helping detect forged IDs or inconsistencies when criminals attempt to rent deposit boxes under false names or third-party identities.
-- [Fraud](https://framework.amltrix.com/techniques/T0144) — - Specializes in authenticating official documents such as passports, IDs, and business registrations.
-- Highlights potential forgeries or tampered identification used to submit fraudulent claims or applications.
-- Supports investigators in confirming legitimate documentation for loans, invoices, and government program eligibility.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — Examines official identification documents, through physical checks or digital forensics, for signs of forgery, incomplete security features, suspicious metadata, or image manipulation. This directly helps uncover tampered or falsified documents used in identity manipulation.
-- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Authenticates physical bearer certificates, detecting forged or altered documentation.
-- Verifies issuance dates, certificate numbers, and other security features, ensuring the instrument’s legitimacy.
-- Helps investigators confirm or refute claims of rightful ownership or chain of custody for bearer instruments.
-- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — - Validates the authenticity of official identification documents used for remittance transactions.
-- Detects forged or altered IDs, as well as the repeated use of different documents by the same sender.
-- Assists in identifying individuals who systematically evade controls by using multiple or false identities to remain under reporting thresholds.
-- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — Authenticates and detects alterations in official permits, licenses, and geological surveys. This is critical for identifying falsified paperwork often used to legitimize illegally extracted minerals.
-- [Expense Report Fraud](https://framework.amltrix.com/techniques/T0144.006) — Authenticates and examines submitted paperwork, such as signatures or official documents, for potential tampering or forgery. This helps uncover falsified signatures on expense forms commonly used in expense report fraud.
-- [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — - Authenticates official identification documents presented by policyholders or premium payers.
-- Detects forged or manipulated documents used to obscure true identities and facilitate illicit policy purchases and early surrenders.
-- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Authenticates and validates official documents, including tax certificates or returns.
-- Identifies potential forgeries, alterations, or inconsistencies supporting fraudulent refund claims.
-- Ensures submitted tax paperwork aligns with legitimate records.
-
----
-
-## [Casino and Gambling Transaction Records](https://framework.amltrix.com/data-sources/DS0041)
-
-**Description:**
-Comprehensive data on gambling transactions and activities, including aggregated information on game types, betting frequency, transaction amounts, participant identities, deposit and withdrawal data, and other relevant details across casinos and related operations.
-
-### Related Techniques
-- [Immediate Cash Conversion](https://framework.amltrix.com/techniques/T0105) — - Monitors chip purchases, redemptions, and related gambling activity.
-- Detects scenarios where customers purchase large amounts of chips and immediately redeem them for cash with minimal gameplay.
-- [Over-the-Counter Cryptocurrency Trading](https://framework.amltrix.com/techniques/T0114) — Details gambling-related transactions, including deposit, withdrawal, and betting activity. When cross-analyzed with OTC trading data, these records help uncover overlapping cash-based or chip redemption behaviors that intersect with OTC conversions, adding additional layers of anonymity.
-- [Lottery Winnings](https://framework.amltrix.com/techniques/T0107.001) — Provides comprehensive data on gambling-related transactions, including lottery ticket purchases and prize redemptions. Such records enable investigators to:
-
-- Track high-frequency or large-volume lottery ticket purchases.
-- Identify unusual or repeated winnings and prize redemption patterns.
-- Detect potential third-party claimants or sudden shifts in gambling behavior indicative of lottery-based money laundering.
-- [Junket-based Casino Transfers](https://framework.amltrix.com/techniques/T0107.004) — - Contains detailed betting outcomes, deposit and withdrawal amounts, timestamps, and overall transaction histories.
-- Enables detection of abnormal gambling outcomes or minimal betting prior to large withdrawals, suggesting contrived or layering transactions.
-- [Match-Fixing](https://framework.amltrix.com/techniques/T0107.005) — - Provides comprehensive records of all betting transactions, including deposit amounts, bet types, frequencies, and win/loss outcomes.
-- Enables detection of rapid deposit-withdrawal cycles, correlated or simultaneous bets from multiple accounts, and consistently successful wagers on unlikely outcomes.
-- Supports investigation of match-fixing by uncovering anomalous betting patterns, sudden shifts in wager size, and suspicious timing relative to sporting events.
-- [Electronic Gaming Machine Ticket Redemption](https://framework.amltrix.com/techniques/T0054) — Contains detailed records of TITO (ticket-in, ticket-out) issuance and redemption, amounts inserted into electronic gaming machines, timestamps, betting activity, and payout details. This data enables tracking minimal-play or no-play scenarios, rapid cash-outs, and the overall flow of funds through gaming machines, helping detect patterns consistent with illicit layering or integration.
-- [Casino Mule Networks](https://framework.amltrix.com/techniques/T0011.003) — - Captures buy-ins, chip redemptions, and negotiable instrument issuance, including timestamps, amounts, and patron identities.
-- Reveals minimal or nonexistent gaming activity, rapid chip conversions, and sequential cashier transactions, supporting the detection of structuring or layering within casino mule networks.
-- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Provides comprehensive logs of gambling transactions and gameplay, including buy-ins, bet sizes, transaction timestamps, game outcomes, and associated player identifiers.
-- Enables direct detection of suspicious transfers of chips through unusual patterns of wins and losses, repeated large losses from the same accounts, and collusive gameplay indicative of chip dumping.
-- Facilitates investigations by correlating deposit or withdrawal data with anomalous bet amounts and rapid chip movements.
-- [Underground Gambling](https://framework.amltrix.com/techniques/T0107.007) — - Provides detailed records of gambling-related activities, including bet placements, winnings, payouts, and player identities.
-  
-- Enables analysts to track unusual patterns in betting behavior, detect consistently high payouts, identify accounts engaging in structuring or frequent large transactions, and investigate suspected underground gambling operations.
-- [In-Person Gambling Imitation](https://framework.amltrix.com/techniques/T0107) — - Captures detailed data on gambling transactions, including chip purchases, redemption amounts, timestamps, and wagering activity.
-- Helps identify minimal betting with rapid chip redemption, structured buy-ins or redemptions under reporting thresholds, and suspicious patterns indicating chip-dumping or match-fixing.
-- Facilitates cross-checking receipts and time-stamped records to detect forged documentation or staff collusion in in-person gambling environments.
-- [Casino Chip Conversions](https://framework.amltrix.com/techniques/T0107.006) — - Provides granular details of chip purchases, redemptions, TITO vouchers, and patron identities.
-- Logs each wager and payout event, enabling analysis of minimal gambling, large or frequent buy-ins, and rapid cash-outs.
-- Includes ticket serial numbers, issuance timestamps, and machine reconciliation records, supporting detection of forged receipts or inconsistencies between winnings claimed and actual gaming activity.
-- Helps identify unusual chip transfers among patrons and patterns of staged losses or transfers immediately preceding redemptions.
-- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — Includes detailed logs of wagers placed, stakes, frequencies, amounts won or lost, and associated identities. This granular view of betting activity allows for the detection of structured bets, repetitive small wagers below reporting thresholds, unusually high-value wins, or potential staff overrides of compliance checks—all pertinent to uncovering manipulations in licensed betting shops.
-- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Verify the legitimacy of betting activity behind large deposits, payouts, or alleged gaming proceeds.
-- Compare deposit and withdrawal data with customer betting patterns to detect inconsistencies.
-
-Monitoring these records helps reveal nonexistent or minimal gambling activity used to legitimize illicit funds as gaming revenue.
 
 ---

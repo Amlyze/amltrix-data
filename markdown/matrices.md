@@ -3,7 +3,9 @@
 ## [Money Laundering](https://framework.amltrix.com/matrices/amltrix-ml)
 
 **Description:**
-Money laundering is the multi-step, cyclical process in which criminals conceal the origins of funds acquired through illegal activities (e.g., fraud, corruption, organized crime) by moving them into the legal financial system under a guise of legitimacy. In the context of AMLTRIX’s adversarial threat model, these activities extend beyond the traditional stages of placement, layering, and integration to encompass early infiltration (access facilitation), operational evasion, concealment mechanisms, and post-integration asset protection—recognizing that criminals can reuse or cycle between these phases as they adapt to avoid detection.
+Money laundering is the multi-step, cyclical process in which criminals conceal the origins of funds acquired through illegal activities (e.g., fraud, corruption, organized crime) by moving them into the legal financial system under a guise of legitimacy. In the context of AMLTRIX’s adversarial threat model, these activities extend beyond the traditional stages of placement, layering, and integration to encompass early infiltration (access facilitation), operational evasion, concealment mechanisms, and post-integration asset protection—recognizing that criminals can reuse or cycle between these phases as they adapt to avoid detection.
+
+
 
 ### Tactics
 
@@ -39,13 +41,13 @@ To ensure both long-term security and short-term flexibility, adversaries delibe
 > It is not yet supported by techniques or indicators, and active development is not currently in progress.  
 > **Feedback and expressions of interest from the community are welcome** to help guide future prioritization.
 
-Terrorist financing involves acquiring, managing, and moving funds from both legitimate and illicit sources to support terrorist activities and organizations. This financial process may utilize conventional methods such as donations or lawful businesses, as well as fraudulent schemes, criminal enterprises, and underground networks like hawala. Funds are directed toward recruitment, training, propaganda, logistical support, and execution of attacks. Within adversarial frameworks like kill-chain models, TF comprises diverse tactics including infiltration of legitimate financial institutions and employing layered transactions to evade law enforcement and regulatory detection.
+Terrorism financing involves acquiring, managing, and moving funds from both legitimate and illicit sources to support terrorism activities and organizations. This financial process may utilize conventional methods such as donations or lawful businesses, as well as fraudulent schemes, criminal enterprises, and underground networks like hawala. Funds are directed toward recruitment, training, propaganda, logistical support, and execution of attacks. Within adversarial frameworks like kill-chain models, TF comprises diverse tactics including infiltration of legitimate financial institutions and employing layered transactions to evade law enforcement and regulatory detection.
 
-In the AMLTRIX adversarial framework, terrorist financing is modeled distinctly from money laundering, highlighting unique tactics and strategic financial objectives. These tactics aim not only to channel resources effectively toward operational goals but also to ensure the long-term resilience and adaptability of terrorist entities.
+In the AMLTRIX adversarial framework, terrorism financing is modeled distinctly from money laundering, highlighting unique tactics and strategic financial objectives. These tactics aim not only to channel resources effectively toward operational goals but also to ensure the long-term resilience and adaptability of terrorist entities.
 
 The outlined matrix below presents seven foundational tactics, each reflecting stages in the financial lifecycle of terrorist organizations. These tactics provide a conceptual foundation for future development of detection techniques, indicators, and analytical frameworks:
 
-### **TF Tactics Overview**
+### **Draft Terrorism Financing Tactics Overview**
 
 | **Tactic** | **Description** |
 | --- | --- |
@@ -55,13 +57,7 @@ The outlined matrix below presents seven foundational tactics, each reflecting s
 | **4. Money Movement** | Transferring funds secretly through formal and informal networks like banking, remittances, hawala, cryptocurrency, and physical smuggling to conceal origins and destinations. |
 | **5. Value Storage** | Securing funds in discreet, stable assets such as real estate, precious metals, digital wallets, or decentralized finance tools to retain liquidity and minimize detection risk. |
 | **6. Resource Procurement and Expenditure** | Directing resources towards operational necessities, including weaponry, communications, logistics, personnel recruitment, and strategic outreach. |
-| **7. Operational Continuity** | Ensuring ongoing survival by diversifying funding methods, embedding redundancy, preparing successors, and adapting financial practices to circumvent countermeasures.
-
----
-
-### **Community Input and Future Direction**
-
-Currently serving as a conceptual scaffold, this matrix invites analysts, researchers, and institutions dealing with TF threats or conducting typology analyses to provide feedback. Your contributions and interest will be instrumental in guiding future refinements and formal integration into the AMLTRIX framework.
+| **7. Operational Continuity** | Ensuring ongoing survival by diversifying funding methods, embedding redundancy, preparing successors, and adapting financial practices to circumvent countermeasures.
 
 ### Tactics
 
@@ -142,13 +138,11 @@ Once a terrorist organization has established a funds collection channel, it can
 > It is not yet supported by techniques or indicators, and active development is not currently in progress.  
 > **Feedback and expressions of interest from the community are welcome** to help guide future prioritization.
 
-### **Overview**
-
 Sanctions evasion is the deliberate circumvention of national or international economic and trade restrictions targeting specific individuals, entities, or states. Evasion efforts span across corporate structuring, trade manipulation, falsified documentation, and strategic use of weak regulatory environments.
 
 In the AMLTRIX adversarial framework, these behaviors are framed as **tactical objectives** pursued by sanctioned actors and their enablers. Each tactic corresponds to a distinct mode of evasion, providing the foundation for eventual mapping to detection techniques and red flags.
 
-### **Sanctions Evasion Tactics**
+### **Draft Sanctions Evasion Tactics**
 
 | **Tactic** | **Description** |
 |-----------|-----------------|
@@ -214,13 +208,11 @@ Example techniques:
 > It is not yet supported by techniques or indicators, and active development is not currently in progress.  
 > **Feedback and expressions of interest from the community are welcome** to help guide future prioritization.
 
-### **Overview**
-
 Proliferation financing is the financial underpinning of efforts to develop, acquire, or transfer weapons of mass destruction (WMD) and their delivery systems. This often involves dual-use goods and highly covert transactional activity, making detection difficult. Threat actors exploit complex trade networks, regulatory gaps, front companies, and misinformation to obscure funding channels and avoid sanctions.
 
 In AMLTRIX, proliferation financing is modeled as an adversarial financial behavior set that overlaps partially with sanctions evasion and money laundering—but has distinct strategic and tactical dimensions tied to WMD program enablement.
 
-### **Proliferation Financing Tactics**
+### **Draft Proliferation Financing Tactics**
 
 | **Tactic** | **Description** |
 |-----------|-----------------|
@@ -291,7 +283,7 @@ Fraud schemes within the financial sector encompass a broad spectrum of activiti
 Framing fraud explicitly as a **financial crime** within the AMLTRIX context provides clarity for financial institutions, regulators, law enforcement, compliance teams, and investigators. It emphasizes fraud’s adversarial, modular nature, allowing precise definition of each fraudulent tactic within the broader fraud lifecycle or kill-chain, thus significantly enhancing detection, prevention, and enforcement capabilities across the financial sector.
 
 
-## **Proposed Fraud Tactics**
+## **Draft Fraud Tactics**
 
 | **Name**                           | **Description**                                                                                                                                                                                                                                           |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

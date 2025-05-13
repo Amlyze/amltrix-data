@@ -269,14 +269,6 @@ Commodities can be categorized into different types:
 
 ---
 
-## Physical Cash
-- **Category:** Fiat (Physical/Digital) & Paper-Based Payment Instruments
-- **Code:** IN0056
-- **Description:** Tangible currency comprising notes and coins, used in everyday transactions due to its high liquidity and universal acceptance.
-- **Short Description:** Physical cash, being universally accepted and easily transferable without digital records, is frequently exploited for money laundering and other illicit financial activities due to its high degree of anonymity and liquidity.
-
----
-
 ## Precious Metals & Gemstones
 - **Category:** Commodities & High-Value Tangible Assets
 - **Code:** IN0031

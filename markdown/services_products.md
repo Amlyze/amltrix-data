@@ -109,6 +109,44 @@ A suite of financial services provided by banks to businesses, encompassing acco
 
 ---
 
+## [Securities Brokerage](https://framework.amltrix.com/services-products/PS0027)
+
+**Description:**
+Financial services provided by brokerage firms that enable individuals and entities to buy, sell, and hold various securities—such as stocks, bonds, mutual funds, and other investment products. Clients typically open brokerage accounts for self-directed or managed trading, with brokers facilitating trade execution, clearing, and related administrative functions.
+
+### Related Techniques
+- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Fraudulently established brokerage accounts (directly by criminals or via money mules) allow illicit proceeds to be channeled into seemingly legitimate securities trades.
+- High volumes of small transactions blend criminal funds into normal trading records, diluting red flags.
+- Complex layering across multiple customer accounts and instruments obscures beneficial ownership and complicates detection.
+- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — - Criminals can rotate authorized traders on brokerage accounts to obscure who actually controls the assets.  
+- Utilize corporate or trust structures to establish accounts, then repeatedly change listed ownership, complicating beneficial ownership tracing.  
+- Conduct rapid trades or transfers within these accounts to layer funds and mask the true financial trail.
+- [Securities Account Ownership](https://framework.amltrix.com/techniques/T0088.001) — - Criminals open or maintain brokerage accounts under multiple nominee names, frequently rotating authorized traders or owners to obscure who controls the securities holdings.  
+- Rapid or repeated changes to signatories inhibit transparent oversight and delay identification of the true beneficiaries.
+- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Criminals can present physical bearer bonds or negotiable certificates for trading or redemption, relying on minimal verification of the true beneficial owner.  
+- Brokers may struggle to confirm provenance of the instrument, enabling illicit proceeds to enter the financial system under the cloak of anonymity.
+- [Wash Trading](https://framework.amltrix.com/techniques/T0094.002) — - Criminals open or control multiple brokerage accounts and execute frequent buy/sell orders of the same stock between accounts they secretly own, creating illusory volume.  
+- This activity can distort market prices and mask illegal funds as legitimate capital gains or losses once the trades settle.
+- [Stock Manipulation](https://framework.amltrix.com/techniques/T0094.001) — - Facilitate direct purchase and sale of equities, allowing criminals to orchestrate manipulative trades across multiple accounts. 
+- Provide an interface to trade low-liquidity or penny stocks, enabling pump-and-dump and wash trading schemes where abnormal volumes or prices can obscure illicit fund origins.
+- [Offsetting Transactions](https://framework.amltrix.com/techniques/T0102) — - Criminals can place near-simultaneous buy and sell orders for the same security using multiple accounts under their control, resulting in minimal net position changes while artificially inflating trading volume.  
+- This creates a wash trade environment that obscures the true source of funds, complicating AML oversight and investigations.
+- [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — - Criminals exploit routine brokerage operations by placing offsetting buy and sell orders across multiple accounts or jurisdictions to disguise illicit funds as ordinary market activity.  
+- The same or linked beneficial owners control both sides of the trades, negating any real market risk while transferring value under the appearance of legitimate trading.
+- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Criminals can set up multiple brokerage accounts to place matching buy/sell orders (wash trading), boosting perceived liquidity and interest in a security.  
+- Pump-and-dump ploys involve spreading false information to inflate share prices, enabling rapid sell-offs at manipulated highs.
+- [Insider Trading](https://framework.amltrix.com/techniques/T0136) — - Criminals leverage brokerage accounts to execute high-volume securities trades on non-public information, quickly generating illicit profits.  
+- Proceeds from these insider trades are then funneled across multiple accounts or intermediaries, obscuring the origin and ownership of funds.  
+- Rapid liquidation and subsequent distribution of profits to external accounts frustrates regulatory oversight and masking suspicious trading patterns.
+- [Bond Investments](https://framework.amltrix.com/techniques/T0061.004) — - Criminals purchase government or corporate bonds using illicit funds, disguising the true source of capital as legitimate investment proceeds. 
+- They may place ownership under relatives or third parties, concealing the ultimate beneficial owner and complicating due diligence. 
+- Interest and redemption payouts are then presented as ordinary investment returns, obscuring their criminal origin.
+- [Dividend Stripping](https://framework.amltrix.com/techniques/T0147.003) — - Provide the primary channel for trading, lending, and short selling of shares around dividend record dates.  
+- Brokers can coordinate rapid ownership transfers so multiple entities appear entitled to the same dividend credits.  
+- Collusion with complicit brokers enables timing trades to blur beneficial ownership, directly supporting duplicate tax refund claims.
+
+---
+
 ## [Credit Card Services](https://framework.amltrix.com/services-products/PS0005)
 
 **Description:**
@@ -133,6 +171,132 @@ Services provided by financial institutions involving the issuance and managemen
 - [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — - Criminals use alternate passports to apply for credit cards under multiple identities.  
 - Parallel credit lines facilitate swift movement and layering of illicit funds.  
 - Discrepancies in identities linked to these cards make transaction monitoring difficult.
+
+---
+
+## [Money Transfer and Remittance Services](https://framework.amltrix.com/services-products/PS0087)
+
+**Description:**
+A broad range of financial services enabling individuals and businesses to send and receive funds both domestically and internationally, including secure transfers through digital platforms or physical agents. Typically offered by banks, money transfer operators, and specialized payment companies, these services support various methods—such as cash transfers, bank transfers, mobile transactions, and digital platforms—and may include currency conversion. They are commonly used for remittances, business payments, and other financial exchanges.
+
+### Related Techniques
+- [Disguised Remittance Transfers](https://framework.amltrix.com/techniques/T0040.001) — - Criminals falsely label remittance transfers as personal gifts, familial support, or charitable donations, providing documents (e.g., gift letters) to reduce scrutiny.
+- They often send amounts exceeding the sender’s known financial profile or route funds through regions lacking any genuine familial or organizational link, concealing the true source.
+- By misrepresenting the transaction purpose, offenders evade common AML checks and appear compliant with routine remittance norms.
+- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — - In jurisdictions with weak regulation, informal or hawala-style services bypass formal monitoring.  
+- Criminals deposit fragmented illicit funds and move them offshore via lightly regulated corridors, complicating AML enforcement.
+- [Micro-Structuring](https://framework.amltrix.com/techniques/T0016.001) — - Criminals can repeatedly send small sums through remittance channels to multiple receivers, ensuring each transaction remains below regulatory thresholds.  
+- Frequent low-value international transfers appear typical for personal remittances, hindering detection of aggregated illicit funds.
+- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — - Criminals can direct unrelated or complicit third parties to initiate or receive remittances on their behalf, obscuring true fund ownership.  
+- Structured or repeated transfers from multiple outside payers complicate beneficial ownership checks and hamper effective monitoring.
+- [Cross-Border Agent Intermediation](https://framework.amltrix.com/techniques/T0121.001) — - Local or regional sub-agents can channel illicit funds under the guise of personal or family remittances, fragmenting oversight across multiple jurisdictions.  
+- Small, frequent transfers help evade detection thresholds and complicate AML controls, enabling layered cross-border movements.
+- [Unlicensed MSBs](https://framework.amltrix.com/techniques/T0013.001) — - Unlicensed operators offer informal channels to move funds across borders or domestically without proper registration or oversight.  
+- They accept cash or value from customers and dispense equivalent payouts in other jurisdictions, bypassing standard AML checks.
+- [Transaction Chaining](https://framework.amltrix.com/techniques/T0070) — - Enables frequent, low-value cross-border transfers, making it harder to piece together the original illicit funds flow.  
+- Criminals exploit multiple remittance corridors and micro-transactions to bypass alerting triggers and conceal beneficiary identities.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — - Multiple accounts can be opened quickly with fabricated personal data, enabling rapid movement of illicit proceeds across borders.
+- Discrepancies between the provided identity details and third-party validations often signal identity tampering or fraud.
+- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Function as money service businesses, allowing frequent cross-border transfers in different currencies.  
+- Facilitate structured layering by breaking transactions into smaller amounts, often below reporting thresholds and during high-traffic periods, complicating the tracing of illicit origins.
+- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Criminals can insert complicit staff or owners to omit suspicious transaction reporting, blending illicit proceeds with regular remittance flows.  
+- Large agent networks enable transactions to be divided among multiple outlets, obscuring patterns and hampering regulatory oversight.
+- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — - Mules can receive or send illicit funds across borders under their own names, masking the true criminal beneficiary.  
+- Minimal documentation beyond the mule’s identity conceals the origin of funds, complicating AML detection.  
+- Rapid cross-border movement of funds facilitates layering through multiple mule-managed channels.
+- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Allow cross-border fund movements that can hide the true beneficiary when compliance is circumvented.  
+- Sanctioned parties often route payments through multiple intermediaries to mask their involvement.
+- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — - Criminals split illicit funds into multiple low-value transfers under various sender identities, avoiding formal reporting thresholds. 
+- Limited checks for smaller transactions allow them to deposit and withdraw proceeds with minimal scrutiny. 
+- Transfers often converge on a single beneficiary lacking a legitimate connection to the senders, obscuring the money trail. 
+- Funds are regularly collected in cash soon after arrival, further frustrating AML monitoring and tracing efforts.
+- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Smaller, frequent transfers are sent via remittance providers to co-conspirators or family abroad, disguising the scope of illicit cash flows.  
+- In less monitored corridors, criminals exploit minimal documentation requirements to launder sexual exploitation revenue.
+- [Piracy](https://framework.amltrix.com/techniques/T0148) — - Criminals conducting piracy leverage these channels to move ransom funds across borders, often breaking down large sums into smaller amounts to avoid detection.  
+- In regions with lax oversight or informal transfer operators, documentation requirements are minimal, enabling pirates to obscure the origin of ransom proceeds.
+- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Criminals deposit illicit proceeds from commodity trafficking in multiple, low-value transfers, making them appear as legitimate remittances.
+- Cross-border capabilities facilitate rapid movement of funds, obscuring origin by layering transfers through various jurisdictions.
+- [Common Offenses](https://framework.amltrix.com/techniques/T0146) — - Criminals split illicit funds into numerous small remittances, often evading more robust checks applied to larger transfers.  
+- Utilizing informal or lightly regulated corridors, they minimize record-keeping, making it challenging for authorities to trace or detect the illicit origin.
+- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Drug networks move profits quickly across multiple jurisdictions by sending smaller remittances to various recipients, avoiding large single transfers that draw scrutiny.  
+- These services enable layering by swiftly mixing illicit funds with legitimate transfers in international corridors that often have less robust oversight.
+- [Casino Mule Networks](https://framework.amltrix.com/techniques/T0011.003) — - Criminals leverage lightly regulated or unregistered remittance providers to transfer funds internationally following casino-based layering.  
+- Splitting transfers across multiple patrons or entities helps mask the funds’ origin and dodge reporting thresholds, making it harder for authorities to track illicit proceeds.  
+- Jurisdictional loopholes and limited oversight at some remittance outlets further obscure the money trail.
+- [Structuring](https://framework.amltrix.com/techniques/T0016) — - Offenders split large sums into numerous low-value transfers that remain below reporting thresholds. 
+- They use multiple senders, recipients, or remittance outlets to distribute the funds, thwarting suspicious transaction monitoring.
+- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — - Criminals exploit informal hawala networks that operate outside formal licensing and KYC requirements.  
+- Deposits of illicit proceeds can be made to a hawaladar’s pooled account, leaving no official record or paper trail.  
+- Cross-border or domestic payouts are arranged through trust-based relationships, effectively bypassing regulatory monitoring and AML detection.
+- [Social Media Mule Recruitment](https://framework.amltrix.com/techniques/T0140.001) — - Mule recruiters instruct recruits to send or receive funds through remittance channels, often targeting cross-border corridors where institutional oversight can be challenging.  
+- Transaction references may cite bogus purposes (e.g., family support, freelance payments) to mask the true nature of these funds.  
+- Distributed transfers using multiple recruits hinder tracing the ultimate beneficiaries.
+- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Multiple small cash deposits are submitted at different remittance outlets, both locally and across borders, disguising the true origin of funds.  
+- The fragmented nature of these transactions makes it harder for authorities to identify a single underlying criminal operation.
+- [Lottery Scams](https://framework.amltrix.com/techniques/T0144.015) — - Criminals instruct victims to send purported 'lottery fees' or 'taxes' via remittance operators, collecting payments in multiple locations to obscure their true identity.  
+- They layer or structure these funds across various jurisdictions, making tracing and recovery of victims’ money more difficult.
+- [Independent Payment Agents](https://framework.amltrix.com/techniques/T0113.001) — - Criminals introduce loosely supervised sub-agents or partner outlets that directly handle funds, bypassing full KYC/AML checks under the principal license.  
+- The principal or aggregator name alone appears on many transaction records, obscuring the sub-agent’s involvement and the ultimate sender or beneficiary.  
+- Complex agent networks fracture oversight, enabling criminals to mask higher-risk transactions as standard remittances.
+- [Phishing Mule Recruitment](https://framework.amltrix.com/techniques/T0140.002) — - After funds are deposited into a victim’s account, criminals instruct them to use remittance services to send money—often internationally—under the guise of processing business or customer payments.  
+- This method leverages the victim’s apparent innocence to disguise the criminals’ involvement and complicate law enforcement tracing.
+- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Some remittance platforms, especially app-based, impose minimal KYC checks, allowing criminals to transfer funds covertly across borders.  
+- Rapid settlement and limited oversight hinder effective AML transaction monitoring, aiding layering and placement.
+- [Cross-Border Payment Routing](https://framework.amltrix.com/techniques/T0121) — - Criminals split illicit proceeds into multiple smaller remittances across different corridors, circumventing reporting thresholds and scrutiny.  
+- They exploit poorly regulated or informal remittance channels to layer funds internationally, obscuring the ultimate source or beneficiary.
+- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Criminals use stolen or fabricated personal details to open multiple remittance accounts simultaneously, camouflaging large volumes of transactions.  
+- By presenting consistent yet false KYC information, they maintain minimal scrutiny while rapidly transferring illicit proceeds internationally.
+- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Criminals deposit smuggling proceeds into remittance channels under individual transaction limits to evade detection.  
+- Transactions often match known smuggling fee amounts, masking their illicit origin and facilitating cross-border fund movement.
+- [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — - Criminals break up large declared sums into smaller remittance transactions, staying below reporting thresholds and evading heightened scrutiny.  
+- They present customs declaration documents as evidence of lawful origin, even if the actual amount physically imported was lower.  
+- By spreading transactions across multiple recipients or locations, perpetrators further complicate investigations into the funds’ illicit source.
+- [Funnel Accounts](https://framework.amltrix.com/techniques/T0083) — - Criminals deposit multiple structured sums of illicit proceeds across different remittance agents or online portals.  
+- The funds are then rapidly transferred or withdrawn in other regions, obscuring the initial sources of the deposits and frustrating investigators.
+- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Perpetrators posing as genuine owners of money mule or customer accounts use deepfake voice technology to pass call-based identity checks.  
+- Rapid cross-border transfers are initiated under false pretenses, leveraging realistic-sounding requests to evade suspicion.  
+- Deepfakes allow them to sidestep typical red flags, as staff believe they are speaking with the legitimate account holder.
+- [Countertrade](https://framework.amltrix.com/techniques/T0079) — - Criminals utilize reciprocal remittances or hawala-style transfers to settle imbalances in countertrade deals.  
+- These off-grid or loosely monitored channels fragment payment trails, hindering authorities’ ability to track the ultimate origin or destination of funds.
+- [Extortion](https://framework.amltrix.com/techniques/T0049) — • Criminals compel overseas individuals or businesses to send forced payments, routing them through remittance channels.  
+• Large or frequent cross-border transfers labeled with ambiguous references can conceal extortion proceeds and finance illicit operations.
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Criminals pose as legitimate individuals using forged identification to open or access remittance accounts.  
+- They send or receive funds internationally under the stolen identity, hampering the integrity of KYC checks and obscuring the true beneficiary.
+- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — - Criminals utilize non-bank remittance or money transfer operators with lax oversight to move dirty funds through mobile channels.  
+- Frequent cross-border micro-remittances bypass stricter bank-level controls, aiding layering efforts.
+- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - After inflating diamond shipment invoices, criminals integrate illicit proceeds by transferring funds across multiple remittance channels, especially where controls may be weaker.  
+- Layering is further facilitated by rapid fund transfers to and from different jurisdictions, making detection of the true transaction origin more difficult.
+- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Victims are instructed to send funds through remittance services, enabling rapid cross-border transfers with limited oversight.
+- By manipulating victims to keep transactions small or coded under personal reasons, scammers reduce scrutiny and exploit the victim’s emotional compliance.
+- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Offenders send small remittances across various corridors to observe whether they prompt additional due diligence. 
+- Low-value cross-border transfers help identify each corridor’s threshold or KYC intensity.
+- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Fraudsters instruct victims to send initial 'advance fees' through common remittance providers, often under the pretext of urgent or unexpected fees.  
+- Once received, perpetrators rapidly withdraw or transfer the funds to additional accounts—potentially across multiple jurisdictions—to obscure the trail.
+- [Wire Transfer Chains](https://framework.amltrix.com/techniques/T0070.001) — - Allows repeated, small-value transactions across diverse remittance channels, contributing to layering by dispersing illicit funds into multiple accounts or payments.  
+- Rapid processing and global coverage enable criminals to move funds quickly, making consolidated oversight more difficult and frustrate detection efforts.
+- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — - Money mules can funnel illicit proceeds across borders under the guise of remittances.  
+- Structured or frequent transfers cloak the true origin and intended recipient, obscuring money trails.
+- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Illicitly obtained tax refund proceeds can be rapidly transferred to offshore or high-risk jurisdictions, concealing their origin.  
+- Use of unregulated or informal channels within remittance services further complicates efforts to trace and recover fraudulent payouts.
+- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — - Offenders segment or bundle government relief payouts into smaller remittance transfers, reducing visibility under certain thresholds.  
+- Cross-border remittances exploit varying degrees of regulatory oversight to mask the ultimate destination of fraudulent proceeds.
+- [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — - Criminals leverage sub-agents or partner outlets operating under a licensed principal to process funds, reducing direct AML scrutiny.  
+- The receiving institution often sees only the main provider (aggregator), obscuring the true source and final beneficiary.  
+- Sub-agents may accept multiple small deposits below reporting thresholds, fragmenting transaction records and complicating oversight.
+- [Cuckoo Smurfing](https://framework.amltrix.com/techniques/T0016.002) — - Criminal or complicit remittance providers intercept legitimate remittance details and deposit illicit proceeds in their place, masking the criminal origin.  
+- Recipients see what appears to be a routine inbound payment, allowing illicit funds to blend seamlessly with genuine remittances.
+- [Black Market Peso Exchange](https://framework.amltrix.com/techniques/T0013.005) — - Peso brokers may use money transfer platforms to move criminal proceeds internationally under the guise of legitimate remittances.  
+- Third-party or intermediary payments with insufficient documentation allow illicit funds to be channeled to exporters, completing the cycle of the Black Market Peso Exchange.
+- [Informal Value Transfer Systems](https://framework.amltrix.com/techniques/T0013) — - Unlicensed or loosely regulated remittance operators can mirror hawala-like operations, using personal trust instead of formal KYC to accept and move significant sums.  
+- Commingling legitimate remittances with illicit funds and minimal recordkeeping obscures transactional traces, allowing criminals to bypass formal banking oversight.
+- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Provide cross-border funds transfers through MSBs, enabling payments to precursor chemical suppliers in higher-risk jurisdictions without raising immediate red flags.  
+- Criminals often structure or split transactions across multiple senders or recipients to evade threshold triggers and obscure the money trail.
+- [Multi-Currency Swap](https://framework.amltrix.com/techniques/T0115.002) — - Criminals repeatedly convert illicit funds into different currencies by routing them through cross-border remittance channels.  
+- They split or structure transactions below reporting thresholds, exploiting weak controls in certain corridors to hide the true origin of funds.
+- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Recruits forward received funds via remittance or money transfer channels to criminals or third-party beneficiaries, often located abroad.  
+- Minimal documentation or lower transaction thresholds can help obscure the true origin and destination of these illicit proceeds.
+- [Smurfing](https://framework.amltrix.com/techniques/T0016.005) — - Criminals execute numerous small transfers via remittance channels, each below monitoring thresholds. 
+- They often involve multiple senders or recipients to disguise the cumulative value and origin of illicit proceeds.
 
 ---
 
@@ -334,44 +498,6 @@ A specialized service managing employee wage calculations, payroll distribution,
 
 ---
 
-## [Securities Brokerage](https://framework.amltrix.com/services-products/PS0027)
-
-**Description:**
-Financial services provided by brokerage firms that enable individuals and entities to buy, sell, and hold various securities—such as stocks, bonds, mutual funds, and other investment products. Clients typically open brokerage accounts for self-directed or managed trading, with brokers facilitating trade execution, clearing, and related administrative functions.
-
-### Related Techniques
-- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Fraudulently established brokerage accounts (directly by criminals or via money mules) allow illicit proceeds to be channeled into seemingly legitimate securities trades.
-- High volumes of small transactions blend criminal funds into normal trading records, diluting red flags.
-- Complex layering across multiple customer accounts and instruments obscures beneficial ownership and complicates detection.
-- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — - Criminals can rotate authorized traders on brokerage accounts to obscure who actually controls the assets.  
-- Utilize corporate or trust structures to establish accounts, then repeatedly change listed ownership, complicating beneficial ownership tracing.  
-- Conduct rapid trades or transfers within these accounts to layer funds and mask the true financial trail.
-- [Securities Account Ownership](https://framework.amltrix.com/techniques/T0088.001) — - Criminals open or maintain brokerage accounts under multiple nominee names, frequently rotating authorized traders or owners to obscure who controls the securities holdings.  
-- Rapid or repeated changes to signatories inhibit transparent oversight and delay identification of the true beneficiaries.
-- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Criminals can present physical bearer bonds or negotiable certificates for trading or redemption, relying on minimal verification of the true beneficial owner.  
-- Brokers may struggle to confirm provenance of the instrument, enabling illicit proceeds to enter the financial system under the cloak of anonymity.
-- [Wash Trading](https://framework.amltrix.com/techniques/T0094.002) — - Criminals open or control multiple brokerage accounts and execute frequent buy/sell orders of the same stock between accounts they secretly own, creating illusory volume.  
-- This activity can distort market prices and mask illegal funds as legitimate capital gains or losses once the trades settle.
-- [Stock Manipulation](https://framework.amltrix.com/techniques/T0094.001) — - Facilitate direct purchase and sale of equities, allowing criminals to orchestrate manipulative trades across multiple accounts. 
-- Provide an interface to trade low-liquidity or penny stocks, enabling pump-and-dump and wash trading schemes where abnormal volumes or prices can obscure illicit fund origins.
-- [Offsetting Transactions](https://framework.amltrix.com/techniques/T0102) — - Criminals can place near-simultaneous buy and sell orders for the same security using multiple accounts under their control, resulting in minimal net position changes while artificially inflating trading volume.  
-- This creates a wash trade environment that obscures the true source of funds, complicating AML oversight and investigations.
-- [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — - Criminals exploit routine brokerage operations by placing offsetting buy and sell orders across multiple accounts or jurisdictions to disguise illicit funds as ordinary market activity.  
-- The same or linked beneficial owners control both sides of the trades, negating any real market risk while transferring value under the appearance of legitimate trading.
-- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Criminals can set up multiple brokerage accounts to place matching buy/sell orders (wash trading), boosting perceived liquidity and interest in a security.  
-- Pump-and-dump ploys involve spreading false information to inflate share prices, enabling rapid sell-offs at manipulated highs.
-- [Insider Trading](https://framework.amltrix.com/techniques/T0136) — - Criminals leverage brokerage accounts to execute high-volume securities trades on non-public information, quickly generating illicit profits.  
-- Proceeds from these insider trades are then funneled across multiple accounts or intermediaries, obscuring the origin and ownership of funds.  
-- Rapid liquidation and subsequent distribution of profits to external accounts frustrates regulatory oversight and masking suspicious trading patterns.
-- [Bond Investments](https://framework.amltrix.com/techniques/T0061.004) — - Criminals purchase government or corporate bonds using illicit funds, disguising the true source of capital as legitimate investment proceeds. 
-- They may place ownership under relatives or third parties, concealing the ultimate beneficial owner and complicating due diligence. 
-- Interest and redemption payouts are then presented as ordinary investment returns, obscuring their criminal origin.
-- [Dividend Stripping](https://framework.amltrix.com/techniques/T0147.003) — - Provide the primary channel for trading, lending, and short selling of shares around dividend record dates.  
-- Brokers can coordinate rapid ownership transfers so multiple entities appear entitled to the same dividend credits.  
-- Collusion with complicit brokers enables timing trades to blur beneficial ownership, directly supporting duplicate tax refund claims.
-
----
-
 ## [Peer-to-Peer Payment Systems](https://framework.amltrix.com/services-products/PS0029)
 
 **Description:**
@@ -513,6 +639,158 @@ Notary services provide legal authentication for documents, ensuring their legit
 
 ---
 
+## [E-commerce Platforms](https://framework.amltrix.com/services-products/PS0012)
+
+**Description:**
+Online marketplaces that facilitate the buying and selling of goods and services over the internet. These platforms support product listings, payment processing, user account management, and transaction reviews, and may cater to both general and specialized consumer markets.
+
+### Related Techniques
+- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Criminals can list or purchase in-game goods or entire accounts, bypassing official platforms with stricter oversight.  
+- By inflating or undervaluing prices, they layer illicit funds through seemingly legitimate transactions with limited identity verification.
+- [Loyalty Points](https://framework.amltrix.com/techniques/T0106) — - Criminals can exploit online marketplaces that allow buying, selling, or transferring loyalty points, effectively converting illicit proceeds into near-cash.  
+- Minimal KYC or transactional scrutiny on some platforms enables rapid transfers of large point balances across multiple accounts or listings, further obscuring the origin of funds and complicating AML efforts.
+- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Provide a marketplace to list and sell in-game assets at inflated or manipulated prices, effectively converting in-game currency back into fiat or cryptocurrency.  
+- Multiple item listings and frequent small-value trades can further fragment financial trails, making detection of illicit proceeds more difficult.
+- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Provide an online marketplace where exploitative content can be sold under the guise of adult or legitimate offerings.
+- Facilitate micro-transactions that camouflage the illicit source of funds, making it difficult to discern legitimate from criminal proceeds.
+- [Chargeback](https://framework.amltrix.com/techniques/T0091) — - Criminals can operate as both seller and buyer, generating fraudulent sales and then initiating chargebacks to siphon illicit funds under the guise of legitimate refunds.  
+- Automated or limited-oversight dispute mechanisms make it easier to file repeated or high-value chargebacks without immediate detection.
+- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Fraudsters list non-existent or sham products, receiving payments from collaborators or unwitting customers.  
+- Such platforms provide a public façade of legitimate retail transactions, integrating illicit funds as apparent sales revenue.
+- [Daigou Networks](https://framework.amltrix.com/techniques/T0013.006) — - Criminals use online marketplaces to resell luxury or high-demand items bought with illicit funds, presenting them as ordinary retail transactions.  
+- These sales effectively integrate illegal proceeds into legitimate-appearing revenue streams, masking the original criminal source of the money.
+- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — - Criminals establish fake or replica storefronts, listing counterfeit or non-existent goods to process sham purchases.  
+- Fraudulent orders and manipulated refunds enable layering of illicit proceeds, masking them as legitimate commercial transactions and complicating AML checks.
+- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — - Criminals list falsified or substandard medical products on online marketplaces, circumventing regulatory oversight and concealing the nature of these goods. 
+- Minimal scrutiny and global reach enable large-scale sales of counterfeit pharmaceuticals, generating proceeds to be laundered later.
+
+---
+
+## [Non-Resident Banking Services](https://framework.amltrix.com/services-products/PS0014)
+
+**Description:**
+Banking services offered to individuals or entities residing outside the jurisdiction in which the bank operates. These may include account management, foreign exchange transactions, and international payment solutions tailored to the needs of non-resident clients.
+
+### Related Techniques
+- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Opening accounts as non-residents in certain jurisdictions reduces scrutiny and oversight.  
+- Criminals use these services to shuttle funds from illegal logging or fishing operations away from their country of origin, complicating AML controls.
+
+---
+
+## [Virtual Office Services](https://framework.amltrix.com/services-products/PS0015)
+
+**Description:**
+Virtual Office Services provide businesses with a professional address and communication solutions without requiring a physical office space. These typically include mail handling, call answering, and access to meeting rooms, offering an affordable option for entrepreneurs and companies seeking a professional presence.
+
+### Related Techniques
+- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Criminals create front companies in environmental sectors that exist only ‘on paper’ through virtual offices.  
+- Professional addresses, mail handling, and call-forwarding assure a veneer of legitimacy while concealing actual illicit activities.
+- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Provide a corporate address and call-handling services for shell companies lacking any physical presence.  
+- Helps conceal actual operators and locations, reinforcing anonymity in financial dealings.
+- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Offer remote business addresses and communication solutions, allowing perpetrators to present a credible facade despite minimal physical infrastructure.  
+- Obscure the real location of the operation, hindering regulatory and law enforcement scrutiny.
+- [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — - Perpetrators maintain only a nominal business presence (e.g., a mail drop or P.O. box) while handling high volumes of transactions, concealing the absence of real operations.
+- The lack of substantial on-site activity hinders verification efforts, creating an illusion of legitimacy for the fraudulent consulting firm.
+- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Provides a nominal physical address and corporate presence in multiple jurisdictions without an actual operational footprint.  
+- Criminals leverage these services to add credibility and complicate investigations, as official records show multiple addresses with no real activity.
+- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — - Offer a professional business address and communication facilities without requiring physical premises.
+- Help criminals project legitimacy for virtual companies while hiding their actual locations or operations.
+- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Provides temporary shell companies with a mailing address and phone services without maintaining a physical presence.  
+- Multiple entities can be formed and dissolved at the same virtual address, complicating regulatory efforts to track and investigate corporate activity.
+- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Provide a nominal business address for the shelf company, concealing any genuine location or operational facility.  
+- Mail forwarding and phone-answering services help criminals maintain an illusion of legitimacy while obscuring actual business activity and ownership.
+
+---
+
+## [Reinsurance Agreements](https://framework.amltrix.com/services-products/PS0016)
+
+**Description:**
+Contracts where an insurance company transfers a portion of its risk portfolio to another insurance company to reduce its potential exposure to significant claims. This arrangement helps insurers manage and spread risk more effectively.
+
+### Related Techniques
+- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — • By creating complex or bogus reinsurance contracts, criminals inflate premiums and fabricate claims to route illicit proceeds through multiple entities.  
+• Layering is achieved as funds traverse various reinsurers—often offshore—masking the true source of the money.  
+• Final payouts or settlements ultimately appear as legitimate insurance or reinsurance transactions, enabling integration into the financial system.
+- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Criminals introduce shell reinsurers or bogus reinsurance deals to convolute the flow of funds, further distancing them from their illicit origins.  
+- This layering tactic involves multiple risk transfers and claim settlements, obscuring transaction trails and complicating AML investigations.
+
+---
+
+## [Cash Transaction Service](https://framework.amltrix.com/services-products/PS0017)
+
+**Description:**
+A service involving the physical exchange of money, encompassing activities such as cash deposits and withdrawals at bank branches or ATMs, as well as currency exchange at foreign exchange bureaus.
+
+### Related Techniques
+- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Predominantly cash-based sex work generates significant ready cash, deposited incrementally at different locations to avoid triggering AML alerts.  
+- The reliance on cash facilitates anonymity for both payers and beneficiaries, weakening the audit trail.
+- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — - Mules deposit or withdraw physical cash, enabling criminals to convert illicit digital proceeds into hard currency.  
+- Repetitive small transactions bypass thresholds that typically trigger enhanced scrutiny.  
+- This direct handling of cash blends illicit funds with everyday cash flows, hindering traceability.
+- [Common Offenses](https://framework.amltrix.com/techniques/T0146) — - Offenders conduct multiple small cash deposits or withdrawals at branches, remaining below typical reporting thresholds.  
+- The physical handling of smaller cash transactions reduces scrutiny, enabling proceeds from minor crimes to enter the financial system undetected.
+- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — - Individuals handling cash deposits or withdrawals only see their specific role and lack awareness of subsequent or preceding transactions.  
+- By dividing physical cash handling among different points of service, criminals maintain strict knowledge silos that obscure the total scale and flow of illicit funds.
+- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Enables direct cash deposits or withdrawals from proceeds of illegal commodity trade without transparent digital trace.
+- Smaller, repeated deposits (structuring) avoid detection thresholds, concealing the total criminal earnings.
+- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Drug traffickers generate substantial amounts of physical currency through illicit sales and rely on frequent cash deposits or withdrawals to obscure the origin of their funds.  
+- By splitting deposits into smaller amounts below reporting thresholds or using multiple points of deposit, they can evade detection and commingle illicit proceeds with legitimate transactions.
+- [Cash Deposits](https://framework.amltrix.com/techniques/T0004) — - Enables direct physical deposits of currency at bank counters, ATMs, or other deposit points.  
+- Criminals exploit daily or transaction limits by depositing multiple times across branches, thereby dispersing significant amounts of illicit cash.
+- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Criminals deposit smaller amounts of cash below official thresholds at numerous branches or counters, circumventing detection triggers.  
+- Distributing deposits geographically obscures the connection among individual transactions, hampering investigators’ ability to flag a consolidated illicit source.
+- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — - Enables repeated deposits and withdrawals of physical currency at bank branches or ATMs, which criminals break into smaller amounts to remain under reporting thresholds.  
+- By distributing these structured transactions across multiple locations, criminals reduce the likelihood of triggering suspicion or detection.
+- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Accept bulk cash deposits from scams, recorded as direct customer payments for telemarketing services.  
+- Hide the actual source of large physical deposits, making it appear as ordinary revenue from fictitious call-center activities.
+- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Enables direct cash payouts to undocumented workers, bypassing traditional payroll and electronic payment records. 
+- The reliance on high-volume cash transactions obscures the ultimate source and destination of funds.
+- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — - Offenders physically present counterfeit currency at bank counters or other authorized outlets for deposit.  
+- Fragmented deposits or smaller transactions can bypass immediate scrutiny and deposit thresholds.
+- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Smugglers frequently handle large volumes of currency, depositing or exchanging it in segments to avoid suspicion.  
+- Breaking down bulk cash into smaller transactions helps disguise origin, aligning with typical smuggling modus operandi.
+- [Immediate Cash Conversion](https://framework.amltrix.com/techniques/T0105) — - Facilitates over-the-counter or retail withdrawal of funds in smaller increments to avoid triggering suspicious thresholds. 
+- Converting digital balances into anonymous physical cash impedes investigators’ ability to track fund movement.
+- [Protection Payments](https://framework.amltrix.com/techniques/T0049.002) — • Protection payments are often collected in cash, enabling frequent deposits or withdrawals without clear traceability.
+• Criminals may structure these deposits below reporting thresholds, rapidly exchanging or depositing cash to evade detection and mask the origin of funds.
+- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Facilitate frequent, undocumented withdrawals of physical cash, enabling off-the-books wage payments without leaving reliable payroll records.  
+- Allow structuring of cash transactions under reporting thresholds, reducing transparency over disbursements labeled as legitimate wages.
+
+---
+
+## [Precious Metals Trading Services](https://framework.amltrix.com/services-products/PS0018)
+
+**Description:**
+A comprehensive service including accounts and platforms, either online or in physical locations, where individuals and institutions can buy, sell, and trade precious metals such as gold, silver, platinum, and palladium. These services are provided by banks, investment firms, and specialized dealers, and facilitate transactions in the commodities market, often serving as a hedge against market volatility.
+
+### Related Techniques
+- [Commodity Smuggling](https://framework.amltrix.com/techniques/T0048) — - Criminals purchase precious metals with illicit funds and physically move them across borders to conceal origins.  
+- Once relocated, they resell or trade these metals through legitimate channels, integrating laundered proceeds into the financial system.
+- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Traffickers convert illegal proceeds into gold or other precious metals, using them as stable-value assets.
+- Bulk purchases and sales in precious metals markets help integrate criminal income, blurring the origin of funds.
+- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — • Criminals can swiftly monetize unlawfully mined gold or other precious metals by selling through legitimate trading platforms, intermingling illegally sourced metals with legitimate inventory. 
+• Facilitates the appearance of lawful revenue streams from the sale of metals, aiding in layering and integration of illicit proceeds into the financial system.
+- [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — - Enables direct purchase and sale of gold, silver, or other metals as a way to convert illicit proceeds into portable, high-value assets.  
+- After transporting or holding metals, criminals resell them for ostensibly legitimate revenue, complicating AML oversight.
+- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Enables criminals to convert illicit proceeds into portable, high-value metals or gemstones that are difficult to track.
+- Underreporting transaction amounts and misrepresenting the source of funds helps circumvent conventional AML scrutiny.
+- Once purchased, these commodities can be easily transported across borders and sold to reintroduce laundered funds into the financial system.
+- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — - Enables direct purchase of gold bars, coins, or bullion with potentially minimal identity verification, particularly in high-value transactions that occur through non-face-to-face channels.  
+- Allows criminals to exploit gold’s worldwide acceptability and subjective valuations to transform illicit cash into a seemingly legitimate commodity.
+- [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — - Criminals claim large overseas purchases of precious metals (e.g., gold) that never materialize, justifying substantial cross-border fund movements.  
+- This apparent commodity trade conceals illicit sources by blending them with normal commercial activity.
+- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Criminals may inflate or deflate precious metal valuations, disguising illicit proceeds as sales or purchases.  
+- They can misrepresent the origin or authenticity of metals, creating fictitious trade records to justify unexplained funds.
+- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Criminals move illicit value into precious metals under misrepresented purity or quantity.  
+- Reselling metals through different jurisdictions or intermediaries obscures the transaction trail and true source of funds.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals convert illicit funds to gold or other metals through accounts or storefronts with lax checks, moving large sums without typical banking scrutiny.  
+- Repeated purchases and subsequent disposals in different jurisdictions help layer proceeds and disguise their criminal origins.
+- [Hot Transfers](https://framework.amltrix.com/techniques/T0013.002) — - Hot Transfer participants frequently use gold or other high-value metals as an informal currency, bypassing traditional banking channels.  
+- Physical transfers and minimal documentation limit banks’ visibility into the origin of funds.  
+- Enhanced identification and monitoring procedures for precious metals transactions reduce these laundering opportunities.
+
+---
+
 ## [Cryptocurrency ATM](https://framework.amltrix.com/services-products/PS0051)
 
 **Description:**
@@ -566,6 +844,162 @@ Accounts managed by charitable organizations to receive donations and manage fun
 - Criminals reroute or slowly siphon funds under philanthropic pretenses, obscuring the ultimate beneficiary and complicating standard KYC measures.
 - [Educational Institution Schemes](https://framework.amltrix.com/techniques/T0019.001) — - Nonprofit educational entities use dedicated charitable accounts to receive large transaction volumes under the veneer of donations, fees, or grants.  
 - Perceived legitimacy of nonprofit status deters deeper scrutiny, enabling the commingling of tainted proceeds with legitimate funds.
+
+---
+
+## [Art and Antiquities Trading & Auction Services](https://framework.amltrix.com/services-products/PS0019)
+
+**Description:**
+A comprehensive set of services facilitating the purchase, sale, exchange, and auction of artwork, antiquities, and historically significant items. These services, typically offered by specialized auction houses, galleries, and dealers, often include provenance research, authentication, private transactions, and organized auctions for collectors, museums, dealers, and investors.
+
+### Related Techniques
+- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Criminals leverage the auctioning of high-value collectibles (e.g., rare coins, stamps, or memorabilia) under the broader umbrella of art or antiquities to introduce illicit funds.  
+- Subjective valuations enable them to justify artificially inflated or deflated prices, creating complex layering chains.  
+- Limited provenance checks and oversight at certain auction houses allow repeated buy-and-sell transactions to mask ownership and fund origin.
+- [Jewelry Valuation Manipulation](https://framework.amltrix.com/techniques/T0045.001) — - High-value or antique jewelry can be sold via auction houses where subjective appraisals permit significant price manipulation.  
+- Repeat sales with altered valuations create layers of transactions, muddling ownership and audit trails.
+- [Art Market Manipulation](https://framework.amltrix.com/techniques/T0045.003) — - Criminals exploit private auctions and subjective valuations to buy and sell artwork at manipulated prices, obscuring the origin of illicit funds.  
+- Limited transparency regarding buyer or seller identity allows shell entities or nominees to conceal beneficial ownership.  
+- Acceptance of cash or in-kind payments in some deals further complicates AML monitoring, enabling criminals to transform illicit funds into seemingly legitimate sales proceeds.
+- [NFT-based Value Obfuscation](https://framework.amltrix.com/techniques/T0064) — - Criminals can present NFTs as digital artwork and exploit auction mechanisms to stage sales at artificially exaggerated prices, masking illicit funds as legitimate art proceeds.  
+- Limited provenance checks or verification processes enable wash trading and inflated valuations, obscuring the true origins of the funds.  
+- By portraying profits from NFT transactions as legitimate art sales, criminals can more easily integrate illicit proceeds into the financial system.
+- [Asset Valuation Manipulation](https://framework.amltrix.com/techniques/T0045) — - Offenders fabricate provenance or falsify valuations of art and antiquities, inflating or deflating prices to absorb illicit proceeds or minimize visible wealth.  
+- The subsequent resale of these assets at a newly manipulated price gives the appearance of legitimate profit or loss, masking the true origin of funds.
+- [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — - Criminals may deposit illicit funds under the guise of bidding on high-value artwork or antiquities and later request partial or full refunds, creating a veneer of legitimate transactions. 
+- They can artificially inflate or deflate final sale prices through collusive bidding, generating receipts for seemingly lawful proceeds while obscuring true ownership and fund origins. 
+- Limited transparency around private or sealed bids and inconsistent AML checks within some art auction practices make it difficult to verify beneficial owners or trace suspicious funds.
+- [Corruption](https://framework.amltrix.com/techniques/T0051) — - High-value art sales and purchases allow large sums of corrupt money to be obscured as investment in collectible assets.  
+- Limited transparency in art transactions creates an ideal environment for laundering, where beneficial ownership and exact sale prices are often undisclosed.
+- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — - Criminals can list or privately offer looted antiquities with falsified provenance, obscuring their illicit origin.  
+- Discretionary pricing and subjective valuation allow over- or under-invoicing, providing opportunities for layering.  
+- Repeated resale through auctions or private deals changes ownership records multiple times, making it harder to trace illicit proceeds.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals exploit the subjective prices and private nature of art and antiquities transactions, purchasing or selling high-value pieces under manipulated valuations to hide illicit funds.  
+- Falsified provenance or authenticity documents further obscure the items’ history, complicating authorities’ attempts to trace ownership.  
+- Private or closed-door auctions enable secretive buy-sell cycles that facilitate layering, making it harder to identify ultimate beneficiaries.
+
+---
+
+## [Asset-Based Financing](https://framework.amltrix.com/services-products/PS0020)
+
+**Description:**
+A financing service where loans or credit lines are secured by collateral assets, which can include real estate, inventory, equipment, or high-value items. Offered by banks and financial institutions to individuals and businesses seeking to leverage their assets to access funding.
+
+### Related Techniques
+- None
+
+---
+
+## [Vault Storage Services](https://framework.amltrix.com/services-products/PS0028)
+
+**Description:**
+Vault storage services offer advanced security measures for storing valuable assets or sensitive documents, typically featuring robust surveillance, controlled access, and on-site security. These services cater to financial institutions, corporations, and individuals requiring secure, specialized storage solutions.
+
+### Related Techniques
+- [Safe Deposit Boxes](https://framework.amltrix.com/techniques/T0043) — - Offer secure storage areas for valuables, enabling criminals to hide illicit assets off financial records.  
+- May allow cash-based fee payments and limited identity checks, reducing traceability and obscuring beneficial ownership.  
+- Facilitate repeated movement or concealment of contraband (e.g., cash, precious metals) with minimal oversight, mirroring the safe deposit box misuse patterns.
+- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — - Provide long-term, high-security storage of valuables outside standard banking channels.  
+- Allow owners to register vault access under corporate or offshore entities, hiding true beneficial owners and the nature of stored assets.  
+- Minimal regulatory scrutiny hampers law enforcement efforts to trace or seize illicitly acquired art, jewelry, or precious metals.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals deposit metals, gems, or other valuables into secure vaults under assumed names or via proxies to conceal ownership.  
+- Holding physical assets outside standard banking channels prevents direct links to the person depositing illicit funds, hindering regulators and investigators.
+
+---
+
+## [Freight Forwarding and Shipping Services](https://framework.amltrix.com/services-products/PS0032)
+
+**Description:**
+A comprehensive range of logistics and transportation offerings enabling the movement of goods or commodities by sea, air, or land. This includes standardized intermodal container shipping, route planning, customs documentation, warehousing, packaging, loading, unloading, insurance, tracking, and overall supply chain management for efficient global trade.
+
+### Related Techniques
+- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Criminals can hide bulk cash within cargo shipments (e.g., in hidden compartments or mislabeled goods) to evade detection at border checkpoints.  
+- Exploitation of complex global logistics and weak customs oversight allows illicit funds to pass under the guise of legitimate freight.
+- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Falsified shipping manifests or customs declarations mask actual contents or misstate shipment values, concealing suspicious flows.  
+- Use of counterfeit bills of lading and related documents facilitates the movement of illicit funds under the guise of legitimate cargo.
+- [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — - Arms traffickers conceal weapon shipments among legitimate cargo or mislabel them to evade detection by customs or law enforcement.  
+- Complex routing and falsified shipping documentation obscure the origin and destination of arms, hindering AML efforts.
+- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Can disguise the true nature or quantity of banned or illegally sourced goods through falsified transportation documents.
+- Import-export entities leverage these services to integrate contraband with legitimate cargo, complicating audits.
+- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Criminals mislabel or under-declare illegal timber, fish, or wildlife cargo to smuggle them as legitimate goods.  
+- False documentation during shipping ensures proceeds appear to stem from lawful trade, facilitating money laundering.
+- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Illicit shipments of narcotics or precursor chemicals are concealed among legitimate cargo, leveraging these logistics channels to move products and proceeds across borders.  
+- Fraudulent shipping documents or mislabeled cargo can hide evidence of illegal activity and facilitate multi-jurisdictional distribution networks.
+- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Criminals mislabel protected species as legitimate cargo or falsify shipping documents to conceal illicit wildlife shipments.  
+- The use of complex logistics networks with multiple transit points obscures true origins and destinations, hindering law enforcement detection.
+- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Illicit actors inflate or fabricate shipping and import fees for collectible items, fostering additional layers of purported expenses.  
+- These artificially high charges appear as legitimate logistics costs, complicating tracing and concealing the criminal origins of funds.
+- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — • Facilitates cross-border transport of illegally mined minerals under falsified customs declarations, disguising true origin and quantity. 
+• Provides logistical cover for mixing illicit shipments with legitimate cargo, reducing detection risk and enabling global distribution of illicitly sourced minerals.
+- [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — - Illicit metals or stones can be hidden among legitimate cargo, with criminals mislabeling or routing shipments through multiple jurisdictions to avoid detection.  
+- Minimal oversight in certain corridors enables the discrete movement of high-value commodities to be sold elsewhere for ‘clean’ funds.
+- [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - By providing inaccurate shipping manifests and cargo descriptions, criminals disguise the true goods or their actual value, facilitating under- or over-invoicing practices.  
+- Complex logistics chains and multiple handoffs allow for discrepancies that can shield illicit transactions from straightforward detection.
+- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — - Phantom shipping, where goods never actually move, is disguised through false cargo documents and route changes.  
+- Illicit items are blended with legitimate freight, or shipment details are altered, masking the nature and value of transported goods.
+- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Generate or manipulate shipping documents (bills of lading, export/import details) for agricultural goods to justify suspicious fund movements.  
+- Invent or inflate shipping volumes and routes to account for nonexistent produce, obscuring true farmland yields and laundering proceeds.
+- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — - Collusive or complicit freight forwarders may issue bogus or partial shipping records.  
+- These records support inflated invoices and false cargo manifests, maintaining an illusion of legitimate trade flows.
+- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Fraudsters generate shipping documents for goods that do not exist or were never actually dispatched.  
+- False transport records reinforce the illusion of legitimate trade for the fabricated sales.
+- [Circular Transactions](https://framework.amltrix.com/techniques/T0039) — - Criminals arrange ‘phantom shipments’ or reship the same goods multiple times, creating artificial trade flows.  
+- Convoluted shipping documentation across various ports and jurisdictions hides the cyclical movement of funds linked to these supposed transactions.
+- [Jewelry Valuation Manipulation](https://framework.amltrix.com/techniques/T0045.001) — - Criminals exploit cross-border shipping of jewelry with falsified or missing documentation—such as absent Kimberley Process Certificates—obscuring illicit origins.  
+- By moving pieces through multiple jurisdictions and forwarding agents, they complicate tracing and enable repeated revaluation or resale.
+- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Criminals falsify shipping documentation and commodity declarations, obscuring the true nature or value of precious metals.
+- Complex logistics and routing channels reduce transparency, allowing smugglers to bypass customs controls and launder illicit funds.
+- Enhanced due diligence in shipping documentation, route tracking, and physical inspections is crucial to detect disguised shipments.
+- [Ghost Shipping](https://framework.amltrix.com/techniques/T0069.002) — - Collusive or negligent freight forwarders may knowingly accept or facilitate forged documents indicating cargo movement when none occurs.  
+- This enables perpetrators to claim a legitimate logistics chain for ghost shipments, disguising the absence of real goods and complicating detection of illicit fund flows.
+- [Countertrade](https://framework.amltrix.com/techniques/T0079) — - Criminals repeatedly ship the same commodities or leave them unclaimed, leveraging complex shipping routes across various jurisdictions.  
+- Layering occurs when forged bills of lading or duplicative submissions create confusion regarding actual ownership and value.
+- [Counterfeit Goods](https://framework.amltrix.com/techniques/T0143.001) — - Facilitate cross-border transportation and distribution of counterfeit goods, often hidden within legitimate shipments. 
+- Provide opportunities to manipulate or forge shipping documents (e.g., bills of lading), disguising the illicit nature of goods and evading regulatory scrutiny.
+- [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — - Misdeclare diamond shipments under generic commodities or undervalued invoices to avoid detection.  
+- Use trans-shipment routes in jurisdictions with lax controls to mask the origin or destination of smuggled diamonds.  
+- Forge or omit required certificates, including Kimberley Process documentation, complicating traceability.
+- [Shipping Document Manipulation](https://framework.amltrix.com/techniques/T0069) — - Criminals may present falsified bills of lading or manifests to freight forwarders, masking the true nature, quantity, or existence of goods.  
+- Multiple or inconsistent versions of shipping documents can be submitted for the same cargo, making it harder to detect fraudulent shipments or ghost shipping schemes.
+- [Bonded Warehouses](https://framework.amltrix.com/techniques/T0112) — - Criminals exploit the warehousing component of freight and shipping offerings to store contraband under bonded warehouse arrangements, mingling illicit goods with legitimate shipments.  
+- They repeatedly re-label or repackage items to disguise their true origin or classification, limiting effective oversight and frustrating auditors seeking to verify the legitimacy of stored goods.  
+- Minimal on-site verification and prolonged storage under customs supervision hamper the identification of beneficial owners.
+- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — - Criminals can mix illicitly harvested goods (e.g., timber, fish, minerals) with legitimate shipments, masking the origin and nature of contraband.  
+- Falsified shipment documents help conceal or misrepresent the quantity or type of cargo, facilitating unhindered cross-border transport of illicit environmental proceeds.
+- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — - Allow discrete cross-border movement of gold bars, bullion, or reclassified 'scrap' gold to evade scrutiny and export restrictions.  
+- Criminals can utilize mislabeling or vague shipment documentation to obscure the gold’s actual value, complicating law enforcement tracking.
+- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Fraudsters may falsify shipping documents or misrepresent cargo volumes to support inflated tax rebate claims on exports.  
+- These services can provide cover for sham cross-border shipments, concealing the absence of genuine trade activity.
+- [Trade Diversion](https://framework.amltrix.com/techniques/T0030) — - By re-routing shipments through unexpected intermediaries, criminals hide the final destination or origin of illicit goods.  
+- Falsified shipping manifests and logistical details blur the trail back to the true source, impeding authorities’ ability to link products to criminal proceeds.
+- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Criminals rotate small parcels of diamonds through multiple jurisdictions, using intermediaries to mask actual shipping routes and forging invoices or shipping documents.  
+- This repeated cross-border movement under various freight arrangements obscures the origin of funds and confounds regulatory and law enforcement monitoring.
+- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — - Criminals mislabel or conceal contraband cigarette shipments as duty-free or unrelated goods, exploiting these services to evade excise taxes and customs.  
+- Multiple transshipment points or routing changes can obscure final destinations and reduce the likelihood of detection by authorities.
+- [Illegal Logging](https://framework.amltrix.com/techniques/T0145.001) — - Criminals commingle illegally harvested logs with legitimate cargo to hide the timber’s true origin.  
+- Altered or forged shipping documents mask shipping routes, volumes, and species, complicating law enforcement efforts to identify illegal wood.
+- [Commodity Smuggling](https://framework.amltrix.com/techniques/T0048) — - Criminals can blend illicit goods with legitimate cargo to evade detection during transit.  
+- Falsified shipping manifests and misdeclared cargo facilitate the cross-border movement of contraband, circumventing duties and screening.
+- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — - Manipulating shipping routes, cargo descriptions, and supporting documentation within free trade zones allows criminals to mask illicit activities.  
+- Repetitive, non-economic shipping patterns (“round-tripping”) and discrepancies in cargo manifests are often used to disguise the movement of illicit funds.
+- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — - Criminals can misdeclare cargo volumes or blend different fuel grades, using falsified shipping records that hide the true nature or value of oil shipments.  
+- By forging documents (e.g., bills of lading), they introduce discrepancies between actual shipments and official paperwork, allowing illicit funds to flow under the guise of normal freight operations.
+- [Export Overvaluation](https://framework.amltrix.com/techniques/T0147.004) — - Criminals can manipulate shipping documents and declared cargo details to justify inflated export values.  
+- Complex routing or multi-stop shipments may obscure the true origins, volumes, or pricing, helping disguise overvalued exports.
+- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Falsified shipping documents or bills of lading can be generated for nonexistent jewelry exports or imports.  
+- These fake logistics records reinforce the illusion of legitimate trade, layering illicit funds.
+- [Black Market Peso Exchange](https://framework.amltrix.com/techniques/T0013.005) — - Criminal intermediaries arrange shipments under-invoiced or misdeclared to reduce import duties or hide true cargo value.  
+- Submitting incomplete or deceptive shipping records helps obscure the illicit origin of funds used to settle shipping and import costs.
+- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Criminals can alter shipping routes or manifests mid-journey, disguising the actual nature and value of goods.  
+- Layered shipping arrangements and free trade zones obscure beneficial ownership and hamper investigations.
+- [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Manipulated shipping papers can align with falsified invoices, creating the illusion of legitimate cross-border movements.  
+- Overstating or fabricating cargo details helps mask the real value or existence of goods involved in trade-based laundering.
+- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — - Criminals arrange cross-border shipments of counterfeit medicines, often mislabeled or with falsified documentation to conceal the illicit nature of the goods. 
+- Large-scale international shipping supports widespread distribution and complicates law enforcement tracking.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals dispatch high-value goods across borders with incomplete or misleading documentation, further distancing them from the original illicit funds source.  
+- By shipping gold bars, artworks, or collectibles internationally, launderers create additional layers, making global tracking and audits more challenging.
+- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Shell companies posing as import/export firms exploit shipping documentation to justify suspicious cross-border transactions.  
+- Minimally verified or fictitious shipment data complicates detection of inflated or nonexistent trade activities.
 
 ---
 
@@ -1010,6 +1444,160 @@ A specialized brokerage account enabling investors to borrow funds from the brok
 
 ---
 
+## [Workers' Compensation Insurance](https://framework.amltrix.com/services-products/PS0033)
+
+**Description:**
+An insurance product that provides financial and medical benefits to employees who suffer work-related injuries or illnesses, while protecting employers from related lawsuits.
+
+### Related Techniques
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Allows manipulation of employee classifications or payroll figures to decrease premiums owed.  
+- Facilitates submission of false claims or documentation understating the true workforce size or wages for insurance savings.
+
+---
+
+## [Foreign Investment Services](https://framework.amltrix.com/services-products/PS0034)
+
+**Description:**
+Services provided by financial institutions and investment firms to facilitate the investment of capital into foreign markets and businesses, including advisory, fund management, and assistance with regulatory compliance across different jurisdictions.
+
+### Related Techniques
+- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Criminals route illicit funds through formal channels as purported foreign capital injections.  
+- These services provide advisory or facilitation that can legitimize funds on paper while bypassing stricter local oversight.
+- [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - Misinvoicing can be paired with foreign direct investment flows to inflate or reduce the apparent capital moving cross-border, disguising illicit proceeds as legitimate business investments.  
+- Particularly in jurisdictions with weaker oversight, criminals exploit these services to obscure the true origins and destinations of funds.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Provide cross-border channels to place illicit capital in international markets under the guise of legitimate foreign investments. 
+- Varying regulatory regimes and multi-jurisdictional hurdles help launderers obscure transaction trails and beneficiary details.
+- [Investment in Financial Instruments](https://framework.amltrix.com/techniques/T0061) — • Criminals exploit cross-border investment channels to introduce illicit funds into foreign markets with less stringent disclosure requirements.
+• Varying regulatory standards allow layering of capital across multiple jurisdictions, further obscuring the origin of proceeds.
+
+---
+
+## [Virtual Asset Exchange](https://framework.amltrix.com/services-products/PS0036)
+
+**Description:**
+Digital platforms enabling individuals and businesses to buy, sell, trade, or exchange cryptocurrencies and other digital assets (including digital payment tokens) with fiat currency or other digital assets. These platforms typically provide user accounts or wallets, real-time trading interfaces, deposit and withdrawal functionalities, and robust security measures.
+
+### Related Techniques
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Criminals register exchange accounts under stolen or synthetic identities, bypassing effective KYC.  
+- This enables laundering of illicit proceeds by trading crypto assets under a false persona, complicating traceability and ownership verification.
+- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — - Criminals exploit online KYC processes by submitting manipulated or stolen identity documents.
+- Once accounts are established, they can convert or transfer cryptocurrency, obscuring beneficial ownership and transactional traces.
+- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Enables rapid, cross-border transfers of digital assets beyond conventional banking oversight.  
+- Can facilitate covert transactions with sanctioned entities, especially where AML/KYC protocols are weak or absent.
+- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — - Criminals can conceal their actual IP address and jurisdiction, preventing the exchange from identifying or blocking high-risk geolocations.  
+- This camouflage complicates cross-border compliance checks, as users may appear to be operating from a location with less stringent AML requirements.  
+- Law enforcement efforts to pinpoint the real origin or destination of digital asset flows are hindered by the VPN layers, easing layering attempts.
+- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Facilitates the final conversion of illicitly obtained in-game or cross-chain assets into recognized cryptocurrencies or fiat.  
+- Criminals hide illicit origins by integrating these exchanges into layered trading patterns before cashing out.
+- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Enables conversion between cryptocurrency and in-game currency, particularly if operating with minimal identity checks or customer due diligence.  
+- Criminals deposit illicit crypto, exchange it for in-game currency, and later liquidate the in-game assets again as crypto or fiat, obscuring the original source of funds.
+- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Criminals exchange cash proceeds for cryptocurrencies or vice versa, exploiting the cross-border reach and pseudo-anonymity of digital assets.  
+- Rapid deposits and withdrawals across multiple wallets in various jurisdictions obscure the origin and beneficiaries of illicit funds.
+- [Piracy](https://framework.amltrix.com/techniques/T0148) — - Pirates convert ransom payments into cryptocurrencies to hide transaction trails, taking advantage of pseudonymous wallet structures.  
+- Subsequent cross-border transfers of digital assets thwart conventional bank monitoring, enabling rapid layering of illicit ransom proceeds.
+- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Criminals convert drug cash into cryptocurrencies to leverage pseudo-anonymity and rapid cross-border transfers.  
+- Exchangers with lax or insufficient KYC/AML controls provide a channel to obscure transaction origins, enabling layering of illicit funds without traditional banking scrutiny.
+- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Convert proceeds from child exploitation into cryptocurrencies, adding layers of pseudonymity.
+- Split transactions across multiple accounts or wallets, complicating law enforcement's efforts to trace and freeze illicit funds.
+- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - By leveraging anonymity networks, criminals obscure IP addresses when opening and operating exchange accounts, undermining KYC and AML controls.
+- Layered encryption and multiple hops further disguise transaction origins, complicating blockchain investigations and hindering law enforcement.
+- [Structuring](https://framework.amltrix.com/techniques/T0016) — - Criminals deposit illicit proceeds in repeated small increments to avoid higher scrutiny thresholds. 
+- They subsequently convert these fragmented amounts into various cryptocurrencies, making it harder to trace the overall transaction volume.
+- [Cryptojacking](https://framework.amltrix.com/techniques/T0020.002) — - Criminals deposit illicitly mined cryptocurrency from cryptojacking into exchanges, converting it into fiat or alternative virtual assets. 
+- Lax KYC/AML controls on some platforms aid in obscuring the true source of funds, enabling rapid layering and integration.
+- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Criminals exploit remote or automated ID verification processes, providing counterfeit or stolen documents to open accounts under false identities. 
+- Through repeated submissions of slightly modified documents, they evade detection while the exchange’s system re-checks KYC credentials. 
+- Once established, these fraudulent accounts facilitate layering of illicit funds and hamper investigators’ attempts to trace beneficial ownership.
+- [Virtual Token](https://framework.amltrix.com/techniques/T0067) — - Criminals exploit minimal or lax KYC procedures on certain platforms to convert illicit proceeds into various tokens and back, impeding law enforcement tracking.  
+- Rapid stablecoin conversions facilitate cross-border transfers with limited oversight, further obscuring the source of funds.
+- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — - Fraudsters lure victims to purchase tokens promising extraordinary returns, exploiting complex or opaque listing processes.  
+- After securing victim funds, perpetrators rapidly convert and move proceeds into various digital wallets or fiat off-ramps, concealing the illicit trail.
+- [Automated Transaction Systems](https://framework.amltrix.com/techniques/T0026) — - Automated trading bots enable criminals to swiftly convert illicit funds into multiple cryptocurrencies and back to fiat, obscuring transaction trails through high-frequency trades.  
+- By scheduling trades in smaller batches across multiple exchange accounts, they avoid triggering typical single-transaction thresholds.  
+- Rapid switching between various virtual assets further complicates investigations, as investigators must trace many short-interval transactions across different blockchain networks.
+- [Public WiFi Networks](https://framework.amltrix.com/techniques/T0015.003) — - Users establish or operate exchange accounts from public WiFi, undermining IP-based due diligence that would normally flag unusual login patterns.  
+- Deposits and withdrawals stem from shared IP addresses, concealing real user identity and complicating beneficial ownership tracing.
+- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Provide criminals a quick on/off ramp for illicit funds, enabling swift conversion between fiat and cryptocurrencies.  
+- Exploit pseudo-anonymous transactions to obscure both origin and eventual beneficiaries, bypassing traditional AML scrutiny.
+- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Fraudulent KYC documentation allows criminals to create exchange accounts under fictitious identities, avoiding scrutiny.  
+- Once established, they convert illicit proceeds into virtual assets or move them across borders while concealing their true identities.
+- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Fraudsters pose as or direct victims to fraudulent trading platforms that appear to be legitimate exchanges, offering high returns on cryptocurrency investments. 
+- Once victims deposit fiat or crypto, perpetrators swiftly move the funds through multiple accounts or wallets, obscuring the true recipients and complicating law enforcement tracking.
+- [Wash Trading](https://framework.amltrix.com/techniques/T0094.002) — - Criminals may create multiple exchange accounts under different identities and trade the same digital assets among these accounts, artificially inflating volume and obscuring the true origins of funds.  
+- The rapid nature of crypto transactions combined with minimal KYC in some jurisdictions enables repeated self-dealing trades, disguising illegal proceeds as legitimate trading gains.
+- [Payment Tokens](https://framework.amltrix.com/techniques/T0067.001) — - Criminals can convert illicit fiat funds into payment tokens through repeated small transactions (smurfing), staying below detection thresholds.  
+- Exploiting exchanges with lax KYC measures enables rapid cross-border transfers that obscure the origin of funds and complicate investigations.
+- [Asset Valuation Manipulation](https://framework.amltrix.com/techniques/T0045) — - Criminals conduct orchestrated trades (“wash trading”) to artificially boost or reduce token or NFT prices, creating a deceptive transaction history that obscures illicit funds.  
+- Rapid buy-and-sell cycles can be framed as normal market volatility, making it harder to trace the original criminal proceeds.
+- [Unlicensed MSBs](https://framework.amltrix.com/techniques/T0013.001) — - Unlicensed exchanges trade digital assets outside regulated frameworks, enabling anonymous or pseudonymous transfers.  
+- Criminals use these platforms to swap cash proceeds for cryptocurrencies, circumventing customer due diligence and reporting obligations.
+- [Offsetting Transactions](https://framework.amltrix.com/techniques/T0102) — - Enables near-instantaneous buy and sell orders in cryptocurrencies, allowing suspicious offsetting trades across multiple wallet addresses held by the same actors.  
+- Pseudonymous account structures and fragmented regulatory oversight can obscure the beneficial owners behind these trades.
+- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Criminals can orchestrate wash trades by repeatedly buying and selling digital assets among linked accounts, artificially inflating trading volumes or boosting prices.  
+- They may conduct pump-and-dump campaigns in low-liquidity tokens, driving up prices through coordinated purchases before rapidly liquidating at inflated valuations.
+- [Cryptocurrency Investment](https://framework.amltrix.com/techniques/T0128) — - Criminals deposit illicit proceeds into exchange accounts to convert fiat into cryptocurrencies, exploiting often inconsistent KYC/AML controls.  
+- They perform frequent cross-exchange transfers to layer funds and obscure their origin, especially using platforms with lax oversight or high-risk jurisdictions.  
+- Repeated reinvestment into various cryptocurrencies makes it harder to trace the ultimate beneficiary or link the assets back to the original crime.
+- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — - Criminals exploit fully remote sign-up on these exchanges using forged or synthetic IDs, bypassing in-person checks.  
+- Repeatedly re-submit slightly altered documents from the same device or IP address, evading automated KYC filters.  
+- Once onboarded under a false identity, they freely convert illicit proceeds into or out of digital assets, obfuscating fund origin.
+- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — - Criminals convert in-game currencies or digital items into mainstream cryptocurrencies or fiat, adding an extra layer to obscure illicit funds.  
+- Weak KYC procedures on some exchanges allow offenders to blend illicit gains with legitimate user flows.  
+- Once converted to mainstream crypto or fiat, the laundered funds can enter traditional banking channels under less scrutiny.
+- [Governance Token Obfuscation](https://framework.amltrix.com/techniques/T0067.003) — - Criminals exploit minimal or no-KYC features to rapidly swap governance tokens for more liquid cryptocurrencies, obscuring traceable links to illicit proceeds.  
+- Interspersing governance token trades among broader altcoin transactions creates a complex transactional chain, making it more difficult for investigators to identify the original source of funds.
+- [Transaction Chaining](https://framework.amltrix.com/techniques/T0070) — - Criminals rapidly convert illicit funds between fiat and cryptocurrencies, repeatedly obscuring transaction trails.  
+- Cross-asset trades (“chain hopping”) across multiple exchanges or jurisdictions complicate investigators’ ability to track the ultimate source or destination of funds.
+- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Criminals use proxy servers to evade geographic or jurisdictional restrictions imposed by virtual asset exchanges, concealing their actual location.  
+- Frequent proxy rotations disrupt IP-based analytics, making it difficult to detect repeated or suspicious usage patterns, thus facilitating layering of illicit funds.
+- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Enable rapid conversion between fiat and various cryptocurrencies, allowing criminals to exploit multiple currency pairs for layering.  
+- Provide pseudonymous trading features that obscure the source and destination of illicit proceeds by cycling funds through different digital assets.
+- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — - Fraudsters may list or promote their newly issued tokens on a centralized exchange to reach a broader pool of investors.  
+- Once enough funds are raised, they quickly convert or withdraw the assets into other cryptocurrencies or fiat, making tracing difficult.  
+- The exchange environment facilitates layering by allowing multiple transactions and transfers through various user accounts or wallets.
+- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Criminals execute minimal crypto deposits or trades to see whether exchange monitoring systems trigger alerts. 
+- Once the limits are understood, offenders can structure larger illicit transfers below detection parameters.
+- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Criminals or their money mules open exchange accounts using falsified or stolen identification to bypass KYC checks.
+- They deposit illicit funds and engage in frequent trades or crypto-to-fiat conversions, embedding illegal proceeds within legitimate trading records.
+- Rapid cross-border transfers and multiple account rotations create layering complexity, making it difficult to trace the original source of funds.
+- [Metaverse-based Asset Transfers](https://framework.amltrix.com/techniques/T0066.001) — - After layering funds through DeFi protocols and metaverse asset transactions, criminals convert their newly ‘clean’ tokens into mainstream cryptocurrencies or fiat via these exchanges.  
+- By appearing as ordinary trades or investments, the illicit origin is effectively concealed, allowing final integration into traditional financial channels.
+- [Privacy Coins](https://framework.amltrix.com/techniques/T0116) — - Criminals can rapidly convert mainstream cryptocurrencies into privacy-oriented coins through exchanges that have minimal or lax KYC requirements.  
+- These quick conversions hide the original source of funds and complicate chain analysis by breaking transactional links between deposit and withdrawal addresses.
+- [Tokenized Fundraisings](https://framework.amltrix.com/techniques/T0144.013) — • After a fraudulent token sale, offenders use exchanges to convert raised tokens into other cryptocurrencies or fiat, further obscuring the source of funds.  
+• By funneling large volumes of tokens through multiple transactions or different exchanges, they deepen the layering process and hinder investigators’ ability to trace the original criminal proceeds.
+- [Multi-hop VPN](https://framework.amltrix.com/techniques/T0015.004) — - Criminals chain multiple VPN connections to conceal IP addresses used for account registration, bypassing geoblocking or region-based compliance checks.  
+- By layering VPN hops, they hamper suspicious transaction monitoring reliant on consistent device or location data, complicating due diligence measures.
+- [Remote Mining](https://framework.amltrix.com/techniques/T0020.001) — - Criminals covertly convert newly mined coins into fiat or other cryptocurrencies, severing on-chain links to the original dirty funds.  
+- Exchanges with weak AML controls may fail to detect the suspicious influx of newly generated assets, facilitating laundering under the guise of legitimate trading.
+- [Utility Tokens](https://framework.amltrix.com/techniques/T0067.005) — - Criminals deposit or withdraw utility tokens under partial or inconsistent KYC measures, making it difficult to trace the original fund source.  
+- They convert illicit proceeds into a variety of tokens or fiat currencies, creating multiple transaction layers that obscure the money trail across jurisdictions.
+- [Darknet Marketplace Transactions](https://framework.amltrix.com/techniques/T0100) — - Convert illicit cryptocurrency proceeds from darknet markets into different digital assets or fiat currency, obscuring the original source of funds.  
+- Exploit weak KYC or cross-border operations to avoid robust AML controls, enabling cyclical layering to hide transaction trails.
+- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Criminals convert illicit funds into cryptocurrency (or vice versa) before channeling them as charitable donations, bypassing traditional financial oversight.  
+- Rapid crypto-to-fiat conversions enable layering, making it difficult to track the original source of funds.
+- [Onion over VPN](https://framework.amltrix.com/techniques/T0015.005) — - Criminals can register and operate exchange accounts through multiple encrypted layers, preventing IP-based or geolocation checks.  
+- The usage of Onion over VPN hinders law enforcement’s ability to trace and link transactions to real-world identities, facilitating the layering of illicit proceeds.
+- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Facilitates the rapid conversion of illicit proceeds from narcotics sales into fiat currency (and vice versa), allowing criminals to finance precursor chemical purchases while obscuring the original source of funds.  
+- Exploits partial or lax KYC measures and blockchain anonymity features, further complicating detection of illicit transactions and beneficiaries.
+- [Ransomware Payments](https://framework.amltrix.com/techniques/T0049.001) — - Criminals funnel or cash out ransom proceeds on unregulated or foreign-based exchanges to circumvent tighter AML controls.  
+- These platforms enable quick conversions between fiat and cryptocurrencies, obscuring the origin of funds and frustrating investigation.
+- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — - Criminals rotate between different passports to bypass KYC measures when creating accounts.  
+- Allows rapid conversion of illicit funds into cryptocurrencies, further masking source and ownership.  
+- The pseudonymous nature of crypto transactions, combined with multiple national identity documents, accelerates layering and hampers AML compliance.
+
+---
+
+## [Online Financial Services](https://framework.amltrix.com/services-products/PS0037)
+
+**Description:**
+Financial services delivered via digital platforms, encompassing online bank accounts, investment services, digital wallets, and payment processing. Users can access and manage their finances through internet-based portals and applications.
+
+### Related Techniques
+- None
+
+---
+
 ## [Digital Wallets](https://framework.amltrix.com/services-products/PS0075)
 
 **Description:**
@@ -1171,6 +1759,21 @@ A brokerage service allowing investors to buy and sell options contracts, granti
 
 ---
 
+## [Mail and Courier Services](https://framework.amltrix.com/services-products/PS0038)
+
+**Description:**
+Services offered by postal and courier companies for the distribution, shipment, and delivery of letters, parcels, and packages domestically and internationally. These offerings often include various delivery speeds, tracking capabilities, and insurance options.
+
+### Related Techniques
+- [Cross-Border Cash Smuggling](https://framework.amltrix.com/techniques/T0065) — - Criminals exploit postal or courier shipments to conceal and transport large sums of currency across borders.  
+- Misdeclared parcels and bribed officials enable evasion of customs checks, bypassing traditional financial controls.
+- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Allows criminals to ship currency as parcels or sealed packages, bypassing direct customs checks.  
+- Use of multiple shipments or mislabeling of package contents helps evade detection and exploit weaker inspection protocols.
+- [Daigou Networks](https://framework.amltrix.com/techniques/T0013.006) — - Daigou coordinators exploit small-parcel or informal courier shipping to move consumer goods purchased with illicit funds across borders.  
+- Under-declared values, incomplete shipping documentation, or multiple recipient addresses obscure beneficial ownership and frustrate AML oversight.
+
+---
+
 ## [Crowdfunding Services](https://framework.amltrix.com/services-products/PS0080)
 
 **Description:**
@@ -1212,6 +1815,25 @@ A range of professional or organizational offerings that facilitate the collecti
 
 ---
 
+## [Commodities Trading Accounts](https://framework.amltrix.com/services-products/PS0039)
+
+**Description:**
+Accounts offered by brokers or financial institutions enabling the buying and selling of raw materials and primary agricultural products. These accounts support various trading instruments, including futures, options, spot contracts, and high-value commodities such as gold and diamonds.
+
+### Related Techniques
+- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Facilitate the buying and selling of high-value raw materials, providing a channel for layering illicit profits.
+- Fictitious or inflated trades conceal the genuine origins and volumes of trafficked commodities.
+- [Commodity Smuggling](https://framework.amltrix.com/techniques/T0048) — - Criminals deposit high-value commodities acquired through smuggling into trading accounts and obscure the illicit origin by mixing with legitimate trades.  
+- Profits from the sale can then be transferred or reinvested, integrating illicit proceeds into the formal financial system.
+- [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — - These accounts can handle precious metals and gemstones (including gold and diamonds), allowing criminals to obscure transactions among legitimate commodities trades.  
+- Under- or overstating commodity values across jurisdictions provides cover for layering and integration.
+- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Traders deliberately over- or under-value trades in raw materials to create illicit gains or losses on paper.  
+- Layering occurs through complex trading strategies and multiple accounts, hindering detection of beneficial owners.
+- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - By opening accounts that permit the trade of high-value commodities like diamonds or gold, launderers can launder funds through multiple purchase and resale transactions.  
+- The complexity of futures, options, or derivative trades in such commodities can further obscure the flow and ownership of criminal proceeds.
+
+---
+
 ## [Superannuation Management Services](https://framework.amltrix.com/services-products/PS0085)
 
 **Description:**
@@ -1233,129 +1855,13 @@ Islamic Banking Services encompass financial offerings compliant with Sharia law
 
 ---
 
-## [Money Transfer and Remittance Services](https://framework.amltrix.com/services-products/PS0087)
+## [Peer-to-Peer Lending Platforms](https://framework.amltrix.com/services-products/PS0041)
 
 **Description:**
-A broad range of financial services enabling individuals and businesses to send and receive funds both domestically and internationally, including secure transfers through digital platforms or physical agents. Typically offered by banks, money transfer operators, and specialized payment companies, these services support various methods—such as cash transfers, bank transfers, mobile transactions, and digital platforms—and may include currency conversion. They are commonly used for remittances, business payments, and other financial exchanges.
+Online marketplaces that connect borrowers directly with individual or institutional lenders, offering loans without the traditional intermediary role of banks.
 
 ### Related Techniques
-- [Disguised Remittance Transfers](https://framework.amltrix.com/techniques/T0040.001) — - Criminals falsely label remittance transfers as personal gifts, familial support, or charitable donations, providing documents (e.g., gift letters) to reduce scrutiny.
-- They often send amounts exceeding the sender’s known financial profile or route funds through regions lacking any genuine familial or organizational link, concealing the true source.
-- By misrepresenting the transaction purpose, offenders evade common AML checks and appear compliant with routine remittance norms.
-- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — - In jurisdictions with weak regulation, informal or hawala-style services bypass formal monitoring.  
-- Criminals deposit fragmented illicit funds and move them offshore via lightly regulated corridors, complicating AML enforcement.
-- [Micro-Structuring](https://framework.amltrix.com/techniques/T0016.001) — - Criminals can repeatedly send small sums through remittance channels to multiple receivers, ensuring each transaction remains below regulatory thresholds.  
-- Frequent low-value international transfers appear typical for personal remittances, hindering detection of aggregated illicit funds.
-- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — - Criminals can direct unrelated or complicit third parties to initiate or receive remittances on their behalf, obscuring true fund ownership.  
-- Structured or repeated transfers from multiple outside payers complicate beneficial ownership checks and hamper effective monitoring.
-- [Cross-Border Agent Intermediation](https://framework.amltrix.com/techniques/T0121.001) — - Local or regional sub-agents can channel illicit funds under the guise of personal or family remittances, fragmenting oversight across multiple jurisdictions.  
-- Small, frequent transfers help evade detection thresholds and complicate AML controls, enabling layered cross-border movements.
-- [Unlicensed MSBs](https://framework.amltrix.com/techniques/T0013.001) — - Unlicensed operators offer informal channels to move funds across borders or domestically without proper registration or oversight.  
-- They accept cash or value from customers and dispense equivalent payouts in other jurisdictions, bypassing standard AML checks.
-- [Transaction Chaining](https://framework.amltrix.com/techniques/T0070) — - Enables frequent, low-value cross-border transfers, making it harder to piece together the original illicit funds flow.  
-- Criminals exploit multiple remittance corridors and micro-transactions to bypass alerting triggers and conceal beneficiary identities.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — - Multiple accounts can be opened quickly with fabricated personal data, enabling rapid movement of illicit proceeds across borders.
-- Discrepancies between the provided identity details and third-party validations often signal identity tampering or fraud.
-- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Function as money service businesses, allowing frequent cross-border transfers in different currencies.  
-- Facilitate structured layering by breaking transactions into smaller amounts, often below reporting thresholds and during high-traffic periods, complicating the tracing of illicit origins.
-- [Complicit or Controlled FIs](https://framework.amltrix.com/techniques/T0082) — - Criminals can insert complicit staff or owners to omit suspicious transaction reporting, blending illicit proceeds with regular remittance flows.  
-- Large agent networks enable transactions to be divided among multiple outlets, obscuring patterns and hampering regulatory oversight.
-- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — - Mules can receive or send illicit funds across borders under their own names, masking the true criminal beneficiary.  
-- Minimal documentation beyond the mule’s identity conceals the origin of funds, complicating AML detection.  
-- Rapid cross-border movement of funds facilitates layering through multiple mule-managed channels.
-- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Allow cross-border fund movements that can hide the true beneficiary when compliance is circumvented.  
-- Sanctioned parties often route payments through multiple intermediaries to mask their involvement.
-- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — - Criminals split illicit funds into multiple low-value transfers under various sender identities, avoiding formal reporting thresholds. 
-- Limited checks for smaller transactions allow them to deposit and withdraw proceeds with minimal scrutiny. 
-- Transfers often converge on a single beneficiary lacking a legitimate connection to the senders, obscuring the money trail. 
-- Funds are regularly collected in cash soon after arrival, further frustrating AML monitoring and tracing efforts.
-- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Smaller, frequent transfers are sent via remittance providers to co-conspirators or family abroad, disguising the scope of illicit cash flows.  
-- In less monitored corridors, criminals exploit minimal documentation requirements to launder sexual exploitation revenue.
-- [Piracy](https://framework.amltrix.com/techniques/T0148) — - Criminals conducting piracy leverage these channels to move ransom funds across borders, often breaking down large sums into smaller amounts to avoid detection.  
-- In regions with lax oversight or informal transfer operators, documentation requirements are minimal, enabling pirates to obscure the origin of ransom proceeds.
-- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Criminals deposit illicit proceeds from commodity trafficking in multiple, low-value transfers, making them appear as legitimate remittances.
-- Cross-border capabilities facilitate rapid movement of funds, obscuring origin by layering transfers through various jurisdictions.
-- [Common Offenses](https://framework.amltrix.com/techniques/T0146) — - Criminals split illicit funds into numerous small remittances, often evading more robust checks applied to larger transfers.  
-- Utilizing informal or lightly regulated corridors, they minimize record-keeping, making it challenging for authorities to trace or detect the illicit origin.
-- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Drug networks move profits quickly across multiple jurisdictions by sending smaller remittances to various recipients, avoiding large single transfers that draw scrutiny.  
-- These services enable layering by swiftly mixing illicit funds with legitimate transfers in international corridors that often have less robust oversight.
-- [Casino Mule Networks](https://framework.amltrix.com/techniques/T0011.003) — - Criminals leverage lightly regulated or unregistered remittance providers to transfer funds internationally following casino-based layering.  
-- Splitting transfers across multiple patrons or entities helps mask the funds’ origin and dodge reporting thresholds, making it harder for authorities to track illicit proceeds.  
-- Jurisdictional loopholes and limited oversight at some remittance outlets further obscure the money trail.
-- [Structuring](https://framework.amltrix.com/techniques/T0016) — - Offenders split large sums into numerous low-value transfers that remain below reporting thresholds. 
-- They use multiple senders, recipients, or remittance outlets to distribute the funds, thwarting suspicious transaction monitoring.
-- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — - Criminals exploit informal hawala networks that operate outside formal licensing and KYC requirements.  
-- Deposits of illicit proceeds can be made to a hawaladar’s pooled account, leaving no official record or paper trail.  
-- Cross-border or domestic payouts are arranged through trust-based relationships, effectively bypassing regulatory monitoring and AML detection.
-- [Social Media Mule Recruitment](https://framework.amltrix.com/techniques/T0140.001) — - Mule recruiters instruct recruits to send or receive funds through remittance channels, often targeting cross-border corridors where institutional oversight can be challenging.  
-- Transaction references may cite bogus purposes (e.g., family support, freelance payments) to mask the true nature of these funds.  
-- Distributed transfers using multiple recruits hinder tracing the ultimate beneficiaries.
-- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Multiple small cash deposits are submitted at different remittance outlets, both locally and across borders, disguising the true origin of funds.  
-- The fragmented nature of these transactions makes it harder for authorities to identify a single underlying criminal operation.
-- [Lottery Scams](https://framework.amltrix.com/techniques/T0144.015) — - Criminals instruct victims to send purported 'lottery fees' or 'taxes' via remittance operators, collecting payments in multiple locations to obscure their true identity.  
-- They layer or structure these funds across various jurisdictions, making tracing and recovery of victims’ money more difficult.
-- [Independent Payment Agents](https://framework.amltrix.com/techniques/T0113.001) — - Criminals introduce loosely supervised sub-agents or partner outlets that directly handle funds, bypassing full KYC/AML checks under the principal license.  
-- The principal or aggregator name alone appears on many transaction records, obscuring the sub-agent’s involvement and the ultimate sender or beneficiary.  
-- Complex agent networks fracture oversight, enabling criminals to mask higher-risk transactions as standard remittances.
-- [Phishing Mule Recruitment](https://framework.amltrix.com/techniques/T0140.002) — - After funds are deposited into a victim’s account, criminals instruct them to use remittance services to send money—often internationally—under the guise of processing business or customer payments.  
-- This method leverages the victim’s apparent innocence to disguise the criminals’ involvement and complicate law enforcement tracing.
-- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Some remittance platforms, especially app-based, impose minimal KYC checks, allowing criminals to transfer funds covertly across borders.  
-- Rapid settlement and limited oversight hinder effective AML transaction monitoring, aiding layering and placement.
-- [Cross-Border Payment Routing](https://framework.amltrix.com/techniques/T0121) — - Criminals split illicit proceeds into multiple smaller remittances across different corridors, circumventing reporting thresholds and scrutiny.  
-- They exploit poorly regulated or informal remittance channels to layer funds internationally, obscuring the ultimate source or beneficiary.
-- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Criminals use stolen or fabricated personal details to open multiple remittance accounts simultaneously, camouflaging large volumes of transactions.  
-- By presenting consistent yet false KYC information, they maintain minimal scrutiny while rapidly transferring illicit proceeds internationally.
-- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Criminals deposit smuggling proceeds into remittance channels under individual transaction limits to evade detection.  
-- Transactions often match known smuggling fee amounts, masking their illicit origin and facilitating cross-border fund movement.
-- [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — - Criminals break up large declared sums into smaller remittance transactions, staying below reporting thresholds and evading heightened scrutiny.  
-- They present customs declaration documents as evidence of lawful origin, even if the actual amount physically imported was lower.  
-- By spreading transactions across multiple recipients or locations, perpetrators further complicate investigations into the funds’ illicit source.
-- [Funnel Accounts](https://framework.amltrix.com/techniques/T0083) — - Criminals deposit multiple structured sums of illicit proceeds across different remittance agents or online portals.  
-- The funds are then rapidly transferred or withdrawn in other regions, obscuring the initial sources of the deposits and frustrating investigators.
-- [Deepfake Impersonation](https://framework.amltrix.com/techniques/T0144.001) — - Perpetrators posing as genuine owners of money mule or customer accounts use deepfake voice technology to pass call-based identity checks.  
-- Rapid cross-border transfers are initiated under false pretenses, leveraging realistic-sounding requests to evade suspicion.  
-- Deepfakes allow them to sidestep typical red flags, as staff believe they are speaking with the legitimate account holder.
-- [Countertrade](https://framework.amltrix.com/techniques/T0079) — - Criminals utilize reciprocal remittances or hawala-style transfers to settle imbalances in countertrade deals.  
-- These off-grid or loosely monitored channels fragment payment trails, hindering authorities’ ability to track the ultimate origin or destination of funds.
-- [Extortion](https://framework.amltrix.com/techniques/T0049) — • Criminals compel overseas individuals or businesses to send forced payments, routing them through remittance channels.  
-• Large or frequent cross-border transfers labeled with ambiguous references can conceal extortion proceeds and finance illicit operations.
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Criminals pose as legitimate individuals using forged identification to open or access remittance accounts.  
-- They send or receive funds internationally under the stolen identity, hampering the integrity of KYC checks and obscuring the true beneficiary.
-- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — - Criminals utilize non-bank remittance or money transfer operators with lax oversight to move dirty funds through mobile channels.  
-- Frequent cross-border micro-remittances bypass stricter bank-level controls, aiding layering efforts.
-- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - After inflating diamond shipment invoices, criminals integrate illicit proceeds by transferring funds across multiple remittance channels, especially where controls may be weaker.  
-- Layering is further facilitated by rapid fund transfers to and from different jurisdictions, making detection of the true transaction origin more difficult.
-- [Romance Mule Recruitment](https://framework.amltrix.com/techniques/T0140.003) — - Victims are instructed to send funds through remittance services, enabling rapid cross-border transfers with limited oversight.
-- By manipulating victims to keep transactions small or coded under personal reasons, scammers reduce scrutiny and exploit the victim’s emotional compliance.
-- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Offenders send small remittances across various corridors to observe whether they prompt additional due diligence. 
-- Low-value cross-border transfers help identify each corridor’s threshold or KYC intensity.
-- [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — - Fraudsters instruct victims to send initial 'advance fees' through common remittance providers, often under the pretext of urgent or unexpected fees.  
-- Once received, perpetrators rapidly withdraw or transfer the funds to additional accounts—potentially across multiple jurisdictions—to obscure the trail.
-- [Wire Transfer Chains](https://framework.amltrix.com/techniques/T0070.001) — - Allows repeated, small-value transactions across diverse remittance channels, contributing to layering by dispersing illicit funds into multiple accounts or payments.  
-- Rapid processing and global coverage enable criminals to move funds quickly, making consolidated oversight more difficult and frustrate detection efforts.
-- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — - Money mules can funnel illicit proceeds across borders under the guise of remittances.  
-- Structured or frequent transfers cloak the true origin and intended recipient, obscuring money trails.
-- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Illicitly obtained tax refund proceeds can be rapidly transferred to offshore or high-risk jurisdictions, concealing their origin.  
-- Use of unregulated or informal channels within remittance services further complicates efforts to trace and recover fraudulent payouts.
-- [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — - Offenders segment or bundle government relief payouts into smaller remittance transfers, reducing visibility under certain thresholds.  
-- Cross-border remittances exploit varying degrees of regulatory oversight to mask the ultimate destination of fraudulent proceeds.
-- [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — - Criminals leverage sub-agents or partner outlets operating under a licensed principal to process funds, reducing direct AML scrutiny.  
-- The receiving institution often sees only the main provider (aggregator), obscuring the true source and final beneficiary.  
-- Sub-agents may accept multiple small deposits below reporting thresholds, fragmenting transaction records and complicating oversight.
-- [Cuckoo Smurfing](https://framework.amltrix.com/techniques/T0016.002) — - Criminal or complicit remittance providers intercept legitimate remittance details and deposit illicit proceeds in their place, masking the criminal origin.  
-- Recipients see what appears to be a routine inbound payment, allowing illicit funds to blend seamlessly with genuine remittances.
-- [Black Market Peso Exchange](https://framework.amltrix.com/techniques/T0013.005) — - Peso brokers may use money transfer platforms to move criminal proceeds internationally under the guise of legitimate remittances.  
-- Third-party or intermediary payments with insufficient documentation allow illicit funds to be channeled to exporters, completing the cycle of the Black Market Peso Exchange.
-- [Informal Value Transfer Systems](https://framework.amltrix.com/techniques/T0013) — - Unlicensed or loosely regulated remittance operators can mirror hawala-like operations, using personal trust instead of formal KYC to accept and move significant sums.  
-- Commingling legitimate remittances with illicit funds and minimal recordkeeping obscures transactional traces, allowing criminals to bypass formal banking oversight.
-- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Provide cross-border funds transfers through MSBs, enabling payments to precursor chemical suppliers in higher-risk jurisdictions without raising immediate red flags.  
-- Criminals often structure or split transactions across multiple senders or recipients to evade threshold triggers and obscure the money trail.
-- [Multi-Currency Swap](https://framework.amltrix.com/techniques/T0115.002) — - Criminals repeatedly convert illicit funds into different currencies by routing them through cross-border remittance channels.  
-- They split or structure transactions below reporting thresholds, exploiting weak controls in certain corridors to hide the true origin of funds.
-- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Recruits forward received funds via remittance or money transfer channels to criminals or third-party beneficiaries, often located abroad.  
-- Minimal documentation or lower transaction thresholds can help obscure the true origin and destination of these illicit proceeds.
-- [Smurfing](https://framework.amltrix.com/techniques/T0016.005) — - Criminals execute numerous small transfers via remittance channels, each below monitoring thresholds. 
-- They often involve multiple senders or recipients to disguise the cumulative value and origin of illicit proceeds.
+- None
 
 ---
 
@@ -1452,6 +1958,42 @@ A secure storage offering provided by financial institutions where customers can
 
 ---
 
+## [Multi-Currency Swap Services](https://framework.amltrix.com/services-products/PS0042)
+
+**Description:**
+Financial arrangements in which two parties exchange specified amounts of different currencies, along with corresponding interest payments, for a set term. These swaps help manage currency risk and facilitate cross-border investments or trade.
+
+### Related Techniques
+- [Currency Exchange Conversions](https://framework.amltrix.com/techniques/T0115) — - Facilitate systematic cross-currency swapping, often in rapid succession, making it harder to pinpoint the original source of funds.
+- Criminals exploit these transactions’ complexity and volume, leveraging multi-currency swap chains to break audit trails and further layer illicit assets.
+- [Multi-Currency Swap](https://framework.amltrix.com/techniques/T0115.002) — - Criminals engage in direct multi-currency swaps to layer funds across multiple denominations.  
+- Frequent cross-currency exchanges—often arranged in quick succession—conceal the path of illicit proceeds, complicating AML scrutiny.
+
+---
+
+## [Third-Party Payment Services](https://framework.amltrix.com/services-products/PS0043)
+
+**Description:**
+Intermediary services facilitating financial transactions between buyers and sellers, offering settlement, invoicing, and integrated payment solutions across channels.
+
+### Related Techniques
+- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — - These services act as a middle layer between the payer and beneficiary, potentially masking the real beneficiary or origin of funds.  
+- Criminals instruct third parties to settle invoices or receive funds, complicating beneficial owner checks and audit trails.
+- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Criminals use intermediary payment providers with inconsistent AML checks to settle cross-game or off-platform transactions.  
+- Limited identity verification allows seamless fund transfers between multiple accounts and services.
+- [Independent Payment Agents](https://framework.amltrix.com/techniques/T0113.001) — - White-label or aggregator frameworks allow sub-agents to operate under the provider’s license, concealing sub-agent identities and activities.  
+- Transaction details typically reflect only the aggregator’s name, reducing transparency into underlying sub-agent transactions and beneficial ownership.  
+- Fragmented responsibility over AML/CFT controls leads to inadequate oversight, creating opportunities for illicit funds to flow undetected.
+- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — - Criminals open or misuse accounts at third-party payment providers (TPPPs), sometimes without the genuine merchant’s awareness, to process unauthorized transactions. 
+- Aggregating multiple merchants’ funds into unified settlement accounts obscures beneficial ownership and complicates detection of illicit activity.
+- [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — - These intermediary platforms facilitate settlements and invoicing on behalf of merchants or individuals, potentially leaving the principal institution unaware of sub-agents managing funds.  
+- The agent-based model disperses transactional records across multiple third parties, reducing transparency for AML investigators.  
+- Criminals exploit minimal oversight in partner outlets to handle high-risk transfers under a legitimate service provider’s umbrella.
+- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Payments are made or received by unrelated third parties, distancing illicit proceeds from their true origin.  
+- Layering of funds through multiple payers or payees creates complex transaction chains that challenge AML controls.
+
+---
+
 ## [Joint Bank Accounts](https://framework.amltrix.com/services-products/PS0091)
 
 **Description:**
@@ -1490,6 +2032,50 @@ Services that enable individuals to access or claim their superannuation funds t
 - [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — - Criminals submit falsified medical certificates or hardship claims to falsely meet eligibility criteria for early withdrawals.
 - They exploit short processing windows to secure disbursements before thorough verification can occur.
 - Stolen identities or fabricated personal details further mask fraudulent access attempts, converting legitimate retirement savings into illicit proceeds.
+
+---
+
+## [Mobile Payment Systems](https://framework.amltrix.com/services-products/PS0044)
+
+**Description:**
+Services that allow users to conduct financial transactions using mobile devices, facilitating payments and transfers through dedicated applications or platforms with swift and convenient processing. These solutions often encompass peer-to-peer transfers and retail payments, providing an enhanced user experience.
+
+### Related Techniques
+- [Social Media Mule Recruitment](https://framework.amltrix.com/techniques/T0140.001) — - Criminals promote quick mobile-based transfers among mule recruits, capitalizing on the seamless integration with social media apps.  
+- Instant transaction features help layer funds swiftly, dispersing them across many accounts before detection.  
+- The casual environment of mobile transactions often encourages recruits to overlook suspicious details.
+- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Criminals exploit mobile apps that allow swift transfers of funds to gambling platforms or between co-conspirators, supporting collusive chip dumping.  
+- Frequent, small-value transactions via mobile payment methods can evade scrutiny, while high-volume transfers may be obscured by the platform’s rapid transaction environment.
+- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Allow swift transfers through smartphone apps, often with simpler onboarding and weak identity checks.  
+- Lack of face-to-face verification can shield the true user, facilitating unmonitored layering via mobile channels.
+- [Cross-Border Agent Intermediation](https://framework.amltrix.com/techniques/T0121.001) — - Local fixers establish or control multiple mobile payment accounts across regions, routing illicit funds under legitimate payment or peer-to-peer transfers.  
+- Gaps in KYC or identity verification on certain platforms allow criminals to conceal ownership and rapidly move money across borders.
+- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — - Enable swift peer-to-peer transfers through mobile apps, sometimes lacking robust KYC.  
+- Frequent, small-value transactions obscure detection, and easy account creation allows criminals to rotate illicit assets quickly.
+- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — - Criminals use falsified or stolen identities to open mobile payment accounts, moving illicit funds through numerous low-value transactions.  
+- Rapid cross-border transfers and inconsistent AML protocols enable layering that obscures the origin of proceeds.
+- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Criminals send frequent, nominal transfers via mobile apps to see if the system flags them. 
+- Using easily accessible mobile devices and multiple SIM cards, they repeatedly test AML thresholds and adapt accordingly.
+- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — - Mules exploit convenient mobile payment tools to receive and forward funds without standard banking scrutiny.  
+- These non-traditional channels can camouflage transactional patterns and sources.
+
+---
+
+## [Paper-Based Transaction Services](https://framework.amltrix.com/services-products/PS0045)
+
+**Description:**
+Financial services utilizing physical documents, such as checks and money orders, for fund transfers, typically requiring manual clearing processes.
+
+### Related Techniques
+- [Negotiable Instrument Purchases](https://framework.amltrix.com/techniques/T0110) — - Criminals obtain cashier’s checks, bank drafts, or traveler’s checks under thresholds to avoid triggering additional scrutiny.  
+- These paper instruments are treated as trustworthy payment methods, allowing easy deposit or redemption at financial institutions.  
+- Rapid and repeated deposits across multiple branches or regions make tracing their true source more difficult.
+- [Name Alteration](https://framework.amltrix.com/techniques/T0023.002) — - Criminals can physically or digitally alter checks, changing or removing the original payee name to match an assumed identity.  
+- These alterations bypass typical payee verification in manual clearing processes, making it harder for banks to detect ties to previously flagged names or records.
+- [Forging or Altering Financial Instruments](https://framework.amltrix.com/techniques/T0126) — - Criminals physically alter paper checks, promissory notes, and similar instruments by changing amounts, payee details, or forging signatures.  
+- These counterfeit documents are then presented as legitimate to move illicit proceeds undetected through manual clearing channels.
+- [Cheque Fraud](https://framework.amltrix.com/techniques/T0144.010) — - Offenders exploit the manual clearing processes for physical checks, depositing forged or “washed” checks into accounts and withdrawing credited amounts before discovery.  
+- The reliance on paper documentation allows tampering with payee details or amounts, enabling fraudulent deposit activities.
 
 ---
 
@@ -1598,6 +2184,17 @@ Comprehensive services including the professional management, secure transportat
 
 ---
 
+## [Family Office Services](https://framework.amltrix.com/services-products/PS0046)
+
+**Description:**
+Comprehensive management and administration services for the financial and personal affairs of wealthy families, including investment management, tax and estate planning, philanthropy, and personalized services. Aimed at preserving and growing family wealth across generations while addressing individual family member needs and goals.
+
+### Related Techniques
+- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — - Family offices often manage diverse assets and can be overseen by close associates or relatives acting as proxies.  
+- The reliance on inter-family or associate relationships can mask the real source of funds, especially if oversight is limited.
+
+---
+
 ## [Student Banking Services](https://framework.amltrix.com/services-products/PS0103)
 
 **Description:**
@@ -1701,6 +2298,19 @@ A service that enables customers to make purchases and withdraw cash using a deb
 
 ---
 
+## [Employment Services](https://framework.amltrix.com/services-products/PS0047)
+
+**Description:**
+A range of services provided by professional organizations that facilitate job placement, recruitment, and career development for individuals, as well as staffing solutions for companies. This includes traditional employment agencies, online job portals, and related services.
+
+### Related Techniques
+- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Operate under the guise of recruitment or staffing agencies, enabling traffickers to channel exploited laborers and funnel illicit funds through false wage disbursements.  
+- Minimize verifiable employment records, increasing the difficulty of tracing and prosecuting forced labor revenues.
+- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Fraudsters post fake job listings or pose as legitimate recruiters on employment platforms, attracting individuals seeking new opportunities.  
+- Once recruited, unsuspecting jobseekers are instructed to use their personal accounts to receive and forward illicit funds, believing they are performing genuine remote work.
+
+---
+
 ## [Investment Banking Services](https://framework.amltrix.com/services-products/PS0108)
 
 **Description:**
@@ -1787,6 +2397,104 @@ Financial services offered by banks located in foreign jurisdictions, typically 
 - Rapid transfers between offshore accounts obscure transaction trails and impede regulatory scrutiny.
 - [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Shell companies open offshore accounts to deposit or transfer illicit proceeds with reduced transparency obligations.  
 - Secrecy laws hamper investigators’ ability to trace funds or identify the true beneficial owners.
+
+---
+
+## [Legal Advisory Services](https://framework.amltrix.com/services-products/PS0048)
+
+**Description:**
+Services provided by legal professionals offering expert advice and assistance on a range of legal matters to individuals and businesses, including guidance on financial transactions, corporate structuring, real estate dealings, and general regulatory compliance across jurisdictions.
+
+### Related Techniques
+- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Offer expertise to structure contracts, trusts, and corporate entities that circumvent explicit sanctions requirements.  
+- May draft complex legal frameworks that obscure sanctioned beneficial owners and facilitate prohibited transactions.
+- [All-Cash Real Estate Transactions](https://framework.amltrix.com/techniques/T0010.005) — - Lawyers may facilitate large all-cash property deals, potentially bypassing standard AML checks if they do not diligently verify the source of funds. 
+- Inadequate legal scrutiny or collusion can create opaque ownership structures, obscuring the ultimate source of illicit cash.
+- [Court System Manipulation](https://framework.amltrix.com/techniques/T0047) — - Corrupt or complicit legal professionals can file fraudulent lawsuits or fabricate legal claims, resulting in court decisions that legitimize otherwise illicit funds as court-ordered settlements.  
+- They may also exploit appeals or procedural delays to prevent or postpone asset-freezing measures, ensuring criminals retain extended control of their illicit proceeds.
+- [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — - Criminals exploit attorneys’ confidentiality obligations to conceal true owners and sources of funds.  
+- They invoke attorney-client privilege to obstruct financial oversight and investigation requests, falsely presenting privilege as absolute.
+- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Legal advisors can structure multi-jurisdictional corporate vehicles, adding complexity that hinders identification of true owners.  
+- Drafting sophisticated agreements and trust deeds can camouflage criminally derived assets behind formal legal documentation.
+- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — - Criminals exploit attorney-client privilege to withhold details on beneficial ownership or the origin of funds.  
+- Legal professionals can structure complex transactions or corporate entities that hide illicit proceeds behind seemingly legitimate legal arrangements.
+- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — - Lawyers can draft or formalize powers of attorney, enabling a proxy to transact on behalf of the criminal principal.  
+- The attorney-client privilege may further obscure the true owner’s identity, impeding AML inquiries.
+- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Drafts complex inter-company agreements and royalty arrangements that can justify manipulated transfer prices.  
+- Legitimate legal structures and contracts are leveraged to mask intentional over- or under-valuation of goods and services.
+- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — - Legal professionals may draft or endorse fraudulent M&A contracts, providing an appearance of legitimacy to fictitious acquisitions or mergers.  
+- Expertise in cross-border regulations can be exploited to circumvent AML checks and conceal the ultimate beneficial owners behind shell entities.
+- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Lawyers can craft complex legal arrangements and contracts that legitimize layered corporate structures in multiple jurisdictions.  
+- Exploits regulatory gaps to obscure beneficial ownership, complicating KYC processes and authorization checks.
+- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — - Draft and structure acquisition contracts that may obscure true purchase prices or beneficial ownership, complicating AML scrutiny.  
+- Provide legal frameworks supporting shell or front company formation, enabling criminals to present a façade of lawful ownership.  
+- Offer strategic counsel that can be co-opted to evade detection, for example by exploiting legal privilege to limit transparency.
+- [Sector-Specific Document Manipulation](https://framework.amltrix.com/techniques/T0012.003) — - Complicit or negligent legal professionals may draft or review fabricated permits, licenses, or certificates aligned with specialized sector requirements.  
+- An official legal opinion or stamp can reduce scrutiny from financial institutions or regulators, further legitimizing forged documentation.
+- [Timeshare Scams](https://framework.amltrix.com/techniques/T0144.014) — - Fraudsters claim to be attorneys offering timeshare exit solutions or contract terminations.  
+- They collect upfront legal fees or retainer payments, yet perform no authentic legal work, redirecting the funds as illicit gains.
+- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Unscrupulous legal practitioners can draft or certify documents known to be forged, enabling criminals to legitimize falsified claims or transactions.  
+- Forged legal frameworks and contracts obscure actual parties to a deal, complicating investigations into beneficial ownership.
+- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Professionals craft legal instruments and corporate documents designed to obscure beneficial ownership.  
+- Offer expert guidance on cross-border incorporation in secrecy-friendly jurisdictions, accelerating shell formation.
+- [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Complicit attorneys can craft legal structures or contracts that obscure the real owner behind nominee arrangements.  
+- Legal privilege may protect certain communications, making beneficial ownership verification more challenging.
+
+---
+
+## [Cross-Chain Bridging Service](https://framework.amltrix.com/services-products/PS0049)
+
+**Description:**
+A service enabling the transfer of digital assets or data across different blockchain networks, facilitating interoperability among distinct blockchain ecosystems and expanding the utility of virtual assets beyond a single chain.
+
+### Related Techniques
+- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — - Facilitates shifting digital assets across different blockchains, breaking transaction trails.  
+- Criminals exploit limited or no AML checks on bridging services to add layering complexity in P2P crypto laundering.
+- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Criminals exploit blockchain interoperability by moving tokens across different chain networks, breaking a single traceable path.  
+- This separation of transaction histories conceals fund origins and disrupts AML monitoring.
+- [Cross-Chain Bridges](https://framework.amltrix.com/techniques/T0005.002) — - Criminals exploit lock-and-mint bridging to create new tokens on one chain in exchange for locked tokens on another, breaking direct transactional links and obscuring origin.  
+- The decentralized nature of bridging often bypasses conventional KYC measures, enabling illicit funds to move freely across multiple blockchain networks without a clear paper trail.  
+- Large collateral pools held by bridges can facilitate high-value laundering, allowing criminals to embed large sums in ostensibly legitimate liquidity flows.  
+- Integrating bridging with minimal-KYC wallets or other decentralized platforms further complicates investigations, impeding authorities’ ability to trace transactions across disparate chains.
+- [Cryptojacking](https://framework.amltrix.com/techniques/T0020.002) — - Criminals transfer cryptojacked coins across multiple blockchains, reducing transparency of fund movements. 
+- Each cross-chain jump erodes transaction trails, exploiting inconsistent AML standards across different networks.
+- [Virtual Token](https://framework.amltrix.com/techniques/T0067) — - Criminals transfer tokens among multiple blockchain networks, breaking transaction continuity and obscuring fund flows.  
+- Repeated bridging confuses investigators by scattering transaction records across different chains, reducing traceability.
+- [Payment Tokens](https://framework.amltrix.com/techniques/T0067.001) — - Allows criminals to hop between different blockchain networks, dispersing illicit payment token flows.  
+- Obscures transaction histories by splitting transactions across multiple chains, undermining traditional AML tracking methods.
+- [DeFi Transactions](https://framework.amltrix.com/techniques/T0067.004) — - Allows criminals to transfer illicit proceeds across multiple blockchains, complicating detection by fragmenting transaction histories.  
+- Exploits rapid chain-hopping to dissociate funds from their original source, hindering effective investigative tracing.
+- [NFT-based Value Obfuscation](https://framework.amltrix.com/techniques/T0064) — - Criminals leverage cross-chain bridging to move NFTs and related funds across different blockchain networks, creating complex transaction trails.  
+- This technique, often referred to as 'chain-hopping,' fragments the audit trail and makes it more difficult for investigators to trace proceeds of crime.  
+- By transferring assets through multiple networks, criminals further layer transactions, obscuring illicit fund flows behind the technical complexity of bridging.
+- [Cryptocurrency Mixing](https://framework.amltrix.com/techniques/T0003) — - Moves illicit funds between different blockchains, complicating single-chain investigative efforts. 
+- When combined with mixing, bridging extends layering across multiple chains, further frustrating law enforcement tracing.
+- [Governance Token Obfuscation](https://framework.amltrix.com/techniques/T0067.003) — - Adversaries transfer governance tokens across multiple blockchains, breaking on-chain address continuity.  
+- Frequent bridging transactions obscure transactional pathways, multiplying compliance and monitoring challenges.
+- [Transaction Chaining](https://framework.amltrix.com/techniques/T0070) — - Allows seamless transfer of digital assets between different blockchains, helping criminals obfuscate the originating chain of illicit funds.  
+- The resulting cross-asset “chain hopping” impedes standardized analytics tools, hindering effective tracing of transactions.
+- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — - Offenders transfer stolen crypto assets across multiple blockchain networks, fragmenting the funds’ transaction history.  
+- By bridging between chains, they reduce the effectiveness of traditional tracing methods and AML analytics.  
+- This rapid, cross-chain layering obfuscates the origin of illicit rug-pull proceeds.
+- [Instant Exchange Services](https://framework.amltrix.com/techniques/T0032) — - Criminals utilize cross-chain bridges to pivot assets quickly between different blockchain ecosystems, evading blockchain analytics tied to any single chain.  
+- These rapid ‘chain hops’ complicate investigators’ efforts to track transactional flows, making it harder to freeze or recover illicit proceeds.  
+- Bridging often circumvents standard compliance measures if each chain or bridging gateway imposes inconsistent or weak KYC/AML controls.
+- [Utility Tokens](https://framework.amltrix.com/techniques/T0067.005) — - Criminals use bridging services to transfer utility tokens and related assets across multiple blockchain networks, complicating transaction monitoring.  
+- By rapidly moving tokens among several chains, they generate overlapping transaction records, creating further layers and hindering forensic tracing.
+- [Darknet Marketplace Transactions](https://framework.amltrix.com/techniques/T0100) — - Transfer illicit proceeds across different blockchain networks, creating complex transaction trails that mask their true origin.  
+- Exploit interoperability to repeatedly switch between tokens on multiple chains, frustrating AML monitoring.
+- [Burn and Mint Transfers](https://framework.amltrix.com/techniques/T0005.001) — - Facilitates transitioning assets across different blockchains, enabling criminals to sever the direct link between the original chain and newly re-minted tokens. 
+- Minimal-KYC or unregulated bridging channels obscure provenance, breaking transaction continuity. 
+- This method adds complexity to forensic tracing by scattering transactional evidence across multiple networks.
+- [Chain Hop](https://framework.amltrix.com/techniques/T0005) — - Criminals exploit bridging solutions to move assets between distinct blockchains, increasing transaction complexity and reducing traceability.  
+- Repeated bridging swaps, often using newly created addresses, obscure the fund flow and hinder investigators’ ability to link original and destination addresses.
+- [Privacy Wallets](https://framework.amltrix.com/techniques/T0034.001) — - Facilitates ‘chain-hopping’ by moving funds from transparent blockchains into privacy-focused wallets or networks, layering illicit proceeds and fragmenting the transaction trail.  
+- Repeated bridging creates multiple, complex transfers that hamper law enforcement efforts to link transactions back to their origin.
+- [Ransomware Payments](https://framework.amltrix.com/techniques/T0049.001) — - Facilitates “chain-hopping” by transferring digital assets across different blockchain networks.  
+- This approach disrupts investigators’ ability to follow the money as it moves away from the initial ransom wallet, impeding effective tracing.
+- [Cross-Chain Token Wrapping](https://framework.amltrix.com/techniques/T0067.002) — - Criminals lock or deposit their illicit tokens on one blockchain, mint wrapped equivalents on another chain, and thereby sever the direct on-chain link to the original funds.  
+- By operating in a largely non-custodial or minimally regulated environment, these bridging services lack robust KYC measures, making it difficult for investigators to trace the origin of assets and identify beneficial owners.  
+- Repeated bridging across multiple networks further fragments the transaction trail, increasing complexity for AML monitoring tools and obscuring the ultimate fund destination.
 
 ---
 
@@ -2097,33 +2805,6 @@ Platforms that facilitate direct cryptocurrency trades between users without a c
 
 ---
 
-## [E-commerce Platforms](https://framework.amltrix.com/services-products/PS0012)
-
-**Description:**
-Online marketplaces that facilitate the buying and selling of goods and services over the internet. These platforms support product listings, payment processing, user account management, and transaction reviews, and may cater to both general and specialized consumer markets.
-
-### Related Techniques
-- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Criminals can list or purchase in-game goods or entire accounts, bypassing official platforms with stricter oversight.  
-- By inflating or undervaluing prices, they layer illicit funds through seemingly legitimate transactions with limited identity verification.
-- [Loyalty Points](https://framework.amltrix.com/techniques/T0106) — - Criminals can exploit online marketplaces that allow buying, selling, or transferring loyalty points, effectively converting illicit proceeds into near-cash.  
-- Minimal KYC or transactional scrutiny on some platforms enables rapid transfers of large point balances across multiple accounts or listings, further obscuring the origin of funds and complicating AML efforts.
-- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Provide a marketplace to list and sell in-game assets at inflated or manipulated prices, effectively converting in-game currency back into fiat or cryptocurrency.  
-- Multiple item listings and frequent small-value trades can further fragment financial trails, making detection of illicit proceeds more difficult.
-- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Provide an online marketplace where exploitative content can be sold under the guise of adult or legitimate offerings.
-- Facilitate micro-transactions that camouflage the illicit source of funds, making it difficult to discern legitimate from criminal proceeds.
-- [Chargeback](https://framework.amltrix.com/techniques/T0091) — - Criminals can operate as both seller and buyer, generating fraudulent sales and then initiating chargebacks to siphon illicit funds under the guise of legitimate refunds.  
-- Automated or limited-oversight dispute mechanisms make it easier to file repeated or high-value chargebacks without immediate detection.
-- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Fraudsters list non-existent or sham products, receiving payments from collaborators or unwitting customers.  
-- Such platforms provide a public façade of legitimate retail transactions, integrating illicit funds as apparent sales revenue.
-- [Daigou Networks](https://framework.amltrix.com/techniques/T0013.006) — - Criminals use online marketplaces to resell luxury or high-demand items bought with illicit funds, presenting them as ordinary retail transactions.  
-- These sales effectively integrate illegal proceeds into legitimate-appearing revenue streams, masking the original criminal source of the money.
-- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — - Criminals establish fake or replica storefronts, listing counterfeit or non-existent goods to process sham purchases.  
-- Fraudulent orders and manipulated refunds enable layering of illicit proceeds, masking them as legitimate commercial transactions and complicating AML checks.
-- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — - Criminals list falsified or substandard medical products on online marketplaces, circumventing regulatory oversight and concealing the nature of these goods. 
-- Minimal scrutiny and global reach enable large-scale sales of counterfeit pharmaceuticals, generating proceeds to be laundered later.
-
----
-
 ## [Mobile Banking](https://framework.amltrix.com/services-products/PS0013)
 
 **Description:**
@@ -2142,174 +2823,6 @@ A service provided by financial institutions that allows customers to conduct fi
 - Facilitates quick international or domestic transfers via mobile apps, adding layers of separation for illicit funds.
 - [Account Compromise](https://framework.amltrix.com/techniques/T0076) — - Criminals may infect or phish victims to gain unauthorized access to mobile banking apps, granting direct control of legitimate accounts.  
 - Once inside, they rapidly transfer funds or change account details, leveraging the account’s established profile to bypass AML alerts.
-
----
-
-## [Non-Resident Banking Services](https://framework.amltrix.com/services-products/PS0014)
-
-**Description:**
-Banking services offered to individuals or entities residing outside the jurisdiction in which the bank operates. These may include account management, foreign exchange transactions, and international payment solutions tailored to the needs of non-resident clients.
-
-### Related Techniques
-- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Opening accounts as non-residents in certain jurisdictions reduces scrutiny and oversight.  
-- Criminals use these services to shuttle funds from illegal logging or fishing operations away from their country of origin, complicating AML controls.
-
----
-
-## [Virtual Office Services](https://framework.amltrix.com/services-products/PS0015)
-
-**Description:**
-Virtual Office Services provide businesses with a professional address and communication solutions without requiring a physical office space. These typically include mail handling, call answering, and access to meeting rooms, offering an affordable option for entrepreneurs and companies seeking a professional presence.
-
-### Related Techniques
-- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Criminals create front companies in environmental sectors that exist only ‘on paper’ through virtual offices.  
-- Professional addresses, mail handling, and call-forwarding assure a veneer of legitimacy while concealing actual illicit activities.
-- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Provide a corporate address and call-handling services for shell companies lacking any physical presence.  
-- Helps conceal actual operators and locations, reinforcing anonymity in financial dealings.
-- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Offer remote business addresses and communication solutions, allowing perpetrators to present a credible facade despite minimal physical infrastructure.  
-- Obscure the real location of the operation, hindering regulatory and law enforcement scrutiny.
-- [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — - Perpetrators maintain only a nominal business presence (e.g., a mail drop or P.O. box) while handling high volumes of transactions, concealing the absence of real operations.
-- The lack of substantial on-site activity hinders verification efforts, creating an illusion of legitimacy for the fraudulent consulting firm.
-- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Provides a nominal physical address and corporate presence in multiple jurisdictions without an actual operational footprint.  
-- Criminals leverage these services to add credibility and complicate investigations, as official records show multiple addresses with no real activity.
-- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — - Offer a professional business address and communication facilities without requiring physical premises.
-- Help criminals project legitimacy for virtual companies while hiding their actual locations or operations.
-- [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Provides temporary shell companies with a mailing address and phone services without maintaining a physical presence.  
-- Multiple entities can be formed and dissolved at the same virtual address, complicating regulatory efforts to track and investigate corporate activity.
-- [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Provide a nominal business address for the shelf company, concealing any genuine location or operational facility.  
-- Mail forwarding and phone-answering services help criminals maintain an illusion of legitimacy while obscuring actual business activity and ownership.
-
----
-
-## [Reinsurance Agreements](https://framework.amltrix.com/services-products/PS0016)
-
-**Description:**
-Contracts where an insurance company transfers a portion of its risk portfolio to another insurance company to reduce its potential exposure to significant claims. This arrangement helps insurers manage and spread risk more effectively.
-
-### Related Techniques
-- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — • By creating complex or bogus reinsurance contracts, criminals inflate premiums and fabricate claims to route illicit proceeds through multiple entities.  
-• Layering is achieved as funds traverse various reinsurers—often offshore—masking the true source of the money.  
-• Final payouts or settlements ultimately appear as legitimate insurance or reinsurance transactions, enabling integration into the financial system.
-- [Captive Insurance](https://framework.amltrix.com/techniques/T0090.001) — - Criminals introduce shell reinsurers or bogus reinsurance deals to convolute the flow of funds, further distancing them from their illicit origins.  
-- This layering tactic involves multiple risk transfers and claim settlements, obscuring transaction trails and complicating AML investigations.
-
----
-
-## [Cash Transaction Service](https://framework.amltrix.com/services-products/PS0017)
-
-**Description:**
-A service involving the physical exchange of money, encompassing activities such as cash deposits and withdrawals at bank branches or ATMs, as well as currency exchange at foreign exchange bureaus.
-
-### Related Techniques
-- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Predominantly cash-based sex work generates significant ready cash, deposited incrementally at different locations to avoid triggering AML alerts.  
-- The reliance on cash facilitates anonymity for both payers and beneficiaries, weakening the audit trail.
-- [Money Mule Recruitment](https://framework.amltrix.com/techniques/T0140) — - Mules deposit or withdraw physical cash, enabling criminals to convert illicit digital proceeds into hard currency.  
-- Repetitive small transactions bypass thresholds that typically trigger enhanced scrutiny.  
-- This direct handling of cash blends illicit funds with everyday cash flows, hindering traceability.
-- [Common Offenses](https://framework.amltrix.com/techniques/T0146) — - Offenders conduct multiple small cash deposits or withdrawals at branches, remaining below typical reporting thresholds.  
-- The physical handling of smaller cash transactions reduces scrutiny, enabling proceeds from minor crimes to enter the financial system undetected.
-- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — - Individuals handling cash deposits or withdrawals only see their specific role and lack awareness of subsequent or preceding transactions.  
-- By dividing physical cash handling among different points of service, criminals maintain strict knowledge silos that obscure the total scale and flow of illicit funds.
-- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Enables direct cash deposits or withdrawals from proceeds of illegal commodity trade without transparent digital trace.
-- Smaller, repeated deposits (structuring) avoid detection thresholds, concealing the total criminal earnings.
-- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Drug traffickers generate substantial amounts of physical currency through illicit sales and rely on frequent cash deposits or withdrawals to obscure the origin of their funds.  
-- By splitting deposits into smaller amounts below reporting thresholds or using multiple points of deposit, they can evade detection and commingle illicit proceeds with legitimate transactions.
-- [Cash Deposits](https://framework.amltrix.com/techniques/T0004) — - Enables direct physical deposits of currency at bank counters, ATMs, or other deposit points.  
-- Criminals exploit daily or transaction limits by depositing multiple times across branches, thereby dispersing significant amounts of illicit cash.
-- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — - Criminals deposit smaller amounts of cash below official thresholds at numerous branches or counters, circumventing detection triggers.  
-- Distributing deposits geographically obscures the connection among individual transactions, hampering investigators’ ability to flag a consolidated illicit source.
-- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — - Enables repeated deposits and withdrawals of physical currency at bank branches or ATMs, which criminals break into smaller amounts to remain under reporting thresholds.  
-- By distributing these structured transactions across multiple locations, criminals reduce the likelihood of triggering suspicion or detection.
-- [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Accept bulk cash deposits from scams, recorded as direct customer payments for telemarketing services.  
-- Hide the actual source of large physical deposits, making it appear as ordinary revenue from fictitious call-center activities.
-- [Cash Wage Payments to Undocumented Workers](https://framework.amltrix.com/techniques/T0052.001) — - Enables direct cash payouts to undocumented workers, bypassing traditional payroll and electronic payment records. 
-- The reliance on high-volume cash transactions obscures the ultimate source and destination of funds.
-- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — - Offenders physically present counterfeit currency at bank counters or other authorized outlets for deposit.  
-- Fragmented deposits or smaller transactions can bypass immediate scrutiny and deposit thresholds.
-- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Smugglers frequently handle large volumes of currency, depositing or exchanging it in segments to avoid suspicion.  
-- Breaking down bulk cash into smaller transactions helps disguise origin, aligning with typical smuggling modus operandi.
-- [Immediate Cash Conversion](https://framework.amltrix.com/techniques/T0105) — - Facilitates over-the-counter or retail withdrawal of funds in smaller increments to avoid triggering suspicious thresholds. 
-- Converting digital balances into anonymous physical cash impedes investigators’ ability to track fund movement.
-- [Protection Payments](https://framework.amltrix.com/techniques/T0049.002) — • Protection payments are often collected in cash, enabling frequent deposits or withdrawals without clear traceability.
-• Criminals may structure these deposits below reporting thresholds, rapidly exchanging or depositing cash to evade detection and mask the origin of funds.
-- [Cash Wage Payments](https://framework.amltrix.com/techniques/T0052) — - Facilitate frequent, undocumented withdrawals of physical cash, enabling off-the-books wage payments without leaving reliable payroll records.  
-- Allow structuring of cash transactions under reporting thresholds, reducing transparency over disbursements labeled as legitimate wages.
-
----
-
-## [Precious Metals Trading Services](https://framework.amltrix.com/services-products/PS0018)
-
-**Description:**
-A comprehensive service including accounts and platforms, either online or in physical locations, where individuals and institutions can buy, sell, and trade precious metals such as gold, silver, platinum, and palladium. These services are provided by banks, investment firms, and specialized dealers, and facilitate transactions in the commodities market, often serving as a hedge against market volatility.
-
-### Related Techniques
-- [Commodity Smuggling](https://framework.amltrix.com/techniques/T0048) — - Criminals purchase precious metals with illicit funds and physically move them across borders to conceal origins.  
-- Once relocated, they resell or trade these metals through legitimate channels, integrating laundered proceeds into the financial system.
-- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Traffickers convert illegal proceeds into gold or other precious metals, using them as stable-value assets.
-- Bulk purchases and sales in precious metals markets help integrate criminal income, blurring the origin of funds.
-- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — • Criminals can swiftly monetize unlawfully mined gold or other precious metals by selling through legitimate trading platforms, intermingling illegally sourced metals with legitimate inventory. 
-• Facilitates the appearance of lawful revenue streams from the sale of metals, aiding in layering and integration of illicit proceeds into the financial system.
-- [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — - Enables direct purchase and sale of gold, silver, or other metals as a way to convert illicit proceeds into portable, high-value assets.  
-- After transporting or holding metals, criminals resell them for ostensibly legitimate revenue, complicating AML oversight.
-- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Enables criminals to convert illicit proceeds into portable, high-value metals or gemstones that are difficult to track.
-- Underreporting transaction amounts and misrepresenting the source of funds helps circumvent conventional AML scrutiny.
-- Once purchased, these commodities can be easily transported across borders and sold to reintroduce laundered funds into the financial system.
-- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — - Enables direct purchase of gold bars, coins, or bullion with potentially minimal identity verification, particularly in high-value transactions that occur through non-face-to-face channels.  
-- Allows criminals to exploit gold’s worldwide acceptability and subjective valuations to transform illicit cash into a seemingly legitimate commodity.
-- [Fictitious Trading across Jurisdictions](https://framework.amltrix.com/techniques/T0069.001) — - Criminals claim large overseas purchases of precious metals (e.g., gold) that never materialize, justifying substantial cross-border fund movements.  
-- This apparent commodity trade conceals illicit sources by blending them with normal commercial activity.
-- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Criminals may inflate or deflate precious metal valuations, disguising illicit proceeds as sales or purchases.  
-- They can misrepresent the origin or authenticity of metals, creating fictitious trade records to justify unexplained funds.
-- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Criminals move illicit value into precious metals under misrepresented purity or quantity.  
-- Reselling metals through different jurisdictions or intermediaries obscures the transaction trail and true source of funds.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals convert illicit funds to gold or other metals through accounts or storefronts with lax checks, moving large sums without typical banking scrutiny.  
-- Repeated purchases and subsequent disposals in different jurisdictions help layer proceeds and disguise their criminal origins.
-- [Hot Transfers](https://framework.amltrix.com/techniques/T0013.002) — - Hot Transfer participants frequently use gold or other high-value metals as an informal currency, bypassing traditional banking channels.  
-- Physical transfers and minimal documentation limit banks’ visibility into the origin of funds.  
-- Enhanced identification and monitoring procedures for precious metals transactions reduce these laundering opportunities.
-
----
-
-## [Art and Antiquities Trading & Auction Services](https://framework.amltrix.com/services-products/PS0019)
-
-**Description:**
-A comprehensive set of services facilitating the purchase, sale, exchange, and auction of artwork, antiquities, and historically significant items. These services, typically offered by specialized auction houses, galleries, and dealers, often include provenance research, authentication, private transactions, and organized auctions for collectors, museums, dealers, and investors.
-
-### Related Techniques
-- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Criminals leverage the auctioning of high-value collectibles (e.g., rare coins, stamps, or memorabilia) under the broader umbrella of art or antiquities to introduce illicit funds.  
-- Subjective valuations enable them to justify artificially inflated or deflated prices, creating complex layering chains.  
-- Limited provenance checks and oversight at certain auction houses allow repeated buy-and-sell transactions to mask ownership and fund origin.
-- [Jewelry Valuation Manipulation](https://framework.amltrix.com/techniques/T0045.001) — - High-value or antique jewelry can be sold via auction houses where subjective appraisals permit significant price manipulation.  
-- Repeat sales with altered valuations create layers of transactions, muddling ownership and audit trails.
-- [Art Market Manipulation](https://framework.amltrix.com/techniques/T0045.003) — - Criminals exploit private auctions and subjective valuations to buy and sell artwork at manipulated prices, obscuring the origin of illicit funds.  
-- Limited transparency regarding buyer or seller identity allows shell entities or nominees to conceal beneficial ownership.  
-- Acceptance of cash or in-kind payments in some deals further complicates AML monitoring, enabling criminals to transform illicit funds into seemingly legitimate sales proceeds.
-- [NFT-based Value Obfuscation](https://framework.amltrix.com/techniques/T0064) — - Criminals can present NFTs as digital artwork and exploit auction mechanisms to stage sales at artificially exaggerated prices, masking illicit funds as legitimate art proceeds.  
-- Limited provenance checks or verification processes enable wash trading and inflated valuations, obscuring the true origins of the funds.  
-- By portraying profits from NFT transactions as legitimate art sales, criminals can more easily integrate illicit proceeds into the financial system.
-- [Asset Valuation Manipulation](https://framework.amltrix.com/techniques/T0045) — - Offenders fabricate provenance or falsify valuations of art and antiquities, inflating or deflating prices to absorb illicit proceeds or minimize visible wealth.  
-- The subsequent resale of these assets at a newly manipulated price gives the appearance of legitimate profit or loss, masking the true origin of funds.
-- [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — - Criminals may deposit illicit funds under the guise of bidding on high-value artwork or antiquities and later request partial or full refunds, creating a veneer of legitimate transactions. 
-- They can artificially inflate or deflate final sale prices through collusive bidding, generating receipts for seemingly lawful proceeds while obscuring true ownership and fund origins. 
-- Limited transparency around private or sealed bids and inconsistent AML checks within some art auction practices make it difficult to verify beneficial owners or trace suspicious funds.
-- [Corruption](https://framework.amltrix.com/techniques/T0051) — - High-value art sales and purchases allow large sums of corrupt money to be obscured as investment in collectible assets.  
-- Limited transparency in art transactions creates an ideal environment for laundering, where beneficial ownership and exact sale prices are often undisclosed.
-- [Illicit Antiquities Trade](https://framework.amltrix.com/techniques/T0007.001) — - Criminals can list or privately offer looted antiquities with falsified provenance, obscuring their illicit origin.  
-- Discretionary pricing and subjective valuation allow over- or under-invoicing, providing opportunities for layering.  
-- Repeated resale through auctions or private deals changes ownership records multiple times, making it harder to trace illicit proceeds.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals exploit the subjective prices and private nature of art and antiquities transactions, purchasing or selling high-value pieces under manipulated valuations to hide illicit funds.  
-- Falsified provenance or authenticity documents further obscure the items’ history, complicating authorities’ attempts to trace ownership.  
-- Private or closed-door auctions enable secretive buy-sell cycles that facilitate layering, making it harder to identify ultimate beneficiaries.
-
----
-
-## [Asset-Based Financing](https://framework.amltrix.com/services-products/PS0020)
-
-**Description:**
-A financing service where loans or credit lines are secured by collateral assets, which can include real estate, inventory, equipment, or high-value items. Offered by banks and financial institutions to individuals and businesses seeking to leverage their assets to access funding.
-
-### Related Techniques
-- None
 
 ---
 
@@ -2333,307 +2846,6 @@ Financial products offered by insurance companies that provide a payout to benef
 - Despite incurring high surrender fees, the covert transformation of criminal proceeds into apparently lawful returns justifies the cost.
 - [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — - Criminals frequently alter policyholders or beneficiaries to obscure the true ownership of illicit funds.  
 - High-value or single-premium life policies can be rapidly funded and surrendered, creating layers that impede AML tracing.
-
----
-
-## [Vault Storage Services](https://framework.amltrix.com/services-products/PS0028)
-
-**Description:**
-Vault storage services offer advanced security measures for storing valuable assets or sensitive documents, typically featuring robust surveillance, controlled access, and on-site security. These services cater to financial institutions, corporations, and individuals requiring secure, specialized storage solutions.
-
-### Related Techniques
-- [Safe Deposit Boxes](https://framework.amltrix.com/techniques/T0043) — - Offer secure storage areas for valuables, enabling criminals to hide illicit assets off financial records.  
-- May allow cash-based fee payments and limited identity checks, reducing traceability and obscuring beneficial ownership.  
-- Facilitate repeated movement or concealment of contraband (e.g., cash, precious metals) with minimal oversight, mirroring the safe deposit box misuse patterns.
-- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — - Provide long-term, high-security storage of valuables outside standard banking channels.  
-- Allow owners to register vault access under corporate or offshore entities, hiding true beneficial owners and the nature of stored assets.  
-- Minimal regulatory scrutiny hampers law enforcement efforts to trace or seize illicitly acquired art, jewelry, or precious metals.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals deposit metals, gems, or other valuables into secure vaults under assumed names or via proxies to conceal ownership.  
-- Holding physical assets outside standard banking channels prevents direct links to the person depositing illicit funds, hindering regulators and investigators.
-
----
-
-## [Freight Forwarding and Shipping Services](https://framework.amltrix.com/services-products/PS0032)
-
-**Description:**
-A comprehensive range of logistics and transportation offerings enabling the movement of goods or commodities by sea, air, or land. This includes standardized intermodal container shipping, route planning, customs documentation, warehousing, packaging, loading, unloading, insurance, tracking, and overall supply chain management for efficient global trade.
-
-### Related Techniques
-- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Criminals can hide bulk cash within cargo shipments (e.g., in hidden compartments or mislabeled goods) to evade detection at border checkpoints.  
-- Exploitation of complex global logistics and weak customs oversight allows illicit funds to pass under the guise of legitimate freight.
-- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Falsified shipping manifests or customs declarations mask actual contents or misstate shipment values, concealing suspicious flows.  
-- Use of counterfeit bills of lading and related documents facilitates the movement of illicit funds under the guise of legitimate cargo.
-- [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — - Arms traffickers conceal weapon shipments among legitimate cargo or mislabel them to evade detection by customs or law enforcement.  
-- Complex routing and falsified shipping documentation obscure the origin and destination of arms, hindering AML efforts.
-- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Can disguise the true nature or quantity of banned or illegally sourced goods through falsified transportation documents.
-- Import-export entities leverage these services to integrate contraband with legitimate cargo, complicating audits.
-- [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Criminals mislabel or under-declare illegal timber, fish, or wildlife cargo to smuggle them as legitimate goods.  
-- False documentation during shipping ensures proceeds appear to stem from lawful trade, facilitating money laundering.
-- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Illicit shipments of narcotics or precursor chemicals are concealed among legitimate cargo, leveraging these logistics channels to move products and proceeds across borders.  
-- Fraudulent shipping documents or mislabeled cargo can hide evidence of illegal activity and facilitate multi-jurisdictional distribution networks.
-- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — - Criminals mislabel protected species as legitimate cargo or falsify shipping documents to conceal illicit wildlife shipments.  
-- The use of complex logistics networks with multiple transit points obscures true origins and destinations, hindering law enforcement detection.
-- [Collectible Auction Manipulation](https://framework.amltrix.com/techniques/T0045.002) — - Illicit actors inflate or fabricate shipping and import fees for collectible items, fostering additional layers of purported expenses.  
-- These artificially high charges appear as legitimate logistics costs, complicating tracing and concealing the criminal origins of funds.
-- [Illegal Mining & Mineral Trafficking](https://framework.amltrix.com/techniques/T0145.003) — • Facilitates cross-border transport of illegally mined minerals under falsified customs declarations, disguising true origin and quantity. 
-• Provides logistical cover for mixing illicit shipments with legitimate cargo, reducing detection risk and enabling global distribution of illicitly sourced minerals.
-- [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — - Illicit metals or stones can be hidden among legitimate cargo, with criminals mislabeling or routing shipments through multiple jurisdictions to avoid detection.  
-- Minimal oversight in certain corridors enables the discrete movement of high-value commodities to be sold elsewhere for ‘clean’ funds.
-- [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - By providing inaccurate shipping manifests and cargo descriptions, criminals disguise the true goods or their actual value, facilitating under- or over-invoicing practices.  
-- Complex logistics chains and multiple handoffs allow for discrepancies that can shield illicit transactions from straightforward detection.
-- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — - Phantom shipping, where goods never actually move, is disguised through false cargo documents and route changes.  
-- Illicit items are blended with legitimate freight, or shipment details are altered, masking the nature and value of transported goods.
-- [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — - Generate or manipulate shipping documents (bills of lading, export/import details) for agricultural goods to justify suspicious fund movements.  
-- Invent or inflate shipping volumes and routes to account for nonexistent produce, obscuring true farmland yields and laundering proceeds.
-- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — - Collusive or complicit freight forwarders may issue bogus or partial shipping records.  
-- These records support inflated invoices and false cargo manifests, maintaining an illusion of legitimate trade flows.
-- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Fraudsters generate shipping documents for goods that do not exist or were never actually dispatched.  
-- False transport records reinforce the illusion of legitimate trade for the fabricated sales.
-- [Circular Transactions](https://framework.amltrix.com/techniques/T0039) — - Criminals arrange ‘phantom shipments’ or reship the same goods multiple times, creating artificial trade flows.  
-- Convoluted shipping documentation across various ports and jurisdictions hides the cyclical movement of funds linked to these supposed transactions.
-- [Jewelry Valuation Manipulation](https://framework.amltrix.com/techniques/T0045.001) — - Criminals exploit cross-border shipping of jewelry with falsified or missing documentation—such as absent Kimberley Process Certificates—obscuring illicit origins.  
-- By moving pieces through multiple jurisdictions and forwarding agents, they complicate tracing and enable repeated revaluation or resale.
-- [Precious Commodity Smuggling](https://framework.amltrix.com/techniques/T0048.003) — - Criminals falsify shipping documentation and commodity declarations, obscuring the true nature or value of precious metals.
-- Complex logistics and routing channels reduce transparency, allowing smugglers to bypass customs controls and launder illicit funds.
-- Enhanced due diligence in shipping documentation, route tracking, and physical inspections is crucial to detect disguised shipments.
-- [Ghost Shipping](https://framework.amltrix.com/techniques/T0069.002) — - Collusive or negligent freight forwarders may knowingly accept or facilitate forged documents indicating cargo movement when none occurs.  
-- This enables perpetrators to claim a legitimate logistics chain for ghost shipments, disguising the absence of real goods and complicating detection of illicit fund flows.
-- [Countertrade](https://framework.amltrix.com/techniques/T0079) — - Criminals repeatedly ship the same commodities or leave them unclaimed, leveraging complex shipping routes across various jurisdictions.  
-- Layering occurs when forged bills of lading or duplicative submissions create confusion regarding actual ownership and value.
-- [Counterfeit Goods](https://framework.amltrix.com/techniques/T0143.001) — - Facilitate cross-border transportation and distribution of counterfeit goods, often hidden within legitimate shipments. 
-- Provide opportunities to manipulate or forge shipping documents (e.g., bills of lading), disguising the illicit nature of goods and evading regulatory scrutiny.
-- [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — - Misdeclare diamond shipments under generic commodities or undervalued invoices to avoid detection.  
-- Use trans-shipment routes in jurisdictions with lax controls to mask the origin or destination of smuggled diamonds.  
-- Forge or omit required certificates, including Kimberley Process documentation, complicating traceability.
-- [Shipping Document Manipulation](https://framework.amltrix.com/techniques/T0069) — - Criminals may present falsified bills of lading or manifests to freight forwarders, masking the true nature, quantity, or existence of goods.  
-- Multiple or inconsistent versions of shipping documents can be submitted for the same cargo, making it harder to detect fraudulent shipments or ghost shipping schemes.
-- [Bonded Warehouses](https://framework.amltrix.com/techniques/T0112) — - Criminals exploit the warehousing component of freight and shipping offerings to store contraband under bonded warehouse arrangements, mingling illicit goods with legitimate shipments.  
-- They repeatedly re-label or repackage items to disguise their true origin or classification, limiting effective oversight and frustrating auditors seeking to verify the legitimacy of stored goods.  
-- Minimal on-site verification and prolonged storage under customs supervision hamper the identification of beneficial owners.
-- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — - Criminals can mix illicitly harvested goods (e.g., timber, fish, minerals) with legitimate shipments, masking the origin and nature of contraband.  
-- Falsified shipment documents help conceal or misrepresent the quantity or type of cargo, facilitating unhindered cross-border transport of illicit environmental proceeds.
-- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — - Allow discrete cross-border movement of gold bars, bullion, or reclassified 'scrap' gold to evade scrutiny and export restrictions.  
-- Criminals can utilize mislabeling or vague shipment documentation to obscure the gold’s actual value, complicating law enforcement tracking.
-- [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Fraudsters may falsify shipping documents or misrepresent cargo volumes to support inflated tax rebate claims on exports.  
-- These services can provide cover for sham cross-border shipments, concealing the absence of genuine trade activity.
-- [Trade Diversion](https://framework.amltrix.com/techniques/T0030) — - By re-routing shipments through unexpected intermediaries, criminals hide the final destination or origin of illicit goods.  
-- Falsified shipping manifests and logistical details blur the trail back to the true source, impeding authorities’ ability to link products to criminal proceeds.
-- [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — - Criminals rotate small parcels of diamonds through multiple jurisdictions, using intermediaries to mask actual shipping routes and forging invoices or shipping documents.  
-- This repeated cross-border movement under various freight arrangements obscures the origin of funds and confounds regulatory and law enforcement monitoring.
-- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — - Criminals mislabel or conceal contraband cigarette shipments as duty-free or unrelated goods, exploiting these services to evade excise taxes and customs.  
-- Multiple transshipment points or routing changes can obscure final destinations and reduce the likelihood of detection by authorities.
-- [Illegal Logging](https://framework.amltrix.com/techniques/T0145.001) — - Criminals commingle illegally harvested logs with legitimate cargo to hide the timber’s true origin.  
-- Altered or forged shipping documents mask shipping routes, volumes, and species, complicating law enforcement efforts to identify illegal wood.
-- [Commodity Smuggling](https://framework.amltrix.com/techniques/T0048) — - Criminals can blend illicit goods with legitimate cargo to evade detection during transit.  
-- Falsified shipping manifests and misdeclared cargo facilitate the cross-border movement of contraband, circumventing duties and screening.
-- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — - Manipulating shipping routes, cargo descriptions, and supporting documentation within free trade zones allows criminals to mask illicit activities.  
-- Repetitive, non-economic shipping patterns (“round-tripping”) and discrepancies in cargo manifests are often used to disguise the movement of illicit funds.
-- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — - Criminals can misdeclare cargo volumes or blend different fuel grades, using falsified shipping records that hide the true nature or value of oil shipments.  
-- By forging documents (e.g., bills of lading), they introduce discrepancies between actual shipments and official paperwork, allowing illicit funds to flow under the guise of normal freight operations.
-- [Export Overvaluation](https://framework.amltrix.com/techniques/T0147.004) — - Criminals can manipulate shipping documents and declared cargo details to justify inflated export values.  
-- Complex routing or multi-stop shipments may obscure the true origins, volumes, or pricing, helping disguise overvalued exports.
-- [Fictitious Jewelry Business](https://framework.amltrix.com/techniques/T0014.005) — - Falsified shipping documents or bills of lading can be generated for nonexistent jewelry exports or imports.  
-- These fake logistics records reinforce the illusion of legitimate trade, layering illicit funds.
-- [Black Market Peso Exchange](https://framework.amltrix.com/techniques/T0013.005) — - Criminal intermediaries arrange shipments under-invoiced or misdeclared to reduce import duties or hide true cargo value.  
-- Submitting incomplete or deceptive shipping records helps obscure the illicit origin of funds used to settle shipping and import costs.
-- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Criminals can alter shipping routes or manifests mid-journey, disguising the actual nature and value of goods.  
-- Layered shipping arrangements and free trade zones obscure beneficial ownership and hamper investigations.
-- [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - Manipulated shipping papers can align with falsified invoices, creating the illusion of legitimate cross-border movements.  
-- Overstating or fabricating cargo details helps mask the real value or existence of goods involved in trade-based laundering.
-- [Counterfeit Pharmaceuticals](https://framework.amltrix.com/techniques/T0143.003) — - Criminals arrange cross-border shipments of counterfeit medicines, often mislabeled or with falsified documentation to conceal the illicit nature of the goods. 
-- Large-scale international shipping supports widespread distribution and complicates law enforcement tracking.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - Criminals dispatch high-value goods across borders with incomplete or misleading documentation, further distancing them from the original illicit funds source.  
-- By shipping gold bars, artworks, or collectibles internationally, launderers create additional layers, making global tracking and audits more challenging.
-- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Shell companies posing as import/export firms exploit shipping documentation to justify suspicious cross-border transactions.  
-- Minimally verified or fictitious shipment data complicates detection of inflated or nonexistent trade activities.
-
----
-
-## [Workers' Compensation Insurance](https://framework.amltrix.com/services-products/PS0033)
-
-**Description:**
-An insurance product that provides financial and medical benefits to employees who suffer work-related injuries or illnesses, while protecting employers from related lawsuits.
-
-### Related Techniques
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Allows manipulation of employee classifications or payroll figures to decrease premiums owed.  
-- Facilitates submission of false claims or documentation understating the true workforce size or wages for insurance savings.
-
----
-
-## [Foreign Investment Services](https://framework.amltrix.com/services-products/PS0034)
-
-**Description:**
-Services provided by financial institutions and investment firms to facilitate the investment of capital into foreign markets and businesses, including advisory, fund management, and assistance with regulatory compliance across different jurisdictions.
-
-### Related Techniques
-- [Fictitious Foreign Investment](https://framework.amltrix.com/techniques/T0061.001) — - Criminals route illicit funds through formal channels as purported foreign capital injections.  
-- These services provide advisory or facilitation that can legitimize funds on paper while bypassing stricter local oversight.
-- [Trade Misinvoicing](https://framework.amltrix.com/techniques/T0008.003) — - Misinvoicing can be paired with foreign direct investment flows to inflate or reduce the apparent capital moving cross-border, disguising illicit proceeds as legitimate business investments.  
-- Particularly in jurisdictions with weaker oversight, criminals exploit these services to obscure the true origins and destinations of funds.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Provide cross-border channels to place illicit capital in international markets under the guise of legitimate foreign investments. 
-- Varying regulatory regimes and multi-jurisdictional hurdles help launderers obscure transaction trails and beneficiary details.
-- [Investment in Financial Instruments](https://framework.amltrix.com/techniques/T0061) — • Criminals exploit cross-border investment channels to introduce illicit funds into foreign markets with less stringent disclosure requirements.
-• Varying regulatory standards allow layering of capital across multiple jurisdictions, further obscuring the origin of proceeds.
-
----
-
-## [Virtual Asset Exchange](https://framework.amltrix.com/services-products/PS0036)
-
-**Description:**
-Digital platforms enabling individuals and businesses to buy, sell, trade, or exchange cryptocurrencies and other digital assets (including digital payment tokens) with fiat currency or other digital assets. These platforms typically provide user accounts or wallets, real-time trading interfaces, deposit and withdrawal functionalities, and robust security measures.
-
-### Related Techniques
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — - Criminals register exchange accounts under stolen or synthetic identities, bypassing effective KYC.  
-- This enables laundering of illicit proceeds by trading crypto assets under a false persona, complicating traceability and ownership verification.
-- [Identity Manipulation](https://framework.amltrix.com/techniques/T0023) — - Criminals exploit online KYC processes by submitting manipulated or stolen identity documents.
-- Once accounts are established, they can convert or transfer cryptocurrency, obscuring beneficial ownership and transactional traces.
-- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Enables rapid, cross-border transfers of digital assets beyond conventional banking oversight.  
-- Can facilitate covert transactions with sanctioned entities, especially where AML/KYC protocols are weak or absent.
-- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — - Criminals can conceal their actual IP address and jurisdiction, preventing the exchange from identifying or blocking high-risk geolocations.  
-- This camouflage complicates cross-border compliance checks, as users may appear to be operating from a location with less stringent AML requirements.  
-- Law enforcement efforts to pinpoint the real origin or destination of digital asset flows are hindered by the VPN layers, easing layering attempts.
-- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Facilitates the final conversion of illicitly obtained in-game or cross-chain assets into recognized cryptocurrencies or fiat.  
-- Criminals hide illicit origins by integrating these exchanges into layered trading patterns before cashing out.
-- [In-Game Currency & Microtransaction Exploits](https://framework.amltrix.com/techniques/T0066.003) — - Enables conversion between cryptocurrency and in-game currency, particularly if operating with minimal identity checks or customer due diligence.  
-- Criminals deposit illicit crypto, exchange it for in-game currency, and later liquidate the in-game assets again as crypto or fiat, obscuring the original source of funds.
-- [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — - Criminals exchange cash proceeds for cryptocurrencies or vice versa, exploiting the cross-border reach and pseudo-anonymity of digital assets.  
-- Rapid deposits and withdrawals across multiple wallets in various jurisdictions obscure the origin and beneficiaries of illicit funds.
-- [Piracy](https://framework.amltrix.com/techniques/T0148) — - Pirates convert ransom payments into cryptocurrencies to hide transaction trails, taking advantage of pseudonymous wallet structures.  
-- Subsequent cross-border transfers of digital assets thwart conventional bank monitoring, enabling rapid layering of illicit ransom proceeds.
-- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Criminals convert drug cash into cryptocurrencies to leverage pseudo-anonymity and rapid cross-border transfers.  
-- Exchangers with lax or insufficient KYC/AML controls provide a channel to obscure transaction origins, enabling layering of illicit funds without traditional banking scrutiny.
-- [Child Exploitation](https://framework.amltrix.com/techniques/T0058.003) — - Convert proceeds from child exploitation into cryptocurrencies, adding layers of pseudonymity.
-- Split transactions across multiple accounts or wallets, complicating law enforcement's efforts to trace and freeze illicit funds.
-- [Anonymous Networking](https://framework.amltrix.com/techniques/T0015) — - By leveraging anonymity networks, criminals obscure IP addresses when opening and operating exchange accounts, undermining KYC and AML controls.
-- Layered encryption and multiple hops further disguise transaction origins, complicating blockchain investigations and hindering law enforcement.
-- [Structuring](https://framework.amltrix.com/techniques/T0016) — - Criminals deposit illicit proceeds in repeated small increments to avoid higher scrutiny thresholds. 
-- They subsequently convert these fragmented amounts into various cryptocurrencies, making it harder to trace the overall transaction volume.
-- [Cryptojacking](https://framework.amltrix.com/techniques/T0020.002) — - Criminals deposit illicitly mined cryptocurrency from cryptojacking into exchanges, converting it into fiat or alternative virtual assets. 
-- Lax KYC/AML controls on some platforms aid in obscuring the true source of funds, enabling rapid layering and integration.
-- [Remote Verification Bypass](https://framework.amltrix.com/techniques/T0135) — - Criminals exploit remote or automated ID verification processes, providing counterfeit or stolen documents to open accounts under false identities. 
-- Through repeated submissions of slightly modified documents, they evade detection while the exchange’s system re-checks KYC credentials. 
-- Once established, these fraudulent accounts facilitate layering of illicit funds and hamper investigators’ attempts to trace beneficial ownership.
-- [Virtual Token](https://framework.amltrix.com/techniques/T0067) — - Criminals exploit minimal or lax KYC procedures on certain platforms to convert illicit proceeds into various tokens and back, impeding law enforcement tracking.  
-- Rapid stablecoin conversions facilitate cross-border transfers with limited oversight, further obscuring the source of funds.
-- [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — - Fraudsters lure victims to purchase tokens promising extraordinary returns, exploiting complex or opaque listing processes.  
-- After securing victim funds, perpetrators rapidly convert and move proceeds into various digital wallets or fiat off-ramps, concealing the illicit trail.
-- [Automated Transaction Systems](https://framework.amltrix.com/techniques/T0026) — - Automated trading bots enable criminals to swiftly convert illicit funds into multiple cryptocurrencies and back to fiat, obscuring transaction trails through high-frequency trades.  
-- By scheduling trades in smaller batches across multiple exchange accounts, they avoid triggering typical single-transaction thresholds.  
-- Rapid switching between various virtual assets further complicates investigations, as investigators must trace many short-interval transactions across different blockchain networks.
-- [Public WiFi Networks](https://framework.amltrix.com/techniques/T0015.003) — - Users establish or operate exchange accounts from public WiFi, undermining IP-based due diligence that would normally flag unusual login patterns.  
-- Deposits and withdrawals stem from shared IP addresses, concealing real user identity and complicating beneficial ownership tracing.
-- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Provide criminals a quick on/off ramp for illicit funds, enabling swift conversion between fiat and cryptocurrencies.  
-- Exploit pseudo-anonymous transactions to obscure both origin and eventual beneficiaries, bypassing traditional AML scrutiny.
-- [Fake KYC Documentation](https://framework.amltrix.com/techniques/T0023.001) — - Fraudulent KYC documentation allows criminals to create exchange accounts under fictitious identities, avoiding scrutiny.  
-- Once established, they convert illicit proceeds into virtual assets or move them across borders while concealing their true identities.
-- [Pig Butchering](https://framework.amltrix.com/techniques/T0144.009) — - Fraudsters pose as or direct victims to fraudulent trading platforms that appear to be legitimate exchanges, offering high returns on cryptocurrency investments. 
-- Once victims deposit fiat or crypto, perpetrators swiftly move the funds through multiple accounts or wallets, obscuring the true recipients and complicating law enforcement tracking.
-- [Wash Trading](https://framework.amltrix.com/techniques/T0094.002) — - Criminals may create multiple exchange accounts under different identities and trade the same digital assets among these accounts, artificially inflating volume and obscuring the true origins of funds.  
-- The rapid nature of crypto transactions combined with minimal KYC in some jurisdictions enables repeated self-dealing trades, disguising illegal proceeds as legitimate trading gains.
-- [Payment Tokens](https://framework.amltrix.com/techniques/T0067.001) — - Criminals can convert illicit fiat funds into payment tokens through repeated small transactions (smurfing), staying below detection thresholds.  
-- Exploiting exchanges with lax KYC measures enables rapid cross-border transfers that obscure the origin of funds and complicate investigations.
-- [Asset Valuation Manipulation](https://framework.amltrix.com/techniques/T0045) — - Criminals conduct orchestrated trades (“wash trading”) to artificially boost or reduce token or NFT prices, creating a deceptive transaction history that obscures illicit funds.  
-- Rapid buy-and-sell cycles can be framed as normal market volatility, making it harder to trace the original criminal proceeds.
-- [Unlicensed MSBs](https://framework.amltrix.com/techniques/T0013.001) — - Unlicensed exchanges trade digital assets outside regulated frameworks, enabling anonymous or pseudonymous transfers.  
-- Criminals use these platforms to swap cash proceeds for cryptocurrencies, circumventing customer due diligence and reporting obligations.
-- [Offsetting Transactions](https://framework.amltrix.com/techniques/T0102) — - Enables near-instantaneous buy and sell orders in cryptocurrencies, allowing suspicious offsetting trades across multiple wallet addresses held by the same actors.  
-- Pseudonymous account structures and fragmented regulatory oversight can obscure the beneficial owners behind these trades.
-- [Market Manipulation](https://framework.amltrix.com/techniques/T0094) — - Criminals can orchestrate wash trades by repeatedly buying and selling digital assets among linked accounts, artificially inflating trading volumes or boosting prices.  
-- They may conduct pump-and-dump campaigns in low-liquidity tokens, driving up prices through coordinated purchases before rapidly liquidating at inflated valuations.
-- [Cryptocurrency Investment](https://framework.amltrix.com/techniques/T0128) — - Criminals deposit illicit proceeds into exchange accounts to convert fiat into cryptocurrencies, exploiting often inconsistent KYC/AML controls.  
-- They perform frequent cross-exchange transfers to layer funds and obscure their origin, especially using platforms with lax oversight or high-risk jurisdictions.  
-- Repeated reinvestment into various cryptocurrencies makes it harder to trace the ultimate beneficiary or link the assets back to the original crime.
-- [Remote Identity Deception](https://framework.amltrix.com/techniques/T0075.001) — - Criminals exploit fully remote sign-up on these exchanges using forged or synthetic IDs, bypassing in-person checks.  
-- Repeatedly re-submit slightly altered documents from the same device or IP address, evading automated KYC filters.  
-- Once onboarded under a false identity, they freely convert illicit proceeds into or out of digital assets, obfuscating fund origin.
-- [Virtual Worlds](https://framework.amltrix.com/techniques/T0066) — - Criminals convert in-game currencies or digital items into mainstream cryptocurrencies or fiat, adding an extra layer to obscure illicit funds.  
-- Weak KYC procedures on some exchanges allow offenders to blend illicit gains with legitimate user flows.  
-- Once converted to mainstream crypto or fiat, the laundered funds can enter traditional banking channels under less scrutiny.
-- [Governance Token Obfuscation](https://framework.amltrix.com/techniques/T0067.003) — - Criminals exploit minimal or no-KYC features to rapidly swap governance tokens for more liquid cryptocurrencies, obscuring traceable links to illicit proceeds.  
-- Interspersing governance token trades among broader altcoin transactions creates a complex transactional chain, making it more difficult for investigators to identify the original source of funds.
-- [Transaction Chaining](https://framework.amltrix.com/techniques/T0070) — - Criminals rapidly convert illicit funds between fiat and cryptocurrencies, repeatedly obscuring transaction trails.  
-- Cross-asset trades (“chain hopping”) across multiple exchanges or jurisdictions complicate investigators’ ability to track the ultimate source or destination of funds.
-- [Proxy Servers](https://framework.amltrix.com/techniques/T0015.002) — - Criminals use proxy servers to evade geographic or jurisdictional restrictions imposed by virtual asset exchanges, concealing their actual location.  
-- Frequent proxy rotations disrupt IP-based analytics, making it difficult to detect repeated or suspicious usage patterns, thus facilitating layering of illicit funds.
-- [Multiple Currency Conversions](https://framework.amltrix.com/techniques/T0115.001) — - Enable rapid conversion between fiat and various cryptocurrencies, allowing criminals to exploit multiple currency pairs for layering.  
-- Provide pseudonymous trading features that obscure the source and destination of illicit proceeds by cycling funds through different digital assets.
-- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — - Fraudsters may list or promote their newly issued tokens on a centralized exchange to reach a broader pool of investors.  
-- Once enough funds are raised, they quickly convert or withdraw the assets into other cryptocurrencies or fiat, making tracing difficult.  
-- The exchange environment facilitates layering by allowing multiple transactions and transfers through various user accounts or wallets.
-- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Criminals execute minimal crypto deposits or trades to see whether exchange monitoring systems trigger alerts. 
-- Once the limits are understood, offenders can structure larger illicit transfers below detection parameters.
-- [Regulated Exchange Mule Transactions](https://framework.amltrix.com/techniques/T0011.001) — - Criminals or their money mules open exchange accounts using falsified or stolen identification to bypass KYC checks.
-- They deposit illicit funds and engage in frequent trades or crypto-to-fiat conversions, embedding illegal proceeds within legitimate trading records.
-- Rapid cross-border transfers and multiple account rotations create layering complexity, making it difficult to trace the original source of funds.
-- [Metaverse-based Asset Transfers](https://framework.amltrix.com/techniques/T0066.001) — - After layering funds through DeFi protocols and metaverse asset transactions, criminals convert their newly ‘clean’ tokens into mainstream cryptocurrencies or fiat via these exchanges.  
-- By appearing as ordinary trades or investments, the illicit origin is effectively concealed, allowing final integration into traditional financial channels.
-- [Privacy Coins](https://framework.amltrix.com/techniques/T0116) — - Criminals can rapidly convert mainstream cryptocurrencies into privacy-oriented coins through exchanges that have minimal or lax KYC requirements.  
-- These quick conversions hide the original source of funds and complicate chain analysis by breaking transactional links between deposit and withdrawal addresses.
-- [Tokenized Fundraisings](https://framework.amltrix.com/techniques/T0144.013) — • After a fraudulent token sale, offenders use exchanges to convert raised tokens into other cryptocurrencies or fiat, further obscuring the source of funds.  
-• By funneling large volumes of tokens through multiple transactions or different exchanges, they deepen the layering process and hinder investigators’ ability to trace the original criminal proceeds.
-- [Multi-hop VPN](https://framework.amltrix.com/techniques/T0015.004) — - Criminals chain multiple VPN connections to conceal IP addresses used for account registration, bypassing geoblocking or region-based compliance checks.  
-- By layering VPN hops, they hamper suspicious transaction monitoring reliant on consistent device or location data, complicating due diligence measures.
-- [Remote Mining](https://framework.amltrix.com/techniques/T0020.001) — - Criminals covertly convert newly mined coins into fiat or other cryptocurrencies, severing on-chain links to the original dirty funds.  
-- Exchanges with weak AML controls may fail to detect the suspicious influx of newly generated assets, facilitating laundering under the guise of legitimate trading.
-- [Utility Tokens](https://framework.amltrix.com/techniques/T0067.005) — - Criminals deposit or withdraw utility tokens under partial or inconsistent KYC measures, making it difficult to trace the original fund source.  
-- They convert illicit proceeds into a variety of tokens or fiat currencies, creating multiple transaction layers that obscure the money trail across jurisdictions.
-- [Darknet Marketplace Transactions](https://framework.amltrix.com/techniques/T0100) — - Convert illicit cryptocurrency proceeds from darknet markets into different digital assets or fiat currency, obscuring the original source of funds.  
-- Exploit weak KYC or cross-border operations to avoid robust AML controls, enabling cyclical layering to hide transaction trails.
-- [Charitable and Non-Profit Organizations](https://framework.amltrix.com/techniques/T0019) — - Criminals convert illicit funds into cryptocurrency (or vice versa) before channeling them as charitable donations, bypassing traditional financial oversight.  
-- Rapid crypto-to-fiat conversions enable layering, making it difficult to track the original source of funds.
-- [Onion over VPN](https://framework.amltrix.com/techniques/T0015.005) — - Criminals can register and operate exchange accounts through multiple encrypted layers, preventing IP-based or geolocation checks.  
-- The usage of Onion over VPN hinders law enforcement’s ability to trace and link transactions to real-world identities, facilitating the layering of illicit proceeds.
-- [Precursor Chemical Procurement](https://framework.amltrix.com/techniques/T0142.001) — - Facilitates the rapid conversion of illicit proceeds from narcotics sales into fiat currency (and vice versa), allowing criminals to finance precursor chemical purchases while obscuring the original source of funds.  
-- Exploits partial or lax KYC measures and blockchain anonymity features, further complicating detection of illicit transactions and beneficiaries.
-- [Ransomware Payments](https://framework.amltrix.com/techniques/T0049.001) — - Criminals funnel or cash out ransom proceeds on unregulated or foreign-based exchanges to circumvent tighter AML controls.  
-- These platforms enable quick conversions between fiat and cryptocurrencies, obscuring the origin of funds and frustrating investigation.
-- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — - Criminals rotate between different passports to bypass KYC measures when creating accounts.  
-- Allows rapid conversion of illicit funds into cryptocurrencies, further masking source and ownership.  
-- The pseudonymous nature of crypto transactions, combined with multiple national identity documents, accelerates layering and hampers AML compliance.
-
----
-
-## [Online Financial Services](https://framework.amltrix.com/services-products/PS0037)
-
-**Description:**
-Financial services delivered via digital platforms, encompassing online bank accounts, investment services, digital wallets, and payment processing. Users can access and manage their finances through internet-based portals and applications.
-
-### Related Techniques
-- None
-
----
-
-## [Mail and Courier Services](https://framework.amltrix.com/services-products/PS0038)
-
-**Description:**
-Services offered by postal and courier companies for the distribution, shipment, and delivery of letters, parcels, and packages domestically and internationally. These offerings often include various delivery speeds, tracking capabilities, and insurance options.
-
-### Related Techniques
-- [Cross-Border Cash Smuggling](https://framework.amltrix.com/techniques/T0065) — - Criminals exploit postal or courier shipments to conceal and transport large sums of currency across borders.  
-- Misdeclared parcels and bribed officials enable evasion of customs checks, bypassing traditional financial controls.
-- [Cash Courier](https://framework.amltrix.com/techniques/T0065.001) — - Allows criminals to ship currency as parcels or sealed packages, bypassing direct customs checks.  
-- Use of multiple shipments or mislabeling of package contents helps evade detection and exploit weaker inspection protocols.
-- [Daigou Networks](https://framework.amltrix.com/techniques/T0013.006) — - Daigou coordinators exploit small-parcel or informal courier shipping to move consumer goods purchased with illicit funds across borders.  
-- Under-declared values, incomplete shipping documentation, or multiple recipient addresses obscure beneficial ownership and frustrate AML oversight.
-
----
-
-## [Commodities Trading Accounts](https://framework.amltrix.com/services-products/PS0039)
-
-**Description:**
-Accounts offered by brokers or financial institutions enabling the buying and selling of raw materials and primary agricultural products. These accounts support various trading instruments, including futures, options, spot contracts, and high-value commodities such as gold and diamonds.
-
-### Related Techniques
-- [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Facilitate the buying and selling of high-value raw materials, providing a channel for layering illicit profits.
-- Fictitious or inflated trades conceal the genuine origins and volumes of trafficked commodities.
-- [Commodity Smuggling](https://framework.amltrix.com/techniques/T0048) — - Criminals deposit high-value commodities acquired through smuggling into trading accounts and obscure the illicit origin by mixing with legitimate trades.  
-- Profits from the sale can then be transferred or reinvested, integrating illicit proceeds into the formal financial system.
-- [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — - These accounts can handle precious metals and gemstones (including gold and diamonds), allowing criminals to obscure transactions among legitimate commodities trades.  
-- Under- or overstating commodity values across jurisdictions provides cover for layering and integration.
-- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Traders deliberately over- or under-value trades in raw materials to create illicit gains or losses on paper.  
-- Layering occurs through complex trading strategies and multiple accounts, hindering detection of beneficial owners.
-- [High-Value Collectibles Conversion](https://framework.amltrix.com/techniques/T0007) — - By opening accounts that permit the trade of high-value commodities like diamonds or gold, launderers can launder funds through multiple purchase and resale transactions.  
-- The complexity of futures, options, or derivative trades in such commodities can further obscure the flow and ownership of criminal proceeds.
 
 ---
 
@@ -2671,218 +2883,6 @@ Financial services allowing users to load funds onto physical or digital instrum
 - Redeem or withdraw these cards across different countries, masking the origin of illicit proceeds and exploiting regulatory gaps.
 - [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — - Illicit gambling proceeds are loaded onto prepaid cards labeled as legitimate payouts, enabling swift cross-border movement of funds.  
 - These cards offer anonymity and limited traceability, supporting ongoing layering and integration of criminal capital.
-
----
-
-## [Peer-to-Peer Lending Platforms](https://framework.amltrix.com/services-products/PS0041)
-
-**Description:**
-Online marketplaces that connect borrowers directly with individual or institutional lenders, offering loans without the traditional intermediary role of banks.
-
-### Related Techniques
-- None
-
----
-
-## [Multi-Currency Swap Services](https://framework.amltrix.com/services-products/PS0042)
-
-**Description:**
-Financial arrangements in which two parties exchange specified amounts of different currencies, along with corresponding interest payments, for a set term. These swaps help manage currency risk and facilitate cross-border investments or trade.
-
-### Related Techniques
-- [Currency Exchange Conversions](https://framework.amltrix.com/techniques/T0115) — - Facilitate systematic cross-currency swapping, often in rapid succession, making it harder to pinpoint the original source of funds.
-- Criminals exploit these transactions’ complexity and volume, leveraging multi-currency swap chains to break audit trails and further layer illicit assets.
-- [Multi-Currency Swap](https://framework.amltrix.com/techniques/T0115.002) — - Criminals engage in direct multi-currency swaps to layer funds across multiple denominations.  
-- Frequent cross-currency exchanges—often arranged in quick succession—conceal the path of illicit proceeds, complicating AML scrutiny.
-
----
-
-## [Third-Party Payment Services](https://framework.amltrix.com/services-products/PS0043)
-
-**Description:**
-Intermediary services facilitating financial transactions between buyers and sellers, offering settlement, invoicing, and integrated payment solutions across channels.
-
-### Related Techniques
-- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — - These services act as a middle layer between the payer and beneficiary, potentially masking the real beneficiary or origin of funds.  
-- Criminals instruct third parties to settle invoices or receive funds, complicating beneficial owner checks and audit trails.
-- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Criminals use intermediary payment providers with inconsistent AML checks to settle cross-game or off-platform transactions.  
-- Limited identity verification allows seamless fund transfers between multiple accounts and services.
-- [Independent Payment Agents](https://framework.amltrix.com/techniques/T0113.001) — - White-label or aggregator frameworks allow sub-agents to operate under the provider’s license, concealing sub-agent identities and activities.  
-- Transaction details typically reflect only the aggregator’s name, reducing transparency into underlying sub-agent transactions and beneficial ownership.  
-- Fragmented responsibility over AML/CFT controls leads to inadequate oversight, creating opportunities for illicit funds to flow undetected.
-- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — - Criminals open or misuse accounts at third-party payment providers (TPPPs), sometimes without the genuine merchant’s awareness, to process unauthorized transactions. 
-- Aggregating multiple merchants’ funds into unified settlement accounts obscures beneficial ownership and complicates detection of illicit activity.
-- [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — - These intermediary platforms facilitate settlements and invoicing on behalf of merchants or individuals, potentially leaving the principal institution unaware of sub-agents managing funds.  
-- The agent-based model disperses transactional records across multiple third parties, reducing transparency for AML investigators.  
-- Criminals exploit minimal oversight in partner outlets to handle high-risk transfers under a legitimate service provider’s umbrella.
-- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — - Payments are made or received by unrelated third parties, distancing illicit proceeds from their true origin.  
-- Layering of funds through multiple payers or payees creates complex transaction chains that challenge AML controls.
-
----
-
-## [Mobile Payment Systems](https://framework.amltrix.com/services-products/PS0044)
-
-**Description:**
-Services that allow users to conduct financial transactions using mobile devices, facilitating payments and transfers through dedicated applications or platforms with swift and convenient processing. These solutions often encompass peer-to-peer transfers and retail payments, providing an enhanced user experience.
-
-### Related Techniques
-- [Social Media Mule Recruitment](https://framework.amltrix.com/techniques/T0140.001) — - Criminals promote quick mobile-based transfers among mule recruits, capitalizing on the seamless integration with social media apps.  
-- Instant transaction features help layer funds swiftly, dispersing them across many accounts before detection.  
-- The casual environment of mobile transactions often encourages recruits to overlook suspicious details.
-- [Chip Dumping](https://framework.amltrix.com/techniques/T0107.003) — - Criminals exploit mobile apps that allow swift transfers of funds to gambling platforms or between co-conspirators, supporting collusive chip dumping.  
-- Frequent, small-value transactions via mobile payment methods can evade scrutiny, while high-volume transfers may be obscured by the platform’s rapid transaction environment.
-- [Alternative Payment Channels](https://framework.amltrix.com/techniques/T0134) — - Allow swift transfers through smartphone apps, often with simpler onboarding and weak identity checks.  
-- Lack of face-to-face verification can shield the true user, facilitating unmonitored layering via mobile channels.
-- [Cross-Border Agent Intermediation](https://framework.amltrix.com/techniques/T0121.001) — - Local fixers establish or control multiple mobile payment accounts across regions, routing illicit funds under legitimate payment or peer-to-peer transfers.  
-- Gaps in KYC or identity verification on certain platforms allow criminals to conceal ownership and rapidly move money across borders.
-- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — - Enable swift peer-to-peer transfers through mobile apps, sometimes lacking robust KYC.  
-- Frequent, small-value transactions obscure detection, and easy account creation allows criminals to rotate illicit assets quickly.
-- [Mobile Payment Systems](https://framework.amltrix.com/techniques/T0134.002) — - Criminals use falsified or stolen identities to open mobile payment accounts, moving illicit funds through numerous low-value transactions.  
-- Rapid cross-border transfers and inconsistent AML protocols enable layering that obscures the origin of proceeds.
-- [Test Payment Probing](https://framework.amltrix.com/techniques/T0035) — - Criminals send frequent, nominal transfers via mobile apps to see if the system flags them. 
-- Using easily accessible mobile devices and multiple SIM cards, they repeatedly test AML thresholds and adapt accordingly.
-- [Money Mule Exploitation](https://framework.amltrix.com/techniques/T0011) — - Mules exploit convenient mobile payment tools to receive and forward funds without standard banking scrutiny.  
-- These non-traditional channels can camouflage transactional patterns and sources.
-
----
-
-## [Paper-Based Transaction Services](https://framework.amltrix.com/services-products/PS0045)
-
-**Description:**
-Financial services utilizing physical documents, such as checks and money orders, for fund transfers, typically requiring manual clearing processes.
-
-### Related Techniques
-- [Negotiable Instrument Purchases](https://framework.amltrix.com/techniques/T0110) — - Criminals obtain cashier’s checks, bank drafts, or traveler’s checks under thresholds to avoid triggering additional scrutiny.  
-- These paper instruments are treated as trustworthy payment methods, allowing easy deposit or redemption at financial institutions.  
-- Rapid and repeated deposits across multiple branches or regions make tracing their true source more difficult.
-- [Name Alteration](https://framework.amltrix.com/techniques/T0023.002) — - Criminals can physically or digitally alter checks, changing or removing the original payee name to match an assumed identity.  
-- These alterations bypass typical payee verification in manual clearing processes, making it harder for banks to detect ties to previously flagged names or records.
-- [Forging or Altering Financial Instruments](https://framework.amltrix.com/techniques/T0126) — - Criminals physically alter paper checks, promissory notes, and similar instruments by changing amounts, payee details, or forging signatures.  
-- These counterfeit documents are then presented as legitimate to move illicit proceeds undetected through manual clearing channels.
-- [Cheque Fraud](https://framework.amltrix.com/techniques/T0144.010) — - Offenders exploit the manual clearing processes for physical checks, depositing forged or “washed” checks into accounts and withdrawing credited amounts before discovery.  
-- The reliance on paper documentation allows tampering with payee details or amounts, enabling fraudulent deposit activities.
-
----
-
-## [Family Office Services](https://framework.amltrix.com/services-products/PS0046)
-
-**Description:**
-Comprehensive management and administration services for the financial and personal affairs of wealthy families, including investment management, tax and estate planning, philanthropy, and personalized services. Aimed at preserving and growing family wealth across generations while addressing individual family member needs and goals.
-
-### Related Techniques
-- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — - Family offices often manage diverse assets and can be overseen by close associates or relatives acting as proxies.  
-- The reliance on inter-family or associate relationships can mask the real source of funds, especially if oversight is limited.
-
----
-
-## [Employment Services](https://framework.amltrix.com/services-products/PS0047)
-
-**Description:**
-A range of services provided by professional organizations that facilitate job placement, recruitment, and career development for individuals, as well as staffing solutions for companies. This includes traditional employment agencies, online job portals, and related services.
-
-### Related Techniques
-- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Operate under the guise of recruitment or staffing agencies, enabling traffickers to channel exploited laborers and funnel illicit funds through false wage disbursements.  
-- Minimize verifiable employment records, increasing the difficulty of tracing and prosecuting forced labor revenues.
-- [Fake Job Recruitment](https://framework.amltrix.com/techniques/T0140.004) — - Fraudsters post fake job listings or pose as legitimate recruiters on employment platforms, attracting individuals seeking new opportunities.  
-- Once recruited, unsuspecting jobseekers are instructed to use their personal accounts to receive and forward illicit funds, believing they are performing genuine remote work.
-
----
-
-## [Legal Advisory Services](https://framework.amltrix.com/services-products/PS0048)
-
-**Description:**
-Services provided by legal professionals offering expert advice and assistance on a range of legal matters to individuals and businesses, including guidance on financial transactions, corporate structuring, real estate dealings, and general regulatory compliance across jurisdictions.
-
-### Related Techniques
-- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Offer expertise to structure contracts, trusts, and corporate entities that circumvent explicit sanctions requirements.  
-- May draft complex legal frameworks that obscure sanctioned beneficial owners and facilitate prohibited transactions.
-- [All-Cash Real Estate Transactions](https://framework.amltrix.com/techniques/T0010.005) — - Lawyers may facilitate large all-cash property deals, potentially bypassing standard AML checks if they do not diligently verify the source of funds. 
-- Inadequate legal scrutiny or collusion can create opaque ownership structures, obscuring the ultimate source of illicit cash.
-- [Court System Manipulation](https://framework.amltrix.com/techniques/T0047) — - Corrupt or complicit legal professionals can file fraudulent lawsuits or fabricate legal claims, resulting in court decisions that legitimize otherwise illicit funds as court-ordered settlements.  
-- They may also exploit appeals or procedural delays to prevent or postpone asset-freezing measures, ensuring criminals retain extended control of their illicit proceeds.
-- [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — - Criminals exploit attorneys’ confidentiality obligations to conceal true owners and sources of funds.  
-- They invoke attorney-client privilege to obstruct financial oversight and investigation requests, falsely presenting privilege as absolute.
-- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Legal advisors can structure multi-jurisdictional corporate vehicles, adding complexity that hinders identification of true owners.  
-- Drafting sophisticated agreements and trust deeds can camouflage criminally derived assets behind formal legal documentation.
-- [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — - Criminals exploit attorney-client privilege to withhold details on beneficial ownership or the origin of funds.  
-- Legal professionals can structure complex transactions or corporate entities that hide illicit proceeds behind seemingly legitimate legal arrangements.
-- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — - Lawyers can draft or formalize powers of attorney, enabling a proxy to transact on behalf of the criminal principal.  
-- The attorney-client privilege may further obscure the true owner’s identity, impeding AML inquiries.
-- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Drafts complex inter-company agreements and royalty arrangements that can justify manipulated transfer prices.  
-- Legitimate legal structures and contracts are leveraged to mask intentional over- or under-valuation of goods and services.
-- [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — - Legal professionals may draft or endorse fraudulent M&A contracts, providing an appearance of legitimacy to fictitious acquisitions or mergers.  
-- Expertise in cross-border regulations can be exploited to circumvent AML checks and conceal the ultimate beneficial owners behind shell entities.
-- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Lawyers can craft complex legal arrangements and contracts that legitimize layered corporate structures in multiple jurisdictions.  
-- Exploits regulatory gaps to obscure beneficial ownership, complicating KYC processes and authorization checks.
-- [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — - Draft and structure acquisition contracts that may obscure true purchase prices or beneficial ownership, complicating AML scrutiny.  
-- Provide legal frameworks supporting shell or front company formation, enabling criminals to present a façade of lawful ownership.  
-- Offer strategic counsel that can be co-opted to evade detection, for example by exploiting legal privilege to limit transparency.
-- [Sector-Specific Document Manipulation](https://framework.amltrix.com/techniques/T0012.003) — - Complicit or negligent legal professionals may draft or review fabricated permits, licenses, or certificates aligned with specialized sector requirements.  
-- An official legal opinion or stamp can reduce scrutiny from financial institutions or regulators, further legitimizing forged documentation.
-- [Timeshare Scams](https://framework.amltrix.com/techniques/T0144.014) — - Fraudsters claim to be attorneys offering timeshare exit solutions or contract terminations.  
-- They collect upfront legal fees or retainer payments, yet perform no authentic legal work, redirecting the funds as illicit gains.
-- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Unscrupulous legal practitioners can draft or certify documents known to be forged, enabling criminals to legitimize falsified claims or transactions.  
-- Forged legal frameworks and contracts obscure actual parties to a deal, complicating investigations into beneficial ownership.
-- [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Professionals craft legal instruments and corporate documents designed to obscure beneficial ownership.  
-- Offer expert guidance on cross-border incorporation in secrecy-friendly jurisdictions, accelerating shell formation.
-- [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Complicit attorneys can craft legal structures or contracts that obscure the real owner behind nominee arrangements.  
-- Legal privilege may protect certain communications, making beneficial ownership verification more challenging.
-
----
-
-## [Cross-Chain Bridging Service](https://framework.amltrix.com/services-products/PS0049)
-
-**Description:**
-A service enabling the transfer of digital assets or data across different blockchain networks, facilitating interoperability among distinct blockchain ecosystems and expanding the utility of virtual assets beyond a single chain.
-
-### Related Techniques
-- [Peer-to-Peer (P2P) Transfers](https://framework.amltrix.com/techniques/T0134.001) — - Facilitates shifting digital assets across different blockchains, breaking transaction trails.  
-- Criminals exploit limited or no AML checks on bridging services to add layering complexity in P2P crypto laundering.
-- [Cross-Platform Trading](https://framework.amltrix.com/techniques/T0066.002) — - Criminals exploit blockchain interoperability by moving tokens across different chain networks, breaking a single traceable path.  
-- This separation of transaction histories conceals fund origins and disrupts AML monitoring.
-- [Cross-Chain Bridges](https://framework.amltrix.com/techniques/T0005.002) — - Criminals exploit lock-and-mint bridging to create new tokens on one chain in exchange for locked tokens on another, breaking direct transactional links and obscuring origin.  
-- The decentralized nature of bridging often bypasses conventional KYC measures, enabling illicit funds to move freely across multiple blockchain networks without a clear paper trail.  
-- Large collateral pools held by bridges can facilitate high-value laundering, allowing criminals to embed large sums in ostensibly legitimate liquidity flows.  
-- Integrating bridging with minimal-KYC wallets or other decentralized platforms further complicates investigations, impeding authorities’ ability to trace transactions across disparate chains.
-- [Cryptojacking](https://framework.amltrix.com/techniques/T0020.002) — - Criminals transfer cryptojacked coins across multiple blockchains, reducing transparency of fund movements. 
-- Each cross-chain jump erodes transaction trails, exploiting inconsistent AML standards across different networks.
-- [Virtual Token](https://framework.amltrix.com/techniques/T0067) — - Criminals transfer tokens among multiple blockchain networks, breaking transaction continuity and obscuring fund flows.  
-- Repeated bridging confuses investigators by scattering transaction records across different chains, reducing traceability.
-- [Payment Tokens](https://framework.amltrix.com/techniques/T0067.001) — - Allows criminals to hop between different blockchain networks, dispersing illicit payment token flows.  
-- Obscures transaction histories by splitting transactions across multiple chains, undermining traditional AML tracking methods.
-- [DeFi Transactions](https://framework.amltrix.com/techniques/T0067.004) — - Allows criminals to transfer illicit proceeds across multiple blockchains, complicating detection by fragmenting transaction histories.  
-- Exploits rapid chain-hopping to dissociate funds from their original source, hindering effective investigative tracing.
-- [NFT-based Value Obfuscation](https://framework.amltrix.com/techniques/T0064) — - Criminals leverage cross-chain bridging to move NFTs and related funds across different blockchain networks, creating complex transaction trails.  
-- This technique, often referred to as 'chain-hopping,' fragments the audit trail and makes it more difficult for investigators to trace proceeds of crime.  
-- By transferring assets through multiple networks, criminals further layer transactions, obscuring illicit fund flows behind the technical complexity of bridging.
-- [Cryptocurrency Mixing](https://framework.amltrix.com/techniques/T0003) — - Moves illicit funds between different blockchains, complicating single-chain investigative efforts. 
-- When combined with mixing, bridging extends layering across multiple chains, further frustrating law enforcement tracing.
-- [Governance Token Obfuscation](https://framework.amltrix.com/techniques/T0067.003) — - Adversaries transfer governance tokens across multiple blockchains, breaking on-chain address continuity.  
-- Frequent bridging transactions obscure transactional pathways, multiplying compliance and monitoring challenges.
-- [Transaction Chaining](https://framework.amltrix.com/techniques/T0070) — - Allows seamless transfer of digital assets between different blockchains, helping criminals obfuscate the originating chain of illicit funds.  
-- The resulting cross-asset “chain hopping” impedes standardized analytics tools, hindering effective tracing of transactions.
-- [Rug Pull](https://framework.amltrix.com/techniques/T0144.003) — - Offenders transfer stolen crypto assets across multiple blockchain networks, fragmenting the funds’ transaction history.  
-- By bridging between chains, they reduce the effectiveness of traditional tracing methods and AML analytics.  
-- This rapid, cross-chain layering obfuscates the origin of illicit rug-pull proceeds.
-- [Instant Exchange Services](https://framework.amltrix.com/techniques/T0032) — - Criminals utilize cross-chain bridges to pivot assets quickly between different blockchain ecosystems, evading blockchain analytics tied to any single chain.  
-- These rapid ‘chain hops’ complicate investigators’ efforts to track transactional flows, making it harder to freeze or recover illicit proceeds.  
-- Bridging often circumvents standard compliance measures if each chain or bridging gateway imposes inconsistent or weak KYC/AML controls.
-- [Utility Tokens](https://framework.amltrix.com/techniques/T0067.005) — - Criminals use bridging services to transfer utility tokens and related assets across multiple blockchain networks, complicating transaction monitoring.  
-- By rapidly moving tokens among several chains, they generate overlapping transaction records, creating further layers and hindering forensic tracing.
-- [Darknet Marketplace Transactions](https://framework.amltrix.com/techniques/T0100) — - Transfer illicit proceeds across different blockchain networks, creating complex transaction trails that mask their true origin.  
-- Exploit interoperability to repeatedly switch between tokens on multiple chains, frustrating AML monitoring.
-- [Burn and Mint Transfers](https://framework.amltrix.com/techniques/T0005.001) — - Facilitates transitioning assets across different blockchains, enabling criminals to sever the direct link between the original chain and newly re-minted tokens. 
-- Minimal-KYC or unregulated bridging channels obscure provenance, breaking transaction continuity. 
-- This method adds complexity to forensic tracing by scattering transactional evidence across multiple networks.
-- [Chain Hop](https://framework.amltrix.com/techniques/T0005) — - Criminals exploit bridging solutions to move assets between distinct blockchains, increasing transaction complexity and reducing traceability.  
-- Repeated bridging swaps, often using newly created addresses, obscure the fund flow and hinder investigators’ ability to link original and destination addresses.
-- [Privacy Wallets](https://framework.amltrix.com/techniques/T0034.001) — - Facilitates ‘chain-hopping’ by moving funds from transparent blockchains into privacy-focused wallets or networks, layering illicit proceeds and fragmenting the transaction trail.  
-- Repeated bridging creates multiple, complex transfers that hamper law enforcement efforts to link transactions back to their origin.
-- [Ransomware Payments](https://framework.amltrix.com/techniques/T0049.001) — - Facilitates “chain-hopping” by transferring digital assets across different blockchain networks.  
-- This approach disrupts investigators’ ability to follow the money as it moves away from the initial ransom wallet, impeding effective tracing.
-- [Cross-Chain Token Wrapping](https://framework.amltrix.com/techniques/T0067.002) — - Criminals lock or deposit their illicit tokens on one blockchain, mint wrapped equivalents on another chain, and thereby sever the direct on-chain link to the original funds.  
-- By operating in a largely non-custodial or minimally regulated environment, these bridging services lack robust KYC measures, making it difficult for investigators to trace the origin of assets and identify beneficial owners.  
-- Repeated bridging across multiple networks further fragments the transaction trail, increasing complexity for AML monitoring tools and obscuring the ultimate fund destination.
 
 ---
 
@@ -2991,6 +2991,21 @@ Services related to the management of funds investing in non-traditional asset c
 - Exploit complex structures and cross-jurisdictional operations to circumvent AML scrutiny, hiding the true beneficial owners.
 - [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Offer exposure to non-traditional or lightly regulated asset classes, providing criminals with less visible avenues to place illicit funds. 
 - Complex fund structures and limited disclosure avenues hinder straightforward identification of origin or ownership of injected money.
+
+---
+
+## [Real Estate Investment Services](https://framework.amltrix.com/services-products/PS0120)
+
+**Description:**
+Services related to the acquisition, management, and investment in real estate properties or portfolios with the goal of generating income or capital appreciation. These services are commonly offered by real estate firms, investment companies, and financial institutions, and can include direct property ownership, real estate investment trusts (REITs), and real estate mutual funds.
+
+### Related Techniques
+- [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — - Criminals invest illicit proceeds in real estate portfolios or REITs, blending them with legitimate investor funds.
+- Complex investment structures and cross-border deals complicate AML oversight, hiding the ultimate source of illicit proceeds.
+- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Allow criminals to commit funds to foreign real estate portfolios, blending illicit capital with legitimate investments.
+- Multi-layered investment vehicles hinder investigators’ ability to identify true owners or trace illegal proceeds.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Enable the injection of illicit funds into real property projects under the pretense of normal commercial investment. 
+- Potential cross-border transactions, complex ownership structures, and variable regulations obscure beneficial ownership and hinder AML tracking.
 
 ---
 
@@ -3704,21 +3719,6 @@ An arrangement in which one financial institution provides services on behalf of
 
 ---
 
-## [Real Estate Investment Services](https://framework.amltrix.com/services-products/PS0120)
-
-**Description:**
-Services related to the acquisition, management, and investment in real estate properties or portfolios with the goal of generating income or capital appreciation. These services are commonly offered by real estate firms, investment companies, and financial institutions, and can include direct property ownership, real estate investment trusts (REITs), and real estate mutual funds.
-
-### Related Techniques
-- [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — - Criminals invest illicit proceeds in real estate portfolios or REITs, blending them with legitimate investor funds.
-- Complex investment structures and cross-border deals complicate AML oversight, hiding the ultimate source of illicit proceeds.
-- [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Allow criminals to commit funds to foreign real estate portfolios, blending illicit capital with legitimate investments.
-- Multi-layered investment vehicles hinder investigators’ ability to identify true owners or trace illegal proceeds.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Enable the injection of illicit funds into real property projects under the pretense of normal commercial investment. 
-- Potential cross-border transactions, complex ownership structures, and variable regulations obscure beneficial ownership and hinder AML tracking.
-
----
-
 ## [Cash-for-Gold Services](https://framework.amltrix.com/services-products/PS0121)
 
 **Description:**
@@ -3950,18 +3950,30 @@ Services that facilitate establishing companies in foreign jurisdictions, often 
 A comprehensive suite of professional services involving the formation, management, and administration of trusts, corporate entities, and other legal structures. These services commonly include fiduciary oversight, estate planning, wealth management, acting as trustees or directors, setting up and managing corporate or trust accounts, maintaining business records, and assisting in the creation, registration, and ongoing management of corporate entities. They typically cover legal and regulatory requirements, guidance on incorporation and business structures, preparation and filing of necessary documents, registered agent services, and support with annual filings, restructurings, mergers, and acquisitions. Providers focus on ensuring the appropriate allocation and protection of assets in accordance with legal frameworks and fiduciary responsibilities.
 
 ### Related Techniques
-- [Fraud](https://framework.amltrix.com/techniques/T0144) — - By forming shell or front companies, perpetrators conceal ownership and produce fake invoices or documents to justify incoming payments.  
-- These structures mask the true origins of fraud proceeds, complicating AML inquiries into beneficial ownership.
+- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — - Facilitates the formation of shell or front entities that appear legitimate yet conceal criminal control and ownership.  
+- Allows forced labor profits to be recorded as operating income or false payroll within corporate structures, complicating efforts to trace funds back to illegal labor practices.
+- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Enable the creation of layered ownership structures or shell entities to hold high-cash-flow real estate, concealing true beneficiaries.  
+- Provide a complex corporate framework that masks criminal involvement and hinders investigative traceability.
+- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Facilitates the formation and management of intricate corporate vehicles, enabling layered ownership arrangements and nominee appointments.  
+- Providers may operate across multiple jurisdictions with minimal disclosure, obscuring ultimate beneficial owners and impeding AML investigations.
 - [Intermediary-Facilitated Transfers](https://framework.amltrix.com/techniques/T0002) — - Criminals or complicit intermediaries use these services to form shell companies or trusts under nominee ownership, masking the real beneficiary.  
 - Trustees, nominee directors, or shareholder arrangements add extra layers that obscure beneficial ownership, impeding due diligence.
-- [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — - Formation of shell companies or trusts to hold real estate assets, concealing the actual owners behind complex legal structures.
-- Layering real estate ownership across multiple entities or jurisdictions hinders transparency, enabling illicit fund flows via property acquisitions or flips.
-- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Criminals can incorporate companies that issue bearer shares, bypassing formal ownership disclosure requirements.  
-- Complex corporate structures mask the identity of ultimate beneficiaries, obstructing AML efforts when dealing with bearer instruments.
-- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Formation of front companies with nominal business operations to hold or move smuggling proceeds.  
-- False directorships and opaque ownership structures obscure the true beneficiaries, facilitating layering and evading scrutiny.
 - [Professional Intermediaries](https://framework.amltrix.com/techniques/T0060) — - Criminals leverage these services to establish and manage corporate entities or trusts that obscure the actual owners of illicit funds.  
 - Complex corporate layering across multiple jurisdictions limits transparency, frustrating efforts to trace beneficial ownership.
+- [Fraud](https://framework.amltrix.com/techniques/T0144) — - By forming shell or front companies, perpetrators conceal ownership and produce fake invoices or documents to justify incoming payments.  
+- These structures mask the true origins of fraud proceeds, complicating AML inquiries into beneficial ownership.
+- [Carbon Credit Trading](https://framework.amltrix.com/techniques/T0118) — - Facilitates the formation of special-purpose vehicles (SPVs) that layer proceeds from carbon credit deals across multiple jurisdictions. 
+- Complex corporate structures hinder identification of ultimate beneficial owners, complicating AML investigations.
+- [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — - Formation of shell companies or trusts to hold real estate assets, concealing the actual owners behind complex legal structures.
+- Layering real estate ownership across multiple entities or jurisdictions hinders transparency, enabling illicit fund flows via property acquisitions or flips.
+- [Corruption](https://framework.amltrix.com/techniques/T0051) — - Establishing trusts, shell, or shelf companies helps obscure the identities and beneficial ownership of politically exposed persons (PEPs).  
+- Nominee structures or layered corporate entities complicate AML due diligence, impeding clear visibility into illicit funds’ origins.
+- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — - Criminals can incorporate companies that issue bearer shares, bypassing formal ownership disclosure requirements.  
+- Complex corporate structures mask the identity of ultimate beneficiaries, obstructing AML efforts when dealing with bearer instruments.
+- [Off-the-Record Deals](https://framework.amltrix.com/techniques/T0095) — - Criminals may conduct private share transfers or secretly change beneficial ownership within corporate structures without updating official records.  
+- By keeping agreements informal and off-the-record, they maintain de facto control while masking their involvement from regulators and bypassing KYC requirements.
+- [Migrant Smuggling](https://framework.amltrix.com/techniques/T0059) — - Formation of front companies with nominal business operations to hold or move smuggling proceeds.  
+- False directorships and opaque ownership structures obscure the true beneficiaries, facilitating layering and evading scrutiny.
 - [Fictitious Payroll](https://framework.amltrix.com/techniques/T0068) — - Set up multiple small entities or “mini umbrella companies,” each with minimal stated employees, to skirt regulatory or tax thresholds.  
 - Fragment real payroll data across shell corporations, concealing ownership and inflating payroll costs to launder funds.
 - [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — - Enable repeated changes to beneficial owners or controllers across trust or corporate entities, complicating efforts to identify the true owner.  
@@ -3969,75 +3981,32 @@ A comprehensive suite of professional services involving the formation, manageme
 - Provide secrecy in some jurisdictions lacking transparent and up-to-date beneficial ownership requirements.
 - [Tampering with Financial Records](https://framework.amltrix.com/techniques/T0093) — - Criminals may collude with insiders to modify corporate ledgers or official statements, hiding the true nature of financial activities.  
 - Altered records frustrate investigators’ efforts to identify beneficial owners or follow the actual flow of funds within corporate entities.
+- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — - Criminals form and administer shell companies in FTZs to obscure beneficial owners.  
+- Nominee structures and limited transparency facilitate under- or over-invoicing and repeated trade transactions, catering to complex layering schemes.
 - [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — - Allow the formation of layered legal entities or front companies, shielding sanctioned owners behind nominee arrangements.  
 - Provide fiduciary oversight and administration that can hide true beneficial ownership from authorities.
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Criminals form or manage shell entities and nominee structures to camouflage the signatories of sponsorship or image licensing contracts, making it difficult for authorities to identify the true owners of the funds.  
+- These structures mask beneficial ownership when channeling inflated or fictitious image rights fees, hampering transparency in the sports sector.
 - [Drug Trade](https://framework.amltrix.com/techniques/T0142) — - Narcotics proceeds are funneled through corporate structures that appear legitimate, obscuring beneficial ownership behind trusts or layered corporate entities.  
 - Providers assist in forming and maintaining shell or front companies, enabling criminals to distance themselves from the illicit origins of funds and complicate investigations.
 - [Shell Companies](https://framework.amltrix.com/techniques/T0001) — - Enablers may establish and administer shell companies with nominee directors and fictitious shareholders.  
 - Legal, administrative, and compliance assistance can mask true beneficial owners and complicate AML investigations.
-- [Carbon Credit Trading](https://framework.amltrix.com/techniques/T0118) — - Facilitates the formation of special-purpose vehicles (SPVs) that layer proceeds from carbon credit deals across multiple jurisdictions. 
-- Complex corporate structures hinder identification of ultimate beneficial owners, complicating AML investigations.
 - [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — - Formation and management of corporate entities enable criminals to shift liabilities or record fictitious revenues, complicating detection of actual money flows.  
 - Maintaining business records on behalf of these entities can include falsifying or omitting transactions, reinforcing the manipulated financial narrative.
-- [Corporate Structuring](https://framework.amltrix.com/techniques/T0130) — - Facilitates the formation and management of intricate corporate vehicles, enabling layered ownership arrangements and nominee appointments.  
-- Providers may operate across multiple jurisdictions with minimal disclosure, obscuring ultimate beneficial owners and impeding AML investigations.
 - [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — - Enable creation and maintenance of shell or front companies to hide beneficial ownership of illicit funds.
 - Service providers add layers of legitimacy, making it more difficult for authorities to uncover the criminal source of revenue from commodity trafficking.
 - [Environmental Crime](https://framework.amltrix.com/techniques/T0145) — - Criminals establish shell or front companies purportedly involved in logging, fishing, or waste management, obscuring beneficial ownership.  
 - Nominee directors or trustees enable layering of illicit funds from environmental crimes, complicating AML efforts.
 - [Tax Evasion & Fraud](https://framework.amltrix.com/techniques/T0147) — - Assist in creating shell or front companies that mask beneficial ownership and real revenue flows.  
 - Layer corporate structures to reclassify or shift income, hindering authorities’ attempts to track legitimate taxable sums.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Criminals establish layered corporate or trust structures for arbitration participants, concealing ownership behind nominees and complex formations.  
-- This disguises the true origin of illicit funds fueling or resulting from staged arbitration, limiting transparency for law enforcement or financial institutions.
-- [Corruption](https://framework.amltrix.com/techniques/T0051) — - Establishing trusts, shell, or shelf companies helps obscure the identities and beneficial ownership of politically exposed persons (PEPs).  
-- Nominee structures or layered corporate entities complicate AML due diligence, impeding clear visibility into illicit funds’ origins.
-- [Off-the-Record Deals](https://framework.amltrix.com/techniques/T0095) — - Criminals may conduct private share transfers or secretly change beneficial ownership within corporate structures without updating official records.  
-- By keeping agreements informal and off-the-record, they maintain de facto control while masking their involvement from regulators and bypassing KYC requirements.
-- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — - Perpetrators establish shell corporations or trust vehicles under this service to hide the true beneficial owners before depositing large volumes of illicit funds.  
-- Professional intermediaries maintain opaque corporate structures and open additional accounts, preventing clear linkage to the ultimate owner.  
-- These arrangements are interwoven with asset management deposits, making it more difficult for regulators and auditors to track illicit proceeds.
-- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — - Criminals utilize these services to set up and administer trusts or corporate entities through separate offices or teams.  
-- Each team typically handles narrow tasks, such as nominee management or registered agent services, without insight into wider financial flows or other parallel entities, bolstering the information silo.
-- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Falsification of incorporation documents and corporate filings to conceal actual ownership and control of entities.  
-- Forged board resolutions or shareholder agreements facilitate unauthorized asset transfers without immediate detection.
-- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — - Criminals form and administer shell companies in FTZs to obscure beneficial owners.  
-- Nominee structures and limited transparency facilitate under- or over-invoicing and repeated trade transactions, catering to complex layering schemes.
-- [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — - Criminals can form multiple corporate entities that appear to be distinct bidders but are actually controlled by the same perpetrators.  
-- Nominee director or shareholder arrangements conceal real ownership, enabling collusive tendering across seemingly independent firms.
-- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Complex legal structures and nominee arrangements can be created to obscure the true ownership of sports clubs.  
-- Such layering impedes investigators from identifying ultimate beneficiaries and tracing the criminal origin of funds funneled into the club.
-- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Facilitates creation and maintenance of multiple corporate vehicles that obscure relationships among related entities.  
-- Enables criminals to route funds among nominally distinct companies, making inflated or under-reported inter-company charges harder to trace.
-- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — - Facilitates the creation and administration of front or shell companies used to commingle illegal revenues with lawful business activities.  
-- Nominee shareholders or directors obscure the true beneficial owners, complicating AML inquiries and enabling further layering of funds derived from environmental crimes.
-- [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — - Criminals establish or administer trusts and corporate entities to act as policyholders or beneficiaries, masking true ownership.  
-- By repeatedly shifting these entities, they create additional layers of complexity, frustrating AML and legal inquiries.
-- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Enable the formation and management of front or shell companies (e.g., massage businesses, bars) to co-mingle illicit proceeds of forced labor or sexual exploitation with lawful revenue.  
-- Obscure the true owners via complex corporate structures, hindering authorities’ ability to link proceeds to trafficking or exploitation.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Facilitate creation of layered corporate structures and trusts, enabling criminals to obscure ultimate beneficial owners when injecting illicit capital into legitimate businesses. 
-- Nominee directorships and complex governance arrangements conceal the true source of funds, allowing launderers to blend illicit money with legitimate revenues.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — - Criminals form or manage shell entities and nominee structures to camouflage the signatories of sponsorship or image licensing contracts, making it difficult for authorities to identify the true owners of the funds.  
-- These structures mask beneficial ownership when channeling inflated or fictitious image rights fees, hampering transparency in the sports sector.
-- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — - Smugglers establish front companies to legitimize cash flows from contraband cigarette sales, mixing them with nominal business activities.  
-- Complex corporate structures and nominee arrangements obscure the beneficial owners, thwarting direct links to smuggling profits and hindering asset tracing.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Allow the formation of shell or front companies that can receive and disguise illicit funds under inflated project costs or subcontracting arrangements.  
-- Enable layering by obscuring beneficial ownership through nominee directors, multi-jurisdictional structures, and complex corporate setups associated with construction deals.
-- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — - Criminals may establish or manage betting operations via complex corporate structures or nominee arrangements to hide beneficial ownership. 
-- Such opacity facilitates layering of illicit funds through the licensed betting shop, making detection of criminal control more difficult.
-- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — - Facilitates the formation of shell or front entities that appear legitimate yet conceal criminal control and ownership.  
-- Allows forced labor profits to be recorded as operating income or false payroll within corporate structures, complicating efforts to trace funds back to illegal labor practices.
 - [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — - Criminals establish shell or nominee-controlled companies through these services to submit falsified applications for government relief funds.  
 - Nominee directors and obscured ownership hamper detection efforts, facilitating subsequent layering or commingling of disbursed funds.
 - [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — - Used to set up shell companies or complex corporate structures that falsely qualify for relief programs.  
 - Nominee directors and opaque beneficial ownership arrangements disguise true control, enabling repeated or fraudulent applications for relief funds.
-- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — - Enable the creation of layered ownership structures or shell entities to hold high-cash-flow real estate, concealing true beneficiaries.  
-- Provide a complex corporate framework that masks criminal involvement and hinders investigative traceability.
 - [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Enable criminals to rapidly establish multiple shell or front companies across jurisdictions, creating complex ownership structures that obscure beneficial owners and the flow of funds. 
 - Provide corporate management and administration to facilitate repeated VAT claims under different legal entities, making it harder to trace actual business operations.
 - [Accrual Manipulation](https://framework.amltrix.com/techniques/T0050.001) — - By forming and managing multiple interconnected entities, criminals can shift expenses or inflate revenues across corporate structures, complicating oversight.  
 - These services enable misrepresentation of accruals through intercompany transactions and nominee arrangements, making it harder for authorities to detect illicit fund movements.
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Facilitate the establishment of shell or front companies to obscure beneficial owners and real employee structures, supporting underreporting of wages.  
-- Provide corporate administration with minimal oversight or nominal directorships, hiding fraudulent payroll and tax practices.
 - [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — - Offer dormant shelf companies with an established incorporation date, enabling criminals to project a longer operating history and bypass extended due diligence.  
 - Provide nominee directors or employees, obscuring beneficial ownership and hindering AML investigations.
 - [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — - Criminals exploit these services to form shell companies designed for brief usage, conducting illicit transactions and dissolving the entities once funds are moved.  
@@ -4067,25 +4036,34 @@ A comprehensive suite of professional services involving the formation, manageme
 - [Real Estate Auction](https://framework.amltrix.com/techniques/T0108.001) — - Criminals establish shell corporations or trusts to act as the official bidder at auctions, masking true beneficial owners.  
 - These structures enable layered ownership, making it difficult for authorities to trace illicit capital injected into real estate acquisitions.  
 - Combined with repeated auction flips, corporate vehicles further disguise and integrate criminal funds into the legitimate financial system.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — - Criminals establish layered corporate or trust structures for arbitration participants, concealing ownership behind nominees and complex formations.  
+- This disguises the true origin of illicit funds fueling or resulting from staged arbitration, limiting transparency for law enforcement or financial institutions.
 - [Legitimate Business Acquisitions](https://framework.amltrix.com/techniques/T0014.001) — - Enable criminals to form or acquire companies and trusts with layered ownership structures, obscuring ultimate beneficial ownership.  
 - Provide administrative and management assistance for business operations used to commingle illicit funds with legitimate revenue streams.  
 - Facilitate M&A processes, where purchase prices can be overstated or understated, masking the true source and volume of funds.
+- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — - Perpetrators establish shell corporations or trust vehicles under this service to hide the true beneficial owners before depositing large volumes of illicit funds.  
+- Professional intermediaries maintain opaque corporate structures and open additional accounts, preventing clear linkage to the ultimate owner.  
+- These arrangements are interwoven with asset management deposits, making it more difficult for regulators and auditors to track illicit proceeds.
 - [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — - Criminals establish shell or dummy entities, enabling fictitious or exaggerated business activities that underpin forged tax rebate claims.  
 - Nominee directors or hiding true beneficiaries help obscure real beneficiaries of inflated refunds, complicating detection.
 - [Trust-Based Obfuscation](https://framework.amltrix.com/techniques/T0088.002) — - Criminals exploit these services to set up trusts with opaque or frequently changing beneficiary information, thwarting beneficial ownership transparency.  
 - Providers can assist in forming trusts in secrecy-friendly jurisdictions, making it difficult for authorities to link funds to the true controller.
 - [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — - Enable formation and administration of fictional corporate structures for purported call-center operations, concealing the true owners and activity.  
 - Provide nominee arrangements and corporate oversight that help legitimize sham contracts and invoices used to disguise illicit revenue.
-- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Facilitates the establishment and administration of multiple corporate entities and trusts across different jurisdictions, enabling criminals to layer ownership and conceal their identities.  
-- Providers may offer nominee director or shareholder services, further obscuring beneficial ownership from regulators and financial institutions.
+- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — - Criminals utilize these services to set up and administer trusts or corporate entities through separate offices or teams.  
+- Each team typically handles narrow tasks, such as nominee management or registered agent services, without insight into wider financial flows or other parallel entities, bolstering the information silo.
 - [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — - Criminals set up trusts or corporate vehicles to obscure beneficial ownership of foreign properties.
 - Nominee directors and intricate layering hamper authorities’ attempts to link the real owner to the laundered assets.
 - [Rental Income Schemes](https://framework.amltrix.com/techniques/T0010.004) — - Criminals establish shell companies through these services, listing them as property owners or landlords to hide beneficial ownership.  
 - Fictitious rental income is then funneled through these corporate entities, complicating AML inquiries into the actual source of the funds.
-- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — - Criminals may designate proxies as official trustees or corporate directors, obscuring the real beneficial owners behind legal structures.  
-- By interposing these proxy entities, illicit proceeds can be controlled without revealing the ultimate individual in charge, hindering AML transparency.
+- [Document Forgery](https://framework.amltrix.com/techniques/T0012) — - Falsification of incorporation documents and corporate filings to conceal actual ownership and control of entities.  
+- Forged board resolutions or shareholder agreements facilitate unauthorized asset transfers without immediate detection.
+- [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — - Criminals can form multiple corporate entities that appear to be distinct bidders but are actually controlled by the same perpetrators.  
+- Nominee director or shareholder arrangements conceal real ownership, enabling collusive tendering across seemingly independent firms.
 - [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — - Offenders exploit corporate formation and administration offerings to register fictitious entities with complex ownership structures, masking beneficial owners.
 - These services help evade scrutiny by layering control under multiple nominees and jurisdictions, facilitating the fraudulent consulting façade.
+- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — - Complex legal structures and nominee arrangements can be created to obscure the true ownership of sports clubs.  
+- Such layering impedes investigators from identifying ultimate beneficiaries and tracing the criminal origin of funds funneled into the club.
 - [Exploitation of Professional Privileges](https://framework.amltrix.com/techniques/T0033) — - Criminals establish multiple legal entities and trust arrangements to layer money and conceal ultimate beneficiaries under professional secrecy.  
 - Professionals managing these structures often unknowingly perpetuate opacity by citing confidentiality clauses.
 - [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — - Establish and administer trusts or corporate vehicles in jurisdictions with minimal disclosure requirements, making it harder to trace true beneficial ownership.  
@@ -4098,10 +4076,32 @@ A comprehensive suite of professional services involving the formation, manageme
 - Assist in creating shell or nominee arrangements, reducing transparency and making it more difficult for authorities to trace illicit funds.
 - [All-Cash Real Estate Transactions](https://framework.amltrix.com/techniques/T0010.005) — - Criminals can establish shell companies or trusts to act as the property buyer, concealing true beneficial ownership. 
 - Complex corporate structures impede investigators from tracing the cash used for real estate acquisitions, reducing transparency and AML oversight.
-- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — - Facilitate remote establishment and administration of intangible legal entities, enabling criminals to incorporate virtual companies with minimal physical presence.
-- Allow the use of nominee directors and complex corporate structures, concealing real beneficial owners behind multiple layers.
+- [Transfer Pricing Manipulation](https://framework.amltrix.com/techniques/T0139) — - Facilitates creation and maintenance of multiple corporate vehicles that obscure relationships among related entities.  
+- Enables criminals to route funds among nominally distinct companies, making inflated or under-reported inter-company charges harder to trace.
 - [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — - Criminals form shell or cover companies to issue invoices for nonexistent goods or services.  
 - These corporate entities obscure true ownership and transaction flows, complicating investigations into origin of funds.
+- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — - Facilitates the creation and administration of front or shell companies used to commingle illegal revenues with lawful business activities.  
+- Nominee shareholders or directors obscure the true beneficial owners, complicating AML inquiries and enabling further layering of funds derived from environmental crimes.
+- [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — - Criminals establish or administer trusts and corporate entities to act as policyholders or beneficiaries, masking true ownership.  
+- By repeatedly shifting these entities, they create additional layers of complexity, frustrating AML and legal inquiries.
+- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — - Enable the formation and management of front or shell companies (e.g., massage businesses, bars) to co-mingle illicit proceeds of forced labor or sexual exploitation with lawful revenue.  
+- Obscure the true owners via complex corporate structures, hindering authorities’ ability to link proceeds to trafficking or exploitation.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — - Facilitate creation of layered corporate structures and trusts, enabling criminals to obscure ultimate beneficial owners when injecting illicit capital into legitimate businesses. 
+- Nominee directorships and complex governance arrangements conceal the true source of funds, allowing launderers to blend illicit money with legitimate revenues.
+- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — - Smugglers establish front companies to legitimize cash flows from contraband cigarette sales, mixing them with nominal business activities.  
+- Complex corporate structures and nominee arrangements obscure the beneficial owners, thwarting direct links to smuggling profits and hindering asset tracing.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — - Allow the formation of shell or front companies that can receive and disguise illicit funds under inflated project costs or subcontracting arrangements.  
+- Enable layering by obscuring beneficial ownership through nominee directors, multi-jurisdictional structures, and complex corporate setups associated with construction deals.
+- [Licensed Betting Shop Manipulation](https://framework.amltrix.com/techniques/T0107.002) — - Criminals may establish or manage betting operations via complex corporate structures or nominee arrangements to hide beneficial ownership. 
+- Such opacity facilitates layering of illicit funds through the licensed betting shop, making detection of criminal control more difficult.
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — - Facilitate the establishment of shell or front companies to obscure beneficial owners and real employee structures, supporting underreporting of wages.  
+- Provide corporate administration with minimal oversight or nominal directorships, hiding fraudulent payroll and tax practices.
+- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — - Facilitates the establishment and administration of multiple corporate entities and trusts across different jurisdictions, enabling criminals to layer ownership and conceal their identities.  
+- Providers may offer nominee director or shareholder services, further obscuring beneficial ownership from regulators and financial institutions.
+- [Proxy Arrangement](https://framework.amltrix.com/techniques/T0038) — - Criminals may designate proxies as official trustees or corporate directors, obscuring the real beneficial owners behind legal structures.  
+- By interposing these proxy entities, illicit proceeds can be controlled without revealing the ultimate individual in charge, hindering AML transparency.
+- [Virtual Companies](https://framework.amltrix.com/techniques/T0127) — - Facilitate remote establishment and administration of intangible legal entities, enabling criminals to incorporate virtual companies with minimal physical presence.
+- Allow the use of nominee directors and complex corporate structures, concealing real beneficial owners behind multiple layers.
 - [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — - Enable the formation of complex corporate or trust structures, allowing corrupt officials to mask beneficial ownership or funnel misappropriated government funds.  
 - Nominee directors and multiple layered entities hinder transparency and complicate AML investigations.
 - [Misrepresentation of Fund Purpose](https://framework.amltrix.com/techniques/T0040) — - Criminals can establish or maintain front companies through these services, falsely claiming legitimate commercial operations or purposes.  

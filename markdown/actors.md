@@ -350,6 +350,57 @@ Their nonprofit and socially respected status causes financial institutions to a
 
 ---
 
+## [Offshore Financial Institution](https://framework.amltrix.com/actors/AT0031)
+
+**Description:**
+A financial entity operating in a jurisdiction typically offering certain regulatory, privacy, or tax benefits for international clients.
+
+### Related Techniques
+- [Offshore or Secrecy Exploitation](https://framework.amltrix.com/techniques/T0062) — Offshore financial institutions located in high-risk or secrecy jurisdictions may knowingly or unwittingly provide accounts with minimal transparency. Their limited customer due diligence and strong banking secrecy enable illicit operators to layer funds, hindering other financial institutions' ability to trace transactions across borders.
+- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — Operating under lighter or less transparent AML regimes, these institutions:
+
+- Maintain accounts for layered corporate structures, shielding beneficial owners from scrutiny.
+- Enable rapid cross-border transfers that bypass rigorous oversight.
+
+Criminals use such offshore platforms to conceal illicit assets and impede investigative efforts.
+- [Cross-Border Payment Routing](https://framework.amltrix.com/techniques/T0121) — Offshore financial institutions are used to:
+
+- Channel funds through jurisdictions with lax or delayed AML regulations.
+- Delay or prevent investigators from tracing transactions by obscuring beneficial ownership details and leveraging bank secrecy laws.
+- [Timeshare Scams](https://framework.amltrix.com/techniques/T0144.014) — Scammers exploit offshore banking channels to:
+
+- Transfer and hold illicit timeshare scam proceeds beyond the reach of local regulations.
+- Obscure beneficial ownership and transaction trails through jurisdictions offering strict privacy laws.
+
+The resulting secrecy hampers financial institutions' attempts to identify and recover stolen funds.
+- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — Offshore financial institutions in jurisdictions with lax disclosure practices accept large deposits for asset management or portfolio accounts. 
+
+- These institutions operate with minimal transparency, aiding criminals in spreading capital across multiple cross-border accounts.
+- This setup undermines traditional AML controls by creating barriers to identifying transaction patterns and beneficial owners.
+- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Offshore financial institutions in jurisdictions with limited AML oversight or strong privacy laws enable:
+
+- The opening of accounts used for multi-layered transfers that conceal illicit origins.
+- Movement of funds with reduced regulatory scrutiny, facilitating layer upon layer of transactions.
+
+This environment makes it more challenging for financial institutions to verify the ultimate sources and beneficiaries of transferred funds.
+- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — These institutions hold accounts for offshore gambling operations, benefiting from weaker disclosure obligations that help obscure the source and destination of funds.
+
+- Lax jurisdictional standards mask ownership details, hampering financial intelligence and law enforcement efforts.
+- Rapid cross-border transfers through offshore accounts hinder investigators tracking illicit proceeds.
+- [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Offshore financial institutions issuing or managing stored-value instruments are exploited when:
+
+- They provide prepaid cards, e-wallets, or similar products with minimal or weak KYC.
+- Criminals use forged or easily accepted identification to open and top up accounts repeatedly below reporting thresholds.
+- Cross-border withdrawals or payments occur under limited oversight, enabling funds to be layered into global financial channels.
+
+These gaps challenge other financial institutions’ ability to trace transaction sources or identify beneficial owners, amplifying money laundering risks.
+- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — Offshore financial institutions facilitate the movement and layering of wildlife trafficking proceeds by:
+
+- Accepting deposits or transfers into jurisdictions with limited regulatory oversight or bank secrecy.
+- Impeding financial institutions' ability to trace cross-border transactions and identify the ultimate beneficiaries.
+
+---
+
 ## [Organized Crime Group](https://framework.amltrix.com/actors/AT0029)
 
 **Description:**
@@ -579,57 +630,6 @@ These practices obscure the true source of funds, complicating financial institu
 - Exploiting gaps or inconsistencies in AML enforcement across borders, fragmenting oversight and facilitating the layering of illicit proceeds.
 - Presenting these transactions as legitimate local activity, making it more difficult for financial institutions to detect suspicious cross-border movements or identify the actual parties involved.
 - [Sexual Exploitation](https://framework.amltrix.com/techniques/T0058.002) — These groups systematically profit from forced prostitution, trafficking, and other forms of sexual exploitation. They frequently operate across jurisdictions, utilizing sophisticated laundering channels such as funnel accounts, structured transactions, and virtual currencies to conceal illicit proceeds. By orchestrating trafficking networks, they create complex financial flows that challenge financial institutions' ability to detect and disrupt related money laundering.
-
----
-
-## [Offshore Financial Institution](https://framework.amltrix.com/actors/AT0031)
-
-**Description:**
-A financial entity operating in a jurisdiction typically offering certain regulatory, privacy, or tax benefits for international clients.
-
-### Related Techniques
-- [Offshore or Secrecy Exploitation](https://framework.amltrix.com/techniques/T0062) — Offshore financial institutions located in high-risk or secrecy jurisdictions may knowingly or unwittingly provide accounts with minimal transparency. Their limited customer due diligence and strong banking secrecy enable illicit operators to layer funds, hindering other financial institutions' ability to trace transactions across borders.
-- [Multi-Jurisdiction Corporate Structures](https://framework.amltrix.com/techniques/T0001.003) — Operating under lighter or less transparent AML regimes, these institutions:
-
-- Maintain accounts for layered corporate structures, shielding beneficial owners from scrutiny.
-- Enable rapid cross-border transfers that bypass rigorous oversight.
-
-Criminals use such offshore platforms to conceal illicit assets and impede investigative efforts.
-- [Cross-Border Payment Routing](https://framework.amltrix.com/techniques/T0121) — Offshore financial institutions are used to:
-
-- Channel funds through jurisdictions with lax or delayed AML regulations.
-- Delay or prevent investigators from tracing transactions by obscuring beneficial ownership details and leveraging bank secrecy laws.
-- [Timeshare Scams](https://framework.amltrix.com/techniques/T0144.014) — Scammers exploit offshore banking channels to:
-
-- Transfer and hold illicit timeshare scam proceeds beyond the reach of local regulations.
-- Obscure beneficial ownership and transaction trails through jurisdictions offering strict privacy laws.
-
-The resulting secrecy hampers financial institutions' attempts to identify and recover stolen funds.
-- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — Offshore financial institutions in jurisdictions with lax disclosure practices accept large deposits for asset management or portfolio accounts. 
-
-- These institutions operate with minimal transparency, aiding criminals in spreading capital across multiple cross-border accounts.
-- This setup undermines traditional AML controls by creating barriers to identifying transaction patterns and beneficial owners.
-- [Offshore Transfers](https://framework.amltrix.com/techniques/T0062.003) — Offshore financial institutions in jurisdictions with limited AML oversight or strong privacy laws enable:
-
-- The opening of accounts used for multi-layered transfers that conceal illicit origins.
-- Movement of funds with reduced regulatory scrutiny, facilitating layer upon layer of transactions.
-
-This environment makes it more challenging for financial institutions to verify the ultimate sources and beneficiaries of transferred funds.
-- [Offshore Gambling Licenses](https://framework.amltrix.com/techniques/T0062.002) — These institutions hold accounts for offshore gambling operations, benefiting from weaker disclosure obligations that help obscure the source and destination of funds.
-
-- Lax jurisdictional standards mask ownership details, hampering financial intelligence and law enforcement efforts.
-- Rapid cross-border transfers through offshore accounts hinder investigators tracking illicit proceeds.
-- [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Offshore financial institutions issuing or managing stored-value instruments are exploited when:
-
-- They provide prepaid cards, e-wallets, or similar products with minimal or weak KYC.
-- Criminals use forged or easily accepted identification to open and top up accounts repeatedly below reporting thresholds.
-- Cross-border withdrawals or payments occur under limited oversight, enabling funds to be layered into global financial channels.
-
-These gaps challenge other financial institutions’ ability to trace transaction sources or identify beneficial owners, amplifying money laundering risks.
-- [Wildlife Trafficking](https://framework.amltrix.com/techniques/T0145.002) — Offshore financial institutions facilitate the movement and layering of wildlife trafficking proceeds by:
-
-- Accepting deposits or transfers into jurisdictions with limited regulatory oversight or bank secrecy.
-- Impeding financial institutions' ability to trace cross-border transactions and identify the ultimate beneficiaries.
 
 ---
 
@@ -1831,12 +1831,23 @@ Individuals or businesses offering short-term loans secured by personal property
 An individual or group engaged in illegal activities that generate unlawful proceeds from a wide range of predicate offenses, such as fraud, corruption, cybercrime, or smuggling.
 
 ### Related Techniques
+- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Criminal actors deposit illicit proceeds into hawala systems, often pairing transactions with fraudulent or manipulated trade documents to obscure the true source of funds. Their use of informal channels bypasses official banking records and AML alerts, hindering financial institutions' ability to identify suspicious activities.
 - [Structuring](https://framework.amltrix.com/techniques/T0016) — Illicit operators engage in structuring by:
 
 - Splitting large sums of illicit proceeds into multiple sub-threshold deposits or transfers under different accounts or identities.
 - Circulating these smaller transactions through financial institutions, remitters, or digital channels to evade reporting triggers.
 
 By maintaining each deposit below detection thresholds, they circumvent standard alerts and frustrate banks' or money service businesses' ability to recognize the aggregated illicit amounts.
+- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — Illicit operators initiate and manage the splitting of remittance transfers by:
+
+- Using multiple sender identities and fragmented amounts to stay below reporting thresholds.
+- Employing loosely supervised or unregistered channels to further conceal the source of illicit funds.
+
+Their activities hamper financial institutions’ ability to detect suspicious patterns, as transactions appear to be legitimate low-value remittances.
+- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — Illicit operators acquire or manage high-cash-flow real estate to integrate illicit funds by:
+
+- Channeling illegal proceeds through property revenues such as rent or room charges.
+- Structuring deposit patterns to mimic normal operating income, reducing the likelihood of detection by financial institutions.
 - [Safe Deposit Boxes](https://framework.amltrix.com/techniques/T0043) — Illicit operators exploit safe deposit boxes by:
 
 - Placing physical cash, precious metals, or other illicit assets into boxes to hide funds from transactional records.
@@ -1844,12 +1855,39 @@ By maintaining each deposit below detection thresholds, they circumvent standard
 - Relying on staggered deposit and withdrawal patterns to avoid triggering reporting thresholds.
 
 These methods help criminals evade detection by limiting visibility into their assets, posing a significant challenge for financial institutions' efforts to trace illicit proceeds.
+- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — Criminal actors produce and circulate counterfeit currency to generate illicit proceeds:
+
+- They manufacture fake banknotes or coins and introduce them via cash transactions or deposits.
+- By mixing forged bills with legitimate funds, they make detection more challenging for financial institutions.
+- [Privacy Coins](https://framework.amltrix.com/techniques/T0116) — Illicit operators knowingly leverage privacy-focused cryptocurrencies by:
+
+- Converting mainstream cryptocurrency proceeds into privacy coins, concealing the true origin of funds from financial institutions.
+- Rapidly cycling those funds through multiple wallet addresses or exchanges, fragmenting the transaction trail.
+- Using unlicensed or poorly regulated platforms with minimal or no KYC, bypassing institutional checks and making it difficult for financial institutions to identify suspicious flows.
+- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — Illicit operators generate and handle criminal proceeds that are transported in bulk within national borders. They:
+
+- Use large-denomination banknotes to minimize physical volume.
+- Deposit or exchange the cash in amounts designed to stay below reporting thresholds.
+
+By operating domestically rather than across international boundaries, they reduce scrutiny and facilitate easier integration of illicit funds into the financial system.
+- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — Criminals orchestrate these transactions by manipulating invoices, undervaluing or overvaluing shipments, and rerouting deliveries across multiple jurisdictions. They exploit free trade zones and unrelated third-party payments to obscure illicit funds, undermining financial institutions' trade finance checks.
+- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — They exploit unpatched vulnerabilities or procedural weaknesses within the bank’s systems to launder illicit funds. They may:
+
+- Bribe or collude with insiders to override AML controls.
+- Manipulate transaction or payment data to conceal sanctioned beneficiaries.
+- Leverage flawed system configurations to move large sums undetected.
 - [Front Company](https://framework.amltrix.com/techniques/T0014) — Illicit operators establish or control front companies to co-mingle criminal proceeds with legitimate revenue streams, often by:
 
 - Setting up credible business ventures with normal commercial activity, thereby masking illegal funds as ordinary income.
 - Generating falsified invoices or overstated sales to obscure the ultimate source of the money.
 
 These practices make it harder for financial institutions to detect suspicious transactions or identify beneficial owners, especially when multi-jurisdictional structures are employed to further complicate due diligence efforts.
+- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Illicit operators take advantage of remote deposit capture by:
+
+- Depositing physically altered or stolen checks from remote locations, evading face-to-face scrutiny.
+- Submitting the same or near-identical checks into multiple accounts in rapid succession.
+
+This enables them to introduce illicit funds, then quickly withdraw or transfer proceeds once cleared, creating additional hurdles for financial institutions attempting to detect fraudulent or high-risk deposits.
 - [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — Illicit operators (the criminals themselves) conduct money laundering through real estate by:
 - Injecting criminal proceeds into property purchases or mortgage payments.
 - Executing property flips at artificially high or low prices to legitimize equity gains.
@@ -1868,6 +1906,12 @@ They exploit differences in regional compliance regimes, making it harder for ba
 - Exploit weak documentation checks so that financial institutions cannot easily distinguish these sham flows from normal outlays.
 
 This manipulation of invoice records hinders effective due diligence and conceals the true origin of the funds.
+- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — They orchestrate the deposit scheme by:
+
+- Generating illicit funds from predicate offenses and seeking to introduce them into the financial system.
+- Instructing multiple individuals or smurfs to make small deposits across diverse branches or locations, each below reporting thresholds.
+
+This approach masks a single illicit source by dispersing deposits geographically, complicating financial institutions' detection efforts.
 - [Precious Metals & Stones Trading](https://framework.amltrix.com/techniques/T0055) — Criminals, including organized crime groups or professional launderers, employ precious metals and gemstones to layer illicit funds by:
 
 - Purchasing these commodities with proceeds of crime, taking advantage of minimal identification requirements or subjective pricing.
@@ -1880,10 +1924,16 @@ This manipulation of invoice records hinders effective due diligence and conceal
 - [Offshore or Secrecy Exploitation](https://framework.amltrix.com/techniques/T0062) — Illicit operators deliberately use high-risk jurisdictions with weak AML oversight to deposit and layer funds through local accounts and corporate structures. By exploiting minimal due diligence requirements, they obscure beneficial ownership, impeding financial institutions' monitoring and cross-border investigative efforts.
 - [Financial Product Overfunding](https://framework.amltrix.com/techniques/T0086) — Illicit operators deliberately overpay or overfund various financial products, such as life insurance policies, credit or prepaid card accounts, and fixed deposit accounts. They deposit illicit funds well above typical usage levels and then request partial withdrawals or refunds. Because these payouts originate from legitimate financial providers, they appear as normal transactions, making it more challenging for financial institutions to detect suspicious activity.
 - [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Illicit operators repeatedly alter beneficial ownership records across trusts, insurance policies, and brokerage accounts. By substituting or removing registered owners, they obscure who truly controls the assets and hinder financial institutions’ efforts to establish ultimate beneficial ownership. They also leverage incomplete or lax ownership registries in secrecy-friendly jurisdictions to evade detection.
-- [Counterfeit Currency](https://framework.amltrix.com/techniques/T0092) — Criminal actors produce and circulate counterfeit currency to generate illicit proceeds:
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — Criminals deliberately manipulate athlete image rights contracts to disguise illicit proceeds. They establish or exploit third-party ownership and offshore structures, routing funds through secrecy-prone jurisdictions to obscure the true beneficiaries. Financial institutions face increased difficulty detecting the disguised nature of these fees, which appear as legitimate endorsements or royalties.
+- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — Illicit operators knowingly convert criminal proceeds into gold for laundering by:
 
-- They manufacture fake banknotes or coins and introduce them via cash transactions or deposits.
-- By mixing forged bills with legitimate funds, they make detection more challenging for financial institutions.
+- Purchasing gold bars, coins, or digital gold with illicit funds to obscure the origin of assets.
+- Reclassifying high-purity bullion as 'scrap' to bypass export controls and further conceal transactional trails.
+- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — Illicit operators use VPNs to:
+
+- Obscure their location and identity when opening or managing accounts, initiating fund transfers, or carrying out digital wallet activities.
+- Encrypt their communications, reducing the likelihood of detection by financial institutions' monitoring systems.
+- Layer illicit proceeds by routing transactions across multiple jurisdictions, complicating investigative efforts to trace funds back to their true origins.
 - [Informal Micro-Finance Schemes](https://framework.amltrix.com/techniques/T0096) — Illicit operators exploit informal micro-finance schemes by:
 
 - Contributing criminal proceeds into rotating savings or credit associations without attracting early scrutiny.
@@ -1897,169 +1947,6 @@ Their role undermines standard due diligence checks by introducing illicit funds
 - Bypassing the stricter controls of the correspondent bank, which assumes the respondent has performed adequate due diligence.
 
 This allows illicit funds to enter the global financial system with minimal scrutiny.
-- [Privacy Coins](https://framework.amltrix.com/techniques/T0116) — Illicit operators knowingly leverage privacy-focused cryptocurrencies by:
-
-- Converting mainstream cryptocurrency proceeds into privacy coins, concealing the true origin of funds from financial institutions.
-- Rapidly cycling those funds through multiple wallet addresses or exchanges, fragmenting the transaction trail.
-- Using unlicensed or poorly regulated platforms with minimal or no KYC, bypassing institutional checks and making it difficult for financial institutions to identify suspicious flows.
-- [Domestic Bulk Cash Delivery](https://framework.amltrix.com/techniques/T0119) — Illicit operators generate and handle criminal proceeds that are transported in bulk within national borders. They:
-
-- Use large-denomination banknotes to minimize physical volume.
-- Deposit or exchange the cash in amounts designed to stay below reporting thresholds.
-
-By operating domestically rather than across international boundaries, they reduce scrutiny and facilitate easier integration of illicit funds into the financial system.
-- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — These individuals or groups initiate and control the falsification of accounting entries, invoices, or transaction timestamps. They knowingly:
-
-- Employ compliant accountants to manipulate the books and hide suspicious fund flows.
-- Overstate or understate revenues and expenses to create a misleading financial narrative.
-
-By engineering these manipulations, they frustrate financial institutions' ability to identify and scrutinize illicit transactions.
-- [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — Criminals orchestrate these transactions by manipulating invoices, undervaluing or overvaluing shipments, and rerouting deliveries across multiple jurisdictions. They exploit free trade zones and unrelated third-party payments to obscure illicit funds, undermining financial institutions' trade finance checks.
-- [Cryptocurrency Investment](https://framework.amltrix.com/techniques/T0128) — Illicit operators funnel unlawful proceeds into cryptocurrency investments, taking advantage of the pseudonymous environment to obscure beneficial ownership.
-
-- They move funds across multiple exchanges and personal or external wallets, employing techniques such as chain-peeling and privacy protocols.
-- These repeated transfers hamper law enforcement and financial institutions' efforts to link assets to the original offense, complicating transaction monitoring and beneficial ownership checks.
-- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — Illicit operators utilize freeports and private storage to conceal criminal proceeds by:
-
-- Placing high-value assets (art, jewelry, precious metals) in secure facilities with minimal disclosure requirements.
-- Bypassing standard customs or border checks and maintaining anonymity through shell or offshore registrations.
-- Retaining the ability to discreetly transfer or retrieve valuables, reducing transparency for financial institutions attempting to trace illicit funds.
-- [Bank Infrastructure Manipulation](https://framework.amltrix.com/techniques/T0132) — They exploit unpatched vulnerabilities or procedural weaknesses within the bank’s systems to launder illicit funds. They may:
-
-- Bribe or collude with insiders to override AML controls.
-- Manipulate transaction or payment data to conceal sanctioned beneficiaries.
-- Leverage flawed system configurations to move large sums undetected.
-- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Illicit operators exploit offshore insurance policies in lenient regulatory environments to place and layer criminal proceeds. They may:
-
-- Pay large single-premium or investment-linked policies using illicit funds and redeem them prematurely, producing payouts that appear legitimate.
-- Stage or fabricate insurance claims for nonexistent assets (such as phantom vessels), receiving ostensibly lawful claim settlements.
-
-These practices obscure the origin of funds and complicate financial institutions’ efforts to detect and investigate suspicious transactions across borders.
-- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — Illicit operators facilitate cryptocurrency mining by:
-
-- Using illicit funds to pay for mining hardware, energy bills, or remote hosting services.
-- Generating newly minted coins without prior on-chain transaction histories, severing the link to the original dirty money.
-- Presenting these mining-related expenses as legitimate operational costs, making it more challenging for financial institutions to identify tainted proceeds.
-- [Unlicensed Real Estate Brokerage](https://framework.amltrix.com/techniques/T0133) — Illicit operators knowingly exploit unlicensed real estate brokers by:
-
-- Hiring unauthorized intermediaries who bypass customer due diligence and AML checks.
-- Channeling illicit proceeds through these brokers to purchase or sell property with limited scrutiny.
-- Concealing the true source of funds from financial institutions, disrupting automated detection and reporting of suspicious transactions.
-- [Remote Deposit Capture](https://framework.amltrix.com/techniques/T0117) — Illicit operators take advantage of remote deposit capture by:
-
-- Depositing physically altered or stolen checks from remote locations, evading face-to-face scrutiny.
-- Submitting the same or near-identical checks into multiple accounts in rapid succession.
-
-This enables them to introduce illicit funds, then quickly withdraw or transfer proceeds once cleared, creating additional hurdles for financial institutions attempting to detect fraudulent or high-risk deposits.
-- [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — These criminal actors orchestrate agent-based transaction processing by:
-
-- Engaging sub-agents or partner outlets operating under licensed payment institutions.
-- Structuring high-risk transfers in smaller amounts to slip below reporting thresholds.
-- Splitting fund flows across multiple providers, fragmenting audit trails.
-- Concealing the true source and destination of illicit proceeds behind intermediaries.
-- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — Illicit operators carry out identity impersonation by:
-
-- Stealing or fabricating personal and organizational data to open or infiltrate financial accounts under false credentials.
-- Gaining unauthorized access to victim funds or laundering illicit proceeds while disguised as legitimate account holders.
-- Misrepresenting themselves during KYC checks, defeating standard due diligence measures.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — Illicit operators orchestrate staged or collusive arbitration proceedings to launder funds by:
-
-- Presenting fabricated claims or inflated damages.
-- Concealing the criminal origins of funds by labeling settlement payments as legitimate awards.
-
-This misleads financial institutions into processing large transfers tied to an apparently valid arbitral ruling rather than recognizing them as suspicious transactions.
-- [Geographically Dispersed Cash Deposit](https://framework.amltrix.com/techniques/T0053) — They orchestrate the deposit scheme by:
-
-- Generating illicit funds from predicate offenses and seeking to introduce them into the financial system.
-- Instructing multiple individuals or smurfs to make small deposits across diverse branches or locations, each below reporting thresholds.
-
-This approach masks a single illicit source by dispersing deposits geographically, complicating financial institutions' detection efforts.
-- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Illicit operators conduct fraudulent early superannuation withdrawals by:
-
-- Using stolen identities to access existing superannuation accounts and submit fabricated hardship or medical claims.
-- Exploiting short processing windows to receive payouts before thorough verification can occur.
-- Generating disbursements that appear legitimate, making detection and prevention more difficult for superannuation providers and financial institutions.
-- [Immediate Cash Conversion](https://framework.amltrix.com/techniques/T0105) — Illicit operators carry out immediate cash conversion by:
-
-- Depositing illicit funds into newly opened or dormant accounts, then withdrawing or transferring in structured increments below reporting thresholds.
-- Quickly converting digital or otherwise traceable balances into physical currency, exploiting the anonymity of cash and complicating financial institutions’ detection efforts.
-- [Renovation Cost Manipulation](https://framework.amltrix.com/techniques/T0124) — Illicit operators direct illegal proceeds into real estate under the cover of renovation projects by:
-
-- Overstating or fabricating contractor invoices for building materials and labor.
-- Coordinating repeated property sales at inflated prices to legitimize the illicit funds within final sale proceeds.
-
-These manipulations obscure the true origin of the funds and can mislead financial institutions financing or insuring real estate transactions.
-- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — Illicit operators deposit large volumes of unlawful proceeds into cross-border asset management or portfolio accounts. 
-
-- They often channel funds through multiple sub-accounts or affiliates, obscuring the paper trail.
-- These deposits generally exceed any legitimate investment rationale, complicating financial institutions’ due diligence and source-of-funds verification processes.
-- [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — They orchestrate and control collusive tendering by:
-
-- Forming or coordinating multiple seemingly independent entities to submit rigged bids.
-- Paying or receiving bribes and kickbacks disguised as legitimate procurement costs.
-
-These actions create contract payments that appear lawful to financial institutions, making it harder to detect the true criminal source of funds.
-- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — Illicit operators, including those engaged in drug trafficking or other serious predicate offenses, invest in or acquire sports clubs to integrate criminal proceeds into seemingly legitimate revenue streams:
-
-- They misrepresent illicit funds as sponsorships, ticket sales, or merchandising income.
-- By exploiting the clubs’ financial needs and weak oversight, they reduce scrutiny from financial institutions.
-- This tactic hinders effective AML measures, as suspicious funds appear to be standard sports-related transactions.
-- [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — Illicit operators knowingly employ cross-border currency declarations to legitimize the physical movement of illicit funds. They:
-
-- Over-declare amounts upon entry, creating official documentation that justifies additional funds not physically transported.
-- Break larger sums into multiple smaller declarations or distribute the money into different currencies (smurfing) to stay below thresholds that trigger heightened checks.
-- Reuse or falsify declaration records to obscure the origin of funds when dealing with financial institutions, leveraging the appearance of lawful cross-border transactions.
-- [Negotiable Instrument Purchases](https://framework.amltrix.com/techniques/T0110) — Illicit operators:
-
-- Purchase negotiable instruments (e.g., cashier’s checks, traveler’s checks, bank drafts) with illicit cash while structuring amounts below reporting thresholds.
-- Distribute these purchases across multiple locations or over consecutive days to avoid detection.
-- Rapidly deposit or redeem the instruments at various accounts or institutions, obscuring the true origin of the funds.
-- [Electronic Gaming Machine Ticket Redemption](https://framework.amltrix.com/techniques/T0054) — Illicit operators insert substantial cash into TITO gaming terminals with little to no betting activity, splitting deposits across multiple sessions or machines. They exchange or consolidate vouchers to further distance the funds from their illicit origin, complicating transactional traceability for financial institutions.
-- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — They generate proceeds from illegal logging, unreported fishing, or unauthorized mining. By embedding or mixing these illicit funds within legitimate supply chains and business operations, they obscure the origin of the money. This commingling hampers financial institutions' ability to detect unusual transactions or trace beneficial owners involved in environmental crime.
-- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — Illicit operators orchestrate insurance and reinsurance manipulations by:
-
-- Establishing or controlling fraudulent insurance providers to inflate premiums, fabricate claims, or shuffle funds across multiple reinsurance layers.
-- Obscuring the criminal origin of funds, making payouts appear as legitimate policy settlements.
-
-Their activities impede financial institutions' ability to trace payment flows, as transactions are masked under seemingly normal insurance arrangements.
-- [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — Illicit operators orchestrate frequent changes or substitutions of policyholders and beneficiaries in insurance contracts to conceal the flow of illicit funds. They:
-
-- Use high-value life insurance or single-premium policies to introduce large sums from questionable sources.
-- Rapidly modify or surrender these policies, layering transactions and hampering transparent ownership tracing for financial institutions.
-- [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — - Illicit operators plan and execute mirror trades to layer criminal proceeds by placing offsetting buy and sell orders across multiple accounts or jurisdictions.
-- They exploit routine brokerage operations, often controlling both sides of trades under different identities or shell entities, making illicit transactions appear as normal market activities.
-- These tactics complicate financial institutions' detection of suspicious trading patterns, as the trades are masked within legitimate market flows.
-- [Crypto ATMs](https://framework.amltrix.com/techniques/T0063) — Illicit operators exploit crypto ATMs by:
-
-- Converting illicit cash into cryptocurrency (and vice versa) with minimal customer identification.
-- Splitting deposits and withdrawals into small increments to remain under reporting thresholds.
-- Rapidly layering funds using multiple machines or repeated transactions.
-
-These practices obscure the origin of illicit proceeds, complicating financial institutions’ efforts to detect or trace suspicious cash flows.
-- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — Illicit operators exploit multiple citizenships by:
-
-- Presenting alternative passports or nationalities when opening accounts or transferring funds, which reduces the likelihood of consistent due diligence.
-- Fragmenting their financial footprint across different identities, hindering investigators’ attempts to consolidate beneficial ownership information.
-- Bypassing stricter KYC controls in certain jurisdictions by strategically selecting which passport or identity to present.
-- [Cash Deposits](https://framework.amltrix.com/techniques/T0004) — Illicit operators deposit physical currency into financial institution accounts, splitting or staggering deposits below reporting thresholds. They may direct third-party depositors to make multiple small drop-offs, obscuring the funds’ true origin.
-
-This practice complicates financial institutions' due diligence and monitoring processes, as individually small transactions can appear routine while collectively representing significant illicit proceeds.
-- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Illicit operators supply criminal proceeds to legitimate businesses, disguising illicit funds as normal capital contributions or operating revenue. By placing money directly into commercial activities and later withdrawing returns or dividends, they obscure the illegal source of funds and thwart financial institutions' ability to detect suspicious capital flows.
-- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Illicit operators orchestrate fraudulent trade finance by:
-
-- Submitting inflated or forged invoices and contracts to justify fund movements.
-- Cycling proceeds through multiple jurisdictions and accounts to conceal the criminal origin of funds.
-- Exploiting letters of credit and pre-shipment loans without any genuine underlying goods or services.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — Criminals deliberately manipulate athlete image rights contracts to disguise illicit proceeds. They establish or exploit third-party ownership and offshore structures, routing funds through secrecy-prone jurisdictions to obscure the true beneficiaries. Financial institutions face increased difficulty detecting the disguised nature of these fees, which appear as legitimate endorsements or royalties.
-- [Gold Conversion](https://framework.amltrix.com/techniques/T0055.001) — Illicit operators knowingly convert criminal proceeds into gold for laundering by:
-
-- Purchasing gold bars, coins, or digital gold with illicit funds to obscure the origin of assets.
-- Reclassifying high-purity bullion as 'scrap' to bypass export controls and further conceal transactional trails.
-- [Virtual Private Network](https://framework.amltrix.com/techniques/T0015.001) — Illicit operators use VPNs to:
-
-- Obscure their location and identity when opening or managing accounts, initiating fund transfers, or carrying out digital wallet activities.
-- Encrypt their communications, reducing the likelihood of detection by financial institutions' monitoring systems.
-- Layer illicit proceeds by routing transactions across multiple jurisdictions, complicating investigative efforts to trace funds back to their true origins.
 - [Investment in Financial Instruments](https://framework.amltrix.com/techniques/T0061) — Criminal actors knowingly exploit investment in financial instruments by:
 
 - Channeling illicit proceeds into hedge funds, private equity, or other private investment vehicles with limited AML scrutiny.
@@ -2083,12 +1970,12 @@ Their use of multi-jurisdictional portfolios hampers financial institutions’ a
 - Conduct rapid chain-hopping from transparent blockchains into privacy-focused wallets, fragmenting the transaction trail and evading straightforward tracing.
 
 These tactics undermine financial institutions' ability to detect suspicious crypto movements and perform effective transaction monitoring, as the commingled or stealth transactions complicate identifying the true beneficiary or source of funds.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — Illicit operators initiate and manage these construction schemes to launder proceeds by:
+- [Manipulation of Financial Records](https://framework.amltrix.com/techniques/T0050) — These individuals or groups initiate and control the falsification of accounting entries, invoices, or transaction timestamps. They knowingly:
 
-- Channeling unlawful funds into large development budgets for apparent economic legitimacy.
-- Manipulating subcontracting chains and cost structures, layering proceeds through multiple transactions.
+- Employ compliant accountants to manipulate the books and hide suspicious fund flows.
+- Overstate or understate revenues and expenses to create a misleading financial narrative.
 
-This fragmentation makes it problematic for financial institutions to ascertain the true source of capital and identify suspicious cash flows.
+By engineering these manipulations, they frustrate financial institutions' ability to identify and scrutinize illicit transactions.
 - [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — Illicit operators knowingly orchestrate the manipulation of oil and fuel transactions by:
 
 - Falsifying or misrepresenting invoices and shipping documentation (e.g., bills of lading) to conceal cargo volumes, grades, or values.
@@ -2096,6 +1983,15 @@ This fragmentation makes it problematic for financial institutions to ascertain 
 - Employing short- or over-shipping strategies, inflating or deflating shipment values to disguise the origin of funds.
 
 These activities obstruct financial institutions' ability to identify suspicious transactions by appearing as legitimate trade deals.
+- [Cryptocurrency Investment](https://framework.amltrix.com/techniques/T0128) — Illicit operators funnel unlawful proceeds into cryptocurrency investments, taking advantage of the pseudonymous environment to obscure beneficial ownership.
+
+- They move funds across multiple exchanges and personal or external wallets, employing techniques such as chain-peeling and privacy protocols.
+- These repeated transfers hamper law enforcement and financial institutions' efforts to link assets to the original offense, complicating transaction monitoring and beneficial ownership checks.
+- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — Illicit operators utilize freeports and private storage to conceal criminal proceeds by:
+
+- Placing high-value assets (art, jewelry, precious metals) in secure facilities with minimal disclosure requirements.
+- Bypassing standard customs or border checks and maintaining anonymity through shell or offshore registrations.
+- Retaining the ability to discreetly transfer or retrieve valuables, reducing transparency for financial institutions attempting to trace illicit funds.
 - [Advance Fee Fraud](https://framework.amltrix.com/techniques/T0144.002) — Illicit operators engage in advance fee fraud by contacting victims with false promises of significant returns or benefits in exchange for upfront fees. They knowingly acquire illicit proceeds from these payments and then quickly layer or structure the funds—often using multiple accounts across various jurisdictions—to conceal their origin. Their reliance on anonymity and frequent cross-border transfers hinders financial institutions' efforts to accurately trace funds or identify ultimate beneficiaries.
 - [Offshore Prepaid and E-Wallet Issuance](https://framework.amltrix.com/techniques/T0062.001) — Illicit operators acquire offshore prepaid and e-wallet accounts by:
 
@@ -2126,24 +2022,18 @@ These actions hamper financial institutions’ ability to detect the ultimate so
 - Use stolen or synthetic identities and fabricated corporate or personal data to meet eligibility requirements.
 - Collude with complicit insiders or facilitators to bypass standard oversight procedures.
 - Rapidly move or layer the proceeds across multiple accounts, impeding financial institutions' ability to trace and identify the illicit origin.
-- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — Illicit operators knowingly funnel criminal proceeds into legitimate payment flows by:
-
-- Opening or misusing merchant accounts and aggregator models to blend illicit funds with genuine customer transactions.
-- Structuring deposits or splitting them into smaller increments below detection thresholds.
-
-This practice obscures the true origin of funds and hampers financial institutions in identifying suspicious activity or freezing illicit flows.
 - [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — They orchestrate fraudulent relief claims by submitting forged or falsified documentation to obtain illicit funds from economic relief programs. Once received, they move or layer these proceeds through various accounts, complicating financial institutions' ability to identify legitimate transactions and detect fraud.
-- [Cuckoo Smurfing](https://framework.amltrix.com/techniques/T0016.002) — Illicit operators execute cuckoo smurfing by:
+- [Offshore Insurance Schemes](https://framework.amltrix.com/techniques/T0085) — Illicit operators exploit offshore insurance policies in lenient regulatory environments to place and layer criminal proceeds. They may:
 
-- Obtaining legitimate remittance details intended for genuine recipients.
-- Substituting their own illicit funds into the unsuspecting recipient’s account, making the deposit appear as a normal inbound transfer.
-- Diverting the real remittance elsewhere, leaving the actual beneficiary unaware that their legitimate payment never arrived.
+- Pay large single-premium or investment-linked policies using illicit funds and redeem them prematurely, producing payouts that appear legitimate.
+- Stage or fabricate insurance claims for nonexistent assets (such as phantom vessels), receiving ostensibly lawful claim settlements.
 
-These actions exploit weak identification protocols around third-party deposits, frustrating financial institutions’ AML monitoring.
-- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — Illicit operators acquire or manage high-cash-flow real estate to integrate illicit funds by:
+These practices obscure the origin of funds and complicate financial institutions’ efforts to detect and investigate suspicious transactions across borders.
+- [Cryptocurrency Mining](https://framework.amltrix.com/techniques/T0020) — Illicit operators facilitate cryptocurrency mining by:
 
-- Channeling illegal proceeds through property revenues such as rent or room charges.
-- Structuring deposit patterns to mimic normal operating income, reducing the likelihood of detection by financial institutions.
+- Using illicit funds to pay for mining hardware, energy bills, or remote hosting services.
+- Generating newly minted coins without prior on-chain transaction histories, severing the link to the original dirty money.
+- Presenting these mining-related expenses as legitimate operational costs, making it more challenging for financial institutions to identify tainted proceeds.
 - [Unemployment Insurance Fraud](https://framework.amltrix.com/techniques/T0144.008) — Illicit operators file or coordinate fraudulent unemployment claims, manipulating eligibility details or using stolen identities to receive illicit government disbursements. These deposits appear as legitimate benefit payments and can circumvent financial institution scrutiny.
 - [Loyalty Points](https://framework.amltrix.com/techniques/T0106) — Illicit operators exploit loyalty or reward point programs by:
 
@@ -2151,6 +2041,11 @@ These actions exploit weak identification protocols around third-party deposits,
 - Transferring or redeeming points across multiple platforms or accounts to mask the original source of value.
 
 These actions reduce transparency for financial institutions, complicating efforts to trace suspicious transactions involving illicit proceeds.
+- [Unlicensed Real Estate Brokerage](https://framework.amltrix.com/techniques/T0133) — Illicit operators knowingly exploit unlicensed real estate brokers by:
+
+- Hiring unauthorized intermediaries who bypass customer due diligence and AML checks.
+- Channeling illicit proceeds through these brokers to purchase or sell property with limited scrutiny.
+- Concealing the true source of funds from financial institutions, disrupting automated detection and reporting of suspicious transactions.
 - [Shelf Companies](https://framework.amltrix.com/techniques/T0001.001) — Illicit operators purchase shelf companies to:
 
 - Exploit existing incorporation dates and credit histories, making them appear more legitimate to financial institutions.
@@ -2200,6 +2095,17 @@ These tactics obscure the true criminal source of funds and frustrate due dilige
 
 By doing so, they obscure ownership and transaction trails, complicating financial institutions’ efforts to identify illicit fund flows.
 - [Fictitious Mergers or Acquisitions](https://framework.amltrix.com/techniques/T0130.001) — They coordinate and execute fictitious M&A deals, disguising illicit proceeds as legitimate transaction payments. By structuring sham acquisitions through multiple corporate vehicles, they create layers of complexity that mask the original source of funds.
+- [Agent-Based Transaction Processing](https://framework.amltrix.com/techniques/T0113) — These criminal actors orchestrate agent-based transaction processing by:
+
+- Engaging sub-agents or partner outlets operating under licensed payment institutions.
+- Structuring high-risk transfers in smaller amounts to slip below reporting thresholds.
+- Splitting fund flows across multiple providers, fragmenting audit trails.
+- Concealing the true source and destination of illicit proceeds behind intermediaries.
+- [Identity Impersonation](https://framework.amltrix.com/techniques/T0075) — Illicit operators carry out identity impersonation by:
+
+- Stealing or fabricating personal and organizational data to open or infiltrate financial accounts under false credentials.
+- Gaining unauthorized access to victim funds or laundering illicit proceeds while disguised as legitimate account holders.
+- Misrepresenting themselves during KYC checks, defeating standard due diligence measures.
 - [Multiple Invoicing](https://framework.amltrix.com/techniques/T0008.001) — Illicit operators execute multiple invoicing schemes by issuing repeated or slightly amended invoices for the same goods or services. This enables them to obtain multiple financing or credit lines from different financial institutions, layering illicit funds under normal trade transactions. By reusing supporting documents, they obscure the true nature of the deals and hamper detection efforts.
 - [Arms Trafficking](https://framework.amltrix.com/techniques/T0143.002) — Illicit operators knowingly engage in arms trafficking, generating proceeds from unauthorized sales and cross-border smuggling. They:
 
@@ -2209,12 +2115,6 @@ By doing so, they obscure ownership and transaction trails, complicating financi
 
 - They exploit weak KYC at ATMs to convert or move cash discreetly.
 - Repeated transactions at different locations fragment the audit trail, challenging financial institutions' monitoring and investigative efforts.
-- [Custodial Mixers](https://framework.amltrix.com/techniques/T0003.001) — Illicit operators, including professional money launderers and organized crime groups, deposit tainted cryptocurrency into custodial mixers, receive seemingly unrelated withdrawals, and repeat the process. This layering obscures the unlawful origin of the funds and complicates financial institutions' efforts to identify or attribute the transactions to their underlying criminal activity.
-- [Chargeback](https://framework.amltrix.com/techniques/T0091) — Illicit operators initiate and orchestrate fraudulent chargebacks by:
-
-- Submitting fabricated or misleading dispute claims to credit card issuers or payment platforms.
-- Coordinating with colluding merchants or controlling both merchant and cardholder roles to inflate or invent transactions.
-- Manipulating transactional records and refund processes to obscure the original source of illicit funds, complicating financial institution detection.
 - [Early Surrender](https://framework.amltrix.com/techniques/T0086.001) — Illicit operators undertake the scheme by:
 
 - Purchasing insurance policies with illicit funds, often structuring or overinflating premium payments from multiple jurisdictions.
@@ -2224,17 +2124,17 @@ By doing so, they obscure ownership and transaction trails, complicating financi
 
 - By frequently rotating signatories and account names, they obscure who truly directs securities transactions.
 - This complicates financial institutions’ efforts to track suspicious activity or identify the ultimate beneficial owners, enabling more effective layering of illicit funds.
-- [Remittance Splitting](https://framework.amltrix.com/techniques/T0016.003) — Illicit operators initiate and manage the splitting of remittance transfers by:
-
-- Using multiple sender identities and fragmented amounts to stay below reporting thresholds.
-- Employing loosely supervised or unregistered channels to further conceal the source of illicit funds.
-
-Their activities hamper financial institutions’ ability to detect suspicious patterns, as transactions appear to be legitimate low-value remittances.
 - [Real Estate Auction](https://framework.amltrix.com/techniques/T0108.001) — Illicit operators knowingly exploit real estate auctions to launder proceeds by:
 
 - Injecting or receiving criminal funds through auction purchases or sales.
 - Flipping auctioned properties multiple times, creating layers that obscure the original source of money.
 - Taking advantage of minimal due diligence at some auctions, making it harder for financial institutions to trace beneficial owners or detect unusual bid patterns.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — Illicit operators orchestrate staged or collusive arbitration proceedings to launder funds by:
+
+- Presenting fabricated claims or inflated damages.
+- Concealing the criminal origins of funds by labeling settlement payments as legitimate awards.
+
+This misleads financial institutions into processing large transfers tied to an apparently valid arbitral ruling rather than recognizing them as suspicious transactions.
 - [Inflated Transaction Pricing](https://framework.amltrix.com/techniques/T0008.002) — Illicit operators orchestrate inflated transaction pricing by:
 
 - Creating false or altered invoices to overstate costs.
@@ -2246,6 +2146,25 @@ These practices make overpayments appear legitimate to financial institutions, h
 - Creating or commissioning falsified invoices, shipping documents, or other trade records.
 - Presenting these documents to banks or trade finance providers to secure credit or early payment.
 - Repaying financed amounts with illicit proceeds, disguising the source of funds through ostensibly legitimate trade settlements.
+- [Early Superannuation Withdrawals](https://framework.amltrix.com/techniques/T0109) — Illicit operators conduct fraudulent early superannuation withdrawals by:
+
+- Using stolen identities to access existing superannuation accounts and submit fabricated hardship or medical claims.
+- Exploiting short processing windows to receive payouts before thorough verification can occur.
+- Generating disbursements that appear legitimate, making detection and prevention more difficult for superannuation providers and financial institutions.
+- [Immediate Cash Conversion](https://framework.amltrix.com/techniques/T0105) — Illicit operators carry out immediate cash conversion by:
+
+- Depositing illicit funds into newly opened or dormant accounts, then withdrawing or transferring in structured increments below reporting thresholds.
+- Quickly converting digital or otherwise traceable balances into physical currency, exploiting the anonymity of cash and complicating financial institutions’ detection efforts.
+- [Renovation Cost Manipulation](https://framework.amltrix.com/techniques/T0124) — Illicit operators direct illegal proceeds into real estate under the cover of renovation projects by:
+
+- Overstating or fabricating contractor invoices for building materials and labor.
+- Coordinating repeated property sales at inflated prices to legitimize the illicit funds within final sale proceeds.
+
+These manipulations obscure the true origin of the funds and can mislead financial institutions financing or insuring real estate transactions.
+- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — Illicit operators deposit large volumes of unlawful proceeds into cross-border asset management or portfolio accounts. 
+
+- They often channel funds through multiple sub-accounts or affiliates, obscuring the paper trail.
+- These deposits generally exceed any legitimate investment rationale, complicating financial institutions’ due diligence and source-of-funds verification processes.
 - [Cross-Chain Token Wrapping](https://framework.amltrix.com/techniques/T0067.002) — They deposit or lock illicit tokens on one blockchain in bridging protocols, generating wrapped tokens on another chain that severs the direct on-chain link to the original funds.
 
 By repeatedly bridging tokens across multiple networks, they fragment transaction histories and impede standard analytics, making it difficult for financial institutions to detect or trace illicit proceeds.
@@ -2291,6 +2210,17 @@ This approach obscures the origin of funds and complicates financial institution
 - Maintain exclusive control over private keys, bypassing identity verification measures.
 - Transfer illicit proceeds across borders without centralized monitoring or account freezing.
 - Fragment funds into multiple pseudonymous addresses, complicating transactional tracing for financial institutions.
+- [Bid Manipulation](https://framework.amltrix.com/techniques/T0080) — They orchestrate and control collusive tendering by:
+
+- Forming or coordinating multiple seemingly independent entities to submit rigged bids.
+- Paying or receiving bribes and kickbacks disguised as legitimate procurement costs.
+
+These actions create contract payments that appear lawful to financial institutions, making it harder to detect the true criminal source of funds.
+- [Sports Club Investments](https://framework.amltrix.com/techniques/T0025) — Illicit operators, including those engaged in drug trafficking or other serious predicate offenses, invest in or acquire sports clubs to integrate criminal proceeds into seemingly legitimate revenue streams:
+
+- They misrepresent illicit funds as sponsorships, ticket sales, or merchandising income.
+- By exploiting the clubs’ financial needs and weak oversight, they reduce scrutiny from financial institutions.
+- This tactic hinders effective AML measures, as suspicious funds appear to be standard sports-related transactions.
 - [Investment Fraud](https://framework.amltrix.com/techniques/T0144.017) — Illicit operators knowingly orchestrate fraudulent investment schemes by:
 
 - Initiating deceptive offers (e.g., boiler room campaigns, fake crypto tokens) and collecting victim funds under false investment pretenses.
@@ -2308,7 +2238,6 @@ This tactic complicates financial institutions' transaction monitoring because t
 - Leveraging these phony transactions to layer illicit funds, making them appear as legitimate trade payments.
 
 Their activity complicates financial institutions' due diligence, as it creates a convincing paper trail with no tangible goods to verify.
-- [Hawala](https://framework.amltrix.com/techniques/T0013.004) — Criminal actors deposit illicit proceeds into hawala systems, often pairing transactions with fraudulent or manipulated trade documents to obscure the true source of funds. Their use of informal channels bypasses official banking records and AML alerts, hindering financial institutions' ability to identify suspicious activities.
 - [Independent Payment Agents](https://framework.amltrix.com/techniques/T0113.001) — Illicit operators exploit sub-agents placed under a licensed payment institution’s network by:
 
 - Introducing loosely supervised partner outlets that handle customer funds while bypassing stricter KYC/AML requirements.
@@ -2321,6 +2250,11 @@ These tactics obscure transaction flows from financial institutions, reducing th
 - Using cross-chain bridges and multi-hop transactions that fragment the trail across multiple blockchains, frustrating investigators’ efforts to perform end-to-end tracing.
 
 These tactics complicate financial institutions’ monitoring by creating intricate transactional chains and limiting visibility into the true origin of funds, especially after hacks or exploits.
+- [Cross-Border Currency Declaration](https://framework.amltrix.com/techniques/T0122) — Illicit operators knowingly employ cross-border currency declarations to legitimize the physical movement of illicit funds. They:
+
+- Over-declare amounts upon entry, creating official documentation that justifies additional funds not physically transported.
+- Break larger sums into multiple smaller declarations or distribute the money into different currencies (smurfing) to stay below thresholds that trigger heightened checks.
+- Reuse or falsify declaration records to obscure the origin of funds when dealing with financial institutions, leveraging the appearance of lawful cross-border transactions.
 - [Diamond Smuggling](https://framework.amltrix.com/techniques/T0048.001) — Illicit operators engage in diamond smuggling by:
 
 - Concealing rough diamonds and moving them across borders through undeclared shipments or falsified documentation.
@@ -2351,6 +2285,78 @@ This layering tactic obscures the true source of funds and complicates financial
 - Filing inflated export invoices to claim unwarranted VAT or tax rebates.
 - Collaborating with complicit importers to route surplus payments, concealing the true cost of goods.
 - Exploiting cross-border regulatory gaps so financial institutions see only seemingly legitimate trade flows, hindering the detection of artificially high export values.
+- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — Illicit operators orchestrate fictitious sales by:
+
+- Advertising non-existent goods or staging sham auctions, generating outwardly legitimate commercial inflows.
+- Channeling payments into the financial system as purported business revenue, disguising the illicit origin from financial institutions.
+
+Their actions distort transactional records, making it difficult for banks or payment processors to detect that no actual trade has occurred.
+- [Negotiable Instrument Purchases](https://framework.amltrix.com/techniques/T0110) — Illicit operators:
+
+- Purchase negotiable instruments (e.g., cashier’s checks, traveler’s checks, bank drafts) with illicit cash while structuring amounts below reporting thresholds.
+- Distribute these purchases across multiple locations or over consecutive days to avoid detection.
+- Rapidly deposit or redeem the instruments at various accounts or institutions, obscuring the true origin of the funds.
+- [Electronic Gaming Machine Ticket Redemption](https://framework.amltrix.com/techniques/T0054) — Illicit operators insert substantial cash into TITO gaming terminals with little to no betting activity, splitting deposits across multiple sessions or machines. They exchange or consolidate vouchers to further distance the funds from their illicit origin, complicating transactional traceability for financial institutions.
+- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — They generate proceeds from illegal logging, unreported fishing, or unauthorized mining. By embedding or mixing these illicit funds within legitimate supply chains and business operations, they obscure the origin of the money. This commingling hampers financial institutions' ability to detect unusual transactions or trace beneficial owners involved in environmental crime.
+- [Insurance and Reinsurance Manipulation](https://framework.amltrix.com/techniques/T0090) — Illicit operators orchestrate insurance and reinsurance manipulations by:
+
+- Establishing or controlling fraudulent insurance providers to inflate premiums, fabricate claims, or shuffle funds across multiple reinsurance layers.
+- Obscuring the criminal origin of funds, making payouts appear as legitimate policy settlements.
+
+Their activities impede financial institutions' ability to trace payment flows, as transactions are masked under seemingly normal insurance arrangements.
+- [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — Illicit operators orchestrate frequent changes or substitutions of policyholders and beneficiaries in insurance contracts to conceal the flow of illicit funds. They:
+
+- Use high-value life insurance or single-premium policies to introduce large sums from questionable sources.
+- Rapidly modify or surrender these policies, layering transactions and hampering transparent ownership tracing for financial institutions.
+- [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — - Illicit operators plan and execute mirror trades to layer criminal proceeds by placing offsetting buy and sell orders across multiple accounts or jurisdictions.
+- They exploit routine brokerage operations, often controlling both sides of trades under different identities or shell entities, making illicit transactions appear as normal market activities.
+- These tactics complicate financial institutions' detection of suspicious trading patterns, as the trades are masked within legitimate market flows.
+- [Crypto ATMs](https://framework.amltrix.com/techniques/T0063) — Illicit operators exploit crypto ATMs by:
+
+- Converting illicit cash into cryptocurrency (and vice versa) with minimal customer identification.
+- Splitting deposits and withdrawals into small increments to remain under reporting thresholds.
+- Rapidly layering funds using multiple machines or repeated transactions.
+
+These practices obscure the origin of illicit proceeds, complicating financial institutions’ efforts to detect or trace suspicious cash flows.
+- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — Illicit operators exploit multiple citizenships by:
+
+- Presenting alternative passports or nationalities when opening accounts or transferring funds, which reduces the likelihood of consistent due diligence.
+- Fragmenting their financial footprint across different identities, hindering investigators’ attempts to consolidate beneficial ownership information.
+- Bypassing stricter KYC controls in certain jurisdictions by strategically selecting which passport or identity to present.
+- [Cash Deposits](https://framework.amltrix.com/techniques/T0004) — Illicit operators deposit physical currency into financial institution accounts, splitting or staggering deposits below reporting thresholds. They may direct third-party depositors to make multiple small drop-offs, obscuring the funds’ true origin.
+
+This practice complicates financial institutions' due diligence and monitoring processes, as individually small transactions can appear routine while collectively representing significant illicit proceeds.
+- [Business Investment](https://framework.amltrix.com/techniques/T0036) — Illicit operators supply criminal proceeds to legitimate businesses, disguising illicit funds as normal capital contributions or operating revenue. By placing money directly into commercial activities and later withdrawing returns or dividends, they obscure the illegal source of funds and thwart financial institutions' ability to detect suspicious capital flows.
+- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Illicit operators orchestrate fraudulent trade finance by:
+
+- Submitting inflated or forged invoices and contracts to justify fund movements.
+- Cycling proceeds through multiple jurisdictions and accounts to conceal the criminal origin of funds.
+- Exploiting letters of credit and pre-shipment loans without any genuine underlying goods or services.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — Illicit operators initiate and manage these construction schemes to launder proceeds by:
+
+- Channeling unlawful funds into large development budgets for apparent economic legitimacy.
+- Manipulating subcontracting chains and cost structures, layering proceeds through multiple transactions.
+
+This fragmentation makes it problematic for financial institutions to ascertain the true source of capital and identify suspicious cash flows.
+- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — Illicit operators knowingly funnel criminal proceeds into legitimate payment flows by:
+
+- Opening or misusing merchant accounts and aggregator models to blend illicit funds with genuine customer transactions.
+- Structuring deposits or splitting them into smaller increments below detection thresholds.
+
+This practice obscures the true origin of funds and hampers financial institutions in identifying suspicious activity or freezing illicit flows.
+- [Cuckoo Smurfing](https://framework.amltrix.com/techniques/T0016.002) — Illicit operators execute cuckoo smurfing by:
+
+- Obtaining legitimate remittance details intended for genuine recipients.
+- Substituting their own illicit funds into the unsuspecting recipient’s account, making the deposit appear as a normal inbound transfer.
+- Diverting the real remittance elsewhere, leaving the actual beneficiary unaware that their legitimate payment never arrived.
+
+These actions exploit weak identification protocols around third-party deposits, frustrating financial institutions’ AML monitoring.
+- [Chargeback](https://framework.amltrix.com/techniques/T0091) — Illicit operators initiate and orchestrate fraudulent chargebacks by:
+
+- Submitting fabricated or misleading dispute claims to credit card issuers or payment platforms.
+- Coordinating with colluding merchants or controlling both merchant and cardholder roles to inflate or invent transactions.
+- Manipulating transactional records and refund processes to obscure the original source of illicit funds, complicating financial institution detection.
+- [Custodial Mixers](https://framework.amltrix.com/techniques/T0003.001) — Illicit operators, including professional money launderers and organized crime groups, deposit tainted cryptocurrency into custodial mixers, receive seemingly unrelated withdrawals, and repeat the process. This layering obscures the unlawful origin of the funds and complicates financial institutions' efforts to identify or attribute the transactions to their underlying criminal activity.
 - [Diamond-based Trade Transactions](https://framework.amltrix.com/techniques/T0055.002) — Illicit operators orchestrate diamond-based trade transactions to launder proceeds:
 
 - They repeatedly re-export parcels across multiple jurisdictions, inflating declared values at each step.
@@ -2366,12 +2372,6 @@ This layering tactic obscures the true source of funds and complicates financial
 - Concealing beneficial owners behind digital registration and nonexistent physical premises, hindering financial institutions' KYC processes.
 - Using fictitious call center or e-commerce activities to generate apparent business revenue, complicating transaction monitoring.
 - Rapidly relocating or dissolving these virtual entities across different jurisdictions to evade scrutiny or detection.
-- [Fictitious Sales](https://framework.amltrix.com/techniques/T0031) — Illicit operators orchestrate fictitious sales by:
-
-- Advertising non-existent goods or staging sham auctions, generating outwardly legitimate commercial inflows.
-- Channeling payments into the financial system as purported business revenue, disguising the illicit origin from financial institutions.
-
-Their actions distort transactional records, making it difficult for banks or payment processors to detect that no actual trade has occurred.
 - [Invoice Manipulation](https://framework.amltrix.com/techniques/T0008) — - They plan and execute the submission of falsified or inflated invoices, sometimes mixing legitimate trade with phantom shipments.
 - By manipulating documents and values, they conceal illicit proceeds under the guise of ordinary trade.
 - Financial institutions face heightened risk when processing these transactions, as the true nature of the funds and goods is obscured.
@@ -4036,39 +4036,20 @@ A legal entity typically formed with minimal or no active business operations. S
 
 - Criminals present these entities as independent lenders in 'loan-back' arrangements, concealing beneficial ownership and the ultimate source of funds.
 - Their lack of real business activity obscures financial flows, making it harder for financial institutions to detect suspicious transactions.
+- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Shell or front companies are used to launder forced labor proceeds by:
+
+- Falsely recording withheld wages as legitimate payroll or operating income.
+- Providing minimal or no genuine operations, thereby concealing the true source of funds.
+- Presenting a façade of legitimacy that complicates financial institutions' detection of illicit labor-related earnings.
+- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — Shell or front companies hold revenue-generating properties to:
+
+- Conceal the identities of those controlling or profiting from high-cash-flow real estate.
+- Layer financial flows behind corporate facades, complicating financial institutions' efforts to trace illicit proceeds.
+- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — Criminals form shell or front companies to establish fraudulent e-commerce businesses with minimal real operations. By mixing illicit proceeds with nominal legitimate income, they create transactions that appear routine, hindering financial institutions' ability to detect suspicious flows.
 - [Fraud](https://framework.amltrix.com/techniques/T0144) — Shell or front companies knowingly serve as conduits for fraudulent proceeds by:
 
 - Issuing false or inflated invoices that justify incoming funds.
 - Obscuring the true ownership and purpose of transactions, allowing criminals to quickly veil the origin of new illicit capital.
-- [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — Shell or front companies are used to:
-- Hold legal title to real estate while concealing the underlying criminal owners.
-- Enable property flips or transfers through a corporate veil, distancing illicit operators from direct ownership.
-- Funnel illicit capital through corporate accounts, complicating transaction monitoring.
-
-This hampers financial institutions’ efforts to trace beneficial owners, especially when corporate registrations lack transparent ownership disclosures.
-- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — Shell or front companies operate as fake suppliers or service providers, issuing bogus invoices to launder illicit funds. They:
-
-- Present themselves as legitimate vendors, allowing criminals to blend sham invoices with genuine business costs.
-- Conceal beneficial ownership and lack real economic activity, making it difficult for financial institutions to verify vendor authenticity.
-
-Repeated use of these shell vendor accounts systematically obscures the source and destination of illicit proceeds, complicating transaction monitoring and detection efforts.
-- [E-commerce & Marketplace Manipulation](https://framework.amltrix.com/techniques/T0028) — Criminals form shell or front companies to establish fraudulent e-commerce businesses with minimal real operations. By mixing illicit proceeds with nominal legitimate income, they create transactions that appear routine, hindering financial institutions' ability to detect suspicious flows.
-- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — Shell or front companies facilitate the misuse of bearer instruments by:
-
-- Issuing bearer shares or other negotiable bearer forms to conceal ultimate ownership.
-- Maintaining minimal or opaque operations, making it difficult for financial institutions to identify true beneficiaries.
-- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Shell or front companies in secrecy-friendly jurisdictions facilitate beneficial ownership manipulation through:
-
-- Repeatedly transferring directorships or shares to obscure the ultimate controller.
-- Exploiting lax reporting requirements to create ever-changing corporate records.
-
-These tactics confuse financial institutions trying to verify the rightful owner.
-- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — Shell or front companies are used to disguise beneficial ownership and the true origin or destination of funds. Adversaries establish them, often in permissive jurisdictions, to bypass sanctions restrictions, complicating financial institutions' due diligence and screening efforts.
-- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — Shell or front companies undermine financial transparency by:
-
-- Offering minimal or nonexistent commercial activity while conducting substantial financial transactions.
-- Presenting falsified invoices or records to legitimize revenues connected to the drug trade.
-- Obscuring beneficial ownership, hampering financial institutions’ efforts to track fund flows.
 - [Fictitious Creditors](https://framework.amltrix.com/techniques/T0103) — Shell or front companies, often established intentionally for illicit purposes, act as ghost vendors or sham creditors by:
 
 - Providing fraudulent invoices or delivery notes for non-existent goods or services.
@@ -4082,16 +4063,67 @@ Their involvement complicates due diligence for financial institutions, as verif
 
 This hampers financial institutions' ability to detect ultimate beneficiaries and disrupt illicit fund movements.
 - [Commodity-based Trade Transactions](https://framework.amltrix.com/techniques/T0125) — These entities act as nominal importers or exporters, layering ownership to conceal the true beneficiaries. They facilitate under- or over-invoicing and fictitious shipments, complicating the ability of financial institutions to detect the actual flow of funds and goods.
-- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — These entities, including offshore companies (ID 256) and private interest foundations (ID 278), obscure the beneficial ownership of freeport-stored assets by:
-
-- Registering high-value items under corporate names or foundation structures, thereby masking the true owners.
-- Conducting internal trades and paying storage fees under layered corporate identities, which limits financial institutions’ visibility.
-- Facilitating anonymized transactions across multiple jurisdictions, thus hindering the detection of illicit origins.
 - [Insider Trading](https://framework.amltrix.com/techniques/T0136) — Legal entities with little or no active business operations are often created in offshore jurisdictions lacking centralized beneficial ownership registries. They:
 
 - Receive or layer insider trading proceeds, obscuring true ownership.
 - Create multiple transactional layers that hinder financial institutions’ due diligence efforts.
 - Enable the conversion of illicit gains into seemingly legitimate corporate revenues or investments.
+- [Real Estate-based Methods](https://framework.amltrix.com/techniques/T0010) — Shell or front companies are used to:
+- Hold legal title to real estate while concealing the underlying criminal owners.
+- Enable property flips or transfers through a corporate veil, distancing illicit operators from direct ownership.
+- Funnel illicit capital through corporate accounts, complicating transaction monitoring.
+
+This hampers financial institutions’ efforts to trace beneficial owners, especially when corporate registrations lack transparent ownership disclosures.
+- [Fake Vendors](https://framework.amltrix.com/techniques/T0022) — Shell or front companies operate as fake suppliers or service providers, issuing bogus invoices to launder illicit funds. They:
+
+- Present themselves as legitimate vendors, allowing criminals to blend sham invoices with genuine business costs.
+- Conceal beneficial ownership and lack real economic activity, making it difficult for financial institutions to verify vendor authenticity.
+
+Repeated use of these shell vendor accounts systematically obscures the source and destination of illicit proceeds, complicating transaction monitoring and detection efforts.
+- [Corruption](https://framework.amltrix.com/techniques/T0051) — Shell or front companies serve as vehicles to conceal beneficial ownership and cash flows derived from bribes or misappropriated funds. Their lack of transparent operations impedes financial institutions' ability to assess the ultimate origin of assets, enabling corrupt actors to layer or disguise illicit proceeds more effectively.
+- [Bearer Instruments](https://framework.amltrix.com/techniques/T0042) — Shell or front companies facilitate the misuse of bearer instruments by:
+
+- Issuing bearer shares or other negotiable bearer forms to conceal ultimate ownership.
+- Maintaining minimal or opaque operations, making it difficult for financial institutions to identify true beneficiaries.
+- [Beneficial Ownership Manipulation](https://framework.amltrix.com/techniques/T0088) — Shell or front companies in secrecy-friendly jurisdictions facilitate beneficial ownership manipulation through:
+
+- Repeatedly transferring directorships or shares to obscure the ultimate controller.
+- Exploiting lax reporting requirements to create ever-changing corporate records.
+
+These tactics confuse financial institutions trying to verify the rightful owner.
+- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — Criminals use shell or front companies in free trade zones to:
+
+- Undertake over- or under-invoicing, repeated re-exports, and other manipulated trade transactions that blend illicit proceeds with legitimate trade.
+- Conceal beneficial ownership behind complex incorporation structures, making it difficult for financial institutions to identify ultimate controllers or verify the true value of transactions.
+
+This deliberate opacity enables systematic layering of illicit funds and frustrates standard AML controls.
+- [Sanctions Evasion](https://framework.amltrix.com/techniques/T0141) — Shell or front companies are used to disguise beneficial ownership and the true origin or destination of funds. Adversaries establish them, often in permissive jurisdictions, to bypass sanctions restrictions, complicating financial institutions' due diligence and screening efforts.
+- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — Criminals incorporate or use shell companies—often registered offshore—to receive artificially inflated licensing or sponsorship fees. These entities obscure the ultimate ownership of funds and mask the illicit sources, undermining financial institutions' ability to trace transactions or identify real beneficiaries.
+- [Drug Trade](https://framework.amltrix.com/techniques/T0142) — Shell or front companies undermine financial transparency by:
+
+- Offering minimal or nonexistent commercial activity while conducting substantial financial transactions.
+- Presenting falsified invoices or records to legitimize revenues connected to the drug trade.
+- Obscuring beneficial ownership, hampering financial institutions’ efforts to track fund flows.
+- [Counterfeit Goods](https://framework.amltrix.com/techniques/T0143.001) — These minimally active entities are used to obscure beneficial ownership and route revenues from counterfeit goods as though they stem from legitimate operations.
+
+- Provide a veil of legitimacy by issuing invoices and receiving payments tied to fake merchandise.
+- Conceal ultimate beneficiaries from financial institutions, complicating beneficial ownership screening and due diligence.
+- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — Shell or front companies are used to:
+
+- Conceal true beneficial ownership by posing as the nominal buyer or seller in oil/fuel deals.
+- Generate fraudulent invoices and official-looking documentation that legitimize misrepresented shipment volumes or prices.
+- Exploit secrecy-prone jurisdictions, hindering financial institutions’ ability to verify corporate ownership and transaction authenticity.
+- [Lottery Winnings](https://framework.amltrix.com/techniques/T0107.001) — Shell or front companies facilitate the laundering of lottery proceeds by:
+
+- Redeeming winning tickets under corporate names to distance criminals from direct involvement.
+- Layering payouts through multiple accounts, further concealing the ultimate beneficiaries.
+
+This setup hampers financial institutions' ability to identify suspicious financial flows.
+- [Freeports and Private Storage](https://framework.amltrix.com/techniques/T0131) — These entities, including offshore companies (ID 256) and private interest foundations (ID 278), obscure the beneficial ownership of freeport-stored assets by:
+
+- Registering high-value items under corporate names or foundation structures, thereby masking the true owners.
+- Conducting internal trades and paying storage fees under layered corporate identities, which limits financial institutions’ visibility.
+- Facilitating anonymized transactions across multiple jurisdictions, thus hindering the detection of illicit origins.
 - [Commodity Trafficking](https://framework.amltrix.com/techniques/T0143) — Shell or front companies are instrumental in layering, concealing the true owners of funds obtained through commodity trafficking.
 
 - Fictitious business transactions or out-of-range invoicing mask illicit proceeds.
@@ -4107,131 +4139,30 @@ This hampers financial institutions' ability to detect ultimate beneficiaries an
 - Relocating declared income across various entities to thwart tax authorities.
 
 These structures obscure the actual flow of money, impeding financial institutions' ability to link transactions to their true origin or beneficiary.
-- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — Shell or front companies serve as third-party payers or recipients, despite lacking legitimate commercial operations:
-
-- Criminals use these entities to layer or mask their control of funds.
-- Financial institutions face challenges verifying genuine business activities or identifying ultimate beneficiaries.
-- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — Shell or front companies act as named parties in fabricated arbitration disputes by:
-
-- Lacking genuine commercial activity, which allows for large settlement payouts without operational justification.
-- Obscuring beneficial owners, making it harder for financial institutions to detect illicit fund flows.
-
-Their minimal disclosure of ownership or transaction records complicates due diligence, aiding the laundering scheme.
-- [Corruption](https://framework.amltrix.com/techniques/T0051) — Shell or front companies serve as vehicles to conceal beneficial ownership and cash flows derived from bribes or misappropriated funds. Their lack of transparent operations impedes financial institutions' ability to assess the ultimate origin of assets, enabling corrupt actors to layer or disguise illicit proceeds more effectively.
-- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — Shell or front companies are created to hold or move illicit proceeds without conducting genuine commercial activities. 
-
-- They open or maintain asset management or portfolio accounts, concealing real ownership.
-- Financial institutions struggle to identify the true beneficial owners, as these entities obscure the origin of funds through complex layering and cross-border structures.
-- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Shell companies limit the spread of knowledge about the illicit enterprise:
-
-- Individuals creating the paperwork or managing these entities often see only the company's paperwork and isolated transactions.
-- Criminals leverage these structures to mask beneficial ownership and segregate financial flows from other laundering steps.
-- This prevents any single actor or institution from gathering enough information to identify connections between transactions handled by separate shell companies or other parts of the laundering chain.
-- [Free Trade Zones](https://framework.amltrix.com/techniques/T0041) — Criminals use shell or front companies in free trade zones to:
-
-- Undertake over- or under-invoicing, repeated re-exports, and other manipulated trade transactions that blend illicit proceeds with legitimate trade.
-- Conceal beneficial ownership behind complex incorporation structures, making it difficult for financial institutions to identify ultimate controllers or verify the true value of transactions.
-
-This deliberate opacity enables systematic layering of illicit funds and frustrates standard AML controls.
-- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — These entities, established with minimal active operations, are used to:
-
-- Conceal beneficial ownership and hide true control structures.
-- Commingle illicit profits from environmental crimes with legitimate income streams.
-
-Unclear operational activities and falsified corporate records hinder financial institutions’ customer due diligence efforts and mask the true source of funds.
-- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — Shell or front companies facilitate trade-based laundering by:
-
-- Holding commercial bank accounts to receive or remit payments tied to over- or under-invoiced shipments.
-- Obscuring beneficial owners behind corporate structures, making it harder for financial institutions to track the real parties behind transactions.
-- Conducting minimal genuine commerce, yet issuing or settling invoices used to justify cross-border funds movement.
-- [Forging or Altering Financial Instruments](https://framework.amltrix.com/techniques/T0126) — They act as nominal corporate structures to issue or receive forged financial instruments, simulating legitimate trade transactions while concealing the true origin of funds. By leveraging falsified documentation, such as letters of credit and invoices, these entities impair due diligence measures and facilitate the layering of illicit proceeds.
-- [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — Shell or front companies serve as policyholders or premium contributors without a legitimate business purpose, obscuring the real owners of illicit funds. This practice:
-
-- Masks beneficial ownership by inserting corporate entities lacking active operations.
-- Frustrates financial institutions' ability to identify the true origin and control of the insurance policy.
-- [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — - These legal entities, often with no real operations, provide account structures for booking mirrored trades under nominal business activity.
-- Criminals use shell or front companies to disguise beneficial ownership and conduct offsetting trades across multiple jurisdictions.
-- Financial institutions face enhanced risk when transactions originate from entities without verifiable commercial functions or transparent ownership.
-- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — Shell or front businesses—such as massage parlors, bars, or recruitment agencies—are used to:
-
-- Commingle illicit proceeds from forced labor or sexual exploitation with legitimate income.
-- Generate false payrolls or underreport wages, masking the true source of funds and obscuring connections to trafficked persons.
-- [Circular Letters of Credit](https://framework.amltrix.com/techniques/T0071) — Shell or front companies are established across multiple jurisdictions to:
-
-- Open letters of credit referencing each other, creating the illusion of legitimate trade.
-- Hide genuine ownership and operational details, making it difficult for banks to ascertain the economic reality behind the alleged transactions.
-- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — Shell or front companies compound multiple citizenship identity misuse by:
-
-- Allowing criminals to register corporate entities under alternate nationalities, obscuring the true beneficial owner.
-- Layering these entities across various jurisdictions, making it extraordinarily difficult for investigators to trace ownership.
-- Combining multiple passports with corporate records to further fragment due diligence efforts and benefit from weakened AML controls.
-- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Shell or front companies, including import-export fronts, enable layering through:
-
-- Serving as nominal buyers or sellers to obtain letters of credit or pre-shipment financing.
-- Issuing falsified documentation that conceals the true ownership and nature of funds.
-- Creating complex cross-border chains of transactions that appear to represent genuine trade.
-- [Player Image Rights Manipulation](https://framework.amltrix.com/techniques/T0129.001) — Criminals incorporate or use shell companies—often registered offshore—to receive artificially inflated licensing or sponsorship fees. These entities obscure the ultimate ownership of funds and mask the illicit sources, undermining financial institutions' ability to trace transactions or identify real beneficiaries.
-- [Counterfeit Goods](https://framework.amltrix.com/techniques/T0143.001) — These minimally active entities are used to obscure beneficial ownership and route revenues from counterfeit goods as though they stem from legitimate operations.
-
-- Provide a veil of legitimacy by issuing invoices and receiving payments tied to fake merchandise.
-- Conceal ultimate beneficiaries from financial institutions, complicating beneficial ownership screening and due diligence.
-- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — Shell or front companies integrate illicit cigarette proceeds by:
-
-- Mixing contraband profits with nominal commercial activity, disguising their criminal origin.
-- Issuing false invoices or accounting records that appear to reflect legitimate trade, confusing financial institution due diligence.
-- Providing a corporate façade that masks the beneficial ownership of smuggled proceeds.
-- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — Shell or front companies are leveraged to:
-
-- Receive inflated payments or subcontracting fees with limited or nonexistent legitimate operations.
-- Obscure ultimate beneficial owners and layer funds across multiple corporate accounts.
-
-Financial institutions struggle to track real money flows, as these companies appear in official documentation yet lack genuine commercial activity.
-- [Oil and Fuel Transaction Manipulation](https://framework.amltrix.com/techniques/T0111.001) — Shell or front companies are used to:
-
-- Conceal true beneficial ownership by posing as the nominal buyer or seller in oil/fuel deals.
-- Generate fraudulent invoices and official-looking documentation that legitimize misrepresented shipment volumes or prices.
-- Exploit secrecy-prone jurisdictions, hindering financial institutions’ ability to verify corporate ownership and transaction authenticity.
-- [Lottery Winnings](https://framework.amltrix.com/techniques/T0107.001) — Shell or front companies facilitate the laundering of lottery proceeds by:
-
-- Redeeming winning tickets under corporate names to distance criminals from direct involvement.
-- Layering payouts through multiple accounts, further concealing the ultimate beneficiaries.
-
-This setup hampers financial institutions' ability to identify suspicious financial flows.
 - [Stock Manipulation](https://framework.amltrix.com/techniques/T0094.001) — Shell or front companies facilitate circular or wash trading by:
 
 - Opening brokerage accounts under corporate identities, obscuring the ultimate controlling parties.
 - Interacting with other affiliated accounts to generate artificial trading volumes or prices.
 
 Financial institutions face significant challenges in identifying beneficial owners and detecting layered flows of illicit funds.
+- [Third-Party Payments](https://framework.amltrix.com/techniques/T0073) — Shell or front companies serve as third-party payers or recipients, despite lacking legitimate commercial operations:
+
+- Criminals use these entities to layer or mask their control of funds.
+- Financial institutions face challenges verifying genuine business activities or identifying ultimate beneficiaries.
 - [Auction Manipulation](https://framework.amltrix.com/techniques/T0108) — Shell or front companies are used to engage in auction transactions, often involving real estate:
 
 - They introduce illicit funds under a corporate façade, allowing criminals to obscure beneficial ownership.
 - Financial institutions struggle with due diligence and beneficial ownership checks, particularly when properties are flipped repeatedly under different shell entities.
-- [Forced Labor](https://framework.amltrix.com/techniques/T0058.001) — Shell or front companies are used to launder forced labor proceeds by:
-
-- Falsely recording withheld wages as legitimate payroll or operating income.
-- Providing minimal or no genuine operations, thereby concealing the true source of funds.
-- Presenting a façade of legitimacy that complicates financial institutions' detection of illicit labor-related earnings.
 - [Government Relief Program Fraud](https://framework.amltrix.com/techniques/T0144.004) — These entities, with minimal or no genuine business activity, are used to:
 
 - Fraudulently apply for government relief funds under falsified corporate details.
 - Commingle or layer the proceeds with purported legitimate transactions, complicating financial institution due diligence.
-- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — Shell or front companies receive blended proceeds from undisclosed payment aggregation by:
-
-- Appearing as legitimate entities to which repeated transfers are made from aggregated merchant accounts.
-- Obscuring the final recipients, complicating beneficial ownership checks and investigations.
-
-Financial institutions struggle to trace the true purpose of these transactions when front entities pose as legitimate businesses.
 - [Economic Relief Fraud](https://framework.amltrix.com/techniques/T0144.005) — Criminals establish or use these entities to:
 
 - Apply for relief funds under false pretenses, often lacking legitimate operations.
 - Commingle fraudulent proceeds with minimal legitimate activity, obscuring transaction origins for financial institutions.
 
 They provide a façade of business legitimacy, complicating due diligence checks.
-- [High-Cash Flow Real Estate](https://framework.amltrix.com/techniques/T0010.002) — Shell or front companies hold revenue-generating properties to:
-
-- Conceal the identities of those controlling or profiting from high-cash-flow real estate.
-- Layer financial flows behind corporate facades, complicating financial institutions' efforts to trace illicit proceeds.
 - [Carousel Fraud](https://framework.amltrix.com/techniques/T0144.007) — - Established or acquired to repeatedly import and export identical goods or services, generating fraudulent VAT refund claims without genuine commercial activity.
 - Conceal beneficial ownership and the repetitive nature of trades, hindering financial institutions’ transaction monitoring and due diligence processes.
 - Used knowingly by criminals to maintain the façade of legitimate cross-border operations and evade scrutiny.
@@ -4244,11 +4175,6 @@ They provide a façade of business legitimacy, complicating due diligence checks
 - Holding accounts with minimal legitimate business operations, which reduces transactional transparency.
 - Concealing beneficial ownership through corporate paperwork or inactive entities.
 - Acting as a layering channel for quick cross-institution fund movements, thereby masking sources from financial institutions.
-- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — Established or purchased with minimal disclosure requirements to shuttle wages without proper withholding and evade payroll-related taxes by:
-
-- Operating under nominal or fictitious ownership, concealing the true controllers from financial institutions.
-- Handling payroll expenses for large crews off-the-books, masking the real wage base from tax authorities.
-- Facilitating the layering of illicit funds by routing payments and withdrawals through accounts in the shell company's name.
 - [Temporary Shell Companies](https://framework.amltrix.com/techniques/T0001.002) — These entities are formed with minimal or no real business activity and are used to receive, move, or disburse illicit funds under the guise of legitimate transactions. They are dissolved shortly after use, leaving little trace for investigators.
 
 This rapid lifecycle complicates financial institutions' attempts to detect suspicious behavior or identify ultimate beneficiaries before the entity ceases to exist.
@@ -4292,17 +4218,32 @@ This obscurity hampers financial institutions' ability to trace illegal logging 
 - Acting as the formal bidder or buyer with minimal operational transparency, making it difficult to identify beneficial owners.
 - Channeling illicit funds through corporate accounts, concealing the true source of capital from financial institutions.
 - Enabling repeated underbidding or overbidding to layer transactions and distort property values.
+- [Arbitration Settlement Manipulation](https://framework.amltrix.com/techniques/T0046) — Shell or front companies act as named parties in fabricated arbitration disputes by:
+
+- Lacking genuine commercial activity, which allows for large settlement payouts without operational justification.
+- Obscuring beneficial owners, making it harder for financial institutions to detect illicit fund flows.
+
+Their minimal disclosure of ownership or transaction records complicates due diligence, aiding the laundering scheme.
 - [Bill of Exchange Manipulation](https://framework.amltrix.com/techniques/T0074.001) — These legal entities are established (or co-opted) to:
 
 - Pose as importers or exporters in fictitious or inflated trade deals.
 - Generate or hold fraudulent bills of exchange and associated documents.
 - Obscure beneficial ownership and confuse financial institutions regarding the legitimacy of cross-border transactions.
+- [Asset Management Deposits](https://framework.amltrix.com/techniques/T0123) — Shell or front companies are created to hold or move illicit proceeds without conducting genuine commercial activities. 
+
+- They open or maintain asset management or portfolio accounts, concealing real ownership.
+- Financial institutions struggle to identify the true beneficial owners, as these entities obscure the origin of funds through complex layering and cross-border structures.
 - [Tax Rebate Fraud](https://framework.amltrix.com/techniques/T0147.002) — Shell or front companies are knowingly established or controlled by criminals to fabricate tax rebate claims by submitting inflated or fictitious documentation. Financial institutions face heightened challenges in verifying the legitimacy of these entities' accounts and transactions, as shell structures obscure ownership and commingle illicit funds with other revenues.
 - [Fictitious Call Center](https://framework.amltrix.com/techniques/T0014.002) — These corporate entities with minimal or no real operations knowingly facilitate:
 
 - Masking the true activities of the call-center scheme by presenting sham invoices or contracts to justify incoming funds.
 - Obscuring beneficial ownership and the genuine flow of illicit proceeds, thereby preventing effective scrutiny by financial institutions.
 - Enabling layering and integration by processing bogus telemarketing revenues that appear legitimate on paper.
+- [Knowledge Compartmentalization](https://framework.amltrix.com/techniques/T0149) — Shell companies limit the spread of knowledge about the illicit enterprise:
+
+- Individuals creating the paperwork or managing these entities often see only the company's paperwork and isolated transactions.
+- Criminals leverage these structures to mask beneficial ownership and segregate financial flows from other laundering steps.
+- This prevents any single actor or institution from gathering enough information to identify connections between transactions handled by separate shell companies or other parts of the laundering chain.
 - [International Real Estate](https://framework.amltrix.com/techniques/T0010.003) — These entities, often established offshore, enable criminals to:
 
 - Hold real estate assets behind corporate veils, preventing financial institutions from linking properties to the ultimate beneficial owner.
@@ -4312,7 +4253,6 @@ This obscurity hampers financial institutions' ability to trace illegal logging 
 
 - Receive purported rental income that is actually illicit funds introduced by criminals.
 - Conceal beneficial ownership, hindering financial institutions' ability to identify the true controllers of the funds.
-- [Casino Mule Networks](https://framework.amltrix.com/techniques/T0011.003) — Shell or front companies open accounts to receive casino-issued checks or wire transfers following the initial chip redemption. By inserting these entities between the casino payouts and the real beneficiaries, they obscure beneficial ownership and hinder financial institutions' ability to track the laundered funds.
 - [Fictitious Consulting Firm](https://framework.amltrix.com/techniques/T0014.003) — Shell or front companies function as fictitious consulting firms when:
 
 - They lack genuine operations yet issue professional invoices, allowing illicit income to appear as legitimate consultancy fees.
@@ -4325,11 +4265,6 @@ This obscurity hampers financial institutions' ability to trace illegal logging 
 - Conduct seemingly legitimate recruitment processes, such as online interviews and structured application procedures.
 - Lend credibility to fraudulent job offers, deceiving recruits and financial institutions alike.
 - Mask beneficial ownership behind fabricated corporate entities, complicating standard due diligence and transaction monitoring efforts.
-- [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Shell or front companies serve as beneficiaries or intermediaries by:
-
-- Receiving advance payments for fictitious or inflated shipments under red/green clause letters of credit.
-- Concealing beneficial ownership, complicating financial institutions' due diligence, and obscuring the origin of illicit funds.
-- Enabling multi-layered transactions that mask ultimate recipients and sources of capital.
 - [Agricultural Ventures](https://framework.amltrix.com/techniques/T0014.004) — Shell or front companies serve as ghost agribusiness projects lacking tangible output and are used to:
 
 - Register or hold farmland with minimal real activity, providing a veneer of legitimate agricultural operations.
@@ -4367,6 +4302,71 @@ These tactics prevent financial institutions from easily pinpointing the ultimat
 - Operating within jurisdictions with weak oversight, making it difficult for financial institutions to trace beneficial ownership or identify the true source of funds.
 
 These entities serve as nominal business fronts, merging illicit proceeds with purported commercial inflows to complete the final integration stage of laundering.
+- [Commingling Environmental Crime Proceeds](https://framework.amltrix.com/techniques/T0057) — These entities, established with minimal active operations, are used to:
+
+- Conceal beneficial ownership and hide true control structures.
+- Commingle illicit profits from environmental crimes with legitimate income streams.
+
+Unclear operational activities and falsified corporate records hinder financial institutions’ customer due diligence efforts and mask the true source of funds.
+- [Trade-based Transaction Manipulation](https://framework.amltrix.com/techniques/T0111) — Shell or front companies facilitate trade-based laundering by:
+
+- Holding commercial bank accounts to receive or remit payments tied to over- or under-invoiced shipments.
+- Obscuring beneficial owners behind corporate structures, making it harder for financial institutions to track the real parties behind transactions.
+- Conducting minimal genuine commerce, yet issuing or settling invoices used to justify cross-border funds movement.
+- [Forging or Altering Financial Instruments](https://framework.amltrix.com/techniques/T0126) — They act as nominal corporate structures to issue or receive forged financial instruments, simulating legitimate trade transactions while concealing the true origin of funds. By leveraging falsified documentation, such as letters of credit and invoices, these entities impair due diligence measures and facilitate the layering of illicit proceeds.
+- [Insurance Beneficiary Substitution](https://framework.amltrix.com/techniques/T0089) — Shell or front companies serve as policyholders or premium contributors without a legitimate business purpose, obscuring the real owners of illicit funds. This practice:
+
+- Masks beneficial ownership by inserting corporate entities lacking active operations.
+- Frustrates financial institutions' ability to identify the true origin and control of the insurance policy.
+- [Mirror Trading](https://framework.amltrix.com/techniques/T0101) — - These legal entities, often with no real operations, provide account structures for booking mirrored trades under nominal business activity.
+- Criminals use shell or front companies to disguise beneficial ownership and conduct offsetting trades across multiple jurisdictions.
+- Financial institutions face enhanced risk when transactions originate from entities without verifiable commercial functions or transparent ownership.
+- [Human Trafficking](https://framework.amltrix.com/techniques/T0058) — Shell or front businesses—such as massage parlors, bars, or recruitment agencies—are used to:
+
+- Commingle illicit proceeds from forced labor or sexual exploitation with legitimate income.
+- Generate false payrolls or underreport wages, masking the true source of funds and obscuring connections to trafficked persons.
+- [Circular Letters of Credit](https://framework.amltrix.com/techniques/T0071) — Shell or front companies are established across multiple jurisdictions to:
+
+- Open letters of credit referencing each other, creating the illusion of legitimate trade.
+- Hide genuine ownership and operational details, making it difficult for banks to ascertain the economic reality behind the alleged transactions.
+- [Multiple Citizenship Identities](https://framework.amltrix.com/techniques/T0024) — Shell or front companies compound multiple citizenship identity misuse by:
+
+- Allowing criminals to register corporate entities under alternate nationalities, obscuring the true beneficial owner.
+- Layering these entities across various jurisdictions, making it extraordinarily difficult for investigators to trace ownership.
+- Combining multiple passports with corporate records to further fragment due diligence efforts and benefit from weakened AML controls.
+- [Trade Finance Manipulation](https://framework.amltrix.com/techniques/T0074) — Shell or front companies, including import-export fronts, enable layering through:
+
+- Serving as nominal buyers or sellers to obtain letters of credit or pre-shipment financing.
+- Issuing falsified documentation that conceals the true ownership and nature of funds.
+- Creating complex cross-border chains of transactions that appear to represent genuine trade.
+- [Cigarette Smuggling](https://framework.amltrix.com/techniques/T0048.002) — Shell or front companies integrate illicit cigarette proceeds by:
+
+- Mixing contraband profits with nominal commercial activity, disguising their criminal origin.
+- Issuing false invoices or accounting records that appear to reflect legitimate trade, confusing financial institution due diligence.
+- Providing a corporate façade that masks the beneficial ownership of smuggled proceeds.
+- [Construction Project Schemes](https://framework.amltrix.com/techniques/T0010.001) — Shell or front companies are leveraged to:
+
+- Receive inflated payments or subcontracting fees with limited or nonexistent legitimate operations.
+- Obscure ultimate beneficial owners and layer funds across multiple corporate accounts.
+
+Financial institutions struggle to track real money flows, as these companies appear in official documentation yet lack genuine commercial activity.
+- [Undisclosed Payment Aggregation](https://framework.amltrix.com/techniques/T0138) — Shell or front companies receive blended proceeds from undisclosed payment aggregation by:
+
+- Appearing as legitimate entities to which repeated transfers are made from aggregated merchant accounts.
+- Obscuring the final recipients, complicating beneficial ownership checks and investigations.
+
+Financial institutions struggle to trace the true purpose of these transactions when front entities pose as legitimate businesses.
+- [Payroll Tax Evasion](https://framework.amltrix.com/techniques/T0147.001) — Established or purchased with minimal disclosure requirements to shuttle wages without proper withholding and evade payroll-related taxes by:
+
+- Operating under nominal or fictitious ownership, concealing the true controllers from financial institutions.
+- Handling payroll expenses for large crews off-the-books, masking the real wage base from tax authorities.
+- Facilitating the layering of illicit funds by routing payments and withdrawals through accounts in the shell company's name.
+- [Casino Mule Networks](https://framework.amltrix.com/techniques/T0011.003) — Shell or front companies open accounts to receive casino-issued checks or wire transfers following the initial chip redemption. By inserting these entities between the casino payouts and the real beneficiaries, they obscure beneficial ownership and hinder financial institutions' ability to track the laundered funds.
+- [Red/Green Clause Letters of Credit](https://framework.amltrix.com/techniques/T0074.002) — Shell or front companies serve as beneficiaries or intermediaries by:
+
+- Receiving advance payments for fictitious or inflated shipments under red/green clause letters of credit.
+- Concealing beneficial ownership, complicating financial institutions' due diligence, and obscuring the origin of illicit funds.
+- Enabling multi-layered transactions that mask ultimate recipients and sources of capital.
 - [Misappropriation of Public Funds](https://framework.amltrix.com/techniques/T0051.001) — Shell or front companies conceal the origin of misappropriated public assets by:
 
 - Holding and transferring funds under nominal or fictitious operations.

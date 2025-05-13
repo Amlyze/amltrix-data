@@ -1,0 +1,111 @@
+STIX ID,Type,Risk Name,Description,Short Description,Created,Modified,spec_version,x_mitre_is_subtechnique,x_mitre_parent_ref,x_mitre_aliases,External References,External ID,URL
+x-amltrix-risk--76c89e84-5917-4ad2-ad13-8b0cd4570c27,x-amltrix-risk,Customer Risk,"Factors stemming from a customer’s identity, ownership, or typical behaviors. Represented by attributes of a client’s background, business model, or transactional behavior that might raise ML/TF concerns.
+
+**Relevant Factors for Tagging Behaviors**
+
+* **Opaque or Complex Ownership**
+  * Shell companies with nominee directors, offshore accounts
+* **High-Profile or High-Corruption Exposure**
+  * Politically Exposed Persons (PEPs), major cash-based businesses (casinos, car dealers)
+* **Unusual Behavioral Patterns**
+  * Reluctance to provide standard documentation, swift fund movements that contradict a stated business profile
+
+**Behavioral Examples of Risk Exploitation**
+
+* Using corporate vehicles with frequently changing beneficial owners
+* Conducting large cash transactions inconsistent with the declared nature of the customer’s business","Customers exhibiting opaque or complex ownership structures, high corruption exposure (e.g., PEPs), or unusual behavioral patterns (e.g., reluctance to disclose information, large inconsistent cash transactions) can facilitate illicit financial flows by obscuring beneficial ownership, evading due diligence, and misaligning transactional activity with declared business profiles.",2025-04-02T13:25:50.636476+00:00,2025-04-02T13:25:50.636476+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""RS0001"",
+    ""url"": ""https://framework.amltrix.com/unknown/RS0001""
+  }
+]",RS0001,https://framework.amltrix.com/unknown/RS0001
+x-amltrix-risk--6d01dc05-77f7-416d-b16f-b5b16db30337,x-amltrix-risk,Jurisdictional Risk,"Risks tied to the jurisdictions or regions involved in a transaction, customer relationship, or ownership structure.
+
+**Relevant Factors for Tagging Behaviors**
+
+* **Sanctioned or Conflict Zones**
+  * Countries or regions under embargo, widespread corruption, or active conflict
+* **Weak Regulatory Frameworks**
+  * Limited AML/CFT controls or high levels of organized crime
+* **Secrecy and Offshore Havens**
+  * Jurisdictions known for banking secrecy or low transparency requirements
+
+**Behavioral Examples of Risk Exploitation**
+
+* Repeated fund transfers to shell companies located in offshore havens
+* Cargo delivery routes through sanctioned regions to obscure transaction trails and the final receiver of goods","Jurisdictional risk stems from engagement in sanctioned or conflict-afflicted regions, locations with weak regulatory frameworks, or offshore secrecy havens, creating heightened exposure to illicit finance and diminished transparency in beneficial ownership. These factors significantly complicate AML/CFT controls, enabling the anonymity of suspect transactions and obscuring the true nature of funds and counterparties.",2025-04-02T13:25:50.636476+00:00,2025-04-02T13:25:50.636476+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""RS0004"",
+    ""url"": ""https://framework.amltrix.com/unknown/RS0004""
+  }
+]",RS0004,https://framework.amltrix.com/unknown/RS0004
+x-amltrix-risk--eb8d8c9e-d633-4d73-a678-86d22592ec79,x-amltrix-risk,Internal Risk,"Operational and governance factors within an institution that may allow illicit activities to go undetected or be abetted internally.
+
+**Relevant Factors for Tagging Behaviors**
+
+* **Weak Governance & Culture**
+  * Inadequate board engagement, compliance understaffing
+* **Insufficient Training & Oversight**
+  * Lack of employee awareness regarding red flags or emerging typologies
+* **Potential Collusion or Conflicts of Interest**
+  * Staff or management turning a blind eye to suspicious transactions, or actively enabling them
+* **Outdated or Fragmented Systems**
+  * Legacy monitoring platforms, siloed data preventing holistic oversight
+
+**Behavioral Examples of Risk Exploitation**
+
+* Bypassing suspicious transaction reporting due to corrupt internal staff
+* Failing to escalate red flags because of poor AML oversight or insufficient training","Weak internal controls, inadequate governance structures, and potential collusion create a breeding ground for unnoticed or even facilitated illicit transactions, dangerously compromising an institution’s AML frameworks. These vulnerabilities, compounded by fragmented systems and insufficient training, significantly elevate the risk of money laundering and terrorist financing activities.",2025-04-02T13:25:50.636476+00:00,2025-04-02T13:25:50.636476+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""RS0005"",
+    ""url"": ""https://framework.amltrix.com/unknown/RS0005""
+  }
+]",RS0005,https://framework.amltrix.com/unknown/RS0005
+x-amltrix-risk--08d444be-c906-40f4-80ed-0a1daf191aff,x-amltrix-risk,Product Risk,"Inherent vulnerabilities linked to specific products, services, or transaction types.
+
+Financial products, services or transaction types that, by design or usage, may facilitate money laundering. This could include any service characteristic that enables illicit layering, anonymity, or rapid value movement.
+
+**Relevant Factors for Tagging Behaviors**
+
+* **Anonymity-Driven Features**
+  * Prepaid instruments with high or no loading limits
+  * Cryptocurrency services lacking full KYC requirements
+* **High Complexity or Structuring**
+  * Advanced trade finance instruments, derivatives, or transactions that obscure beneficial ownership
+* * **Rapid Cross-Border Usage**
+    * Mechanisms allowing quick, large cross-border transfers without sufficient due diligence
+
+**Behavioral Examples of Risk Exploitation**
+
+* Splitting large deposits into multiple smaller amounts via prepaid cards
+* Exploiting fast-moving international wire services to layer funds across different jurisdictions","Product risk arises from inherent design or usage features in certain financial instruments—such as anonymous prepaid cards, complex trade products, or rapid cross-border transfer mechanisms—that enable layering, structuring, and obfuscation of beneficial ownership. These vulnerabilities, if not mitigated through rigorous KYC and transaction monitoring, substantially elevate exposure to money laundering and terrorist financing.",2025-04-02T13:25:50.636476+00:00,2025-04-02T13:25:50.636476+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""RS0002"",
+    ""url"": ""https://framework.amltrix.com/unknown/RS0002""
+  }
+]",RS0002,https://framework.amltrix.com/unknown/RS0002
+x-amltrix-risk--7355e381-afd8-4758-802c-2942ebb8719d,x-amltrix-risk,Channel Risk,"Potential vulnerabilities stemming from the way products and services are delivered or accessed.
+
+**Relevant Factors for Tagging Behaviors**
+
+* **Non-Face-to-Face Delivery**
+  * Online-only account openings or transactions with minimal identity verification
+* **Dependence on Multiple Intermediaries**
+  * Complex correspondent banking chains, reliance on unregulated agents
+* **Emerging FinTech or Unregulated Platforms**
+  * Payment apps or crypto exchanges with limited AML oversight
+
+**Behavioral Examples of Risk Exploitation**
+
+* Layering funds through multiple digital wallets or payment processors
+* Opening accounts remotely using forged or minimal documentation","Channel risk arises from non-face-to-face delivery methods, reliance on multiple or unregulated intermediaries, and the use of emerging FinTech platforms, enabling adversaries to layer and disguise illicit funds more effectively while complicating due diligence and identity verification processes. This heightens exposure to money laundering and terrorist financing, particularly when leveraging minimal oversight or inadequate KYC requirements.",2025-04-02T13:25:50.636476+00:00,2025-04-02T13:25:50.636476+00:00,2.1,False,,,"[
+  {
+    ""source_name"": ""amltrix-ml"",
+    ""external_id"": ""RS0003"",
+    ""url"": ""https://framework.amltrix.com/unknown/RS0003""
+  }
+]",RS0003,https://framework.amltrix.com/unknown/RS0003
